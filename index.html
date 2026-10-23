@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NBA Fantezi Lig Sezon 6 — Eşleşme Karşılaştırma</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--panel:#ffffff;--fg:#141922;--muted:#5d6676;--line:#dde1e7;--a:#1f5fd1;--b:#e3792b;--ok:#17834a;--bad:#c23b3b;--chip:#eef1f5;color-scheme:light;
+ padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1319;--panel:#171c24;--fg:#e8ecf2;--muted:#9aa4b5;--line:#2a313c;--a:#5b8ff0;--b:#f0974f;--ok:#43c07a;--bad:#ef6b6b;--chip:#1f2630;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.45}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 16px 48px}
+header h1{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-weight:700;font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:.01em;margin:0;line-height:1.05}
+header p{color:var(--muted);margin:.4rem 0 0;max-width:70ch}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 4px}
+select{font:inherit;font-size:1rem;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg);max-width:100%}
+.vs{font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--muted);letter-spacing:.08em}
+.upd{color:var(--muted);font-size:.85rem}
+section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 16px;margin-top:18px}
+h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.45rem;margin:0 0 10px;letter-spacing:.01em}
+.note{color:var(--muted);font-size:.88rem;margin:4px 0 12px}
+.score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:8px 0 6px}
+.score .nm{font-weight:600;font-size:1.05rem;line-height:1.2}
+.score .nm.a{text-align:right;color:var(--a)} .score .nm.b{color:var(--b)}
+.score .big{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(2.8rem,10vw,4rem);line-height:1;white-space:nowrap}
+.verdict{text-align:center;color:var(--muted);margin-bottom:14px}
+.cats{display:grid;gap:8px}
+.cat{display:grid;grid-template-columns:minmax(48px,64px) 1fr 42px 1fr minmax(48px,64px);gap:8px;align-items:center;font-variant-numeric:tabular-nums}
+.cat .v{font-weight:500}.cat .v.a{text-align:right}
+.cat .won{font-weight:700}
+.cat .won.a{color:var(--a)}.cat .won.b{color:var(--b)}
+.cat .lbl{text-align:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;color:var(--muted);font-size:.95rem}
+.track{height:14px;border-radius:4px;background:var(--chip);position:relative;overflow:hidden}
+.track span{position:absolute;top:0;bottom:0;border-radius:4px}
+.track.a span{right:0;background:var(--a)}.track.b span{left:0;background:var(--b)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;background:var(--chip);position:sticky;top:0}
+th:first-child,td:first-child,th.l,td.l{text-align:left}
+tr:last-child td{border-bottom:0}
+tr.sel td{font-weight:600}
+tr.sel td:first-child{box-shadow:inset 3px 0 0 var(--a)}
+td.win{color:var(--ok);font-weight:600} td.loss{color:var(--bad)}
+.pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:.8rem;font-weight:600}
+.pill.win{background:color-mix(in srgb,var(--ok) 15%,transparent);color:var(--ok)}
+.pill.loss{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+.pill.tie{background:var(--chip);color:var(--muted)}
+footer{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
+.err{color:var(--bad)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <h1>NBA Fantezi Lig Sezon 6</h1>
+ <p>Haftalık eşleşme karşılaştırma. Veriler Yahoo'daki haftalık toplamlardır; FG% ve FT% isabet/deneme oranı, TO'da az olan kazanır.</p>
+ <div class="bar"><select id="week" aria-label="Hafta"></select><span class="upd" id="upd"></span></div>
+</header>
+
+<section id="eslesme">
+ <h2>Eşleşme</h2>
+ <div class="bar"><select id="ta" aria-label="Birinci takım"></select><span class="vs">VS</span><select id="tb" aria-label="İkinci takım"></select></div>
+ <div class="score"><div class="nm a" id="na"></div><div class="big"><span id="sa">–</span> – <span id="sb">–</span></div><div class="nm b" id="nb"></div></div>
+ <div class="verdict" id="verdict"></div>
+ <div class="cats" id="cats"></div>
+</section>
+
+<section id="herkese">
+ <h2>Herkese karşı</h2>
+ <div class="bar"><select id="tc" aria-label="Takım"></select><span class="note" style="margin:0">ligdeki diğer takımlara karşı skor</span></div>
+ <div class="tw"><table id="t-vs"><thead><tr><th>Rakip</th><th>G</th><th>M</th><th>B</th><th>Sonuç</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="guc">
+ <h2>Güç sıralaması</h2>
+ <p class="note">Her takım bu haftanın toplamlarıyla diğer herkese karşı eşleştirilseydi: yendiği rakip sayısı ve toplam kategori sonucu.</p>
+ <div class="tw"><table id="t-st"><thead><tr><th>Sıra</th><th class="l">Takım</th><th>Yendiği rakip</th><th>Kategori G</th><th>M</th><th>B</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="kategori">
+ <h2>Kategori sıraları</h2>
+ <p class="note">1 = ligin en iyisi. Takımlar 9 kategorideki ortalama sıralarına göre dizildi; ilk 4 yeşil, son 4 kırmızı.</p>
+ <div class="tw"><table id="t-cr"><thead><tr><th>Takım</th><th>Ort.</th><th>FG%</th><th>FT%</th><th>3PM</th><th>PTS</th><th>REB</th><th>AST</th><th>ST</th><th>BLK</th><th>TO</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="toplam">
+ <h2>Haftalık toplamlar</h2>
+ <p class="note">Yahoo'daki toplamlar, güç sırasına göre.</p>
+ <div class="tw"><table id="t-raw"><thead><tr><th>Takım</th><th>Maç</th><th>FGM/A</th><th>FG%</th><th>FTM/A</th><th>FT%</th><th>3PM</th><th>PTS</th><th>REB</th><th>AST</th><th>ST</th><th>BLK</th><th>TO</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="macbasi">
+ <h2>Maç başına en iyi takımlar</h2>
+ <p class="note">Takımlar farklı sayıda maç oynadığı için maç başına ortalamalar. Sıralama, bu ortalamalarla herkese karşı kazanılan kategori sayısına göre; Yahoo skorunu değil takımların gücünü gösterir.</p>
+ <div class="tw"><table id="t-pg"><thead><tr><th>Sıra</th><th class="l">Takım</th><th>Maç</th><th>Kat. G</th><th>FG%</th><th>FT%</th><th>3PM</th><th>PTS</th><th>REB</th><th>AST</th><th>ST</th><th>BLK</th><th>TO</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<footer>Veriler Yahoo Fantasy eşleşme ekranlarından alınır ve haftalık güncellenir.</footer>
+</div>
+<script>
+const CATS=[["fgp","FG%"],["ftp","FT%"],["tpm","3PM"],["pts","PTS"],["reb","REB"],["ast","AST"],["st","ST"],["blk","BLK"],["to","TO"]];
+const K=CATS.map(c=>c[0]);
+const $=id=>document.getElementById(id);
+const pct=v=>isFinite(v)?v.toFixed(3).replace(/^0/,""):"–";
+const one=v=>v.toFixed(1);
+let DATA=null,W=null,V=[],PG=[];
+const better=(k,x,y)=>k==="to"?x<y:x>y;
+function vals(rows,perGame){return rows.map(r=>{const g=perGame?r.gp:1;return{team:r.team,gp:r.gp,fgp:r.fgm/r.fga,ftp:r.ftm/r.fta,tpm:r.tpm/g,pts:r.pts/g,reb:r.reb/g,ast:r.ast/g,st:r.st/g,blk:r.blk/g,to:r.to/g,raw:r};});}
+function cmp(a,b){let w=0,l=0;K.forEach(k=>{if(better(k,a[k],b[k]))w++;else if(better(k,b[k],a[k]))l++;});return{w,l,t:9-w-l};}
+function standings(v){const out=v.map(a=>{let cw=0,cl=0,ct=0,beats=0;v.forEach(b=>{if(a===b)return;const r=cmp(a,b);cw+=r.w;cl+=r.l;ct+=r.t;if(r.w>r.l)beats++;});return{team:a.team,cw,cl,ct,beats};});out.sort((x,y)=>(y.beats-x.beats)||((y.cw+y.ct/2)-(x.cw+x.ct/2)));out.forEach((r,i)=>r.rank=i+1);return out;}
+function q(name,def){return new URLSearchParams(location.search).get(name)||def;}
+function setQ(name,val){const u=new URL(location);u.searchParams.set(name,val);history.replaceState(null,"",u);}
+function opts(sel,teams,val){sel.replaceChildren(...teams.map(t=>new Option(t,t)));sel.value=teams.includes(val)?val:teams[0];}
+function td(text,cls){const e=document.createElement("td");e.textContent=text;if(cls)e.className=cls;return e;}
+function row(cells,cls){const tr=document.createElement("tr");if(cls)tr.className=cls;cells.forEach(c=>tr.appendChild(c));return tr;}
+function render(){
+ const A=$("ta").value,B=$("tb").value,C=$("tc").value;
+ const a=V.find(r=>r.team===A),b=V.find(r=>r.team===B);
+ $("na").textContent=A;$("nb").textContent=B;
+ const box=$("cats");box.textContent="";
+ if(a&&b&&A!==B){const r=cmp(a,b);$("sa").textContent=r.w;$("sb").textContent=r.l;
+  $("verdict").textContent=(r.w>r.l?A+" kazanıyor":r.w<r.l?B+" kazanıyor":"Berabere")+(r.t?" · "+r.t+" kategori berabere":"");}
+ else{$("sa").textContent="–";$("sb").textContent="–";$("verdict").textContent="İki farklı takım seç.";}
+ CATS.forEach(([k,lbl])=>{const x=a[k],y=b[k],mx=Math.max(x,y)||1;const isP=k==="fgp"||k==="ftp";
+  const va=document.createElement("span");va.className="v a";va.textContent=isP?pct(x):Math.round(x);
+  const vb=document.createElement("span");vb.className="v b";vb.textContent=isP?pct(y):Math.round(y);
+  if(A!==B){if(better(k,x,y))va.classList.add("won","a");if(better(k,y,x))vb.classList.add("won","b");}
+  const ta=document.createElement("div");ta.className="track a";const sa=document.createElement("span");sa.style.width=(100*x/mx)+"%";ta.appendChild(sa);
+  const tb=document.createElement("div");tb.className="track b";const sb=document.createElement("span");sb.style.width=(100*y/mx)+"%";tb.appendChild(sb);
+  const l=document.createElement("span");l.className="lbl";l.textContent=lbl;
+  const d=document.createElement("div");d.className="cat";d.append(va,ta,l,tb,vb);box.appendChild(d);});
+ const c=V.find(r=>r.team===C);const vt=$("t-vs").tBodies[0];vt.textContent="";
+ V.filter(o=>o!==c).map(o=>({o,r:cmp(c,o)})).sort((p,q)=>(q.r.w-q.r.l)-(p.r.w-p.r.l)).forEach(({o,r})=>{
+  const res=r.w>r.l?["Kazanır","win"]:r.w<r.l?["Kaybeder","loss"]:["Berabere","tie"];
+  const pill=document.createElement("td");const s=document.createElement("span");s.className="pill "+res[1];s.textContent=res[0];pill.appendChild(s);
+  vt.appendChild(row([td(o.team),td(r.w),td(r.l),td(r.t),pill]));});
+ const sel=t=>(t===A||t===B||t===C)?"sel":"";
+ const st=standings(V);const tbs=$("t-st").tBodies[0];tbs.textContent="";
+ st.forEach(r=>tbs.appendChild(row([td(r.rank),td(r.team,"l"),td(r.beats),td(r.cw),td(r.cl),td(r.ct)],sel(r.team))));
+ const ranks=V.map(a=>{const o={team:a.team};let s=0;K.forEach(k=>{o[k]=1+V.filter(b=>better(k,b[k],a[k])).length;s+=o[k];});o.avg=s/9;return o;}).sort((x,y)=>x.avg-y.avg);
+ const tcr=$("t-cr").tBodies[0];tcr.textContent="";
+ ranks.forEach(o=>tcr.appendChild(row([td(o.team),td(one(o.avg))].concat(K.map(k=>td(o[k],o[k]<=4?"win":o[k]>=V.length-3?"loss":""))),sel(o.team))));
+ const order=Object.fromEntries(st.map(r=>[r.team,r.rank]));const traw=$("t-raw").tBodies[0];traw.textContent="";
+ V.slice().sort((x,y)=>order[x.team]-order[y.team]).forEach(v=>{const r=v.raw;traw.appendChild(row([td(r.team),td(r.gp),td(r.fgm+"/"+r.fga),td(pct(v.fgp)),td(r.ftm+"/"+r.fta),td(pct(v.ftp)),td(r.tpm),td(r.pts),td(r.reb),td(r.ast),td(r.st),td(r.blk),td(r.to)],sel(r.team)));});
+ const pgs=PG.map(a=>{let w=0;PG.forEach(b=>{if(a!==b)K.forEach(k=>{if(better(k,a[k],b[k]))w++;});});return{a,w};}).sort((x,y)=>y.w-x.w);
+ const tpg=$("t-pg").tBodies[0];tpg.textContent="";
+ pgs.forEach(({a,w},i)=>tpg.appendChild(row([td(i+1),td(a.team,"l"),td(a.gp),td(w),td(pct(a.fgp)),td(pct(a.ftp))].concat(["tpm","pts","reb","ast","st","blk","to"].map(k=>td(one(a[k])))),sel(a.team))));
+}
+function loadWeek(wk){W=DATA.weeks[wk];V=vals(W.teams,false);PG=vals(W.teams,true);$("upd").textContent=W.updated?"Son güncelleme: "+W.updated:"";
+ const teams=W.teams.map(t=>t.team);const def="tarkus maurelius";
+ opts($("ta"),teams,q("a",def));opts($("tb"),teams,q("b",teams.find(t=>t!==$("ta").value)));opts($("tc"),teams,q("c",def));render();}
+fetch("data.json?v="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const wks=Object.keys(d.weeks).sort((a,b)=>b-a);
+ $("week").replaceChildren(...wks.map(w=>new Option(d.weeks[w].label||("Hafta "+w),w)));$("week").value=q("w",wks[0]);if(!d.weeks[$("week").value])$("week").value=wks[0];
+ loadWeek($("week").value);
+ $("week").onchange=()=>{setQ("w",$("week").value);loadWeek($("week").value);};
+ ["ta","tb","tc"].forEach((id,i)=>$(id).onchange=()=>{setQ("abc"[i],$(id).value);render();});
+}).catch(()=>{document.querySelector(".wrap").insertAdjacentHTML("beforeend","<p class='err'>Veriler yüklenemedi. Sayfayı yenile.</p>");});
+</script>
+</body>
+</html>
