@@ -1,0 +1,27 @@
+{
+ "league": "NBA Fantezi Lig Sezon 6",
+ "weeks": {
+  "1": {
+   "label": "Hafta 1 (20-25 Ekim)",
+   "updated": "23 Ekim 2026",
+   "teams": [
+    {"team":"tarkus maurelius","gp":12,"fgm":61,"fga":116,"ftm":51,"fta":63,"tpm":19,"pts":192,"reb":51,"ast":24,"st":14,"blk":6,"to":21},
+    {"team":"Yukatel Metin Akdülger","gp":14,"fgm":52,"fga":113,"ftm":22,"fta":30,"tpm":14,"pts":140,"reb":51,"ast":36,"st":9,"blk":6,"to":22},
+    {"team":"Pickle Men","gp":12,"fgm":70,"fga":141,"ftm":45,"fta":63,"tpm":18,"pts":203,"reb":68,"ast":30,"st":12,"blk":5,"to":30},
+    {"team":"BÇ","gp":16,"fgm":83,"fga":160,"ftm":33,"fta":46,"tpm":15,"pts":214,"reb":98,"ast":51,"st":11,"blk":14,"to":39},
+    {"team":"Bomonti Sınırsız","gp":11,"fgm":42,"fga":119,"ftm":24,"fta":32,"tpm":22,"pts":130,"reb":54,"ast":36,"st":15,"blk":2,"to":20},
+    {"team":"Los Gerseii","gp":13,"fgm":54,"fga":127,"ftm":19,"fta":28,"tpm":17,"pts":144,"reb":36,"ast":40,"st":13,"blk":6,"to":21},
+    {"team":"EAH Seniors","gp":17,"fgm":86,"fga":179,"ftm":56,"fta":65,"tpm":18,"pts":246,"reb":93,"ast":48,"st":30,"blk":17,"to":25},
+    {"team":"Kreuzberg Boys","gp":15,"fgm":80,"fga":150,"ftm":39,"fta":52,"tpm":20,"pts":219,"reb":54,"ast":36,"st":12,"blk":2,"to":41},
+    {"team":"HobaKumpo","gp":13,"fgm":62,"fga":137,"ftm":31,"fta":39,"tpm":21,"pts":176,"reb":77,"ast":33,"st":9,"blk":7,"to":21},
+    {"team":"M. Sucks","gp":13,"fgm":50,"fga":132,"ftm":52,"fta":65,"tpm":18,"pts":170,"reb":64,"ast":26,"st":16,"blk":9,"to":29},
+    {"team":"Kalidou Koulibaly","gp":11,"fgm":54,"fga":126,"ftm":30,"fta":37,"tpm":10,"pts":148,"reb":76,"ast":41,"st":18,"blk":4,"to":13},
+    {"team":"Normal MAFIA","gp":15,"fgm":69,"fga":158,"ftm":38,"fta":47,"tpm":23,"pts":199,"reb":70,"ast":33,"st":10,"blk":12,"to":22},
+    {"team":"Kassablancas","gp":17,"fgm":55,"fga":138,"ftm":40,"fta":50,"tpm":15,"pts":165,"reb":81,"ast":51,"st":17,"blk":13,"to":23},
+    {"team":"Splash Brothers","gp":14,"fgm":83,"fga":188,"ftm":36,"fta":54,"tpm":22,"pts":224,"reb":78,"ast":45,"st":20,"blk":7,"to":23},
+    {"team":"Kyojins on Rumbling","gp":13,"fgm":67,"fga":146,"ftm":56,"fta":73,"tpm":12,"pts":202,"reb":81,"ast":45,"st":11,"blk":4,"to":25},
+    {"team":"Suhayy31","gp":14,"fgm":72,"fga":147,"ftm":25,"fta":31,"tpm":17,"pts":186,"reb":53,"ast":52,"st":17,"blk":9,"to":29}
+   ]
+  }
+ }
+}
