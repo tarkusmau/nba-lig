@@ -27,8 +27,9 @@ jobs:
           LEAGUE_ID: "71722"
         run: python scripts/update.py
       - name: Kaydet
+        if: always()
         run: |
           git config user.name "lig-bot"
           git config user.email "lig-bot@users.noreply.github.com"
-          git add data.json token.enc
+          git add token.enc; [ -f data.json ] && git add data.json
           git diff --cached --quiet || (git commit -m "Otomatik güncelleme" && git push)
