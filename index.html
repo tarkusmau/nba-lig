@@ -111,7 +111,7 @@ const pct=v=>isFinite(v)?v.toFixed(3).replace(/^0/,""):"–";
 const one=v=>v.toFixed(1);
 let DATA=null,W=null,V=[],PG=[];
 const better=(k,x,y)=>k==="to"?x<y:x>y;
-function vals(rows,perGame){return rows.map(r=>{const g=perGame?r.gp:1;return{team:r.team,gp:r.gp,fgp:r.fgm/r.fga,ftp:r.ftm/r.fta,tpm:r.tpm/g,pts:r.pts/g,reb:r.reb/g,ast:r.ast/g,st:r.st/g,blk:r.blk/g,to:r.to/g,raw:r};});}
+function vals(rows,perGame){return rows.map(r=>{const g=perGame?(r.gp||1):1;return{team:r.team,gp:r.gp,fgp:r.fgm/r.fga,ftp:r.ftm/r.fta,tpm:r.tpm/g,pts:r.pts/g,reb:r.reb/g,ast:r.ast/g,st:r.st/g,blk:r.blk/g,to:r.to/g,raw:r};});}
 function cmp(a,b){let w=0,l=0;K.forEach(k=>{if(better(k,a[k],b[k]))w++;else if(better(k,b[k],a[k]))l++;});return{w,l,t:9-w-l};}
 function standings(v){const out=v.map(a=>{let cw=0,cl=0,ct=0,beats=0;v.forEach(b=>{if(a===b)return;const r=cmp(a,b);cw+=r.w;cl+=r.l;ct+=r.t;if(r.w>r.l)beats++;});return{team:a.team,cw,cl,ct,beats};});out.sort((x,y)=>(y.beats-x.beats)||((y.cw+y.ct/2)-(x.cw+x.ct/2)));out.forEach((r,i)=>r.rank=i+1);return out;}
 function q(name,def){return new URLSearchParams(location.search).get(name)||def;}
@@ -147,10 +147,10 @@ function render(){
  const tcr=$("t-cr").tBodies[0];tcr.textContent="";
  ranks.forEach(o=>tcr.appendChild(row([td(o.team),td(one(o.avg))].concat(K.map(k=>td(o[k],o[k]<=4?"win":o[k]>=V.length-3?"loss":""))),sel(o.team))));
  const order=Object.fromEntries(st.map(r=>[r.team,r.rank]));const traw=$("t-raw").tBodies[0];traw.textContent="";
- V.slice().sort((x,y)=>order[x.team]-order[y.team]).forEach(v=>{const r=v.raw;traw.appendChild(row([td(r.team),td(r.gp),td(r.fgm+"/"+r.fga),td(pct(v.fgp)),td(r.ftm+"/"+r.fta),td(pct(v.ftp)),td(r.tpm),td(r.pts),td(r.reb),td(r.ast),td(r.st),td(r.blk),td(r.to)],sel(r.team)));});
+ V.slice().sort((x,y)=>order[x.team]-order[y.team]).forEach(v=>{const r=v.raw;traw.appendChild(row([td(r.team),td(r.gp??"–"),td(r.fgm+"/"+r.fga),td(pct(v.fgp)),td(r.ftm+"/"+r.fta),td(pct(v.ftp)),td(r.tpm),td(r.pts),td(r.reb),td(r.ast),td(r.st),td(r.blk),td(r.to)],sel(r.team)));});
  const pgs=PG.map(a=>{let w=0;PG.forEach(b=>{if(a!==b)K.forEach(k=>{if(better(k,a[k],b[k]))w++;});});return{a,w};}).sort((x,y)=>y.w-x.w);
  const tpg=$("t-pg").tBodies[0];tpg.textContent="";
- pgs.forEach(({a,w},i)=>tpg.appendChild(row([td(i+1),td(a.team,"l"),td(a.gp),td(w),td(pct(a.fgp)),td(pct(a.ftp))].concat(["tpm","pts","reb","ast","st","blk","to"].map(k=>td(one(a[k])))),sel(a.team))));
+ pgs.forEach(({a,w},i)=>tpg.appendChild(row([td(i+1),td(a.team,"l"),td(a.gp??"–"),td(w),td(pct(a.fgp)),td(pct(a.ftp))].concat(["tpm","pts","reb","ast","st","blk","to"].map(k=>td(one(a[k])))),sel(a.team))));
 }
 function loadWeek(wk){W=DATA.weeks[wk];V=vals(W.teams,false);PG=vals(W.teams,true);$("upd").textContent=W.updated?"Son güncelleme: "+W.updated:"";
  const teams=W.teams.map(t=>t.team);const def="tarkus maurelius";
