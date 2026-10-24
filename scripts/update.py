@@ -43,7 +43,18 @@ def api(path):
         sys.exit(f"Yahoo API hatası {r.status_code} ({path}): {r.text[:300]}")
     return ET.fromstring(r.content)
 
-league_key = f"nba.l.{LEAGUE}"
+# Liginin tam anahtarını (ör. 466.l.71722) kullanıcının liglerinden bul
+league_key = None
+try:
+    ul = api("users;use_login=1/games;game_codes=nba/leagues")
+    for l in ul.iterfind(".//y:league", NS):
+        if l.findtext("y:league_id", namespaces=NS) == LEAGUE:
+            league_key = l.findtext("y:league_key", namespaces=NS)
+except SystemExit as e:
+    print("Kullanıcı ligleri okunamadı:", e)
+if not league_key:
+    sys.exit("Lig bulunamadı: Yahoo hesabının bu ligde olduğundan ve uygulamanın Fantasy Sports izni olduğundan emin ol.")
+print("Lig anahtarı:", league_key)
 lg = api(f"league/{league_key}").find("y:league", NS)
 current = int(lg.findtext("y:current_week", default="1", namespaces=NS))
 start = int(lg.findtext("y:start_week", default="1", namespaces=NS))
