@@ -33,6 +33,8 @@ def get_access_token():
             sys.exit("İlk kurulum için YAHOO_AUTH_CODE secret gerekli.")
         tok = token_request({"grant_type": "authorization_code", "code": CODE, "redirect_uri": REDIRECT})
     open("token.enc", "wb").write(fern.encrypt(tok["refresh_token"].encode()))
+    print("Token alındı. Alanlar:", sorted(k for k in tok if k not in ("access_token","refresh_token","id_token")),
+          "| scope:", tok.get("scope"), "| tip:", tok.get("token_type"))
     return tok["access_token"]
 
 AT = get_access_token()
@@ -43,6 +45,9 @@ def api(path):
         sys.exit(f"Yahoo API hatası {r.status_code} ({path}): {r.text[:300]}")
     return ET.fromstring(r.content)
 
+for test in ("game/nba", "users;use_login=1"):
+    r = requests.get("https://fantasysports.yahooapis.com/fantasy/v2/" + test, headers={"Authorization": "Bearer " + AT}, timeout=30)
+    print("TEST", test, "->", r.status_code, r.text[:160].replace("\n", " "))
 # Liginin tam anahtarını (ör. 466.l.71722) kullanıcının liglerinden bul
 league_key = None
 try:
