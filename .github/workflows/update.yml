@@ -1,0 +1,34 @@
+name: Lig verisi güncelle
+on:
+  schedule:
+    - cron: "0 6 * * *"    # her gün 09:00 (TR)
+    - cron: "0 18 * * *"   # her gün 21:00 (TR)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lig-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install cryptography requests
+      - name: Yahoo'dan veriyi çek
+        env:
+          YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
+          YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
+          YAHOO_AUTH_CODE: ${{ secrets.YAHOO_AUTH_CODE }}
+          ENC_KEY: ${{ secrets.ENC_KEY }}
+          LEAGUE_ID: "71722"
+        run: python scripts/update.py
+      - name: Kaydet
+        run: |
+          git config user.name "lig-bot"
+          git config user.email "lig-bot@users.noreply.github.com"
+          git add data.json token.enc
+          git diff --cached --quiet || (git commit -m "Otomatik güncelleme" && git push)
