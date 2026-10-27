@@ -53,6 +53,9 @@ td.win{color:var(--ok);font-weight:600} td.loss{color:var(--bad)}
 .pill.tie{background:var(--chip);color:var(--muted)}
 footer{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
 .err{color:var(--bad)}
+.wk{position:relative;display:inline-flex;align-items:baseline;gap:.4em;padding:.45em .9em;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent);border-radius:10px;cursor:pointer}
+.wk b{font-weight:800;font-size:1.05em}.wk i{font-style:italic;font-weight:400;opacity:.55}.wk .car{opacity:.6;font-size:.9em}
+.wk select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}
 </style>
 </head>
 <body>
@@ -60,7 +63,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
 <header>
  <h1>NBA Fantezi Lig Sezon 6</h1>
  <p>Haftalık eşleşme karşılaştırma. Veriler Yahoo'daki haftalık toplamlardır; FG% ve FT% isabet/deneme oranı, TO'da az olan kazanır.</p>
- <div class="bar"><select id="week" aria-label="Hafta"></select><span class="upd" id="upd"></span></div>
+ <div class="bar"><label class="wk"><span id="wkl"></span><span class="car" aria-hidden="true">▾</span><select id="week" aria-label="Hafta"></select></label><span class="upd" id="upd"></span></div>
 </header>
 
 <section id="eslesme">
@@ -114,6 +117,7 @@ const better=(k,x,y)=>k==="to"?x<y:x>y;
 function vals(rows,perGame){return rows.map(r=>{const g=perGame?(r.gp||1):1;return{team:r.team,gp:r.gp,fgp:r.fgm/r.fga,ftp:r.ftm/r.fta,tpm:r.tpm/g,pts:r.pts/g,reb:r.reb/g,ast:r.ast/g,st:r.st/g,blk:r.blk/g,to:r.to/g,raw:r};});}
 function cmp(a,b){let w=0,l=0;K.forEach(k=>{if(better(k,a[k],b[k]))w++;else if(better(k,b[k],a[k]))l++;});return{w,l,t:9-w-l};}
 function standings(v){const out=v.map(a=>{let cw=0,cl=0,ct=0,beats=0;v.forEach(b=>{if(a===b)return;const r=cmp(a,b);cw+=r.w;cl+=r.l;ct+=r.t;if(r.w>r.l)beats++;});return{team:a.team,cw,cl,ct,beats};});out.sort((x,y)=>(y.beats-x.beats)||((y.cw+y.ct/2)-(x.cw+x.ct/2)));out.forEach((r,i)=>r.rank=i+1);return out;}
+function setWk(s){const m=s.match(/^(.*?)\s*(\(.*\))?$/),e=$("wkl");e.replaceChildren();const b=document.createElement("b");b.textContent=m[1];e.append(b);if(m[2]){const i=document.createElement("i");i.textContent=" "+m[2];e.append(i);}}
 function q(name,def){return new URLSearchParams(location.search).get(name)||def;}
 function setQ(name,val){const u=new URL(location);u.searchParams.set(name,val);history.replaceState(null,"",u);}
 function opts(sel,teams,val){sel.replaceChildren(...teams.map(t=>new Option(t,t)));sel.value=teams.includes(val)?val:teams[0];}
@@ -152,7 +156,7 @@ function render(){
  const tpg=$("t-pg").tBodies[0];tpg.textContent="";
  pgs.forEach(({a,w},i)=>tpg.appendChild(row([td(i+1),td(a.team,"l"),td(a.gp??"–"),td(w),td(pct(a.fgp)),td(pct(a.ftp))].concat(["tpm","pts","reb","ast","st","blk","to"].map(k=>td(one(a[k])))),sel(a.team))));
 }
-function loadWeek(wk){W=DATA.weeks[wk];V=vals(W.teams,false);PG=vals(W.teams,true);$("upd").textContent=W.updated?"Son güncelleme: "+W.updated:"";
+function loadWeek(wk){W=DATA.weeks[wk];setWk(W.label||("Hafta "+wk));V=vals(W.teams,false);PG=vals(W.teams,true);$("upd").textContent=W.updated?"Son güncelleme: "+W.updated:"";
  const teams=W.teams.map(t=>t.team);const def="tarkus maurelius";
  opts($("ta"),teams,q("a",def));opts($("tb"),teams,q("b",teams.find(t=>t!==$("ta").value)));opts($("tc"),teams,q("c",def));render();}
 fetch("data.json?v="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const wks=Object.keys(d.weeks).sort((a,b)=>b-a);
