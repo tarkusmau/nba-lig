@@ -1,0 +1,5 @@
+cookie uzunluk: 2880
+home: 200 https://basketball.fantasysports.yahoo.com/nba/71722 1012627
+matchup: 200 https://basketball.fantasysports.yahoo.com/nba/71722/matchup?week=4&mid1=1 991503
+scoreboard: 200 https://basketball.fantasysports.yahoo.com/nba/71722?matchup_week=4&module=matchups 1012733
+transactions: 200 https://basketball.fantasysports.yahoo.com/nba/71722/transactions 908310
