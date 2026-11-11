@@ -28,5 +28,5 @@ jobs:
         run: |
           git config user.name "lig-bot"
           git config user.email "lig-bot@users.noreply.github.com"
-          git add data.json transactions.json run.log
+          git add data.json transactions.json run.log players
           git diff --cached --quiet || (git commit -m "Otomatik güncelleme ($(TZ=Europe/Istanbul date '+%d.%m.%Y %H:%M'))" && git pull --rebase && git push)
