@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-11 17:00",
+"updated": "2026-11-11 20:59",
 "source": "ESPN",
 "injuries": [
 {
@@ -39,6 +39,15 @@
 "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
 },
 {
+"name": "Mikel Brown Jr.",
+"team": "Brooklyn Nets",
+"status": "Out",
+"date": "2026-11-11T16:40Z",
+"return": "2026-11-14",
+"type": "Illness",
+"note": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports."
+},
+{
 "name": "Nolan Traore",
 "team": "Brooklyn Nets",
 "status": "Day-To-Day",
@@ -46,24 +55,6 @@
 "return": "2026-11-11",
 "type": "Calf",
 "note": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans."
-},
-{
-"name": "Egor Demin",
-"team": "Brooklyn Nets",
-"status": "Out",
-"date": "2026-11-10T22:51Z",
-"return": "2026-11-11",
-"type": "Leg",
-"note": "Demin (leg) is probable for Wednesday's game against the Pelicans, Erik Slater of ClutchPoints.com reports."
-},
-{
-"name": "Grant Nelson",
-"team": "Brooklyn Nets",
-"status": "Day-To-Day",
-"date": "2026-11-08T16:21Z",
-"return": "2026-11-10",
-"type": "Knee",
-"note": "Nelson signed a two-way contract with the Nets on Friday, Michael Scotto of HoopsHype.com reports."
 },
 {
 "name": "Brandon Miller",
@@ -201,6 +192,15 @@
 "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
 },
 {
+"name": "Ugonna Onyenso",
+"team": "Detroit Pistons",
+"status": "Day-To-Day",
+"date": "2026-11-11T15:16Z",
+"return": "2026-11-13",
+"type": "Foot",
+"note": "Onyenso agreed to a two-way contract with the Pistons on Thursday."
+},
+{
 "name": "Isaiah Joe",
 "team": "Detroit Pistons",
 "status": "Out",
@@ -219,6 +219,15 @@
 "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
 },
 {
+"name": "Will Richard",
+"team": "Golden State Warriors",
+"status": "Day-To-Day",
+"date": "2026-11-11T17:03Z",
+"return": "2026-11-11",
+"type": "Thumb",
+"note": "Richard (thumb) is questionable for Wednesday's game against Houston."
+},
+{
 "name": "Gary Payton II",
 "team": "Golden State Warriors",
 "status": "Out",
@@ -226,15 +235,6 @@
 "return": "2026-11-13",
 "type": "Knee",
 "note": "Payton (knee) is out for Wednesday's game against Houston."
-},
-{
-"name": "Will Richard",
-"team": "Golden State Warriors",
-"status": "Out",
-"date": "2026-11-10T21:34Z",
-"return": "2026-11-11",
-"type": "Thumb",
-"note": "Richard (thumb) is questionable for Wednesday's game against Houston."
 },
 {
 "name": "Brandon Williams",
@@ -329,8 +329,8 @@
 {
 "name": "Cam Christie",
 "team": "LA Clippers",
-"status": "Out",
-"date": "2026-11-11T01:39Z",
+"status": "Day-To-Day",
+"date": "2026-11-11T14:59Z",
 "return": "2026-11-13",
 "type": "Ankle",
 "note": "Christie (ankle) is listed as out for Tuesday's game against Phoenix."
@@ -419,8 +419,8 @@
 {
 "name": "Tyler Herro",
 "team": "Milwaukee Bucks",
-"status": "Out",
-"date": "2026-11-10T23:24Z",
+"status": "Day-To-Day",
+"date": "2026-11-11T14:58Z",
 "return": "2026-11-11",
 "type": "Knee",
 "note": "Herro (knee) is listed as out for Tuesday's game against New York."
@@ -444,6 +444,24 @@
 "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
 },
 {
+"name": "Bennedict Mathurin",
+"team": "New Orleans Pelicans",
+"status": "Out",
+"date": "2026-11-11T16:55Z",
+"return": "2026-11-13",
+"type": "Thumb",
+"note": "Mathurin has been ruled out for Wednesday's game against the Nets due to a right thumb sprain."
+},
+{
+"name": "Trey Murphy III",
+"team": "New Orleans Pelicans",
+"status": "Day-To-Day",
+"date": "2026-11-11T16:53Z",
+"return": "2026-11-11",
+"type": "Knee",
+"note": "Murphy (knee) is doubtful for Wednesday's game against the Nets."
+},
+{
 "name": "Trendon Watford",
 "team": "New Orleans Pelicans",
 "status": "Out",
@@ -451,15 +469,6 @@
 "return": "2026-11-13",
 "type": "Ankle",
 "note": "Watford (ankle) is out for Wednesday's game against the Nets."
-},
-{
-"name": "Trey Murphy III",
-"team": "New Orleans Pelicans",
-"status": "Day-To-Day",
-"date": "2026-11-10T19:22Z",
-"return": "2026-11-11",
-"type": "Knee",
-"note": "Murphy (knee) is probable for Wednesday's game against the Nets."
 },
 {
 "name": "Yves Missi",
@@ -527,8 +536,8 @@
 {
 "name": "Tristan da Silva",
 "team": "Orlando Magic",
-"status": "Out",
-"date": "2026-11-11T01:34Z",
+"status": "Day-To-Day",
+"date": "2026-11-11T15:00Z",
 "return": "2026-11-11",
 "type": "Calf",
 "note": "Da Silva (calf) has been ruled out for Tuesday's game against the Kings, Jason Beede of the Orlando Sentinel reports."
@@ -644,8 +653,8 @@
 {
 "name": "Precious Achiuwa",
 "team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-11T06:04Z",
+"status": "Day-To-Day",
+"date": "2026-11-11T14:44Z",
 "return": "2026-11-13",
 "type": "Lower Leg",
 "note": "Achiuwa left Tuesday's 107-100 loss to the Magic with a left lower leg contusion and did not return, Matt George of ABC 10 Sacramento reports."
@@ -698,11 +707,11 @@
 {
 "name": "Trayce Jackson-Davis",
 "team": "Toronto Raptors",
-"status": "Day-To-Day",
-"date": "2026-11-10T21:54Z",
-"return": "2026-11-11",
+"status": "Out",
+"date": "2026-11-11T17:37Z",
+"return": "2026-11-12",
 "type": "Illness",
-"note": "Jackson-Davis is questionable for Wednesday's game against Boston with an illness."
+"note": "Jackson-Davis (illness) has been ruled out for Wednesday's game against the Celtics, Blake Murphy of Sportsnet.ca reports."
 },
 {
 "name": "Collin Murray-Boyles",
@@ -750,22 +759,22 @@
 "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
 },
 {
-"name": "Lauri Markkanen",
-"team": "Utah Jazz",
-"status": "Out",
-"date": "2026-11-10T18:30Z",
-"return": "2026-11-11",
-"type": "Wrist",
-"note": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
-},
-{
 "name": "Keyonte George",
 "team": "Utah Jazz",
-"status": "Out",
-"date": "2026-11-10T00:08Z",
+"status": "Day-To-Day",
+"date": "2026-11-11T15:00Z",
 "return": "2026-11-11",
 "type": "Ankle",
 "note": "George (ankle) has been ruled out for Tuesday's game against the Heat."
+},
+{
+"name": "Lauri Markkanen",
+"team": "Utah Jazz",
+"status": "Day-To-Day",
+"date": "2026-11-11T14:45Z",
+"return": "2026-11-11",
+"type": "Wrist",
+"note": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
 },
 {
 "name": "Jusuf Nurkic",

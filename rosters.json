@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 17:00",
+ "updated": "2026-11-11 20:59",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -183,7 +183,7 @@
    {
     "name": "Keyonte George",
     "slot": "IL",
-    "status": "O",
+    "status": "D",
     "draft": 27
    }
   ],
@@ -584,7 +584,7 @@
    {
     "name": "Tristan da Silva",
     "slot": "IL",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -895,7 +895,7 @@
    {
     "name": "Precious Achiuwa",
     "slot": "BN",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -1146,8 +1146,7 @@
    {
     "name": "Paul George",
     "slot": "SF",
-    "nba": "BOS",
-    "pos": "SF,PF",
+    "status": "O",
     "draft": 19
    },
    {
@@ -1215,7 +1214,8 @@
    {
     "name": "Egor Dëmin",
     "slot": "IL",
-    "status": "O",
+    "nba": "BKN",
+    "pos": "PG,SG",
     "draft": 3
    },
    {
@@ -1227,7 +1227,7 @@
    {
     "name": "Lauri Markkanen",
     "slot": "IL",
-    "status": "O",
+    "status": "Q",
     "draft": 32
    }
   ],
@@ -1294,13 +1294,6 @@
     "nba": "PHI",
     "pos": "C",
     "draft": 20
-   },
-   {
-    "name": "Leaky Black",
-    "slot": "Util",
-    "nba": "SAC",
-    "pos": "SF,PF",
-    "draft": "FA"
    },
    {
     "name": "Ryan Kalkbrenner",
@@ -1467,7 +1460,7 @@
    {
     "name": "Trey Murphy III",
     "slot": "F",
-    "status": "P",
+    "status": "D",
     "draft": 38
    },
    {
@@ -1522,7 +1515,7 @@
    {
     "name": "Tyler Herro",
     "slot": "IL",
-    "status": "O",
+    "status": "Q",
     "draft": 17
    },
    {
@@ -1701,11 +1694,11 @@
     "draft": "FA"
    },
    {
-    "name": "Mikel Brown Jr.",
+    "name": "Sidy Cissoko",
     "slot": "Util",
-    "nba": "BKN",
-    "pos": "PG",
-    "draft": 1
+    "nba": "POR",
+    "pos": "SF,PF",
+    "draft": "FA"
    },
    {
     "name": "Devin Booker",
@@ -1729,10 +1722,9 @@
     "draft": 1
    },
    {
-    "name": "Isaiah Jackson",
+    "name": "Mikel Brown Jr.",
     "slot": "IL",
-    "nba": "LAC",
-    "pos": "C",
+    "status": "O",
     "draft": 1
    },
    {

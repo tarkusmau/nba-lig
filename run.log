@@ -1,6 +1,8 @@
 Guncel hafta: 4
-Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 11 Kasım 2026, 17:00 (10 Kasım maçları dahil)
-Islemler: 0 yeni kayit eklendi.
+Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 11 Kasım 2026, 20:59 (10 Kasım maçları dahil)
+Islemler: 2 yeni kayit eklendi.
+  + {"time": "2026-11-11 20:28", "team": "Yukatel Metin Akdülger", "type": "add/drop", "add": ["S. Cissoko"], "drop": ["I. Jackson"], "pos": "SF,PF / C", "source": "FA"}
+  + {"time": "2026-11-11 19:22", "team": "Normal MAFIA", "type": "drop", "add": [], "drop": ["L. Black"], "pos": "SF,PF"}
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 7: 'Kassablancas', 1: 'Pickle Men', 14: 'Suhayy31', 2: 'Bomonti Sınırsız', 9: 'Kyojins on Rumbling', 3: 'BÇ', 10: 'Los Gerseii', 4: 'EAH Seniors', 11: 'M. Sucks', 5: 'HobaKumpo', 13: 'Splash Brothers', 6: 'Kalidou Koulibaly', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 16: 'Yukatel Metin Akdülger'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 15 oyuncu, IL: ['Jalen Suggs', 'Keyonte George']
@@ -14,17 +16,17 @@ Kadro Kreuzberg Boys: 16 oyuncu, IL: ['Paolo Banchero', 'Dereck Lively II', 'Jus
 Kadro Kyojins on Rumbling: 14 oyuncu, IL: ['Mark Williams']
 Kadro Los Gerseii: 14 oyuncu, IL: ['Kristaps Porziņģis']
 Kadro M. Sucks: 16 oyuncu, IL: ['Egor Dëmin', 'Kawhi Leonard', 'Lauri Markkanen']
-Kadro Normal MAFIA: 15 oyuncu, IL: ['Tobias Harris', 'Jalen Duren']
+Kadro Normal MAFIA: 14 oyuncu, IL: ['Tobias Harris', 'Jalen Duren']
 Kadro Splash Brothers: 13 oyuncu, IL: []
 Kadro Suhayy31: 15 oyuncu, IL: ['Tyler Herro', 'Ja Morant']
 Kadro tarkus maurelius: 15 oyuncu, IL: ['Immanuel Quickley', 'Anthony Davis']
-Kadro Yukatel Metin Akdülger: 16 oyuncu, IL: ['Isaiah Jackson', 'Jimmy Butler III', 'Maxime Raynaud']
+Kadro Yukatel Metin Akdülger: 16 oyuncu, IL: ['Mikel Brown Jr.', 'Jimmy Butler III', 'Maxime Raynaud']
 Puan durumu: 0 tablo yazildi.
 Fikstur: {'4': 'Kassablancas', '5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo'}
-Oyuncular bu_sezon_ort: 439 oyuncu (239 kadrolu) yazildi.
-Oyuncular gecen_sezon_ort: 439 oyuncu (239 kadrolu) yazildi.
-Oyuncular son14_ort: 439 oyuncu (239 kadrolu) yazildi.
-Oyuncular son7_ort: 439 oyuncu (239 kadrolu) yazildi.
-Oyuncular projeksiyon_kalan: 439 oyuncu (239 kadrolu) yazildi.
+Oyuncular bu_sezon_ort: 438 oyuncu (238 kadrolu) yazildi.
+Oyuncular gecen_sezon_ort: 438 oyuncu (238 kadrolu) yazildi.
+Oyuncular son14_ort: 438 oyuncu (238 kadrolu) yazildi.
+Oyuncular son7_ort: 438 oyuncu (238 kadrolu) yazildi.
+Oyuncular projeksiyon_kalan: 438 oyuncu (238 kadrolu) yazildi.
 HATA NBA takvimi: HTTP Error 403: Forbidden
-Sakatliklar: 91 kayit.
+Sakatliklar: 92 kayit.

@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-11 17:00",
+ "updated": "2026-11-11 20:59",
  "files": {
   "data.json": 16075,
   "draft.json": 11492,
-  "injuries.json": 24037,
-  "players/bu_sezon_ort.json": 160297,
-  "players/gecen_sezon_ort.json": 159711,
-  "players/projeksiyon_kalan.json": 161401,
-  "players/son14_ort.json": 159767,
-  "players/son7_ort.json": 159507,
-  "rosters.json": 28062,
-  "run.log": 2646,
+  "injuries.json": 24382,
+  "players/bu_sezon_ort.json": 159912,
+  "players/gecen_sezon_ort.json": 159367,
+  "players/projeksiyon_kalan.json": 161029,
+  "players/son14_ort.json": 159400,
+  "players/son7_ort.json": 159169,
+  "rosters.json": 27937,
+  "run.log": 2151,
   "schedule.json": 174,
   "standings.json": 49,
-  "transactions.json": 8144
+  "transactions.json": 8411
  }
 }
