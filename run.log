@@ -1,0 +1,7 @@
+Token alındı. Alanlar: ['expires_in', 'token_type'] | scope: None | tip: bearer
+TEST game/nba -> 403 <?xml version="1.0" encoding="UTF-8"?> <error xml:lang="en-us" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/game/nba" xmlns:yahoo="http://www.yahooa
+TEST users;use_login=1 -> 403 <?xml version="1.0" encoding="UTF-8"?> <error xml:lang="en-us" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1" xmlns:yahoo="http://w
+Kullanıcı ligleri okunamadı: Yahoo API hatası 403 (users;use_login=1/games;game_codes=nba/leagues): <?xml version="1.0" encoding="UTF-8"?>
+<error xml:lang="en-us" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1/games;game_codes=nba/leagues" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://www.yahooapis.com/v1/base.rng">
+ <description>This application is n
+Lig bulunamadı: Yahoo hesabının bu ligde olduğundan ve uygulamanın Fantasy Sports izni olduğundan emin ol.
