@@ -193,7 +193,7 @@ def tx_key(e):
 
 # ---------------- Ana akis ----------------
 # ---------------- Oyuncu istatistikleri (Players sayfasi) ----------------
-PLAYER_SETS = [("bu_sezon_ort", "S_AS_2026"), ("gecen_sezon_ort", "S_AS_2025"), ("son14_ort", "AS_L14")]
+PLAYER_SETS = [("bu_sezon_ort", "S_AS_2026"), ("gecen_sezon_ort", "S_AS_2025"), ("son14_ort", "S_AL14"), ("projeksiyon_kalan", "S_PSR")]
 PLAYER_PAGES = 12   # sayfa basi 25 oyuncu -> ~300 oyuncu
 
 def parse_players(html):
