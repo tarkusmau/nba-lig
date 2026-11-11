@@ -1,0 +1,1752 @@
+{
+ "updated": "2026-11-11 17:00",
+ "team_info": {
+  "Pickle Men": {
+   "id": 1,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Bomonti Sınırsız": {
+   "id": 2,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "BÇ": {
+   "id": 3,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "EAH Seniors": {
+   "id": 4,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "HobaKumpo": {
+   "id": 5,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Kalidou Koulibaly": {
+   "id": 6,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Kassablancas": {
+   "id": 7,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Kreuzberg Boys": {
+   "id": 8,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Kyojins on Rumbling": {
+   "id": 9,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Los Gerseii": {
+   "id": 10,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "M. Sucks": {
+   "id": 11,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Normal MAFIA": {
+   "id": 12,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Splash Brothers": {
+   "id": 13,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Suhayy31": {
+   "id": 14,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "tarkus maurelius": {
+   "id": 15,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  },
+  "Yukatel Metin Akdülger": {
+   "id": 16,
+   "Record": "Record Book | Dues ",
+   "Rank": "Rankings | Stats "
+  }
+ },
+ "teams": {
+  "Pickle Men": [
+   {
+    "name": "Ty Jerome",
+    "slot": "PG",
+    "nba": "MEM",
+    "pos": "PG,SG",
+    "draft": 7
+   },
+   {
+    "name": "Jamal Cain",
+    "slot": "SG",
+    "nba": "ORL",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Luke Kennard",
+    "slot": "G",
+    "nba": "PHX",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Kevin Durant",
+    "slot": "SF",
+    "nba": "HOU",
+    "pos": "SG,SF,PF",
+    "draft": 48
+   },
+   {
+    "name": "Miles Bridges",
+    "slot": "PF",
+    "nba": "PHX",
+    "pos": "PF",
+    "draft": 10
+   },
+   {
+    "name": "Caleb Wilson",
+    "slot": "F",
+    "nba": "CHI",
+    "pos": "PF",
+    "draft": 8
+   },
+   {
+    "name": "Paul Reed",
+    "slot": "C",
+    "nba": "DET",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "Evan Mobley",
+    "slot": "C",
+    "nba": "CLE",
+    "pos": "PF,C",
+    "draft": 35
+   },
+   {
+    "name": "Aday Mara",
+    "slot": "Util",
+    "nba": "OKC",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Norman Powell",
+    "slot": "Util",
+    "status": "Q",
+    "draft": 10
+   },
+   {
+    "name": "Darius Garland",
+    "slot": "BN",
+    "nba": "LAC",
+    "pos": "PG",
+    "draft": 23
+   },
+   {
+    "name": "Rui Hachimura",
+    "slot": "BN",
+    "nba": "LAC",
+    "pos": "SF,PF",
+    "draft": 4
+   },
+   {
+    "name": "Rudy Gobert",
+    "slot": "BN",
+    "nba": "MIN",
+    "pos": "C",
+    "draft": 14
+   },
+   {
+    "name": "Jalen Suggs",
+    "slot": "IL",
+    "status": "O",
+    "draft": 7
+   },
+   {
+    "name": "Keyonte George",
+    "slot": "IL",
+    "status": "O",
+    "draft": 27
+   }
+  ],
+  "Bomonti Sınırsız": [
+   {
+    "name": "Ja'Kobe Walter",
+    "slot": "PG",
+    "nba": "TOR",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Desmond Bane",
+    "slot": "SG",
+    "nba": "ORL",
+    "pos": "SG,SF",
+    "draft": 26
+   },
+   {
+    "name": "Luka Dončić",
+    "slot": "G",
+    "nba": "LAL",
+    "pos": "PG,SG",
+    "draft": 73
+   },
+   {
+    "name": "Klay Thompson",
+    "slot": "SF",
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Naz Reid",
+    "slot": "PF",
+    "nba": "CHA",
+    "pos": "PF,C",
+    "draft": 18
+   },
+   {
+    "name": "Naji Marshall",
+    "slot": "F",
+    "nba": "DAL",
+    "pos": "SG,SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Jaxson Hayes",
+    "slot": "C",
+    "nba": "UTA",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Kel'el Ware",
+    "slot": "C",
+    "nba": "MIL",
+    "pos": "C",
+    "draft": 18
+   },
+   {
+    "name": "Jamal Shead",
+    "slot": "Util",
+    "nba": "TOR",
+    "pos": "PG",
+    "draft": 1
+   },
+   {
+    "name": "Mitchell Robinson",
+    "slot": "Util",
+    "nba": "BOS",
+    "pos": "C",
+    "draft": 1
+   },
+   {
+    "name": "James Harden",
+    "slot": "BN",
+    "nba": "CLE",
+    "pos": "PG,SG",
+    "draft": 37
+   },
+   {
+    "name": "Kingston Flemings",
+    "slot": "BN",
+    "nba": "ATL",
+    "pos": "PG",
+    "draft": "FA"
+   },
+   {
+    "name": "Sion James",
+    "slot": "BN",
+    "nba": "CHA",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Brandon Miller",
+    "slot": "IL",
+    "status": "Q",
+    "draft": 32
+   }
+  ],
+  "BÇ": [
+   {
+    "name": "Dylan Harper",
+    "slot": "PG",
+    "nba": "SAS",
+    "pos": "PG,SG",
+    "draft": 11
+   },
+   {
+    "name": "Pelle Larsson",
+    "slot": "SG",
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Kevin Huerter",
+    "slot": "G",
+    "nba": "DET",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Cedric Coward",
+    "slot": "SF",
+    "nba": "MEM",
+    "pos": "SG,SF",
+    "draft": 11
+   },
+   {
+    "name": "Julius Randle",
+    "slot": "PF",
+    "nba": "BKN",
+    "pos": "PF",
+    "draft": 16
+   },
+   {
+    "name": "Isaiah Stewart",
+    "slot": "F",
+    "status": "Q",
+    "draft": 1
+   },
+   {
+    "name": "Isaiah Hartenstein",
+    "slot": "C",
+    "nba": "OKC",
+    "pos": "C",
+    "draft": 9
+   },
+   {
+    "name": "Day'Ron Sharpe",
+    "slot": "C",
+    "nba": "BKN",
+    "pos": "C",
+    "draft": 8
+   },
+   {
+    "name": "Donovan Mitchell",
+    "slot": "Util",
+    "nba": "CLE",
+    "pos": "PG,SG",
+    "draft": 49
+   },
+   {
+    "name": "Karlo Matković",
+    "slot": "Util",
+    "nba": "NOP",
+    "pos": "PF,C",
+    "draft": "FA"
+   },
+   {
+    "name": "Ausar Thompson",
+    "slot": "BN",
+    "nba": "DET",
+    "pos": "SG,SF,PF",
+    "draft": 16
+   },
+   {
+    "name": "Jaylen Brown",
+    "slot": "BN",
+    "nba": "PHI",
+    "pos": "SG,SF,PF",
+    "draft": 31
+   },
+   {
+    "name": "Khaman Maluach",
+    "slot": "BN",
+    "nba": "PHX",
+    "pos": "C",
+    "draft": 4
+   },
+   {
+    "name": "Josh Hart",
+    "slot": "IL",
+    "status": "O",
+    "draft": 16
+   },
+   {
+    "name": "Jaren Jackson Jr.",
+    "slot": "IL",
+    "status": "O",
+    "draft": 30
+   }
+  ],
+  "EAH Seniors": [
+   {
+    "name": "Stephen Curry",
+    "slot": "PG",
+    "nba": "GSW",
+    "pos": "PG",
+    "draft": 34
+   },
+   {
+    "name": "Ziaire Williams",
+    "slot": "SG",
+    "nba": "LAL",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Jrue Holiday",
+    "slot": "G",
+    "nba": "POR",
+    "pos": "PG,SG",
+    "draft": 2
+   },
+   {
+    "name": "Toumani Camara",
+    "slot": "SF",
+    "nba": "POR",
+    "pos": "SF,PF",
+    "draft": 6
+   },
+   {
+    "name": "Derrick Jones Jr.",
+    "slot": "PF",
+    "nba": "LAC",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Jaylen Wells",
+    "slot": "F",
+    "nba": "MEM",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Myles Turner",
+    "slot": "C",
+    "nba": "MIL",
+    "pos": "C",
+    "draft": 5
+   },
+   {
+    "name": "Zach Edey",
+    "slot": "C",
+    "nba": "MEM",
+    "pos": "C",
+    "draft": 15
+   },
+   {
+    "name": "De'Anthony Melton",
+    "slot": "Util",
+    "nba": "GSW",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Jake LaRavia",
+    "slot": "Util",
+    "nba": "LAL",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "LeBron James",
+    "slot": "BN",
+    "nba": "PHI",
+    "pos": "SF,PF",
+    "draft": 27
+   },
+   {
+    "name": "Tyrese Maxey",
+    "slot": "BN",
+    "nba": "PHI",
+    "pos": "PG",
+    "draft": 56
+   },
+   {
+    "name": "Jaden McDaniels",
+    "slot": "BN",
+    "nba": "MIN",
+    "pos": "SF",
+    "draft": 8
+   },
+   {
+    "name": "Chet Holmgren",
+    "slot": "IL",
+    "status": "O",
+    "draft": 34
+   }
+  ],
+  "HobaKumpo": [
+   {
+    "name": "Reed Sheppard",
+    "slot": "PG",
+    "nba": "HOU",
+    "pos": "PG,SG",
+    "draft": 4
+   },
+   {
+    "name": "Brandin Podziemski",
+    "slot": "SG",
+    "nba": "GSW",
+    "pos": "PG,SG",
+    "draft": 4
+   },
+   {
+    "name": "RJ Barrett",
+    "slot": "G",
+    "nba": "TOR",
+    "pos": "SG,SF,PF",
+    "draft": 6
+   },
+   {
+    "name": "Brice Sensabaugh",
+    "slot": "SF",
+    "nba": "UTA",
+    "pos": "SG,SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Kelly Oubre Jr.",
+    "slot": "PF",
+    "nba": "IND",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Saddiq Bey",
+    "slot": "F",
+    "nba": "NOP",
+    "pos": "SF,PF",
+    "draft": 3
+   },
+   {
+    "name": "Neemias Queta",
+    "slot": "C",
+    "nba": "BOS",
+    "pos": "C",
+    "draft": 4
+   },
+   {
+    "name": "Ivica Zubac",
+    "slot": "C",
+    "nba": "IND",
+    "pos": "C",
+    "draft": 19
+   },
+   {
+    "name": "Jalen Brunson",
+    "slot": "Util",
+    "nba": "NYK",
+    "pos": "PG",
+    "draft": 41
+   },
+   {
+    "name": "Isaiah Collier",
+    "slot": "Util",
+    "nba": "UTA",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Ayo Dosunmu",
+    "slot": "BN",
+    "nba": "MIN",
+    "pos": "PG,SG",
+    "draft": 5
+   },
+   {
+    "name": "Joan Beringer",
+    "slot": "BN",
+    "nba": "MIN",
+    "pos": "PF,C",
+    "draft": 2
+   },
+   {
+    "name": "Domantas Sabonis",
+    "slot": "BN",
+    "nba": "SAC",
+    "pos": "PF,C",
+    "draft": 34
+   },
+   {
+    "name": "Tristan da Silva",
+    "slot": "IL",
+    "status": "O",
+    "draft": "FA"
+   },
+   {
+    "name": "Brandon Ingram",
+    "slot": "IL",
+    "status": "O",
+    "draft": 12
+   },
+   {
+    "name": "Anthony Edwards",
+    "slot": "IL",
+    "status": "O",
+    "draft": 64
+   }
+  ],
+  "Kalidou Koulibaly": [
+   {
+    "name": "Amen Thompson",
+    "slot": "PG",
+    "nba": "HOU",
+    "pos": "PG,SG",
+    "draft": 39
+   },
+   {
+    "name": "Ryan Rollins",
+    "slot": "SG",
+    "nba": "MIL",
+    "pos": "PG,SG",
+    "draft": 22
+   },
+   {
+    "name": "Fred VanVleet",
+    "slot": "G",
+    "nba": "HOU",
+    "pos": "PG",
+    "draft": 6
+   },
+   {
+    "name": "Keldon Johnson",
+    "slot": "SF",
+    "nba": "SAS",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Obi Toppin",
+    "slot": "PF",
+    "nba": "IND",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Cameron Boozer",
+    "slot": "F",
+    "nba": "MEM",
+    "pos": "PF",
+    "draft": 25
+   },
+   {
+    "name": "Jabari Smith Jr.",
+    "slot": "C",
+    "nba": "HOU",
+    "pos": "PF,C",
+    "draft": 10
+   },
+   {
+    "name": "Derik Queen",
+    "slot": "C",
+    "nba": "NOP",
+    "pos": "PF,C",
+    "draft": 7
+   },
+   {
+    "name": "Collin Sexton",
+    "slot": "Util",
+    "nba": "LAL",
+    "pos": "PG,SG",
+    "draft": 1
+   },
+   {
+    "name": "Yves Missi",
+    "slot": "Util",
+    "status": "O",
+    "draft": 1
+   },
+   {
+    "name": "Walter Clayton Jr.",
+    "slot": "BN",
+    "nba": "DAL",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "De'Andre Hunter",
+    "slot": "BN",
+    "nba": "SAC",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Dyson Daniels",
+    "slot": "BN",
+    "nba": "ATL",
+    "pos": "SG,SF",
+    "draft": 26
+   },
+   {
+    "name": "Brandon Williams",
+    "slot": "IL",
+    "status": "O",
+    "draft": "FA"
+   },
+   {
+    "name": "Scottie Barnes",
+    "slot": "IL",
+    "status": "O",
+    "draft": 58
+   },
+   {
+    "name": "Justin Champagnie",
+    "slot": "IL",
+    "status": "O",
+    "draft": "FA"
+   }
+  ],
+  "Kassablancas": [
+   {
+    "name": "Quenton Jackson",
+    "slot": "PG",
+    "nba": "IND",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Alex Caruso",
+    "slot": "SG",
+    "nba": "OKC",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Tre Jones",
+    "slot": "G",
+    "nba": "CHI",
+    "pos": "PG,SG",
+    "draft": 1
+   },
+   {
+    "name": "Ace Bailey",
+    "slot": "SF",
+    "nba": "UTA",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Draymond Green",
+    "slot": "PF",
+    "nba": "GSW",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "Kyle Kuzma",
+    "slot": "F",
+    "nba": "MIL",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Zion Williamson",
+    "slot": "C",
+    "nba": "NOP",
+    "pos": "PF,C",
+    "draft": 17
+   },
+   {
+    "name": "Victor Wembanyama",
+    "slot": "C",
+    "nba": "SAS",
+    "pos": "C",
+    "draft": 90
+   },
+   {
+    "name": "Jakob Poeltl",
+    "slot": "Util",
+    "nba": "TOR",
+    "pos": "C",
+    "draft": 3
+   },
+   {
+    "name": "Jalen Smith",
+    "slot": "Util",
+    "nba": "CHI",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "Anfernee Simons",
+    "slot": "BN",
+    "nba": "PHI",
+    "pos": "PG,SG",
+    "draft": 1
+   },
+   {
+    "name": "VJ Edgecombe",
+    "slot": "BN",
+    "nba": "PHI",
+    "pos": "PG,SG",
+    "draft": 13
+   },
+   {
+    "name": "Max Strus",
+    "slot": "BN",
+    "nba": "LAC",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Tyrese Haliburton",
+    "slot": "IL",
+    "status": "O",
+    "draft": 51
+   },
+   {
+    "name": "Kon Knueppel",
+    "slot": "IL",
+    "status": "O",
+    "draft": 19
+   }
+  ],
+  "Kreuzberg Boys": [
+   {
+    "name": "Scoot Henderson",
+    "slot": "PG",
+    "nba": "POR",
+    "pos": "PG",
+    "draft": 1
+   },
+   {
+    "name": "Stephon Castle",
+    "slot": "SG",
+    "nba": "SAS",
+    "pos": "PG,SG",
+    "draft": 14
+   },
+   {
+    "name": "Nique Clifford",
+    "slot": "G",
+    "nba": "OKC",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Kobe Sanders",
+    "slot": "SF",
+    "nba": "LAC",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "DeMar DeRozan",
+    "slot": "PF",
+    "nba": "DEN",
+    "pos": "SF,PF",
+    "draft": 16
+   },
+   {
+    "name": "Mario Hezonja",
+    "slot": "F",
+    "nba": "CLE",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Charles Bassey",
+    "slot": "C",
+    "nba": "GSW",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Moussa Diabaté",
+    "slot": "C",
+    "status": "Q",
+    "draft": 1
+   },
+   {
+    "name": "Jared McCain",
+    "slot": "Util",
+    "nba": "OKC",
+    "pos": "PG,SG",
+    "draft": 1
+   },
+   {
+    "name": "Giannis Antetokounmpo",
+    "slot": "Util",
+    "nba": "MIA",
+    "pos": "PF,C",
+    "draft": 63
+   },
+   {
+    "name": "Jalen Green",
+    "slot": "BN",
+    "nba": "PHX",
+    "pos": "SG,SF",
+    "draft": 5
+   },
+   {
+    "name": "Precious Achiuwa",
+    "slot": "BN",
+    "status": "O",
+    "draft": "FA"
+   },
+   {
+    "name": "Cade Cunningham",
+    "slot": "BN",
+    "nba": "DET",
+    "pos": "PG,SG",
+    "draft": 66
+   },
+   {
+    "name": "Paolo Banchero",
+    "slot": "IL",
+    "status": "O",
+    "draft": 26
+   },
+   {
+    "name": "Dereck Lively II",
+    "slot": "IL",
+    "status": "O",
+    "draft": 1
+   },
+   {
+    "name": "Jusuf Nurkić",
+    "slot": "IL",
+    "status": "O",
+    "draft": 3
+   }
+  ],
+  "Kyojins on Rumbling": [
+   {
+    "name": "Payton Pritchard",
+    "slot": "PG",
+    "nba": "BOS",
+    "pos": "PG",
+    "draft": 12
+   },
+   {
+    "name": "Christian Braun",
+    "slot": "SG",
+    "nba": "DEN",
+    "pos": "SG,SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Trae Young",
+    "slot": "G",
+    "nba": "WAS",
+    "pos": "PG",
+    "draft": 37
+   },
+   {
+    "name": "Matas Buzelis",
+    "slot": "SF",
+    "nba": "CHI",
+    "pos": "SF,PF",
+    "draft": 23
+   },
+   {
+    "name": "Franz Wagner",
+    "slot": "PF",
+    "nba": "ORL",
+    "pos": "SF,PF",
+    "draft": 24
+   },
+   {
+    "name": "Bilal Coulibaly",
+    "slot": "F",
+    "nba": "WAS",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Wendell Carter Jr.",
+    "slot": "C",
+    "nba": "ORL",
+    "pos": "C",
+    "draft": 3
+   },
+   {
+    "name": "Alperen Şengün",
+    "slot": "C",
+    "nba": "HOU",
+    "pos": "PF,C",
+    "draft": 45
+   },
+   {
+    "name": "Alex Sarr",
+    "slot": "Util",
+    "nba": "WAS",
+    "pos": "C",
+    "draft": 19
+   },
+   {
+    "name": "Coby White",
+    "slot": "Util",
+    "nba": "CHA",
+    "pos": "PG,SG",
+    "draft": 8
+   },
+   {
+    "name": "Zach LaVine",
+    "slot": "BN",
+    "nba": "SAC",
+    "pos": "PG,SG,SF",
+    "draft": 9
+   },
+   {
+    "name": "Zaccharie Risacher",
+    "slot": "BN",
+    "nba": "DAL",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Onyeka Okongwu",
+    "slot": "BN",
+    "nba": "ATL",
+    "pos": "C",
+    "draft": 28
+   },
+   {
+    "name": "Mark Williams",
+    "slot": "IL",
+    "status": "O",
+    "draft": 3
+   }
+  ],
+  "Los Gerseii": [
+   {
+    "name": "Andrew Nembhard",
+    "slot": "PG",
+    "nba": "IND",
+    "pos": "PG,SG",
+    "draft": 6
+   },
+   {
+    "name": "Aaron Nesmith",
+    "slot": "SG",
+    "nba": "IND",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "LaMelo Ball",
+    "slot": "G",
+    "nba": "MIN",
+    "pos": "PG",
+    "draft": 39
+   },
+   {
+    "name": "Julian Champagnie",
+    "slot": "SF",
+    "nba": "SAS",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Jonathan Kuminga",
+    "slot": "PF",
+    "nba": "MIN",
+    "pos": "SF,PF",
+    "draft": 2
+   },
+   {
+    "name": "Kyshawn George",
+    "slot": "F",
+    "nba": "WAS",
+    "pos": "SG,SF,PF",
+    "draft": 5
+   },
+   {
+    "name": "Mo Bamba",
+    "slot": "C",
+    "nba": "UTA",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Donovan Clingan",
+    "slot": "C",
+    "nba": "POR",
+    "pos": "C",
+    "draft": 25
+   },
+   {
+    "name": "Nikola Jokić",
+    "slot": "Util",
+    "nba": "DEN",
+    "pos": "C",
+    "draft": 90
+   },
+   {
+    "name": "Nic Claxton",
+    "slot": "Util",
+    "nba": "CHI",
+    "pos": "C",
+    "draft": 4
+   },
+   {
+    "name": "Collin Gillespie",
+    "slot": "BN",
+    "nba": "PHX",
+    "pos": "PG,SG",
+    "draft": 2
+   },
+   {
+    "name": "Dennis Schröder",
+    "slot": "BN",
+    "status": "O",
+    "draft": "FA"
+   },
+   {
+    "name": "Bones Hyland",
+    "slot": "BN",
+    "nba": "MIN",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Kristaps Porziņģis",
+    "slot": "IL",
+    "status": "O",
+    "draft": 5
+   }
+  ],
+  "M. Sucks": [
+   {
+    "name": "Jamal Murray",
+    "slot": "PG",
+    "nba": "DEN",
+    "pos": "PG",
+    "draft": 47
+   },
+   {
+    "name": "Cam Spencer",
+    "slot": "SG",
+    "nba": "MEM",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Jeremiah Fears",
+    "slot": "G",
+    "nba": "NOP",
+    "pos": "PG,SG",
+    "draft": 3
+   },
+   {
+    "name": "Paul George",
+    "slot": "SF",
+    "nba": "BOS",
+    "pos": "SF,PF",
+    "draft": 19
+   },
+   {
+    "name": "Peyton Watson",
+    "slot": "PF",
+    "nba": "CLE",
+    "pos": "SF,PF",
+    "draft": 6
+   },
+   {
+    "name": "Gui Santos",
+    "slot": "F",
+    "nba": "GSW",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Aaron Gordon",
+    "slot": "C",
+    "nba": "DEN",
+    "pos": "PF,C",
+    "draft": 6
+   },
+   {
+    "name": "Deandre Ayton",
+    "slot": "C",
+    "nba": "WAS",
+    "pos": "C",
+    "draft": 4
+   },
+   {
+    "name": "Jerami Grant",
+    "slot": "Util",
+    "nba": "MEM",
+    "pos": "SF,PF",
+    "draft": 1
+   },
+   {
+    "name": "Josh Giddey",
+    "slot": "Util",
+    "nba": "CHI",
+    "pos": "PG,SG",
+    "draft": 42
+   },
+   {
+    "name": "Daniel Gafford",
+    "slot": "BN",
+    "nba": "DAL",
+    "pos": "C",
+    "draft": 3
+   },
+   {
+    "name": "Keaton Wagler",
+    "slot": "BN",
+    "nba": "LAC",
+    "pos": "SG",
+    "draft": 1
+   },
+   {
+    "name": "Devin Vassell",
+    "slot": "BN",
+    "status": "Q",
+    "draft": 1
+   },
+   {
+    "name": "Egor Dëmin",
+    "slot": "IL",
+    "status": "O",
+    "draft": 3
+   },
+   {
+    "name": "Kawhi Leonard",
+    "slot": "IL",
+    "status": "O",
+    "draft": 35
+   },
+   {
+    "name": "Lauri Markkanen",
+    "slot": "IL",
+    "status": "O",
+    "draft": 32
+   }
+  ],
+  "Normal MAFIA": [
+   {
+    "name": "Shai Gilgeous-Alexander",
+    "slot": "PG",
+    "nba": "OKC",
+    "pos": "PG",
+    "draft": 73
+   },
+   {
+    "name": "Brayden Burries",
+    "slot": "SG",
+    "nba": "MIL",
+    "pos": "SG",
+    "draft": 1
+   },
+   {
+    "name": "Kris Dunn",
+    "slot": "G",
+    "nba": "LAC",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "AJ Dybantsa",
+    "slot": "SF",
+    "nba": "WAS",
+    "pos": "SF",
+    "draft": 11
+   },
+   {
+    "name": "Jalen Johnson",
+    "slot": "PF",
+    "nba": "ATL",
+    "pos": "SF,PF",
+    "draft": 53
+   },
+   {
+    "name": "Keon Ellis",
+    "slot": "F",
+    "nba": "BKN",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Dylan Cardwell",
+    "slot": "C",
+    "nba": "SAC",
+    "pos": "PF,C",
+    "draft": "FA"
+   },
+   {
+    "name": "Andre Drummond",
+    "slot": "C",
+    "nba": "NYK",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Joel Embiid",
+    "slot": "Util",
+    "nba": "PHI",
+    "pos": "C",
+    "draft": 20
+   },
+   {
+    "name": "Leaky Black",
+    "slot": "Util",
+    "nba": "SAC",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Ryan Kalkbrenner",
+    "slot": "BN",
+    "nba": "CHA",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Daniss Jenkins",
+    "slot": "BN",
+    "nba": "DET",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "CJ McCollum",
+    "slot": "BN",
+    "nba": "ATL",
+    "pos": "PG,SG",
+    "draft": 7
+   },
+   {
+    "name": "Tobias Harris",
+    "slot": "IL",
+    "status": "O",
+    "draft": 1
+   },
+   {
+    "name": "Jalen Duren",
+    "slot": "IL",
+    "status": "O",
+    "draft": 29
+   }
+  ],
+  "Splash Brothers": [
+   {
+    "name": "De'Aaron Fox",
+    "slot": "PG",
+    "nba": "SAS",
+    "pos": "PG",
+    "draft": 19
+   },
+   {
+    "name": "Deni Avdija",
+    "slot": "SG",
+    "nba": "POR",
+    "pos": "SG,SF,PF",
+    "draft": 27
+   },
+   {
+    "name": "Anthony Black",
+    "slot": "G",
+    "nba": "ORL",
+    "pos": "PG,SG,SF",
+    "draft": 2
+   },
+   {
+    "name": "Dillon Brooks",
+    "slot": "SF",
+    "nba": "PHX",
+    "pos": "SF,PF",
+    "draft": 2
+   },
+   {
+    "name": "Andrew Wiggins",
+    "slot": "PF",
+    "nba": "MIA",
+    "pos": "SG,SF,PF",
+    "draft": 5
+   },
+   {
+    "name": "Jaime Jaquez Jr.",
+    "slot": "F",
+    "nba": "MIL",
+    "pos": "SG,SF,PF",
+    "draft": 5
+   },
+   {
+    "name": "Pascal Siakam",
+    "slot": "C",
+    "nba": "IND",
+    "pos": "PF,C",
+    "draft": 19
+   },
+   {
+    "name": "Collin Murray-Boyles",
+    "slot": "C",
+    "status": "Q",
+    "draft": 6
+   },
+   {
+    "name": "Dejounte Murray",
+    "slot": "Util",
+    "nba": "NOP",
+    "pos": "PG,SG",
+    "draft": 20
+   },
+   {
+    "name": "Damian Lillard",
+    "slot": "Util",
+    "nba": "POR",
+    "pos": "PG",
+    "draft": 15
+   },
+   {
+    "name": "Bam Adebayo",
+    "slot": "BN",
+    "nba": "MIA",
+    "pos": "PF,C",
+    "draft": 35
+   },
+   {
+    "name": "Darius Acuff Jr.",
+    "slot": "BN",
+    "nba": "SAC",
+    "pos": "PG",
+    "draft": 3
+   },
+   {
+    "name": "Duncan Robinson",
+    "slot": "BN",
+    "nba": "DET",
+    "pos": "SG,SF",
+    "draft": "FA"
+   }
+  ],
+  "Suhayy31": [
+   {
+    "name": "Bennett Stirtz",
+    "slot": "PG",
+    "nba": "OKC",
+    "pos": "PG",
+    "draft": "FA"
+   },
+   {
+    "name": "Ajay Mitchell",
+    "slot": "SG",
+    "nba": "OKC",
+    "pos": "PG,SG",
+    "draft": 5
+   },
+   {
+    "name": "Austin Reaves",
+    "slot": "G",
+    "nba": "LAL",
+    "pos": "PG,SG,SF",
+    "draft": 39
+   },
+   {
+    "name": "Herbert Jones",
+    "slot": "SF",
+    "nba": "NOP",
+    "pos": "SG,SF",
+    "draft": 4
+   },
+   {
+    "name": "Mikal Bridges",
+    "slot": "PF",
+    "nba": "NYK",
+    "pos": "SF,PF",
+    "draft": 19
+   },
+   {
+    "name": "Trey Murphy III",
+    "slot": "F",
+    "status": "P",
+    "draft": 38
+   },
+   {
+    "name": "Robert Williams III",
+    "slot": "C",
+    "nba": "POR",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Danny Wolf",
+    "slot": "C",
+    "nba": "BKN",
+    "pos": "PF,C",
+    "draft": "FA"
+   },
+   {
+    "name": "Walker Kessler",
+    "slot": "Util",
+    "nba": "LAL",
+    "pos": "C",
+    "draft": 29
+   },
+   {
+    "name": "Michael Porter Jr.",
+    "slot": "Util",
+    "nba": "BKN",
+    "pos": "SF,PF",
+    "draft": 25
+   },
+   {
+    "name": "Davion Mitchell",
+    "slot": "BN",
+    "nba": "MIA",
+    "pos": "PG",
+    "draft": 5
+   },
+   {
+    "name": "P.J. Washington",
+    "slot": "BN",
+    "nba": "DAL",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "John Collins",
+    "slot": "BN",
+    "nba": "DET",
+    "pos": "PF,C",
+    "draft": 8
+   },
+   {
+    "name": "Tyler Herro",
+    "slot": "IL",
+    "status": "O",
+    "draft": 17
+   },
+   {
+    "name": "Ja Morant",
+    "slot": "IL",
+    "status": "O",
+    "draft": 12
+   }
+  ],
+  "tarkus maurelius": [
+   {
+    "name": "N. Alexander-Walker",
+    "slot": "PG",
+    "nba": "ATL",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Tari Eason",
+    "slot": "SG",
+    "nba": "HOU",
+    "pos": "SG,SF,PF",
+    "draft": 2
+   },
+   {
+    "name": "Matisse Thybulle",
+    "slot": "G",
+    "nba": "LAL",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Sam Hauser",
+    "slot": "SF",
+    "nba": "BOS",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
+    "name": "OG Anunoby",
+    "slot": "PF",
+    "nba": "NYK",
+    "pos": "SF,PF",
+    "draft": 20
+   },
+   {
+    "name": "Cooper Flagg",
+    "slot": "F",
+    "nba": "DAL",
+    "pos": "SG,SF,PF",
+    "draft": 55
+   },
+   {
+    "name": "Jarrett Allen",
+    "slot": "C",
+    "nba": "CLE",
+    "pos": "C",
+    "draft": 21
+   },
+   {
+    "name": "Sandro Mamukelashvili",
+    "slot": "C",
+    "nba": "LAL",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "Meleek Thomas",
+    "slot": "Util",
+    "nba": "CLE",
+    "pos": "SG",
+    "draft": "FA"
+   },
+   {
+    "name": "Grayson Allen",
+    "slot": "Util",
+    "nba": "CHA",
+    "pos": "SG,SF",
+    "draft": 2
+   },
+   {
+    "name": "Kyrie Irving",
+    "slot": "BN",
+    "nba": "DAL",
+    "pos": "PG,SG",
+    "draft": 28
+   },
+   {
+    "name": "Brook Lopez",
+    "slot": "BN",
+    "nba": "LAC",
+    "pos": "C",
+    "draft": 1
+   },
+   {
+    "name": "Morez Johnson Jr.",
+    "slot": "BN",
+    "status": "Q",
+    "draft": "FA"
+   },
+   {
+    "name": "Immanuel Quickley",
+    "slot": "IL",
+    "status": "Q",
+    "draft": 8
+   },
+   {
+    "name": "Anthony Davis",
+    "slot": "IL",
+    "nba": "WAS",
+    "pos": "PF,C",
+    "draft": 30
+   }
+  ],
+  "Yukatel Metin Akdülger": [
+   {
+    "name": "Nolan Traore",
+    "slot": "PG",
+    "status": "Q",
+    "draft": "FA"
+   },
+   {
+    "name": "Derrick White",
+    "slot": "SG",
+    "nba": "BOS",
+    "pos": "PG,SG",
+    "draft": 33
+   },
+   {
+    "name": "Darryn Peterson",
+    "slot": "G",
+    "nba": "UTA",
+    "pos": "SG",
+    "draft": 7
+   },
+   {
+    "name": "Jayson Tatum",
+    "slot": "SF",
+    "nba": "BOS",
+    "pos": "SF,PF",
+    "draft": 61
+   },
+   {
+    "name": "Yaxel Lendeborg",
+    "slot": "PF",
+    "nba": "GSW",
+    "pos": "SF,PF",
+    "draft": 5
+   },
+   {
+    "name": "Cameron Johnson",
+    "slot": "F",
+    "nba": "DEN",
+    "pos": "SF,PF",
+    "draft": 2
+   },
+   {
+    "name": "Karl-Anthony Towns",
+    "slot": "C",
+    "nba": "NYK",
+    "pos": "PF,C",
+    "draft": 47
+   },
+   {
+    "name": "Bobby Portis Jr.",
+    "slot": "C",
+    "nba": "MIA",
+    "pos": "PF,C",
+    "draft": 1
+   },
+   {
+    "name": "Santi Aldama",
+    "slot": "Util",
+    "nba": "DAL",
+    "pos": "PF",
+    "draft": "FA"
+   },
+   {
+    "name": "Mikel Brown Jr.",
+    "slot": "Util",
+    "nba": "BKN",
+    "pos": "PG",
+    "draft": 1
+   },
+   {
+    "name": "Devin Booker",
+    "slot": "BN",
+    "nba": "PHX",
+    "pos": "PG,SG",
+    "draft": 38
+   },
+   {
+    "name": "Keegan Murray",
+    "slot": "BN",
+    "nba": "SAC",
+    "pos": "SF,PF",
+    "draft": 4
+   },
+   {
+    "name": "Aaron Wiggins",
+    "slot": "BN",
+    "nba": "ATL",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Isaiah Jackson",
+    "slot": "IL",
+    "nba": "LAC",
+    "pos": "C",
+    "draft": 1
+   },
+   {
+    "name": "Jimmy Butler III",
+    "slot": "IL",
+    "status": "O",
+    "draft": "FA"
+   },
+   {
+    "name": "Maxime Raynaud",
+    "slot": "IL",
+    "status": "O",
+    "draft": 2
+   }
+  ]
+ }
+}

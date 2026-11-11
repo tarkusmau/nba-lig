@@ -741,7 +741,7 @@
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "11 Kasım 2026, 16:39 (10 Kasım maçları dahil)",
+   "updated": "11 Kasım 2026, 17:00 (10 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -983,6 +983,40 @@
      "blk": 16,
      "to": 14
     }
+   ],
+   "pairs": [
+    [
+     "Pickle Men",
+     "Suhayy31"
+    ],
+    [
+     "Bomonti Sınırsız",
+     "Kyojins on Rumbling"
+    ],
+    [
+     "BÇ",
+     "Los Gerseii"
+    ],
+    [
+     "EAH Seniors",
+     "M. Sucks"
+    ],
+    [
+     "HobaKumpo",
+     "Splash Brothers"
+    ],
+    [
+     "Kalidou Koulibaly",
+     "Kreuzberg Boys"
+    ],
+    [
+     "Normal MAFIA",
+     "Yukatel Metin Akdülger"
+    ],
+    [
+     "tarkus maurelius",
+     "Kassablancas"
+    ]
    ]
   }
  }

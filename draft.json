@@ -1,0 +1,1042 @@
+[
+{
+"name": "Austin Reaves",
+"cost": 39,
+"team": "$39"
+},
+{
+"name": "Michael Porter Jr.",
+"cost": 25,
+"team": "$25"
+},
+{
+"name": "Walker Kessler",
+"cost": 29,
+"team": "$29"
+},
+{
+"name": "Ja Morant",
+"cost": 12,
+"team": "$12"
+},
+{
+"name": "Trey Murphy III",
+"cost": 38,
+"team": "$38"
+},
+{
+"name": "Mikal Bridges",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Tyler Herro",
+"cost": 17,
+"team": "$17"
+},
+{
+"name": "Davion Mitchell",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "John Collins",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Ajay Mitchell",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "P.J. Washington",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Kelly Oubre Jr.",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Bennedict Mathurin",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jamal Murray",
+"cost": 47,
+"team": "$47"
+},
+{
+"name": "Josh Giddey",
+"cost": 42,
+"team": "$42"
+},
+{
+"name": "Kawhi Leonard",
+"cost": 35,
+"team": "$35"
+},
+{
+"name": "Lauri Markkanen",
+"cost": 32,
+"team": "$32"
+},
+{
+"name": "Paul George",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Deandre Ayton",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Aaron Gordon",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Peyton Watson",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Daniel Gafford",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Gui Santos",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jeremiah Fears",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Devin Vassell",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jerami Grant",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Donovan Mitchell",
+"cost": 49,
+"team": "$49"
+},
+{
+"name": "Jaylen Brown",
+"cost": 31,
+"team": "$31"
+},
+{
+"name": "Jaren Jackson Jr.",
+"cost": 30,
+"team": "$30"
+},
+{
+"name": "Josh Hart",
+"cost": 16,
+"team": "$16"
+},
+{
+"name": "Julius Randle",
+"cost": 16,
+"team": "$16"
+},
+{
+"name": "Ausar Thompson",
+"cost": 16,
+"team": "$16"
+},
+{
+"name": "Isaiah Hartenstein",
+"cost": 9,
+"team": "$9"
+},
+{
+"name": "Dylan Harper",
+"cost": 11,
+"team": "$11"
+},
+{
+"name": "Cedric Coward",
+"cost": 11,
+"team": "$11"
+},
+{
+"name": "Day'Ron Sharpe",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Jake LaRavia",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Isaiah Stewart",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Isaiah Jackson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Giannis Antetokounmpo",
+"cost": 63,
+"team": "$63"
+},
+{
+"name": "Cade Cunningham",
+"cost": 66,
+"team": "$66"
+},
+{
+"name": "DeMar DeRozan",
+"cost": 16,
+"team": "$16"
+},
+{
+"name": "Paolo Banchero",
+"cost": 26,
+"team": "$26"
+},
+{
+"name": "Stephon Castle",
+"cost": 14,
+"team": "$14"
+},
+{
+"name": "Jalen Green",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Jusuf Nurkić",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Mason Plumlee",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Bogdan Bogdanović",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Moussa Diabaté",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jared McCain",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Scoot Henderson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Dereck Lively II",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Luka Dončić",
+"cost": 73,
+"team": "$73"
+},
+{
+"name": "Brandon Miller",
+"cost": 32,
+"team": "$32"
+},
+{
+"name": "Donovan Clingan",
+"cost": 25,
+"team": "$25"
+},
+{
+"name": "Desmond Bane",
+"cost": 26,
+"team": "$26"
+},
+{
+"name": "Naz Reid",
+"cost": 18,
+"team": "$18"
+},
+{
+"name": "Kel'el Ware",
+"cost": 18,
+"team": "$18"
+},
+{
+"name": "Collin Gillespie",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Pelle Larsson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Mikel Brown Jr.",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Keaton Wagler",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Oso Ighodaro",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Naji Marshall",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jordan Poole",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Kevin Durant",
+"cost": 48,
+"team": "$48"
+},
+{
+"name": "Evan Mobley",
+"cost": 35,
+"team": "$35"
+},
+{
+"name": "Darius Garland",
+"cost": 23,
+"team": "$23"
+},
+{
+"name": "Keyonte George",
+"cost": 27,
+"team": "$27"
+},
+{
+"name": "Miles Bridges",
+"cost": 10,
+"team": "$10"
+},
+{
+"name": "Rudy Gobert",
+"cost": 14,
+"team": "$14"
+},
+{
+"name": "Jalen Suggs",
+"cost": 7,
+"team": "$7"
+},
+{
+"name": "Norman Powell",
+"cost": 10,
+"team": "$10"
+},
+{
+"name": "Caleb Wilson",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Ty Jerome",
+"cost": 7,
+"team": "$7"
+},
+{
+"name": "Rui Hachimura",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Paul Reed",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Khaman Maluach",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Anthony Davis",
+"cost": 30,
+"team": "$30"
+},
+{
+"name": "Cooper Flagg",
+"cost": 55,
+"team": "$55"
+},
+{
+"name": "Kyrie Irving",
+"cost": 28,
+"team": "$28"
+},
+{
+"name": "Nickeil Alexander-Walker",
+"cost": 26,
+"team": "$26"
+},
+{
+"name": "OG Anunoby",
+"cost": 20,
+"team": "$20"
+},
+{
+"name": "Jarrett Allen",
+"cost": 21,
+"team": "$21"
+},
+{
+"name": "Immanuel Quickley",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Herbert Jones",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Sandro Mamukelashvili",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Tari Eason",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Grayson Allen",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Hannes Steinbach",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Brook Lopez",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Shai Gilgeous-Alexander",
+"cost": 73,
+"team": "$73"
+},
+{
+"name": "Jalen Johnson",
+"cost": 53,
+"team": "$53"
+},
+{
+"name": "Joel Embiid",
+"cost": 20,
+"team": "$20"
+},
+{
+"name": "Jalen Duren",
+"cost": 29,
+"team": "$29"
+},
+{
+"name": "AJ Dybantsa",
+"cost": 11,
+"team": "$11"
+},
+{
+"name": "CJ McCollum",
+"cost": 7,
+"team": "$7"
+},
+{
+"name": "Keon Ellis",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Tobias Harris",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Brayden Burries",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Mitchell Robinson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Luguentz Dort",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Miles McBride",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Moritz Wagner",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Bam Adebayo",
+"cost": 35,
+"team": "$35"
+},
+{
+"name": "Jalen Williams",
+"cost": 32,
+"team": "$32"
+},
+{
+"name": "Deni Avdija",
+"cost": 27,
+"team": "$27"
+},
+{
+"name": "De'Aaron Fox",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Dejounte Murray",
+"cost": 20,
+"team": "$20"
+},
+{
+"name": "Alex Sarr",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Damian Lillard",
+"cost": 15,
+"team": "$15"
+},
+{
+"name": "Pascal Siakam",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Collin Murray-Boyles",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Darius Acuff Jr.",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Dillon Brooks",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Anthony Black",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Aaron Nesmith",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Nikola Jokić",
+"cost": 90,
+"team": "$90"
+},
+{
+"name": "James Harden",
+"cost": 37,
+"team": "$37"
+},
+{
+"name": "LaMelo Ball",
+"cost": 39,
+"team": "$39"
+},
+{
+"name": "Andrew Nembhard",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Andrew Wiggins",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Kristaps Porziņģis",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Keegan Murray",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Kyshawn George",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Nic Claxton",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Jay Huff",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jonathan Kuminga",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Donte DiVincenzo",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Julian Champagnie",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jayson Tatum",
+"cost": 61,
+"team": "$61"
+},
+{
+"name": "Devin Booker",
+"cost": 38,
+"team": "$38"
+},
+{
+"name": "Karl-Anthony Towns",
+"cost": 47,
+"team": "$47"
+},
+{
+"name": "Derrick White",
+"cost": 33,
+"team": "$33"
+},
+{
+"name": "Darryn Peterson",
+"cost": 7,
+"team": "$7"
+},
+{
+"name": "Yaxel Lendeborg",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Bobby Portis Jr.",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Maxime Raynaud",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Cameron Johnson",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Klay Thompson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Luke Kornet",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Collin Sexton",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Aaron Wiggins",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Alperen Şengün",
+"cost": 45,
+"team": "$45"
+},
+{
+"name": "Trae Young",
+"cost": 37,
+"team": "$37"
+},
+{
+"name": "Onyeka Okongwu",
+"cost": 28,
+"team": "$28"
+},
+{
+"name": "Franz Wagner",
+"cost": 24,
+"team": "$24"
+},
+{
+"name": "Matas Buzelis",
+"cost": 23,
+"team": "$23"
+},
+{
+"name": "Zach LaVine",
+"cost": 9,
+"team": "$9"
+},
+{
+"name": "Payton Pritchard",
+"cost": 12,
+"team": "$12"
+},
+{
+"name": "Coby White",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Mark Williams",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Jaime Jaquez Jr.",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Wendell Carter Jr.",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Christian Braun",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Joan Beringer",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Scottie Barnes",
+"cost": 58,
+"team": "$58"
+},
+{
+"name": "Amen Thompson",
+"cost": 39,
+"team": "$39"
+},
+{
+"name": "Dyson Daniels",
+"cost": 26,
+"team": "$26"
+},
+{
+"name": "Cameron Boozer",
+"cost": 25,
+"team": "$25"
+},
+{
+"name": "Ryan Rollins",
+"cost": 22,
+"team": "$22"
+},
+{
+"name": "Fred VanVleet",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Jabari Smith Jr.",
+"cost": 10,
+"team": "$10"
+},
+{
+"name": "Derik Queen",
+"cost": 7,
+"team": "$7"
+},
+{
+"name": "Egor Dëmin",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Yves Missi",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "GG Jackson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jamal Shead",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Keldon Johnson",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Tyrese Maxey",
+"cost": 56,
+"team": "$56"
+},
+{
+"name": "LeBron James",
+"cost": 27,
+"team": "$27"
+},
+{
+"name": "Stephen Curry",
+"cost": 34,
+"team": "$34"
+},
+{
+"name": "Chet Holmgren",
+"cost": 34,
+"team": "$34"
+},
+{
+"name": "Zach Edey",
+"cost": 15,
+"team": "$15"
+},
+{
+"name": "Jaden McDaniels",
+"cost": 8,
+"team": "$8"
+},
+{
+"name": "Kevin Porter Jr.",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Myles Turner",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Cason Wallace",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Toumani Camara",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Scotty Pippen Jr.",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Quentin Grimes",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jrue Holiday",
+"cost": 2,
+"team": "$2"
+},
+{
+"name": "Domantas Sabonis",
+"cost": 34,
+"team": "$34"
+},
+{
+"name": "Anthony Edwards",
+"cost": 64,
+"team": "$64"
+},
+{
+"name": "Jalen Brunson",
+"cost": 41,
+"team": "$41"
+},
+{
+"name": "Ivica Zubac",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "Brandon Ingram",
+"cost": 12,
+"team": "$12"
+},
+{
+"name": "Reed Sheppard",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "RJ Barrett",
+"cost": 6,
+"team": "$6"
+},
+{
+"name": "Brandin Podziemski",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Ayo Dosunmu",
+"cost": 5,
+"team": "$5"
+},
+{
+"name": "Neemias Queta",
+"cost": 4,
+"team": "$4"
+},
+{
+"name": "Nikola Vučević",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Saddiq Bey",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Tim Hardaway Jr.",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Tyrese Haliburton",
+"cost": 51,
+"team": "$51"
+},
+{
+"name": "Victor Wembanyama",
+"cost": 90,
+"team": "$90"
+},
+{
+"name": "Zion Williamson",
+"cost": 17,
+"team": "$17"
+},
+{
+"name": "Kon Knueppel",
+"cost": 19,
+"team": "$19"
+},
+{
+"name": "VJ Edgecombe",
+"cost": 13,
+"team": "$13"
+},
+{
+"name": "Jakob Poeltl",
+"cost": 3,
+"team": "$3"
+},
+{
+"name": "Tre Jones",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Ace Bailey",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Kyle Kuzma",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Draymond Green",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Alex Caruso",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Jalen Smith",
+"cost": 1,
+"team": "$1"
+},
+{
+"name": "Anfernee Simons",
+"cost": 1,
+"team": "$1"
+}
+]
