@@ -192,6 +192,76 @@ def tx_key(e):
     return (e["time"], e["team"], tuple(e["add"]), tuple(e["drop"]))
 
 # ---------------- Ana akis ----------------
+# ---------------- Oyuncu istatistikleri (Players sayfasi) ----------------
+PLAYER_SETS = [("bu_sezon_ort", "S_AS_2026"), ("gecen_sezon_ort", "S_AS_2025"), ("son14_ort", "AS_L14")]
+PLAYER_PAGES = 12   # sayfa basi 25 oyuncu -> ~300 oyuncu
+
+def parse_players(html):
+    soup = BeautifulSoup(html, "html.parser")
+    table = None
+    for t in soup.find_all("table"):
+        heads = [th.get_text(" ", strip=True) for th in t.find_all("th")]
+        if any(h.startswith("Player") or h == "Players" for h in heads) and any("PTS" in h for h in heads):
+            table = t; break
+    if table is None:
+        return [], [], soup
+    # son baslik satiri gercek sutun adlari
+    hrows = table.find("thead").find_all("tr") if table.find("thead") else [table.find("tr")]
+    heads = [th.get_text(" ", strip=True) for th in hrows[-1].find_all(["th", "td"])]
+    rows = []
+    body = table.find("tbody") or table
+    for tr in body.find_all("tr"):
+        tds = tr.find_all("td")
+        if len(tds) < 6:
+            continue
+        a = tr.find("a", class_=re.compile("name"))
+        if not a:
+            continue
+        rec = {"name": a.get_text(strip=True)}
+        tp = tr.find("span", class_=re.compile("Fz-xxs"))
+        if tp:
+            txt = tp.get_text(" ", strip=True)
+            if " - " in txt:
+                rec["nba"], rec["pos"] = [x.strip() for x in txt.split(" - ", 1)]
+        inj = tr.find("span", class_=re.compile("F-injury"))
+        if inj:
+            rec["status"] = inj.get_text(strip=True)
+        cells = [td.get_text(" ", strip=True) for td in tds]
+        off = len(heads) - len(cells)
+        for i, c in enumerate(cells):
+            hi = i + off
+            if 0 <= hi < len(heads) and heads[hi] and heads[hi] not in ("Player", "Players", "Action", "Forecast"):
+                rec[heads[hi]] = c
+        rows.append(rec)
+    return rows, heads, soup
+
+def scrape_players():
+    os.makedirs("players", exist_ok=True)
+    for key, stat in PLAYER_SETS:
+        allp, heads = [], []
+        for p in range(PLAYER_PAGES):
+            path = f"/players?status=ALL&pos=P&cut_type=33&stat1={stat}&myteam=0&sort=AR&sdir=1&count={p*25}"
+            try:
+                html = fetch(path)
+            except SystemExit:
+                raise
+            except Exception as ex:
+                log(f"HATA oyuncular {key} sayfa {p}: {ex}"); break
+            if p == 0:
+                open(f"players/probe_{key}.html", "w", encoding="utf-8").write(html)
+            rows, h, soup = parse_players(html)
+            if p == 0:
+                opts = [o.get("value") for o in soup.select("select[name=stat1] option")][:40]
+                log(f"Oyuncular {key}: stat1 secenekleri: {opts}")
+                log(f"Oyuncular {key}: basliklar: {h}")
+            if not rows:
+                break
+            heads = heads or h
+            allp += rows
+        json.dump({"updated": NOW.strftime("%Y-%m-%d %H:%M"), "stat": stat, "columns": heads, "players": allp},
+                  open(f"players/{key}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+        log(f"Oyuncular {key}: {len(allp)} oyuncu yazildi.")
+
 def main():
     if not COOKIE and not LOCAL:
         log("HATA: YAHOO_COOKIE secret'i yok."); finish(1)
@@ -243,6 +313,13 @@ def main():
             log("  + " + json.dumps(e, ensure_ascii=False))
     except Exception as ex:
         log(f"HATA islemler: {ex}"); failed = True
+
+    try:
+        scrape_players()
+    except SystemExit:
+        raise
+    except Exception as ex:
+        log(f"HATA oyuncular: {ex}")
 
     finish(1 if failed else 0)
 
