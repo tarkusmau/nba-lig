@@ -10,6 +10,16 @@ LEAGUE = os.environ.get("LEAGUE_ID", "71722")
 REDIRECT = "https://localhost"
 TOKEN_URL = "https://api.login.yahoo.com/oauth2/get_token"
 NS = {"y": "http://fantasysports.yahooapis.com/fantasy/v2/base.rng"}
+
+DIAG = []
+def fail(msg):
+    try:
+        d = json.load(open("data.json", encoding="utf-8")) if os.path.exists("data.json") else {}
+        d["_diag"] = {"time": datetime.datetime.now(datetime.timezone.utc).isoformat(), "error": str(msg)[:600], "log": DIAG[-12:]}
+        json.dump(d, open("data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception:
+        pass
+    sys.exit(msg)
 if not KEY:
     sys.exit("ENC_KEY secret eksik.")
 fern = Fernet(base64.urlsafe_b64encode(hashlib.sha256(KEY.encode()).digest()))
@@ -17,7 +27,7 @@ fern = Fernet(base64.urlsafe_b64encode(hashlib.sha256(KEY.encode()).digest()))
 def token_request(data):
     r = requests.post(TOKEN_URL, data=data, auth=(CID, CSEC), timeout=30)
     if r.status_code != 200:
-        sys.exit(f"Yahoo token hatası {r.status_code}: {r.text[:300]}")
+        fail(f"Yahoo token hatası {r.status_code}: {r.text[:300]}")
     return r.json()
 
 def get_access_token():
@@ -30,7 +40,7 @@ def get_access_token():
             print("Kayıtlı anahtar kullanılamadı:", str(e)[:200])
     if tok is None:
         if not CODE:
-            sys.exit("İlk kurulum için YAHOO_AUTH_CODE secret gerekli.")
+            fail("İlk kurulum için YAHOO_AUTH_CODE secret gerekli.")
         tok = token_request({"grant_type": "authorization_code", "code": CODE, "redirect_uri": REDIRECT})
     open("token.enc", "wb").write(fern.encrypt(tok["refresh_token"].encode()))
     print("Token alındı. Alanlar:", sorted(k for k in tok if k not in ("access_token","refresh_token","id_token")),
@@ -42,12 +52,12 @@ def api(path):
     r = requests.get("https://fantasysports.yahooapis.com/fantasy/v2/" + path,
                      headers={"Authorization": "Bearer " + AT}, timeout=30)
     if r.status_code != 200:
-        sys.exit(f"Yahoo API hatası {r.status_code} ({path}): {r.text[:300]}")
+        fail(f"Yahoo API hatası {r.status_code} ({path}): {r.text[:300]}")
     return ET.fromstring(r.content)
 
 for test in ("game/nba", "users;use_login=1"):
     r = requests.get("https://fantasysports.yahooapis.com/fantasy/v2/" + test, headers={"Authorization": "Bearer " + AT}, timeout=30)
-    print("TEST", test, "->", r.status_code, r.text[:160].replace("\n", " "))
+    print("TEST", test, "->", r.status_code, r.text[:160].replace("\n", " ")); DIAG.append(f"TEST {test} -> {r.status_code} {r.text[:200]}")
 # Liginin tam anahtarını (ör. 466.l.71722) kullanıcının liglerinden bul
 league_key = None
 try:
@@ -56,9 +66,9 @@ try:
         if l.findtext("y:league_id", namespaces=NS) == LEAGUE:
             league_key = l.findtext("y:league_key", namespaces=NS)
 except SystemExit as e:
-    print("Kullanıcı ligleri okunamadı:", e)
+    print("Kullanıcı ligleri okunamadı:", e); DIAG.append(f"ligler: {e}")
 if not league_key:
-    sys.exit("Lig bulunamadı: Yahoo hesabının bu ligde olduğundan ve uygulamanın Fantasy Sports izni olduğundan emin ol.")
+    fail("Lig bulunamadı: Yahoo hesabının bu ligde olduğundan ve uygulamanın Fantasy Sports izni olduğundan emin ol.")
 print("Lig anahtarı:", league_key)
 lg = api(f"league/{league_key}").find("y:league", NS)
 current = int(lg.findtext("y:current_week", default="1", namespaces=NS))
@@ -104,5 +114,5 @@ for wk in range(start, current + 1):
 now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3)))
 for w in weeks.values():
     w["updated"] = now.strftime("%d.%m.%Y %H:%M")
-json.dump({"league": lname, "weeks": weeks}, open("data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+json.dump({"league": lname, "weeks": weeks, "_diag": {"time": now.isoformat(), "error": None, "log": DIAG[-12:]}}, open("data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(f"{len(weeks)} hafta yazıldı (güncel hafta {current}).")
