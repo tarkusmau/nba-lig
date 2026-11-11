@@ -987,12 +987,8 @@
   }
  },
  "_diag": {
-  "time": "2026-11-11T09:17:00.627155+00:00",
-  "error": "Lig bulunamadı: Yahoo hesabının bu ligde olduğundan ve uygulamanın Fantasy Sports izni olduğundan emin ol.",
-  "log": [
-   "TEST game/nba -> 403 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<error xml:lang=\"en-us\" yahoo:uri=\"http://fantasysports.yahooapis.com/fantasy/v2/game/nba\" xmlns:yahoo=\"http://www.yahooapis.com/v1/base.rng\" xmlns=\"http://www.y",
-   "TEST users;use_login=1 -> 403 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<error xml:lang=\"en-us\" yahoo:uri=\"http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1\" xmlns:yahoo=\"http://www.yahooapis.com/v1/base.rng\" xmlns=\"htt",
-   "ligler: Yahoo API hatası 403 (users;use_login=1/games;game_codes=nba/leagues): <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<error xml:lang=\"en-us\" yahoo:uri=\"http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1/games;game_codes=nba/leagues\" xmlns:yahoo=\"http://www.yahooapis.com/v1/base.rng\" xmlns=\"http://www.yahooapis.com/v1/base.rng\">\n <description>This application is n"
-  ]
+  "time": "2026-11-11T11:27:03.174654+00:00",
+  "error": "Yahoo token hatası 400: {\"error\":\"INVALID_CLIENT_SECRET\",\"error_description\":\"Invalid client secret\"}",
+  "log": []
  }
 }
