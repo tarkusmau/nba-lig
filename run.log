@@ -1,32 +1,36 @@
 Guncel hafta: 4
-Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 11 Kasım 2026, 20:59 (10 Kasım maçları dahil)
-Islemler: 2 yeni kayit eklendi.
-  + {"time": "2026-11-11 20:28", "team": "Yukatel Metin Akdülger", "type": "add/drop", "add": ["S. Cissoko"], "drop": ["I. Jackson"], "pos": "SF,PF / C", "source": "FA"}
-  + {"time": "2026-11-11 19:22", "team": "Normal MAFIA", "type": "drop", "add": [], "drop": ["L. Black"], "pos": "SF,PF"}
+Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 12 Kasım 2026, 10:39 (11 Kasım maçları dahil)
+Islemler: 6 yeni kayit eklendi.
+  + {"time": "2026-11-12 03:30", "team": "EAH Seniors", "type": "add", "add": ["R. Holland II"], "drop": [], "pos": "SF,PF", "source": "FA"}
+  + {"time": "2026-11-12 02:31", "team": "tarkus maurelius", "type": "drop", "add": [], "drop": ["S. Hauser"], "pos": "SF,PF"}
+  + {"time": "2026-11-12 01:28", "team": "BÇ", "type": "drop", "add": [], "drop": ["K. Huerter"], "pos": "SG,SF"}
+  + {"time": "2026-11-11 23:51", "team": "tarkus maurelius", "type": "drop", "add": [], "drop": ["M. Johnson Jr."], "pos": "PF"}
+  + {"time": "2026-11-11 23:43", "team": "Pickle Men", "type": "drop", "add": [], "drop": ["J. Cain"], "pos": "SG,SF"}
+  + {"time": "2026-11-11 22:16", "team": "Normal MAFIA", "type": "add", "add": ["J. Okogie"], "drop": [], "pos": "SG,SF", "source": "FA"}
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 7: 'Kassablancas', 1: 'Pickle Men', 14: 'Suhayy31', 2: 'Bomonti Sınırsız', 9: 'Kyojins on Rumbling', 3: 'BÇ', 10: 'Los Gerseii', 4: 'EAH Seniors', 11: 'M. Sucks', 5: 'HobaKumpo', 13: 'Splash Brothers', 6: 'Kalidou Koulibaly', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 16: 'Yukatel Metin Akdülger'}
 Draft: 208 secim yazildi.
-Kadro Pickle Men: 15 oyuncu, IL: ['Jalen Suggs', 'Keyonte George']
+Kadro Pickle Men: 14 oyuncu, IL: ['Jalen Suggs']
 Kadro Bomonti Sınırsız: 14 oyuncu, IL: ['Brandon Miller']
-Kadro BÇ: 15 oyuncu, IL: ['Josh Hart', 'Jaren Jackson Jr.']
-Kadro EAH Seniors: 14 oyuncu, IL: ['Chet Holmgren']
+Kadro BÇ: 14 oyuncu, IL: ['Jaren Jackson Jr.']
+Kadro EAH Seniors: 15 oyuncu, IL: ['Myles Turner', 'Chet Holmgren']
 Kadro HobaKumpo: 16 oyuncu, IL: ['Tristan da Silva', 'Brandon Ingram', 'Anthony Edwards']
 Kadro Kalidou Koulibaly: 16 oyuncu, IL: ['Brandon Williams', 'Scottie Barnes', 'Justin Champagnie']
 Kadro Kassablancas: 15 oyuncu, IL: ['Tyrese Haliburton', 'Kon Knueppel']
 Kadro Kreuzberg Boys: 16 oyuncu, IL: ['Paolo Banchero', 'Dereck Lively II', 'Jusuf Nurkić']
 Kadro Kyojins on Rumbling: 14 oyuncu, IL: ['Mark Williams']
 Kadro Los Gerseii: 14 oyuncu, IL: ['Kristaps Porziņģis']
-Kadro M. Sucks: 16 oyuncu, IL: ['Egor Dëmin', 'Kawhi Leonard', 'Lauri Markkanen']
-Kadro Normal MAFIA: 14 oyuncu, IL: ['Tobias Harris', 'Jalen Duren']
+Kadro M. Sucks: 16 oyuncu, IL: ['Paul George', 'Kawhi Leonard', 'Lauri Markkanen']
+Kadro Normal MAFIA: 15 oyuncu, IL: ['Tobias Harris', 'Jalen Duren']
 Kadro Splash Brothers: 13 oyuncu, IL: []
-Kadro Suhayy31: 15 oyuncu, IL: ['Tyler Herro', 'Ja Morant']
-Kadro tarkus maurelius: 15 oyuncu, IL: ['Immanuel Quickley', 'Anthony Davis']
+Kadro Suhayy31: 15 oyuncu, IL: ['Trey Murphy III', 'Ja Morant']
+Kadro tarkus maurelius: 13 oyuncu, IL: []
 Kadro Yukatel Metin Akdülger: 16 oyuncu, IL: ['Mikel Brown Jr.', 'Jimmy Butler III', 'Maxime Raynaud']
 Puan durumu: 0 tablo yazildi.
 Fikstur: {'4': 'Kassablancas', '5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo'}
-Oyuncular bu_sezon_ort: 438 oyuncu (238 kadrolu) yazildi.
-Oyuncular gecen_sezon_ort: 438 oyuncu (238 kadrolu) yazildi.
-Oyuncular son14_ort: 438 oyuncu (238 kadrolu) yazildi.
-Oyuncular son7_ort: 438 oyuncu (238 kadrolu) yazildi.
-Oyuncular projeksiyon_kalan: 438 oyuncu (238 kadrolu) yazildi.
+Oyuncular bu_sezon_ort: 436 oyuncu (236 kadrolu) yazildi.
+Oyuncular gecen_sezon_ort: 436 oyuncu (236 kadrolu) yazildi.
+Oyuncular son14_ort: 436 oyuncu (236 kadrolu) yazildi.
+Oyuncular son7_ort: 436 oyuncu (236 kadrolu) yazildi.
+Oyuncular projeksiyon_kalan: 436 oyuncu (236 kadrolu) yazildi.
 HATA NBA takvimi: HTTP Error 403: Forbidden
-Sakatliklar: 92 kayit.
+Sakatliklar: 97 kayit.
