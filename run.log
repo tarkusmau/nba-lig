@@ -1,8 +1,5 @@
 Guncel hafta: 4
-Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 13 Kasım 2026, 11:39 (12 Kasım maçları dahil)
-Hafta 1 eslesmeleri: [['Pickle Men', 'BÇ'], ['Bomonti Sınırsız', 'Los Gerseii'], ['EAH Seniors', 'Kreuzberg Boys'], ['HobaKumpo', 'M. Sucks'], ['Kalidou Koulibaly', 'Normal MAFIA'], ['Kassablancas', 'Splash Brothers'], ['Kyojins on Rumbling', 'Suhayy31'], ['tarkus maurelius', 'Yukatel Metin Akdülger']]
-Hafta 2 eslesmeleri: [['Pickle Men', 'Yukatel Metin Akdülger'], ['Bomonti Sınırsız', 'HobaKumpo'], ['BÇ', 'Kalidou Koulibaly'], ['EAH Seniors', 'Suhayy31'], ['Kassablancas', 'Kyojins on Rumbling'], ['Kreuzberg Boys', 'tarkus maurelius'], ['Los Gerseii', 'Normal MAFIA'], ['M. Sucks', 'Splash Brothers']]
-Hafta 3 eslesmeleri: [['Pickle Men', 'Kreuzberg Boys'], ['Bomonti Sınırsız', 'Splash Brothers'], ['BÇ', 'Normal MAFIA'], ['EAH Seniors', 'Kassablancas'], ['HobaKumpo', 'Los Gerseii'], ['Kalidou Koulibaly', 'Yukatel Metin Akdülger'], ['Kyojins on Rumbling', 'M. Sucks'], ['Suhayy31', 'tarkus maurelius']]
+Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 13 Kasım 2026, 12:18 (12 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
 Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 7: 'Kassablancas', 1: 'Pickle Men', 14: 'Suhayy31', 2: 'Bomonti Sınırsız', 9: 'Kyojins on Rumbling', 3: 'BÇ', 10: 'Los Gerseii', 4: 'EAH Seniors', 11: 'M. Sucks', 5: 'HobaKumpo', 13: 'Splash Brothers', 6: 'Kalidou Koulibaly', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 16: 'Yukatel Metin Akdülger'}
@@ -23,11 +20,29 @@ Kadro Splash Brothers: 13 oyuncu, IL: []
 Kadro Suhayy31: 16 oyuncu, IL: ['Ajay Mitchell', 'Trey Murphy III', 'Ja Morant']
 Kadro tarkus maurelius: 13 oyuncu, IL: []
 Kadro Yukatel Metin Akdülger: 16 oyuncu, IL: ['Mikel Brown Jr.', 'Jimmy Butler III', 'Maxime Raynaud']
+yoneticiler: 16 satir.
+takim kayitlari: 16 satir.
+takim toplamlari: 16 satir.
+Ayarlar: 40 satir.
+Yahoo sakatliklar: 103 kayit.
+Gunluk kadro 2026-11-13: 16 takim, 145 maci olan oyuncu.
+Gunluk kadro 2026-11-14: 16 takim, 80 maci olan oyuncu.
+Gunluk kadro 2026-11-15: 16 takim, 140 maci olan oyuncu.
+Gunluk kadro 2026-11-16: 16 takim, 125 maci olan oyuncu.
+Gunluk kadro 2026-11-17: 16 takim, 83 maci olan oyuncu.
+Gunluk kadro 2026-11-18: 16 takim, 186 maci olan oyuncu.
+Gunluk kadro 2026-11-19: 16 takim, 67 maci olan oyuncu.
+Gunluk kadro 2026-11-20: 16 takim, 143 maci olan oyuncu.
 Fikstur: {'4': 'Kassablancas', '5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo'}
 Oyuncular bu_sezon_ort: 437 oyuncu (237 kadrolu) yazildi.
 Oyuncular gecen_sezon_ort: 437 oyuncu (237 kadrolu) yazildi.
 Oyuncular son14_ort: 437 oyuncu (237 kadrolu) yazildi.
 Oyuncular son7_ort: 437 oyuncu (237 kadrolu) yazildi.
 Oyuncular projeksiyon_kalan: 437 oyuncu (237 kadrolu) yazildi.
-HATA NBA takvimi: HTTP Error 400: Bad Request
+Takvim fixturedownload/nba-2026: 156 gun, 1200 mac
+NBA takvimi: 156 gun yazildi (tum sezon: True).
+Box score 2026-11-09: 8 mac.
+Box score 2026-11-10: 6 mac.
+Box score 2026-11-11: 10 mac.
+Box score 2026-11-12: 4 mac.
 Sakatliklar: 102 kayit.

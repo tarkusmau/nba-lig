@@ -843,7 +843,7 @@
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "13 Kasım 2026, 11:39 (12 Kasım maçları dahil)",
+   "updated": "13 Kasım 2026, 12:18 (12 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -858,7 +858,9 @@
      "ast": 60,
      "st": 9,
      "blk": 12,
-     "to": 38
+     "to": 38,
+     "games_played": 23,
+     "games_total": 43
     },
     {
      "team": "Suhayy31",
@@ -873,7 +875,9 @@
      "ast": 56,
      "st": 26,
      "blk": 17,
-     "to": 37
+     "to": 37,
+     "games_played": 26,
+     "games_total": 39
     },
     {
      "team": "Bomonti Sınırsız",
@@ -888,7 +892,9 @@
      "ast": 85,
      "st": 36,
      "blk": 12,
-     "to": 57
+     "to": 57,
+     "games_played": 26,
+     "games_total": 40
     },
     {
      "team": "Kyojins on Rumbling",
@@ -903,7 +909,9 @@
      "ast": 94,
      "st": 24,
      "blk": 13,
-     "to": 52
+     "to": 52,
+     "games_played": 26,
+     "games_total": 44
     },
     {
      "team": "BÇ",
@@ -918,7 +926,9 @@
      "ast": 91,
      "st": 23,
      "blk": 18,
-     "to": 42
+     "to": 42,
+     "games_played": 24,
+     "games_total": 45
     },
     {
      "team": "Los Gerseii",
@@ -933,7 +943,9 @@
      "ast": 95,
      "st": 17,
      "blk": 18,
-     "to": 38
+     "to": 38,
+     "games_played": 24,
+     "games_total": 41
     },
     {
      "team": "EAH Seniors",
@@ -948,7 +960,9 @@
      "ast": 52,
      "st": 11,
      "blk": 7,
-     "to": 25
+     "to": 25,
+     "games_played": 20,
+     "games_total": 33
     },
     {
      "team": "M. Sucks",
@@ -963,7 +977,9 @@
      "ast": 65,
      "st": 9,
      "blk": 18,
-     "to": 40
+     "to": 40,
+     "games_played": 23,
+     "games_total": 41
     },
     {
      "team": "HobaKumpo",
@@ -978,7 +994,9 @@
      "ast": 60,
      "st": 16,
      "blk": 14,
-     "to": 26
+     "to": 26,
+     "games_played": 22,
+     "games_total": 43
     },
     {
      "team": "Splash Brothers",
@@ -993,7 +1011,9 @@
      "ast": 99,
      "st": 32,
      "blk": 11,
-     "to": 42
+     "to": 42,
+     "games_played": 26,
+     "games_total": 46
     },
     {
      "team": "Kalidou Koulibaly",
@@ -1008,7 +1028,9 @@
      "ast": 63,
      "st": 22,
      "blk": 9,
-     "to": 34
+     "to": 34,
+     "games_played": 23,
+     "games_total": 43
     },
     {
      "team": "Kreuzberg Boys",
@@ -1023,7 +1045,9 @@
      "ast": 67,
      "st": 10,
      "blk": 7,
-     "to": 27
+     "to": 27,
+     "games_played": 24,
+     "games_total": 44
     },
     {
      "team": "Normal MAFIA",
@@ -1038,7 +1062,9 @@
      "ast": 55,
      "st": 18,
      "blk": 15,
-     "to": 43
+     "to": 43,
+     "games_played": 23,
+     "games_total": 37
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1053,7 +1079,9 @@
      "ast": 73,
      "st": 17,
      "blk": 18,
-     "to": 41
+     "to": 41,
+     "games_played": 22,
+     "games_total": 36
     },
     {
      "team": "tarkus maurelius",
@@ -1068,7 +1096,9 @@
      "ast": 71,
      "st": 31,
      "blk": 17,
-     "to": 34
+     "to": 34,
+     "games_played": 26,
+     "games_total": 46
     },
     {
      "team": "Kassablancas",
@@ -1083,7 +1113,9 @@
      "ast": 66,
      "st": 19,
      "blk": 30,
-     "to": 32
+     "to": 32,
+     "games_played": 24,
+     "games_total": 46
     }
    ],
    "pairs": [

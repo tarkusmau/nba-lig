@@ -1,0 +1,179 @@
+{
+ "updated": "2026-11-13 12:18",
+ "tables": [
+  {
+   "headers": [
+    "Team Name",
+    "Manager",
+    "Email",
+    "Waiver Budget",
+    "Waiver Priority",
+    "Moves",
+    "Trades",
+    "Last League Activity"
+   ],
+   "rows": [
+    {
+     "Team Name": "Bomonti Sınırsız",
+     "Manager": "Güralp",
+     "Email": "gbozkurtt@yahoo.com",
+     "Waiver Budget": "$130",
+     "Waiver Priority": "12",
+     "Moves": "17",
+     "Trades": "1",
+     "Last League Activity": "Thu Nov 12 3:39pm EST"
+    },
+    {
+     "Team Name": "BÇ",
+     "Manager": "Burak",
+     "Email": "burakcelikturkk@gmail.com",
+     "Waiver Budget": "$200",
+     "Waiver Priority": "14",
+     "Moves": "14",
+     "Trades": "0",
+     "Last League Activity": "Wed Nov 11 5:28pm EST"
+    },
+    {
+     "Team Name": "EAH Seniors",
+     "Manager": "anıl",
+     "Email": "kantutancerrah@gmail.com",
+     "Waiver Budget": "$174",
+     "Waiver Priority": "3",
+     "Moves": "13",
+     "Trades": "0",
+     "Last League Activity": "Fri Nov 13 1:21am EST"
+    },
+    {
+     "Team Name": "HobaKumpo",
+     "Manager": "hakanoba789",
+     "Email": "hakanilikoba94@gmail.com",
+     "Waiver Budget": "$175",
+     "Waiver Priority": "2",
+     "Moves": "10",
+     "Trades": "0",
+     "Last League Activity": "Thu Nov 12 3:41am EST"
+    },
+    {
+     "Team Name": "Kalidou Koulibaly",
+     "Manager": "Hakan",
+     "Email": "hakankutuk7556@gmail.com",
+     "Waiver Budget": "$155",
+     "Waiver Priority": "4",
+     "Moves": "11",
+     "Trades": "0",
+     "Last League Activity": "Fri Nov 13 3:05am EST"
+    },
+    {
+     "Team Name": "Kassablancas",
+     "Manager": "Emre",
+     "Email": "aek717b@gmail.com",
+     "Waiver Budget": "$200",
+     "Waiver Priority": "1",
+     "Moves": "6",
+     "Trades": "0",
+     "Last League Activity": "Fri Nov 13 12:52am EST"
+    },
+    {
+     "Team Name": "Kreuzberg Boys",
+     "Manager": "onur",
+     "Email": "onurkirit01@gmail.com",
+     "Waiver Budget": "$199",
+     "Waiver Priority": "13",
+     "Moves": "13",
+     "Trades": "0",
+     "Last League Activity": "Wed Nov 11 6:41am EST"
+    },
+    {
+     "Team Name": "Kyojins on Rumbling",
+     "Manager": "Erwin Smith",
+     "Email": "--hidden--",
+     "Waiver Budget": "$192",
+     "Waiver Priority": "5",
+     "Moves": "6",
+     "Trades": "1",
+     "Last League Activity": "Thu Nov 12 5:48pm EST"
+    },
+    {
+     "Team Name": "Los Gerseii",
+     "Manager": "LOSPRODUCTION",
+     "Email": "--hidden--",
+     "Waiver Budget": "$188",
+     "Waiver Priority": "7",
+     "Moves": "6",
+     "Trades": "1",
+     "Last League Activity": "Wed Nov 11 4:33am EST"
+    },
+    {
+     "Team Name": "M. Sucks",
+     "Manager": "Özcan",
+     "Email": "ozcanekiz@gmail.com",
+     "Waiver Budget": "$200",
+     "Waiver Priority": "15",
+     "Moves": "3",
+     "Trades": "0",
+     "Last League Activity": "Fri Nov 13 3:15am EST"
+    },
+    {
+     "Team Name": "Normal MAFIA",
+     "Manager": "mafia16",
+     "Email": "omercanulucay@yahoo.com",
+     "Waiver Budget": "$169",
+     "Waiver Priority": "9",
+     "Moves": "14",
+     "Trades": "0",
+     "Last League Activity": "Thu Nov 12 3:46pm EST"
+    },
+    {
+     "Team Name": "Pickle Men",
+     "Manager": "Sergen Commissioner",
+     "Email": "sergendevran@yahoo.com",
+     "Waiver Budget": "$200",
+     "Waiver Priority": "11",
+     "Moves": "10",
+     "Trades": "0",
+     "Last League Activity": "Thu Nov 12 11:11pm EST"
+    },
+    {
+     "Team Name": "Splash Brothers",
+     "Manager": "Serhan",
+     "Email": "mast3rly@gmail.com",
+     "Waiver Budget": "$165",
+     "Waiver Priority": "8",
+     "Moves": "11",
+     "Trades": "1",
+     "Last League Activity": "Wed Nov 11 6:39am EST"
+    },
+    {
+     "Team Name": "Suhayy31",
+     "Manager": "Eymen",
+     "Email": "eymenfrnc@gmail.com",
+     "Waiver Budget": "$183",
+     "Waiver Priority": "16",
+     "Moves": "13",
+     "Trades": "0",
+     "Last League Activity": "Thu Nov 12 4:32am EST"
+    },
+    {
+     "Team Name": "tarkus maurelius",
+     "Manager": "tarkus",
+     "Email": "tarkusmau@yahoo.com",
+     "Waiver Budget": "$200",
+     "Waiver Priority": "10",
+     "Moves": "12",
+     "Trades": "0",
+     "Last League Activity": "Fri Nov 13 12:40am EST"
+    },
+    {
+     "Team Name": "Yukatel Metin Akdülger",
+     "Manager": "Yasin",
+     "Email": "yasinatayy@gmail.com",
+     "Waiver Budget": "$158",
+     "Waiver Priority": "6",
+     "Moves": "20",
+     "Trades": "0",
+     "Last League Activity": "Wed Nov 11 12:28pm EST"
+    }
+   ]
+  }
+ ]
+}
