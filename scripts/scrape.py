@@ -219,6 +219,9 @@ def parse_players(html):
         if not a:
             continue
         rec = {"name": a.get_text(strip=True)}
+        pid = re.search(r"/players/(\d+)", a.get("href", ""))
+        if pid:
+            rec["id"] = int(pid.group(1))
         tp = tr.find("span", class_=re.compile("Fz-xxs"))
         if tp:
             txt = tp.get_text(" ", strip=True)
@@ -271,6 +274,7 @@ def team_ids(home):
             ids.setdefault(int(tid), txt)
     return ids
 
+POSRX = re.compile(r"\b([A-Z]{2,4}) - ((?:PG|SG|G|SF|PF|F|C)(?:,(?:PG|SG|G|SF|PF|F|C))*)\b")
 def parse_roster(html):
     soup = BeautifulSoup(html, "html.parser")
     out = []
@@ -282,9 +286,12 @@ def parse_roster(html):
         slot_el = tr.find(class_=re.compile("pos-label")) or tds[0]
         slot = (slot_el.get("data-pos") or slot_el.get_text(" ", strip=True)).split(" ")[0]
         rec = {"name": a.get_text(strip=True), "slot": slot}
-        tp = tr.find("span", class_=re.compile("Fz-xxs"))
-        if tp and " - " in tp.get_text(" ", strip=True):
-            rec["nba"], rec["pos"] = [x.strip() for x in tp.get_text(" ", strip=True).split(" - ", 1)]
+        pid = re.search(r"/players/(\d+)", a.get("href", ""))
+        if pid:
+            rec["id"] = int(pid.group(1))
+        m = POSRX.search(tr.get_text(" ", strip=True))
+        if m:
+            rec["nba"], rec["pos"] = m.group(1), m.group(2)
         inj = tr.find("span", class_=re.compile("F-injury"))
         if inj:
             rec["status"] = inj.get_text(strip=True)
@@ -295,18 +302,18 @@ def parse_roster(html):
 def parse_draft(html, ids):
     soup = BeautifulSoup(html, "html.parser")
     out = []
-    for tr in soup.find_all("tr"):
-        a = tr.find("a", class_=re.compile("name")) or tr.find("a", href=re.compile(r"/players?/\d+"))
-        cost = re.search(r"\$(\d+)", tr.get_text(" ", strip=True))
-        if not a or not cost:
-            continue
-        team = ""
-        ta = tr.find("a", href=re.compile(r"/nba/%s/\d{1,2}$" % LEAGUE))
-        if ta:
-            team = ta.get_text(strip=True) or ids.get(int(ta["href"].rstrip("/").split("/")[-1]), "")
-        if not team:
-            team = (tr.get("title") or "").strip() or tr.find_all("td")[-1].get_text(" ", strip=True)
-        out.append({"name": a.get_text(strip=True), "cost": int(cost.group(1)), "team": team})
+    for tb in soup.find_all("table"):
+        th = tb.find("th")
+        team = th.get_text(strip=True) if th else ""
+        for tr in tb.find_all("tr"):
+            a = tr.find("a", class_=re.compile("name"))
+            c = tr.find("td", class_=re.compile("cost"))
+            if not a or not c:
+                continue
+            cost = re.search(r"\$(\d+)", c.get_text())
+            pid = re.search(r"/players/(\d+)", a.get("href", ""))
+            out.append({"name": a.get_text(strip=True), "id": int(pid.group(1)) if pid else None,
+                        "cost": int(cost.group(1)) if cost else 0, "team": team})
     return out
 
 TEAM_INFO = {}
@@ -325,7 +332,8 @@ def scrape_rosters(home):
         raise
     except Exception as ex:
         log(f"HATA draft: {ex}")
-    cost = {d["name"]: d["cost"] for d in draft}
+    cost = {d["id"]: d["cost"] for d in draft if d.get("id")}
+    cost_n = {d["name"]: d["cost"] for d in draft}
     teams = {}
     for tid in sorted(ids or range(1, 17)):
         try:
@@ -343,7 +351,7 @@ def scrape_rosters(home):
             TEAM_INFO[name] = {"id": tid, **info}
             rows = parse_roster(html)
             for r in rows:
-                r["draft"] = cost.get(r["name"], "FA")
+                r["draft"] = cost.get(r.get("id"), cost_n.get(r["name"], "FA"))
             teams[name] = rows
             log(f"Kadro {name}: {len(rows)} oyuncu, IL: {[r['name'] for r in rows if r['slot'].startswith('IL')]}")
         except SystemExit:
@@ -371,13 +379,64 @@ def generic_tables(html):
             out.append({"headers": heads, "rows": rows})
     return out
 
-def scrape_standings():
-    html = fetch("/standings")
-    open("probe_standings.html", "w", encoding="utf-8").write(html)
-    tabs = generic_tables(html)
-    json.dump({"updated": NOW.strftime("%Y-%m-%d %H:%M"), "tables": tabs},
-              open("standings.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    log(f"Puan durumu: {len(tabs)} tablo yazildi.")
+CATS = [("FG%", None), ("FT%", None), ("3PM", "tpm"), ("PTS", "pts"), ("REB", "reb"), ("AST", "ast"),
+        ("ST", "st"), ("BLK", "blk"), ("TO", "to")]
+
+def cat_result(a, b):
+    w = l = t = 0
+    for c, k in CATS:
+        if c == "FG%":
+            x = a["fgm"] / a["fga"] if a["fga"] else 0; y = b["fgm"] / b["fga"] if b["fga"] else 0
+            x, y = round(x, 3), round(y, 3)
+        elif c == "FT%":
+            x = a["ftm"] / a["fta"] if a["fta"] else 0; y = b["ftm"] / b["fta"] if b["fta"] else 0
+            x, y = round(x, 3), round(y, 3)
+        else:
+            x, y = a[k], b[k]
+            if c == "TO":
+                x, y = -x, -y
+        if x > y: w += 1
+        elif x < y: l += 1
+        else: t += 1
+    return w, l, t
+
+def week_pairs(w, ids):
+    pairs, done = [], set()
+    for tid, name in sorted(ids.items()):
+        if name in done:
+            continue
+        html = fetch(f"/matchup?week={w}&mid1={tid}")
+        others = [n for n in ids.values() if n != name and n in html]
+        if not others:
+            continue
+        opp = max(others, key=lambda n: html.count(n))
+        pairs.append([name, opp]); done.update([name, opp])
+    return pairs
+
+def compute_standings(data):
+    tab = {}
+    for wk, wd in sorted(data["weeks"].items(), key=lambda kv: int(kv[0])):
+        if "(final)" not in wd.get("updated", "") or not wd.get("pairs"):
+            continue
+        tm = {t["team"]: t for t in wd["teams"]}
+        for a, b in wd["pairs"]:
+            if a not in tm or b not in tm:
+                continue
+            w, l, t = cat_result(tm[a], tm[b])
+            for n, r in ((a, (w, l, t)), (b, (l, w, t))):
+                s = tab.setdefault(n, {"team": n, "W": 0, "L": 0, "T": 0, "mW": 0, "mL": 0, "mT": 0})
+                s["W"] += r[0]; s["L"] += r[1]; s["T"] += r[2]
+                if r[0] > r[1]: s["mW"] += 1
+                elif r[0] < r[1]: s["mL"] += 1
+                else: s["mT"] += 1
+    rows = list(tab.values())
+    for r in rows:
+        g = r["W"] + r["L"] + r["T"]
+        r["pct"] = round((r["W"] + r["T"] / 2) / g, 3) if g else 0
+    rows.sort(key=lambda r: -r["pct"])
+    json.dump({"updated": NOW.strftime("%Y-%m-%d %H:%M"), "note": "kategori bazli H2H; sadece biten haftalar",
+               "standings": rows}, open("standings.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    log(f"Puan durumu: {len(rows)} takim hesaplandi.")
 
 # ---------------- Tarkus fiksturu (sonraki haftalar) ----------------
 MY_TEAM = "tarkus maurelius"
@@ -407,74 +466,75 @@ def scrape_schedule(current):
 # ---------------- Dis kaynaklar (cerezsiz) ----------------
 def get_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json",
-                                                "Referer": "https://www.nba.com/", "Origin": "https://www.nba.com"})
+                                                })
     return json.loads(urllib.request.urlopen(req, timeout=40).read().decode("utf-8"))
 
-YAHOO_ABBR = {"GSW": "GS", "NYK": "NY", "NOP": "NO", "SAS": "SA", "PHX": "PHO"}
+ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
+
+def espn_events(start, end):
+    d = get_json(f"{ESPN}/scoreboard?dates={start:%Y%m%d}-{end:%Y%m%d}&limit=1000")
+    evs = d.get("events", [])
+    if evs:
+        return evs
+    evs, day = [], start
+    while day <= end:
+        evs += get_json(f"{ESPN}/scoreboard?dates={day:%Y%m%d}").get("events", [])
+        day += datetime.timedelta(days=1)
+    return evs
 
 def scrape_nba_schedule():
-    d = get_json("https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json")
     today = NOW.date()
     days = {}
-    for gd in d["leagueSchedule"]["gameDates"]:
-        dt = datetime.datetime.strptime(gd["gameDate"].split(" ")[0], "%m/%d/%Y").date()
-        if not (today - datetime.timedelta(days=21) <= dt <= today + datetime.timedelta(days=28)):
-            continue
-        games = []
-        for g in gd["games"]:
-            a, h = g["awayTeam"].get("teamTricode"), g["homeTeam"].get("teamTricode")
-            if a and h:
-                games.append({"id": g["gameId"], "away": a, "home": h, "status": g.get("gameStatus")})
-        if games:
-            days[dt.isoformat()] = games
-    json.dump({"updated": NOW.strftime("%Y-%m-%d %H:%M"), "note_dates": "ABD (ET) tarihi",
-               "yahoo_abbr": YAHOO_ABBR, "days": days},
-              open("nba_schedule.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    log(f"NBA takvimi: {len(days)} gun yazildi.")
+    for ev in espn_events(today - datetime.timedelta(days=21), today + datetime.timedelta(days=28)):
+        comp = ev["competitions"][0]
+        t = {c["homeAway"]: c["team"]["abbreviation"] for c in comp["competitors"]}
+        dt = datetime.datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ET).date().isoformat()
+        days.setdefault(dt, []).append({"id": ev["id"], "away": t.get("away"), "home": t.get("home"),
+                                        "done": bool(comp["status"]["type"].get("completed"))})
+    days = dict(sorted(days.items()))
+    json.dump({"updated": NOW.strftime("%Y-%m-%d %H:%M"), "note": "ABD (ET) tarihi, ESPN kisaltmalari",
+               "days": days}, open("nba_schedule.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    log(f"NBA takvimi: {len(days)} gun, {sum(len(v) for v in days.values())} mac.")
     return days
-
-def mins(v):
-    m = re.match(r"PT(\d+)M([\d.]+)S", v or "")
-    return round(int(m.group(1)) + float(m.group(2)) / 60, 1) if m else 0
 
 def scrape_boxscores(days):
     os.makedirs("boxscores", exist_ok=True)
     today = NOW.date()
-    for ds, games in sorted(days.items()):
+    for ds, games in days.items():
         dt = datetime.date.fromisoformat(ds)
-        if not (today - datetime.timedelta(days=4) <= dt < today + datetime.timedelta(days=1)):
+        done = [g for g in games if g["done"]]
+        if not done or not (today - datetime.timedelta(days=4) <= dt <= today):
             continue
         fn = f"boxscores/{ds}.json"
-        done = [g for g in games if g["status"] == 3]
-        if not done:
+        old = json.load(open(fn, encoding="utf-8")) if os.path.exists(fn) else {"games": {}}
+        if len(old.get("games", {})) >= len(done):
             continue
-        old = json.load(open(fn, encoding="utf-8")) if os.path.exists(fn) else {}
-        if old and len(old.get("games", {})) >= len(done):
-            continue
-        out = {}
+        out = old.get("games", {})
         for g in done:
+            if g["id"] in out:
+                continue
             try:
-                b = get_json(f"https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{g['id']}.json")["game"]
+                j = get_json(f"{ESPN}/summary?event={g['id']}")
             except Exception as ex:
                 log(f"HATA boxscore {g['id']}: {ex}"); continue
             pl = []
-            for side in ("awayTeam", "homeTeam"):
-                tm = b[side]["teamTricode"]
-                for p in b[side]["players"]:
-                    s = p.get("statistics", {})
-                    r = {"n": p.get("name"), "t": tm, "st": p.get("starter") == "1", "min": mins(s.get("minutes"))}
-                    if r["min"] > 0:
-                        r.update({"pts": s.get("points"), "reb": s.get("reboundsTotal"), "ast": s.get("assists"),
-                                  "stl": s.get("steals"), "blk": s.get("blocks"), "3pm": s.get("threePointersMade"),
-                                  "to": s.get("turnovers"), "fg": f"{s.get('fieldGoalsMade')}/{s.get('fieldGoalsAttempted')}",
-                                  "ft": f"{s.get('freeThrowsMade')}/{s.get('freeThrowsAttempted')}"})
-                    elif p.get("notPlayingReason") or p.get("status") == "INACTIVE":
-                        r["out"] = p.get("notPlayingDescription") or p.get("notPlayingReason") or "INACTIVE"
-                    pl.append(r)
+            for tm in j.get("boxscore", {}).get("players", []):
+                ab = tm.get("team", {}).get("abbreviation")
+                for st in tm.get("statistics", []):
+                    lab = st.get("labels") or st.get("names") or []
+                    for a in st.get("athletes", []):
+                        r = {"n": a.get("athlete", {}).get("displayName"), "t": ab, "st": bool(a.get("starter"))}
+                        if a.get("didNotPlay") or not a.get("stats"):
+                            r["out"] = a.get("reason") or "DNP"
+                        else:
+                            v = dict(zip(lab, a["stats"]))
+                            r.update({"min": v.get("MIN"), "pts": v.get("PTS"), "reb": v.get("REB"), "ast": v.get("AST"),
+                                      "stl": v.get("STL"), "blk": v.get("BLK"), "to": v.get("TO"),
+                                      "3pm": (v.get("3PT") or "").split("-")[0], "fg": v.get("FG"), "ft": v.get("FT")})
+                        pl.append(r)
             out[g["id"]] = {"match": f"{g['away']}@{g['home']}", "players": pl}
-        if out:
-            json.dump({"date": ds, "games": out}, open(fn, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-            log(f"Box score {ds}: {len(out)} mac.")
+        json.dump({"date": ds, "games": out}, open(fn, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+        log(f"Box score {ds}: {len(out)} mac.")
     for f in glob.glob("boxscores/*.json"):
         try:
             if datetime.date.fromisoformat(os.path.basename(f)[:10]) < today - datetime.timedelta(days=14):
@@ -537,11 +597,26 @@ def main():
         errs = check(teams, [t["team"] for t in ref["teams"]] if ref else None)
         if errs:
             log(f"HATA hafta {wk}, dosyaya yazilmadi: " + " | ".join(errs)); failed = True; continue
-        pairs = [[teams[i]["team"], teams[i + 1]["team"]] for i in range(0, len(teams) - 1, 2)]
-        weeks[str(wk)] = {"label": label, "updated": updated_str(final=wk < current), "teams": teams, "pairs": pairs}
+        weeks[str(wk)] = {"label": label, "updated": updated_str(final=wk < current), "teams": teams}
+        if wk == current:
+            weeks[str(wk)]["pairs"] = [[teams[i]["team"], teams[i + 1]["team"]] for i in range(0, len(teams) - 1, 2)]
         log(f"Hafta {wk} yazildi: {label} | {weeks[str(wk)]['updated']}")
 
+    ids = team_ids(home)
+    for wk in sorted(weeks, key=int):
+        if not weeks[wk].get("pairs") and len(ids) == 16:
+            try:
+                weeks[wk]["pairs"] = week_pairs(int(wk), ids)
+                log(f"Hafta {wk} eslesmeleri: {weeks[wk]['pairs']}")
+            except SystemExit:
+                raise
+            except Exception as ex:
+                log(f"HATA eslesmeler hafta {wk}: {ex}")
     data["weeks"] = dict(sorted(weeks.items(), key=lambda kv: int(kv[0])))
+    try:
+        compute_standings(data)
+    except Exception as ex:
+        log(f"HATA puan durumu: {ex}")
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1); f.write("\n")
 
@@ -568,7 +643,7 @@ def main():
     except Exception as ex:
         log(f"HATA kadrolar: {ex}")
 
-    for name, fn in (("puan durumu", scrape_standings), ("fikstur", lambda: scrape_schedule(current)),
+    for name, fn in (("fikstur", lambda: scrape_schedule(current)),
                      ("oyuncular", scrape_players)):
         try:
             fn()
