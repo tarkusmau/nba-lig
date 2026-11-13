@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 12:18",
+ "updated": "2026-11-13 20:56",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-13": {
@@ -203,7 +203,7 @@
      "name": "Brandon Miller",
      "nba": "CHA",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -369,6 +369,13 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C",
+     "game": "vs OKC 10:30 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG"
@@ -384,7 +391,7 @@
      "name": "LeBron James",
      "nba": "PHI",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -1153,9 +1160,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG",
+     "game": "@ LAC 10:30 pm"
     },
     {
      "slot": "SG",
@@ -1199,42 +1207,42 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "vs POR 10:00 pm"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG",
-     "game": "@ LAC 10:30 pm"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF",
+     "game": "vs OKC 10:30 pm"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG",
      "game": "@ CHI 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -1352,11 +1360,18 @@
      "game": "@ LAC 10:30 pm"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG",
+     "game": "@ ORL 7:00 pm"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG",
+     "game": "vs CLE 8:00 pm"
     },
     {
      "slot": "SF",
@@ -1367,9 +1382,10 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF",
+     "game": "@ IND 7:00 pm"
     },
     {
      "slot": "F",
@@ -1379,15 +1395,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
+     "name": "John Collins",
+     "nba": "DET",
      "pos": "PF,C"
     },
     {
      "slot": "C",
-     "name": "John Collins",
-     "nba": "DET",
-     "pos": "PF,C"
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C",
+     "game": "@ SAC 10:00 pm"
     },
     {
      "slot": "Util",
@@ -1396,38 +1413,29 @@
      "pos": "C"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG",
-     "game": "@ ORL 7:00 pm"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
      "name": "Michael Porter Jr.",
      "nba": "BKN",
      "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C",
-     "game": "@ SAC 10:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF",
-     "game": "@ IND 7:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG",
-     "game": "vs CLE 8:00 pm"
     },
     {
      "slot": "IL",
@@ -1549,9 +1557,10 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ CHI 8:00 pm"
     },
     {
      "slot": "G",
@@ -1562,9 +1571,10 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
-     "pos": "SF,PF"
+     "name": "Keegan Murray",
+     "nba": "SAC",
+     "pos": "SF,PF",
+     "game": "vs POR 10:00 pm"
     },
     {
      "slot": "PF",
@@ -1575,9 +1585,10 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF",
+     "game": "@ SAC 10:00 pm"
     },
     {
      "slot": "C",
@@ -1595,37 +1606,34 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
      "status": "Q"
     },
     {
-     "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
-     "pos": "SF,PF",
-     "game": "vs POR 10:00 pm"
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "@ CHI 8:00 pm"
+     "name": "Jayson Tatum",
+     "nba": "BOS",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
-     "pos": "SF,PF",
-     "game": "@ SAC 10:00 pm"
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "BN",
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF"
     },
     {
      "slot": "IL",
@@ -1846,7 +1854,7 @@
      "name": "Brandon Miller",
      "nba": "CHA",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -2006,6 +2014,12 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG"
@@ -2022,7 +2036,7 @@
      "name": "LeBron James",
      "nba": "PHI",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -2755,10 +2769,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "@ MIA 8:00 pm"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -2799,40 +2812,40 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF",
-     "game": "vs CHI 8:00 pm"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "@ MIA 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -2943,11 +2956,17 @@
      "pos": "PG"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG",
+     "game": "vs DET 8:00 pm"
     },
     {
      "slot": "SF",
@@ -2958,10 +2977,9 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C",
-     "game": "@ CLE 7:30 pm"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF"
     },
     {
      "slot": "F",
@@ -2972,17 +2990,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
-     "pos": "PF,C",
-     "game": "@ MEM 8:00 pm"
-    },
-    {
-     "slot": "C",
      "name": "John Collins",
      "nba": "DET",
      "pos": "PF,C",
      "game": "@ MIA 8:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C"
     },
     {
      "slot": "Util",
@@ -2991,10 +3008,25 @@
      "pos": "C"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C",
+     "game": "@ MEM 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C",
+     "game": "@ CLE 7:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -3002,25 +3034,6 @@
      "nba": "BKN",
      "pos": "SF,PF",
      "game": "@ MEM 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG",
-     "game": "vs DET 8:00 pm"
     },
     {
      "slot": "IL",
@@ -3138,9 +3151,9 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "G",
@@ -3150,8 +3163,8 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
+     "name": "Keegan Murray",
+     "nba": "SAC",
      "pos": "SF,PF"
     },
     {
@@ -3162,10 +3175,9 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF",
-     "game": "@ NOP 7:00 pm"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF"
     },
     {
      "slot": "C",
@@ -3182,13 +3194,6 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF",
-     "game": "@ CLE 7:30 pm"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
@@ -3196,22 +3201,30 @@
      "status": "Q"
     },
     {
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF",
+     "game": "@ NOP 7:00 pm"
     },
     {
      "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
-     "pos": "SF,PF"
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF",
+     "game": "@ MIA 8:00 pm"
     },
     {
      "slot": "IL",
@@ -3439,7 +3452,7 @@
      "nba": "CHA",
      "pos": "SF,PF",
      "game": "@ LAC 4:30 pm",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -3597,6 +3610,13 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C",
+     "game": "vs CHA 4:30 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG",
@@ -3614,7 +3634,7 @@
      "nba": "PHI",
      "pos": "SF,PF",
      "game": "vs IND 1:00 pm",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -4381,9 +4401,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG",
+     "game": "@ SAC 9:00 pm"
     },
     {
      "slot": "SG",
@@ -4428,44 +4449,44 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "@ LAC 4:30 pm"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C",
-     "game": "vs IND 1:00 pm"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "vs OKC 9:00 pm"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG",
-     "game": "@ SAC 9:00 pm"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF",
+     "game": "vs CHA 4:30 pm"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG",
      "game": "@ MIL 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C",
+     "game": "vs IND 1:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "@ LAC 4:30 pm"
     },
     {
      "slot": "IL",
@@ -4579,12 +4600,17 @@
      "game": "@ SAC 9:00 pm"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG",
+     "game": "vs ATL 8:00 pm"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "game": "@ PHX 4:00 pm",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG"
     },
     {
      "slot": "SF",
@@ -4594,10 +4620,10 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C",
-     "game": "@ BOS 6:00 pm"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF",
+     "game": "@ TOR 6:00 pm"
     },
     {
      "slot": "F",
@@ -4607,15 +4633,15 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
+     "name": "John Collins",
+     "nba": "DET",
      "pos": "PF,C"
     },
     {
      "slot": "C",
-     "name": "John Collins",
-     "nba": "DET",
-     "pos": "PF,C"
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C"
     },
     {
      "slot": "Util",
@@ -4625,36 +4651,31 @@
      "game": "@ PHX 4:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG",
-     "game": "vs ATL 8:00 pm"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C",
+     "game": "@ BOS 6:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "game": "@ PHX 4:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
      "name": "Michael Porter Jr.",
      "nba": "BKN",
      "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF",
-     "game": "@ TOR 6:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG"
     },
     {
      "slot": "IL",
@@ -4780,10 +4801,10 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG",
-     "game": "vs DAL 6:00 pm"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ MIL 8:00 pm"
     },
     {
      "slot": "G",
@@ -4794,10 +4815,10 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
+     "name": "Keegan Murray",
+     "nba": "SAC",
      "pos": "SF,PF",
-     "game": "vs DAL 6:00 pm"
+     "game": "vs OKC 9:00 pm"
     },
     {
      "slot": "PF",
@@ -4807,8 +4828,8 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
+     "name": "Sidy Cissoko",
+     "nba": "POR",
      "pos": "SF,PF"
     },
     {
@@ -4826,37 +4847,36 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF",
-     "game": "@ BOS 6:00 pm"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
      "status": "Q"
     },
     {
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG",
+     "game": "vs DAL 6:00 pm"
+    },
+    {
      "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF",
-     "game": "vs OKC 9:00 pm"
+     "game": "vs DAL 6:00 pm"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "@ MIL 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
+     "name": "Cameron Johnson",
+     "nba": "DEN",
      "pos": "SF,PF"
+    },
+    {
+     "slot": "BN",
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF"
     },
     {
      "slot": "IL",
@@ -5080,7 +5100,7 @@
      "name": "Brandon Miller",
      "nba": "CHA",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -5244,6 +5264,12 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG",
@@ -5262,7 +5288,7 @@
      "nba": "PHI",
      "pos": "SF,PF",
      "game": "@ BKN 7:30 pm",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -6022,9 +6048,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -6066,41 +6092,40 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C"
+     "name": "Dylan Cardwell",
+     "nba": "SAC",
+     "pos": "PF,C"
     },
     {
      "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF"
+    },
+    {
+     "slot": "Util",
+     "name": "CJ McCollum",
+     "nba": "ATL",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
      "name": "Joel Embiid",
      "nba": "PHI",
      "pos": "C",
      "game": "@ BKN 7:30 pm"
     },
     {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF",
-     "game": "vs POR 8:00 pm"
-    },
-    {
      "slot": "BN",
-     "name": "Dylan Cardwell",
-     "nba": "SAC",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG"
-    },
-    {
-     "slot": "BN",
-     "name": "CJ McCollum",
-     "nba": "ATL",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
      "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -6213,11 +6238,17 @@
      "pos": "PG"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG",
+     "game": "vs HOU 7:30 pm"
     },
     {
      "slot": "SF",
@@ -6228,9 +6259,9 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF"
     },
     {
      "slot": "F",
@@ -6241,16 +6272,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
-     "pos": "PF,C",
-     "game": "vs PHI 7:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "John Collins",
      "nba": "DET",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C",
+     "game": "@ MIN 8:00 pm"
     },
     {
      "slot": "Util",
@@ -6259,10 +6290,24 @@
      "pos": "C"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C",
+     "game": "vs PHI 7:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -6270,26 +6315,6 @@
      "nba": "BKN",
      "pos": "SF,PF",
      "game": "vs PHI 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C",
-     "game": "@ MIN 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG",
-     "game": "vs HOU 7:30 pm"
     },
     {
      "slot": "IL",
@@ -6409,10 +6434,9 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG",
-     "game": "vs ORL 7:00 pm"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "G",
@@ -6422,10 +6446,9 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
-     "pos": "SF,PF",
-     "game": "vs ORL 7:00 pm"
+     "name": "Keegan Murray",
+     "nba": "SAC",
+     "pos": "SF,PF"
     },
     {
      "slot": "PF",
@@ -6436,10 +6459,10 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
+     "name": "Sidy Cissoko",
+     "nba": "POR",
      "pos": "SF,PF",
-     "game": "vs PHX 9:00 pm"
+     "game": "@ MIN 8:00 pm"
     },
     {
      "slot": "C",
@@ -6456,12 +6479,6 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
@@ -6469,23 +6486,31 @@
      "status": "Q"
     },
     {
-     "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
-     "pos": "SF,PF"
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG",
+     "game": "vs ORL 7:00 pm"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF"
-    },
-    {
-     "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF",
-     "game": "@ MIN 8:00 pm"
+     "game": "vs ORL 7:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF",
+     "game": "vs PHX 9:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF"
     },
     {
      "slot": "IL",
@@ -6708,7 +6733,7 @@
      "nba": "CHA",
      "pos": "SF,PF",
      "game": "@ LAL 11:00 pm",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -6865,6 +6890,13 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C",
+     "game": "vs UTA 10:30 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG"
@@ -6881,7 +6913,7 @@
      "name": "LeBron James",
      "nba": "PHI",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -7615,10 +7647,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "@ SAS 8:00 pm"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -7660,41 +7691,42 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "@ LAL 11:00 pm"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF",
-     "game": "vs POR 8:00 pm"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF",
+     "game": "vs UTA 10:30 pm"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "@ SAS 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "@ LAL 11:00 pm"
     },
     {
      "slot": "IL",
@@ -7807,12 +7839,16 @@
      "pos": "PG"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "game": "vs CHA 11:00 pm",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG"
     },
     {
      "slot": "SF",
@@ -7822,9 +7858,10 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF",
+     "game": "@ TOR 7:30 pm"
     },
     {
      "slot": "F",
@@ -7835,16 +7872,17 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "C",
      "name": "John Collins",
      "nba": "DET",
      "pos": "PF,C",
      "game": "@ SAS 8:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C",
+     "game": "@ MIN 8:00 pm"
     },
     {
      "slot": "Util",
@@ -7854,36 +7892,30 @@
      "game": "vs CHA 11:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "game": "vs CHA 11:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
      "name": "Michael Porter Jr.",
      "nba": "BKN",
      "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C",
-     "game": "@ MIN 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF",
-     "game": "@ TOR 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG"
     },
     {
      "slot": "IL",
@@ -8003,9 +8035,9 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "G",
@@ -8016,8 +8048,8 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
+     "name": "Keegan Murray",
+     "nba": "SAC",
      "pos": "SF,PF"
     },
     {
@@ -8028,9 +8060,10 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF",
+     "game": "@ MIN 8:00 pm"
     },
     {
      "slot": "C",
@@ -8047,35 +8080,35 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
      "status": "Q"
     },
     {
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
-     "pos": "SF,PF",
-     "game": "@ MIN 8:00 pm"
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF",
+     "game": "@ SAS 8:00 pm"
     },
     {
      "slot": "IL",
@@ -8307,7 +8340,7 @@
      "name": "Brandon Miller",
      "nba": "CHA",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -8474,6 +8507,12 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG",
@@ -8491,7 +8530,7 @@
      "nba": "PHI",
      "pos": "SF,PF",
      "game": "@ ORL 7:00 pm",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -9278,10 +9317,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "@ NOP 8:00 pm"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG",
+     "game": "vs ATL 8:00 pm"
     },
     {
      "slot": "SG",
@@ -9325,43 +9364,43 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C",
-     "game": "@ ORL 7:00 pm"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "vs PHX 10:00 pm"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG",
-     "game": "vs ATL 8:00 pm"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG",
      "game": "@ OKC 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C",
+     "game": "@ ORL 7:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "@ NOP 8:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -9479,12 +9518,18 @@
      "game": "vs ATL 8:00 pm"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG",
+     "game": "@ MIA 7:00 pm"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "game": "vs UTA 10:00 pm",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG",
+     "game": "vs MIL 7:00 pm"
     },
     {
      "slot": "SF",
@@ -9495,10 +9540,9 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C",
-     "game": "vs GSW 9:30 pm"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF"
     },
     {
      "slot": "F",
@@ -9508,17 +9552,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
-     "pos": "PF,C",
-     "game": "vs CHI 7:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "John Collins",
      "nba": "DET",
      "pos": "PF,C",
      "game": "@ NOP 8:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C"
     },
     {
      "slot": "Util",
@@ -9528,11 +9571,26 @@
      "game": "vs UTA 10:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG",
-     "game": "@ MIA 7:00 pm"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C",
+     "game": "vs CHI 7:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C",
+     "game": "vs GSW 9:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "game": "vs UTA 10:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -9540,25 +9598,6 @@
      "nba": "BKN",
      "pos": "SF,PF",
      "game": "vs CHI 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG",
-     "game": "vs MIL 7:00 pm"
     },
     {
      "slot": "IL",
@@ -9684,10 +9723,10 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG",
-     "game": "@ DEN 9:00 pm"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ OKC 8:00 pm"
     },
     {
      "slot": "G",
@@ -9698,10 +9737,10 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
+     "name": "Keegan Murray",
+     "nba": "SAC",
      "pos": "SF,PF",
-     "game": "@ DEN 9:00 pm"
+     "game": "vs PHX 10:00 pm"
     },
     {
      "slot": "PF",
@@ -9712,10 +9751,9 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF",
-     "game": "vs BOS 9:00 pm"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF"
     },
     {
      "slot": "C",
@@ -9732,13 +9770,6 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF",
-     "game": "vs GSW 9:30 pm"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
@@ -9746,24 +9777,32 @@
      "status": "Q"
     },
     {
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG",
+     "game": "@ DEN 9:00 pm"
+    },
+    {
      "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF",
-     "game": "vs PHX 10:00 pm"
+     "game": "@ DEN 9:00 pm"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF",
+     "game": "vs BOS 9:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Kevin Huerter",
+     "nba": "DET",
      "pos": "SG,SF",
-     "game": "@ OKC 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
-     "pos": "SF,PF"
+     "game": "@ NOP 8:00 pm"
     },
     {
      "slot": "IL",
@@ -9980,7 +10019,7 @@
      "name": "Brandon Miller",
      "nba": "CHA",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -10140,6 +10179,13 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C",
+     "game": "@ SAS 8:00 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG"
@@ -10156,7 +10202,7 @@
      "name": "LeBron James",
      "nba": "PHI",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -10886,9 +10932,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -10931,40 +10977,40 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF",
-     "game": "vs NYK 8:00 pm"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF",
+     "game": "@ SAS 8:00 pm"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -11075,11 +11121,17 @@
      "pos": "PG"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG",
+     "game": "vs POR 8:00 pm"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG"
     },
     {
      "slot": "SF",
@@ -11089,9 +11141,10 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF",
+     "game": "@ MIN 8:00 pm"
     },
     {
      "slot": "F",
@@ -11102,15 +11155,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
+     "name": "John Collins",
+     "nba": "DET",
      "pos": "PF,C"
     },
     {
      "slot": "C",
-     "name": "John Collins",
-     "nba": "DET",
-     "pos": "PF,C"
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C",
+     "game": "@ MIL 8:00 pm"
     },
     {
      "slot": "Util",
@@ -11119,37 +11173,29 @@
      "pos": "C"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG",
-     "game": "vs POR 8:00 pm"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
      "name": "Michael Porter Jr.",
      "nba": "BKN",
      "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C",
-     "game": "@ MIL 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF",
-     "game": "@ MIN 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG"
     },
     {
      "slot": "IL",
@@ -11265,9 +11311,9 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "G",
@@ -11277,8 +11323,8 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
+     "name": "Keegan Murray",
+     "nba": "SAC",
      "pos": "SF,PF"
     },
     {
@@ -11290,9 +11336,10 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF",
+     "game": "@ MIL 8:00 pm"
     },
     {
      "slot": "C",
@@ -11309,35 +11356,34 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
      "status": "Q"
     },
     {
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
-     "pos": "SF,PF",
-     "game": "@ MIL 8:00 pm"
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF"
     },
     {
      "slot": "IL",
@@ -11569,7 +11615,7 @@
      "nba": "CHA",
      "pos": "SF,PF",
      "game": "@ ATL 7:00 pm",
-     "status": "O"
+     "status": "Q"
     }
    ],
    "BÇ": [
@@ -11728,6 +11774,12 @@
     },
     {
      "slot": "Util",
+     "name": "Isaiah Jackson",
+     "nba": "LAC",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
      "name": "Tyrese Maxey",
      "nba": "PHI",
      "pos": "PG"
@@ -11743,7 +11795,7 @@
      "name": "LeBron James",
      "nba": "PHI",
      "pos": "SF,PF",
-     "status": "O"
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -12512,10 +12564,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "vs TOR 7:30 pm"
+     "name": "Shai Gilgeous-Alexander",
+     "nba": "OKC",
+     "pos": "PG",
+     "game": "vs NOP 8:00 pm"
     },
     {
      "slot": "SG",
@@ -12558,43 +12610,43 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "@ ATL 7:00 pm"
-    },
-    {
-     "slot": "Util",
-     "name": "Joel Embiid",
-     "nba": "PHI",
-     "pos": "C"
-    },
-    {
-     "slot": "Util",
-     "name": "Trey Lyles",
-     "nba": "MIN",
-     "pos": "PF"
-    },
-    {
-     "slot": "BN",
      "name": "Dylan Cardwell",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "@ LAL 10:00 pm"
     },
     {
-     "slot": "BN",
-     "name": "Shai Gilgeous-Alexander",
-     "nba": "OKC",
-     "pos": "PG",
-     "game": "vs NOP 8:00 pm"
+     "slot": "Util",
+     "name": "Baba Miller",
+     "nba": "LAC",
+     "pos": "PF"
     },
     {
-     "slot": "BN",
+     "slot": "Util",
      "name": "CJ McCollum",
      "nba": "ATL",
      "pos": "PG,SG",
      "game": "vs CHA 7:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Joel Embiid",
+     "nba": "PHI",
+     "pos": "C"
+    },
+    {
+     "slot": "BN",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "vs TOR 7:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "@ ATL 7:00 pm"
     },
     {
      "slot": "IL",
@@ -12709,12 +12761,16 @@
      "game": "vs NOP 8:00 pm"
     },
     {
+     "slot": "SG",
+     "name": "Tyler Herro",
+     "nba": "MIL",
+     "pos": "PG,SG"
+    },
+    {
      "slot": "G",
-     "name": "Austin Reaves",
-     "nba": "LAL",
-     "pos": "PG,SG,SF",
-     "game": "vs SAC 10:00 pm",
-     "status": "Q"
+     "name": "Davion Mitchell",
+     "nba": "MIA",
+     "pos": "PG"
     },
     {
      "slot": "SF",
@@ -12725,9 +12781,9 @@
     },
     {
      "slot": "PF",
-     "name": "P.J. Washington",
-     "nba": "DAL",
-     "pos": "PF,C"
+     "name": "Mikal Bridges",
+     "nba": "NYK",
+     "pos": "SF,PF"
     },
     {
      "slot": "F",
@@ -12737,17 +12793,16 @@
     },
     {
      "slot": "C",
-     "name": "Danny Wolf",
-     "nba": "BKN",
-     "pos": "PF,C",
-     "game": "vs ORL 7:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "John Collins",
      "nba": "DET",
      "pos": "PF,C",
      "game": "vs TOR 7:30 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Robert Williams III",
+     "nba": "POR",
+     "pos": "C"
     },
     {
      "slot": "Util",
@@ -12757,10 +12812,25 @@
      "game": "vs SAC 10:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Tyler Herro",
-     "nba": "MIL",
-     "pos": "PG,SG"
+     "slot": "BN",
+     "name": "Danny Wolf",
+     "nba": "BKN",
+     "pos": "PF,C",
+     "game": "vs ORL 7:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "P.J. Washington",
+     "nba": "DAL",
+     "pos": "PF,C"
+    },
+    {
+     "slot": "BN",
+     "name": "Austin Reaves",
+     "nba": "LAL",
+     "pos": "PG,SG,SF",
+     "game": "vs SAC 10:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -12768,24 +12838,6 @@
      "nba": "BKN",
      "pos": "SF,PF",
      "game": "vs ORL 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Robert Williams III",
-     "nba": "POR",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Mikal Bridges",
-     "nba": "NYK",
-     "pos": "SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Davion Mitchell",
-     "nba": "MIA",
-     "pos": "PG"
     },
     {
      "slot": "IL",
@@ -12910,9 +12962,10 @@
     },
     {
      "slot": "SG",
-     "name": "Derrick White",
-     "nba": "BOS",
-     "pos": "PG,SG"
+     "name": "Aaron Wiggins",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "vs CHA 7:00 pm"
     },
     {
      "slot": "G",
@@ -12923,9 +12976,10 @@
     },
     {
      "slot": "SF",
-     "name": "Jayson Tatum",
-     "nba": "BOS",
-     "pos": "SF,PF"
+     "name": "Keegan Murray",
+     "nba": "SAC",
+     "pos": "SF,PF",
+     "game": "@ LAL 10:00 pm"
     },
     {
      "slot": "PF",
@@ -12935,10 +12989,9 @@
     },
     {
      "slot": "F",
-     "name": "Cameron Johnson",
-     "nba": "DEN",
-     "pos": "SF,PF",
-     "game": "vs HOU 10:00 pm"
+     "name": "Sidy Cissoko",
+     "nba": "POR",
+     "pos": "SF,PF"
     },
     {
      "slot": "C",
@@ -12954,12 +13007,6 @@
     },
     {
      "slot": "Util",
-     "name": "Santi Aldama",
-     "nba": "DAL",
-     "pos": "PF"
-    },
-    {
-     "slot": "Util",
      "name": "Nolan Traore",
      "nba": "BKN",
      "pos": "PG",
@@ -12967,24 +13014,30 @@
      "status": "Q"
     },
     {
-     "slot": "BN",
-     "name": "Keegan Murray",
-     "nba": "SAC",
-     "pos": "SF,PF",
-     "game": "@ LAL 10:00 pm"
+     "slot": "Util",
+     "name": "Derrick White",
+     "nba": "BOS",
+     "pos": "PG,SG"
     },
     {
      "slot": "BN",
-     "name": "Aaron Wiggins",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "vs CHA 7:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Sidy Cissoko",
-     "nba": "POR",
+     "name": "Jayson Tatum",
+     "nba": "BOS",
      "pos": "SF,PF"
+    },
+    {
+     "slot": "BN",
+     "name": "Cameron Johnson",
+     "nba": "DEN",
+     "pos": "SF,PF",
+     "game": "vs HOU 10:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Kevin Huerter",
+     "nba": "DET",
+     "pos": "SG,SF",
+     "game": "vs TOR 7:30 pm"
     },
     {
      "slot": "IL",

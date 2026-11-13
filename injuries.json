@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-13 12:18",
+"updated": "2026-11-13 20:56",
 "source": "ESPN",
 "injuries": [
 {
@@ -597,31 +597,31 @@
 "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports."
 },
 {
-"name": "Tristan da Silva",
-"team": "Orlando Magic",
-"status": "Day-To-Day",
-"date": "2026-11-12T22:07Z",
-"return": "2026-11-13",
-"type": "Calf",
-"note": "Da Silva (calf) is questionable for Friday's game against Milwaukee."
-},
-{
 "name": "Jamal Cain",
 "team": "Orlando Magic",
 "status": "Day-To-Day",
-"date": "2026-11-12T22:04Z",
+"date": "2026-11-13T17:12Z",
 "return": "2026-11-13",
 "type": "Shoulder",
-"note": "Cain (shoulder) is questionable for Friday's game against the Bucks."
+"note": "Cain (shoulder) participated in Friday morning's shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports."
+},
+{
+"name": "Tristan da Silva",
+"team": "Orlando Magic",
+"status": "Day-To-Day",
+"date": "2026-11-13T17:09Z",
+"return": "2026-11-13",
+"type": "Calf",
+"note": "Da Silva (calf) participated in Friday's morning shootaround and remains questionable for Friday's game against Milwaukee, Jason Beede of the Orlando Sentinel reports."
 },
 {
 "name": "Jalen Suggs",
 "team": "Orlando Magic",
 "status": "Out",
-"date": "2026-11-12T22:03Z",
+"date": "2026-11-13T17:08Z",
 "return": "2026-11-13",
 "type": "Knee",
-"note": "Suggs (knee) is questionable for Friday's game against Milwaukee."
+"note": "Suggs (knee) participated in Friday's morning shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports."
 },
 {
 "name": "Jonathan Isaac",
@@ -694,6 +694,15 @@
 "return": "2027-10-01",
 "type": "Achilles",
 "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
+},
+{
+"name": "Drew Timme",
+"team": "Phoenix Suns",
+"status": "Day-To-Day",
+"date": "2026-11-13T16:22Z",
+"return": "2026-11-15",
+"type": "Hand",
+"note": "The Suns claimed Timme off waivers Monday, per Michael Scotto of HoopsHype.com."
 },
 {
 "name": "Mark Williams",
@@ -802,6 +811,15 @@
 "return": "2026-12-03",
 "type": "Knee",
 "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+},
+{
+"name": "Kevin McCullar Jr.",
+"team": "Toronto Raptors",
+"status": "Day-To-Day",
+"date": "2026-11-13T15:37Z",
+"return": "2026-11-14",
+"type": "Illness",
+"note": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports."
 },
 {
 "name": "Trayce Jackson-Davis",

@@ -843,7 +843,7 @@
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "13 Kasım 2026, 12:18 (12 Kasım maçları dahil)",
+   "updated": "13 Kasım 2026, 20:56 (12 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -877,7 +877,7 @@
      "blk": 17,
      "to": 37,
      "games_played": 26,
-     "games_total": 39
+     "games_total": 40
     },
     {
      "team": "Bomonti Sınırsız",
@@ -962,7 +962,7 @@
      "blk": 7,
      "to": 25,
      "games_played": 20,
-     "games_total": 33
+     "games_total": 34
     },
     {
      "team": "M. Sucks",
@@ -1064,7 +1064,7 @@
      "blk": 15,
      "to": 43,
      "games_played": 23,
-     "games_total": 37
+     "games_total": 41
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1081,7 +1081,7 @@
      "blk": 18,
      "to": 41,
      "games_played": 22,
-     "games_total": 36
+     "games_total": 37
     },
     {
      "team": "tarkus maurelius",
