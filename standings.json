@@ -1,4 +1,166 @@
 {
- "updated": "2026-11-13 10:38",
- "tables": []
+ "updated": "2026-11-13 11:39",
+ "note": "kategori bazli H2H; sadece biten haftalar",
+ "standings": [
+  {
+   "team": "EAH Seniors",
+   "W": 19,
+   "L": 8,
+   "T": 0,
+   "mW": 2,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.704
+  },
+  {
+   "team": "Yukatel Metin Akdülger",
+   "W": 17,
+   "L": 9,
+   "T": 1,
+   "mW": 2,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.648
+  },
+  {
+   "team": "BÇ",
+   "W": 16,
+   "L": 9,
+   "T": 2,
+   "mW": 2,
+   "mL": 0,
+   "mT": 1,
+   "pct": 0.63
+  },
+  {
+   "team": "Splash Brothers",
+   "W": 16,
+   "L": 11,
+   "T": 0,
+   "mW": 3,
+   "mL": 0,
+   "mT": 0,
+   "pct": 0.593
+  },
+  {
+   "team": "Pickle Men",
+   "W": 14,
+   "L": 11,
+   "T": 2,
+   "mW": 1,
+   "mL": 1,
+   "mT": 1,
+   "pct": 0.556
+  },
+  {
+   "team": "Los Gerseii",
+   "W": 14,
+   "L": 12,
+   "T": 1,
+   "mW": 1,
+   "mL": 1,
+   "mT": 1,
+   "pct": 0.537
+  },
+  {
+   "team": "tarkus maurelius",
+   "W": 14,
+   "L": 12,
+   "T": 1,
+   "mW": 2,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.537
+  },
+  {
+   "team": "Kassablancas",
+   "W": 14,
+   "L": 13,
+   "T": 0,
+   "mW": 2,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.519
+  },
+  {
+   "team": "Suhayy31",
+   "W": 14,
+   "L": 13,
+   "T": 0,
+   "mW": 2,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.519
+  },
+  {
+   "team": "Bomonti Sınırsız",
+   "W": 13,
+   "L": 13,
+   "T": 1,
+   "mW": 1,
+   "mL": 1,
+   "mT": 1,
+   "pct": 0.5
+  },
+  {
+   "team": "M. Sucks",
+   "W": 13,
+   "L": 13,
+   "T": 1,
+   "mW": 1,
+   "mL": 1,
+   "mT": 1,
+   "pct": 0.5
+  },
+  {
+   "team": "Normal MAFIA",
+   "W": 12,
+   "L": 14,
+   "T": 1,
+   "mW": 1,
+   "mL": 1,
+   "mT": 1,
+   "pct": 0.463
+  },
+  {
+   "team": "Kyojins on Rumbling",
+   "W": 11,
+   "L": 15,
+   "T": 1,
+   "mW": 0,
+   "mL": 2,
+   "mT": 1,
+   "pct": 0.426
+  },
+  {
+   "team": "HobaKumpo",
+   "W": 10,
+   "L": 17,
+   "T": 0,
+   "mW": 0,
+   "mL": 3,
+   "mT": 0,
+   "pct": 0.37
+  },
+  {
+   "team": "Kalidou Koulibaly",
+   "W": 7,
+   "L": 18,
+   "T": 2,
+   "mW": 0,
+   "mL": 2,
+   "mT": 1,
+   "pct": 0.296
+  },
+  {
+   "team": "Kreuzberg Boys",
+   "W": 5,
+   "L": 21,
+   "T": 1,
+   "mW": 0,
+   "mL": 3,
+   "mT": 0,
+   "pct": 0.204
+  }
+ ]
 }

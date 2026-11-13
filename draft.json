@@ -1,1042 +1,1250 @@
 [
 {
 "name": "Austin Reaves",
+"id": 6606,
 "cost": 39,
-"team": "$39"
+"team": "Suhayy31"
 },
 {
 "name": "Michael Porter Jr.",
+"id": 6025,
 "cost": 25,
-"team": "$25"
+"team": "Suhayy31"
 },
 {
 "name": "Walker Kessler",
+"id": 6712,
 "cost": 29,
-"team": "$29"
+"team": "Suhayy31"
 },
 {
 "name": "Ja Morant",
+"id": 6164,
 "cost": 12,
-"team": "$12"
+"team": "Suhayy31"
 },
 {
 "name": "Trey Murphy III",
+"id": 6559,
 "cost": 38,
-"team": "$38"
+"team": "Suhayy31"
 },
 {
 "name": "Mikal Bridges",
+"id": 6021,
 "cost": 19,
-"team": "$19"
+"team": "Suhayy31"
 },
 {
 "name": "Tyler Herro",
+"id": 6175,
 "cost": 17,
-"team": "$17"
+"team": "Suhayy31"
 },
 {
 "name": "Davion Mitchell",
+"id": 6551,
 "cost": 5,
-"team": "$5"
+"team": "Suhayy31"
 },
 {
 "name": "John Collins",
+"id": 5832,
 "cost": 8,
-"team": "$8"
+"team": "Suhayy31"
 },
 {
 "name": "Ajay Mitchell",
+"id": 10304,
 "cost": 5,
-"team": "$5"
+"team": "Suhayy31"
 },
 {
 "name": "P.J. Washington",
+"id": 6174,
 "cost": 1,
-"team": "$1"
+"team": "Suhayy31"
 },
 {
 "name": "Kelly Oubre Jr.",
+"id": 5475,
 "cost": 1,
-"team": "$1"
+"team": "Suhayy31"
 },
 {
 "name": "Bennedict Mathurin",
+"id": 6696,
 "cost": 1,
-"team": "$1"
+"team": "Suhayy31"
 },
 {
 "name": "Jamal Murray",
+"id": 5638,
 "cost": 47,
-"team": "$47"
+"team": "M. Sucks"
 },
 {
 "name": "Josh Giddey",
+"id": 6548,
 "cost": 42,
-"team": "$42"
+"team": "M. Sucks"
 },
 {
 "name": "Kawhi Leonard",
+"id": 4896,
 "cost": 35,
-"team": "$35"
+"team": "M. Sucks"
 },
 {
 "name": "Lauri Markkanen",
+"id": 5769,
 "cost": 32,
-"team": "$32"
+"team": "M. Sucks"
 },
 {
 "name": "Paul George",
+"id": 4725,
 "cost": 19,
-"team": "$19"
+"team": "M. Sucks"
 },
 {
 "name": "Deandre Ayton",
+"id": 5958,
 "cost": 4,
-"team": "$4"
+"team": "M. Sucks"
 },
 {
 "name": "Aaron Gordon",
+"id": 5295,
 "cost": 6,
-"team": "$6"
+"team": "M. Sucks"
 },
 {
 "name": "Peyton Watson",
+"id": 6720,
 "cost": 6,
-"team": "$6"
+"team": "M. Sucks"
 },
 {
 "name": "Daniel Gafford",
+"id": 6226,
 "cost": 3,
-"team": "$3"
+"team": "M. Sucks"
 },
 {
 "name": "Gui Santos",
+"id": 6745,
 "cost": 1,
-"team": "$1"
+"team": "M. Sucks"
 },
 {
 "name": "Jeremiah Fears",
+"id": 10440,
 "cost": 3,
-"team": "$3"
+"team": "M. Sucks"
 },
 {
 "name": "Devin Vassell",
+"id": 6403,
 "cost": 1,
-"team": "$1"
+"team": "M. Sucks"
 },
 {
 "name": "Jerami Grant",
+"id": 5350,
 "cost": 1,
-"team": "$1"
+"team": "M. Sucks"
 },
 {
 "name": "Donovan Mitchell",
+"id": 5826,
 "cost": 49,
-"team": "$49"
+"team": "BÇ"
 },
 {
 "name": "Jaylen Brown",
+"id": 5602,
 "cost": 31,
-"team": "$31"
+"team": "BÇ"
 },
 {
 "name": "Jaren Jackson Jr.",
+"id": 6015,
 "cost": 30,
-"team": "$30"
+"team": "BÇ"
 },
 {
 "name": "Josh Hart",
+"id": 5843,
 "cost": 16,
-"team": "$16"
+"team": "BÇ"
 },
 {
 "name": "Julius Randle",
+"id": 5318,
 "cost": 16,
-"team": "$16"
+"team": "BÇ"
 },
 {
 "name": "Ausar Thompson",
+"id": 10096,
 "cost": 16,
-"team": "$16"
+"team": "BÇ"
 },
 {
 "name": "Isaiah Hartenstein",
+"id": 5856,
 "cost": 9,
-"team": "$9"
+"team": "BÇ"
 },
 {
 "name": "Dylan Harper",
+"id": 10467,
 "cost": 11,
-"team": "$11"
+"team": "BÇ"
 },
 {
 "name": "Cedric Coward",
+"id": 10465,
 "cost": 11,
-"team": "$11"
+"team": "BÇ"
 },
 {
 "name": "Day'Ron Sharpe",
+"id": 6571,
 "cost": 8,
-"team": "$8"
+"team": "BÇ"
 },
 {
 "name": "Jake LaRavia",
+"id": 6709,
 "cost": 1,
-"team": "$1"
+"team": "BÇ"
 },
 {
 "name": "Isaiah Stewart",
+"id": 6408,
 "cost": 1,
-"team": "$1"
+"team": "BÇ"
 },
 {
 "name": "Isaiah Jackson",
+"id": 6564,
 "cost": 1,
-"team": "$1"
+"team": "BÇ"
 },
 {
 "name": "Giannis Antetokounmpo",
+"id": 5185,
 "cost": 63,
-"team": "$63"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Cade Cunningham",
+"id": 6512,
 "cost": 66,
-"team": "$66"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "DeMar DeRozan",
+"id": 4614,
 "cost": 16,
-"team": "$16"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Paolo Banchero",
+"id": 6691,
 "cost": 26,
-"team": "$26"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Stephon Castle",
+"id": 10290,
 "cost": 14,
-"team": "$14"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Jalen Green",
+"id": 6513,
 "cost": 5,
-"team": "$5"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Jusuf Nurkić",
+"id": 5327,
 "cost": 3,
-"team": "$3"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Mason Plumlee",
+"id": 5192,
 "cost": 2,
-"team": "$2"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Bogdan Bogdanović",
+"id": 5338,
 "cost": 1,
-"team": "$1"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Moussa Diabaté",
+"id": 6733,
 "cost": 1,
-"team": "$1"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Jared McCain",
+"id": 10276,
 "cost": 1,
-"team": "$1"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Scoot Henderson",
+"id": 10048,
 "cost": 1,
-"team": "$1"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Dereck Lively II",
+"id": 10097,
 "cost": 1,
-"team": "$1"
+"team": "Kreuzberg Boys"
 },
 {
 "name": "Luka Dončić",
+"id": 6014,
 "cost": 73,
-"team": "$73"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Brandon Miller",
+"id": 10104,
 "cost": 32,
-"team": "$32"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Donovan Clingan",
+"id": 10285,
 "cost": 25,
-"team": "$25"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Desmond Bane",
+"id": 6422,
 "cost": 26,
-"team": "$26"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Naz Reid",
+"id": 6253,
 "cost": 18,
-"team": "$18"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Kel'el Ware",
+"id": 10274,
 "cost": 18,
-"team": "$18"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Collin Gillespie",
+"id": 6751,
 "cost": 2,
-"team": "$2"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Pelle Larsson",
+"id": 10312,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Mikel Brown Jr.",
+"id": 10588,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Keaton Wagler",
+"id": 10585,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Oso Ighodaro",
+"id": 10313,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Naji Marshall",
+"id": 6499,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Jordan Poole",
+"id": 6216,
 "cost": 1,
-"team": "$1"
+"team": "Bomonti Sınırsız"
 },
 {
 "name": "Kevin Durant",
+"id": 4244,
 "cost": 48,
-"team": "$48"
+"team": "Pickle Men"
 },
 {
 "name": "Evan Mobley",
+"id": 6514,
 "cost": 35,
-"team": "$35"
+"team": "Pickle Men"
 },
 {
 "name": "Darius Garland",
+"id": 6167,
 "cost": 23,
-"team": "$23"
+"team": "Pickle Men"
 },
 {
 "name": "Keyonte George",
+"id": 10100,
 "cost": 27,
-"team": "$27"
+"team": "Pickle Men"
 },
 {
 "name": "Miles Bridges",
+"id": 6023,
 "cost": 10,
-"team": "$10"
+"team": "Pickle Men"
 },
 {
 "name": "Rudy Gobert",
+"id": 5197,
 "cost": 14,
-"team": "$14"
+"team": "Pickle Men"
 },
 {
 "name": "Jalen Suggs",
+"id": 6516,
 "cost": 7,
-"team": "$7"
+"team": "Pickle Men"
 },
 {
 "name": "Norman Powell",
+"id": 5506,
 "cost": 10,
-"team": "$10"
+"team": "Pickle Men"
 },
 {
 "name": "Caleb Wilson",
+"id": 10595,
 "cost": 8,
-"team": "$8"
+"team": "Pickle Men"
 },
 {
 "name": "Ty Jerome",
+"id": 6212,
 "cost": 7,
-"team": "$7"
+"team": "Pickle Men"
 },
 {
 "name": "Rui Hachimura",
+"id": 6171,
 "cost": 4,
-"team": "$4"
+"team": "Pickle Men"
 },
 {
 "name": "Paul Reed",
+"id": 6450,
 "cost": 1,
-"team": "$1"
+"team": "Pickle Men"
 },
 {
 "name": "Khaman Maluach",
+"id": 10447,
 "cost": 4,
-"team": "$4"
+"team": "Pickle Men"
 },
 {
 "name": "Anthony Davis",
+"id": 5007,
 "cost": 30,
-"team": "$30"
+"team": "tarkus maurelius"
 },
 {
 "name": "Cooper Flagg",
+"id": 10468,
 "cost": 55,
-"team": "$55"
+"team": "tarkus maurelius"
 },
 {
 "name": "Kyrie Irving",
+"id": 4840,
 "cost": 28,
-"team": "$28"
+"team": "tarkus maurelius"
 },
 {
 "name": "Nickeil Alexander-Walker",
+"id": 6205,
 "cost": 26,
-"team": "$26"
+"team": "tarkus maurelius"
 },
 {
 "name": "OG Anunoby",
+"id": 5836,
 "cost": 20,
-"team": "$20"
+"team": "tarkus maurelius"
 },
 {
 "name": "Jarrett Allen",
+"id": 5835,
 "cost": 21,
-"team": "$21"
+"team": "tarkus maurelius"
 },
 {
 "name": "Immanuel Quickley",
+"id": 6417,
 "cost": 8,
-"team": "$8"
+"team": "tarkus maurelius"
 },
 {
 "name": "Herbert Jones",
+"id": 6577,
 "cost": 4,
-"team": "$4"
+"team": "tarkus maurelius"
 },
 {
 "name": "Sandro Mamukelashvili",
+"id": 6596,
 "cost": 1,
-"team": "$1"
+"team": "tarkus maurelius"
 },
 {
 "name": "Tari Eason",
+"id": 6707,
 "cost": 2,
-"team": "$2"
+"team": "tarkus maurelius"
 },
 {
 "name": "Grayson Allen",
+"id": 6032,
 "cost": 2,
-"team": "$2"
+"team": "tarkus maurelius"
 },
 {
 "name": "Hannes Steinbach",
+"id": 10577,
 "cost": 2,
-"team": "$2"
+"team": "tarkus maurelius"
 },
 {
 "name": "Brook Lopez",
+"id": 4472,
 "cost": 1,
-"team": "$1"
+"team": "tarkus maurelius"
 },
 {
 "name": "Shai Gilgeous-Alexander",
+"id": 6022,
 "cost": 73,
-"team": "$73"
+"team": "Normal MAFIA"
 },
 {
 "name": "Jalen Johnson",
+"id": 6562,
 "cost": 53,
-"team": "$53"
+"team": "Normal MAFIA"
 },
 {
 "name": "Joel Embiid",
+"id": 5294,
 "cost": 20,
-"team": "$20"
+"team": "Normal MAFIA"
 },
 {
 "name": "Jalen Duren",
+"id": 6703,
 "cost": 29,
-"team": "$29"
+"team": "Normal MAFIA"
 },
 {
 "name": "AJ Dybantsa",
+"id": 10599,
 "cost": 11,
-"team": "$11"
+"team": "Normal MAFIA"
 },
 {
 "name": "CJ McCollum",
+"id": 5161,
 "cost": 7,
-"team": "$7"
+"team": "Normal MAFIA"
 },
 {
 "name": "Keon Ellis",
+"id": 6753,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Tobias Harris",
+"id": 4901,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Brayden Burries",
+"id": 10576,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Mitchell Robinson",
+"id": 6047,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Luguentz Dort",
+"id": 6254,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Miles McBride",
+"id": 6578,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Moritz Wagner",
+"id": 6036,
 "cost": 1,
-"team": "$1"
+"team": "Normal MAFIA"
 },
 {
 "name": "Bam Adebayo",
+"id": 5827,
 "cost": 35,
-"team": "$35"
+"team": "Splash Brothers"
 },
 {
 "name": "Jalen Williams",
+"id": 6702,
 "cost": 32,
-"team": "$32"
+"team": "Splash Brothers"
 },
 {
 "name": "Deni Avdija",
+"id": 6401,
 "cost": 27,
-"team": "$27"
+"team": "Splash Brothers"
 },
 {
 "name": "De'Aaron Fox",
+"id": 5767,
 "cost": 19,
-"team": "$19"
+"team": "Splash Brothers"
 },
 {
 "name": "Dejounte Murray",
+"id": 5660,
 "cost": 20,
-"team": "$20"
+"team": "Splash Brothers"
 },
 {
 "name": "Alex Sarr",
+"id": 10294,
 "cost": 19,
-"team": "$19"
+"team": "Splash Brothers"
 },
 {
 "name": "Damian Lillard",
+"id": 5012,
 "cost": 15,
-"team": "$15"
+"team": "Splash Brothers"
 },
 {
 "name": "Pascal Siakam",
+"id": 5658,
 "cost": 19,
-"team": "$19"
+"team": "Splash Brothers"
 },
 {
 "name": "Collin Murray-Boyles",
+"id": 10443,
 "cost": 6,
-"team": "$6"
+"team": "Splash Brothers"
 },
 {
 "name": "Darius Acuff Jr.",
+"id": 10582,
 "cost": 3,
-"team": "$3"
+"team": "Splash Brothers"
 },
 {
 "name": "Dillon Brooks",
+"id": 5858,
 "cost": 2,
-"team": "$2"
+"team": "Splash Brothers"
 },
 {
 "name": "Anthony Black",
+"id": 10095,
 "cost": 2,
-"team": "$2"
+"team": "Splash Brothers"
 },
 {
 "name": "Aaron Nesmith",
+"id": 6406,
 "cost": 1,
-"team": "$1"
+"team": "Splash Brothers"
 },
 {
 "name": "Nikola Jokić",
+"id": 5352,
 "cost": 90,
-"team": "$90"
+"team": "Los Gerseii"
 },
 {
 "name": "James Harden",
+"id": 4563,
 "cost": 37,
-"team": "$37"
+"team": "Los Gerseii"
 },
 {
 "name": "LaMelo Ball",
+"id": 6395,
 "cost": 39,
-"team": "$39"
+"team": "Los Gerseii"
 },
 {
 "name": "Andrew Nembhard",
+"id": 6721,
 "cost": 6,
-"team": "$6"
+"team": "Los Gerseii"
 },
 {
 "name": "Andrew Wiggins",
+"id": 5292,
 "cost": 5,
-"team": "$5"
+"team": "Los Gerseii"
 },
 {
 "name": "Kristaps Porziņģis",
+"id": 5464,
 "cost": 5,
-"team": "$5"
+"team": "Los Gerseii"
 },
 {
 "name": "Keegan Murray",
+"id": 6694,
 "cost": 4,
-"team": "$4"
+"team": "Los Gerseii"
 },
 {
 "name": "Kyshawn George",
+"id": 10272,
 "cost": 5,
-"team": "$5"
+"team": "Los Gerseii"
 },
 {
 "name": "Nic Claxton",
+"id": 6219,
 "cost": 4,
-"team": "$4"
+"team": "Los Gerseii"
 },
 {
 "name": "Jay Huff",
+"id": 6617,
 "cost": 1,
-"team": "$1"
+"team": "Los Gerseii"
 },
 {
 "name": "Jonathan Kuminga",
+"id": 6549,
 "cost": 2,
-"team": "$2"
+"team": "Los Gerseii"
 },
 {
 "name": "Donte DiVincenzo",
+"id": 6028,
 "cost": 1,
-"team": "$1"
+"team": "Los Gerseii"
 },
 {
 "name": "Julian Champagnie",
+"id": 6754,
 "cost": 1,
-"team": "$1"
+"team": "Los Gerseii"
 },
 {
 "name": "Jayson Tatum",
+"id": 5765,
 "cost": 61,
-"team": "$61"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Devin Booker",
+"id": 5473,
 "cost": 38,
-"team": "$38"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Karl-Anthony Towns",
+"id": 5432,
 "cost": 47,
-"team": "$47"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Derrick White",
+"id": 5842,
 "cost": 33,
-"team": "$33"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Darryn Peterson",
+"id": 10590,
 "cost": 7,
-"team": "$7"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Yaxel Lendeborg",
+"id": 10571,
 "cost": 5,
-"team": "$5"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Bobby Portis Jr.",
+"id": 5482,
 "cost": 1,
-"team": "$1"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Maxime Raynaud",
+"id": 10496,
 "cost": 2,
-"team": "$2"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Cameron Johnson",
+"id": 6173,
 "cost": 2,
-"team": "$2"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Klay Thompson",
+"id": 4892,
 "cost": 1,
-"team": "$1"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Luke Kornet",
+"id": 5903,
 "cost": 1,
-"team": "$1"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Collin Sexton",
+"id": 6019,
 "cost": 1,
-"team": "$1"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Aaron Wiggins",
+"id": 6597,
 "cost": 1,
-"team": "$1"
+"team": "Yukatel Metin Akdülger"
 },
 {
 "name": "Alperen Şengün",
+"id": 6558,
 "cost": 45,
-"team": "$45"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Trae Young",
+"id": 6016,
 "cost": 37,
-"team": "$37"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Onyeka Okongwu",
+"id": 6398,
 "cost": 28,
-"team": "$28"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Franz Wagner",
+"id": 6550,
 "cost": 24,
-"team": "$24"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Matas Buzelis",
+"id": 10265,
 "cost": 23,
-"team": "$23"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Zach LaVine",
+"id": 5324,
 "cost": 9,
-"team": "$9"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Payton Pritchard",
+"id": 6418,
 "cost": 12,
-"team": "$12"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Coby White",
+"id": 6169,
 "cost": 8,
-"team": "$8"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Mark Williams",
+"id": 6705,
 "cost": 3,
-"team": "$3"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Jaime Jaquez Jr.",
+"id": 10092,
 "cost": 5,
-"team": "$5"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Wendell Carter Jr.",
+"id": 6018,
 "cost": 3,
-"team": "$3"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Christian Braun",
+"id": 6711,
 "cost": 1,
-"team": "$1"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Joan Beringer",
+"id": 10460,
 "cost": 2,
-"team": "$2"
+"team": "Kyojins on Rumbling"
 },
 {
 "name": "Scottie Barnes",
+"id": 6515,
 "cost": 58,
-"team": "$58"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Amen Thompson",
+"id": 10108,
 "cost": 39,
-"team": "$39"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Dyson Daniels",
+"id": 6698,
 "cost": 26,
-"team": "$26"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Cameron Boozer",
+"id": 10592,
 "cost": 25,
-"team": "$25"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Ryan Rollins",
+"id": 6734,
 "cost": 22,
-"team": "$22"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Fred VanVleet",
+"id": 5727,
 "cost": 6,
-"team": "$6"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Jabari Smith Jr.",
+"id": 6693,
 "cost": 10,
-"team": "$10"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Derik Queen",
+"id": 10444,
 "cost": 7,
-"team": "$7"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Egor Dëmin",
+"id": 10445,
 "cost": 3,
-"team": "$3"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Yves Missi",
+"id": 10289,
 "cost": 1,
-"team": "$1"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "GG Jackson",
+"id": 10070,
 "cost": 1,
-"team": "$1"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Jamal Shead",
+"id": 10333,
 "cost": 1,
-"team": "$1"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Keldon Johnson",
+"id": 6217,
 "cost": 1,
-"team": "$1"
+"team": "Kalidou Koulibaly"
 },
 {
 "name": "Tyrese Maxey",
+"id": 6413,
 "cost": 56,
-"team": "$56"
+"team": "EAH Seniors"
 },
 {
 "name": "LeBron James",
+"id": 3704,
 "cost": 27,
-"team": "$27"
+"team": "EAH Seniors"
 },
 {
 "name": "Stephen Curry",
+"id": 4612,
 "cost": 34,
-"team": "$34"
+"team": "EAH Seniors"
 },
 {
 "name": "Chet Holmgren",
+"id": 6692,
 "cost": 34,
-"team": "$34"
+"team": "EAH Seniors"
 },
 {
 "name": "Zach Edey",
+"id": 10287,
 "cost": 15,
-"team": "$15"
+"team": "EAH Seniors"
 },
 {
 "name": "Jaden McDaniels",
+"id": 6420,
 "cost": 8,
-"team": "$8"
+"team": "EAH Seniors"
 },
 {
 "name": "Kevin Porter Jr.",
+"id": 6218,
 "cost": 5,
-"team": "$5"
+"team": "EAH Seniors"
 },
 {
 "name": "Myles Turner",
+"id": 5471,
 "cost": 5,
-"team": "$5"
+"team": "EAH Seniors"
 },
 {
 "name": "Cason Wallace",
+"id": 10107,
 "cost": 5,
-"team": "$5"
+"team": "EAH Seniors"
 },
 {
 "name": "Toumani Camara",
+"id": 10065,
 "cost": 6,
-"team": "$6"
+"team": "EAH Seniors"
 },
 {
 "name": "Scotty Pippen Jr.",
+"id": 6757,
 "cost": 2,
-"team": "$2"
+"team": "EAH Seniors"
 },
 {
 "name": "Quentin Grimes",
+"id": 6567,
 "cost": 1,
-"team": "$1"
+"team": "EAH Seniors"
 },
 {
 "name": "Jrue Holiday",
+"id": 4622,
 "cost": 2,
-"team": "$2"
+"team": "EAH Seniors"
 },
 {
 "name": "Domantas Sabonis",
+"id": 5642,
 "cost": 34,
-"team": "$34"
+"team": "HobaKumpo"
 },
 {
 "name": "Anthony Edwards",
+"id": 6355,
 "cost": 64,
-"team": "$64"
+"team": "HobaKumpo"
 },
 {
 "name": "Jalen Brunson",
+"id": 6044,
 "cost": 41,
-"team": "$41"
+"team": "HobaKumpo"
 },
 {
 "name": "Ivica Zubac",
+"id": 5663,
 "cost": 19,
-"team": "$19"
+"team": "HobaKumpo"
 },
 {
 "name": "Brandon Ingram",
+"id": 5601,
 "cost": 12,
-"team": "$12"
+"team": "HobaKumpo"
 },
 {
 "name": "Reed Sheppard",
+"id": 10288,
 "cost": 4,
-"team": "$4"
+"team": "HobaKumpo"
 },
 {
 "name": "RJ Barrett",
+"id": 6165,
 "cost": 6,
-"team": "$6"
+"team": "HobaKumpo"
 },
 {
 "name": "Brandin Podziemski",
+"id": 10115,
 "cost": 4,
-"team": "$4"
+"team": "HobaKumpo"
 },
 {
 "name": "Ayo Dosunmu",
+"id": 6580,
 "cost": 5,
-"team": "$5"
+"team": "HobaKumpo"
 },
 {
 "name": "Neemias Queta",
+"id": 6581,
 "cost": 4,
-"team": "$4"
+"team": "HobaKumpo"
 },
 {
 "name": "Nikola Vučević",
+"id": 4897,
 "cost": 3,
-"team": "$3"
+"team": "HobaKumpo"
 },
 {
 "name": "Saddiq Bey",
+"id": 6411,
 "cost": 3,
-"team": "$3"
+"team": "HobaKumpo"
 },
 {
 "name": "Tim Hardaway Jr.",
+"id": 5194,
 "cost": 1,
-"team": "$1"
+"team": "HobaKumpo"
 },
 {
 "name": "Tyrese Haliburton",
+"id": 6404,
 "cost": 51,
-"team": "$51"
+"team": "Kassablancas"
 },
 {
 "name": "Victor Wembanyama",
+"id": 10094,
 "cost": 90,
-"team": "$90"
+"team": "Kassablancas"
 },
 {
 "name": "Zion Williamson",
+"id": 6163,
 "cost": 17,
-"team": "$17"
+"team": "Kassablancas"
 },
 {
 "name": "Kon Knueppel",
+"id": 10450,
 "cost": 19,
-"team": "$19"
+"team": "Kassablancas"
 },
 {
 "name": "VJ Edgecombe",
+"id": 10454,
 "cost": 13,
-"team": "$13"
+"team": "Kassablancas"
 },
 {
 "name": "Jakob Poeltl",
+"id": 5640,
 "cost": 3,
-"team": "$3"
+"team": "Kassablancas"
 },
 {
 "name": "Tre Jones",
+"id": 6433,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Ace Bailey",
+"id": 10462,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Kyle Kuzma",
+"id": 5840,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Draymond Green",
+"id": 5069,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Alex Caruso",
+"id": 5754,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Jalen Smith",
+"id": 6402,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 },
 {
 "name": "Anfernee Simons",
+"id": 6035,
 "cost": 1,
-"team": "$1"
+"team": "Kassablancas"
 }
 ]

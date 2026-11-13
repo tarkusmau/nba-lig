@@ -245,6 +245,40 @@
      "blk": 13,
      "to": 62
     }
+   ],
+   "pairs": [
+    [
+     "Pickle Men",
+     "BÇ"
+    ],
+    [
+     "Bomonti Sınırsız",
+     "Los Gerseii"
+    ],
+    [
+     "EAH Seniors",
+     "Kreuzberg Boys"
+    ],
+    [
+     "HobaKumpo",
+     "M. Sucks"
+    ],
+    [
+     "Kalidou Koulibaly",
+     "Normal MAFIA"
+    ],
+    [
+     "Kassablancas",
+     "Splash Brothers"
+    ],
+    [
+     "Kyojins on Rumbling",
+     "Suhayy31"
+    ],
+    [
+     "tarkus maurelius",
+     "Yukatel Metin Akdülger"
+    ]
    ]
   },
   "2": {
@@ -491,6 +525,40 @@
      "blk": 22,
      "to": 72
     }
+   ],
+   "pairs": [
+    [
+     "Pickle Men",
+     "Yukatel Metin Akdülger"
+    ],
+    [
+     "Bomonti Sınırsız",
+     "HobaKumpo"
+    ],
+    [
+     "BÇ",
+     "Kalidou Koulibaly"
+    ],
+    [
+     "EAH Seniors",
+     "Suhayy31"
+    ],
+    [
+     "Kassablancas",
+     "Kyojins on Rumbling"
+    ],
+    [
+     "Kreuzberg Boys",
+     "tarkus maurelius"
+    ],
+    [
+     "Los Gerseii",
+     "Normal MAFIA"
+    ],
+    [
+     "M. Sucks",
+     "Splash Brothers"
+    ]
    ]
   },
   "3": {
@@ -737,11 +805,45 @@
      "blk": 24,
      "to": 64
     }
+   ],
+   "pairs": [
+    [
+     "Pickle Men",
+     "Kreuzberg Boys"
+    ],
+    [
+     "Bomonti Sınırsız",
+     "Splash Brothers"
+    ],
+    [
+     "BÇ",
+     "Normal MAFIA"
+    ],
+    [
+     "EAH Seniors",
+     "Kassablancas"
+    ],
+    [
+     "HobaKumpo",
+     "Los Gerseii"
+    ],
+    [
+     "Kalidou Koulibaly",
+     "Yukatel Metin Akdülger"
+    ],
+    [
+     "Kyojins on Rumbling",
+     "M. Sucks"
+    ],
+    [
+     "Suhayy31",
+     "tarkus maurelius"
+    ]
    ]
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "13 Kasım 2026, 10:38 (12 Kasım maçları dahil)",
+   "updated": "13 Kasım 2026, 11:39 (12 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
