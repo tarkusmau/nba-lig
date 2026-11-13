@@ -1,11 +1,6 @@
 Guncel hafta: 4
-Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 13 Kasım 2026, 08:44 (12 Kasım maçları dahil)
-Islemler: 5 yeni kayit eklendi.
-  + {"time": "2026-11-13 07:49", "team": "EAH Seniors", "type": "add/drop", "add": ["T. Proctor"], "drop": ["J. LaRavia"], "pos": "PG,SG / SF,PF", "source": "FA"}
-  + {"time": "2026-11-13 07:25", "team": "EAH Seniors", "type": "drop", "add": [], "drop": ["R. Holland II"], "pos": "SF,PF"}
-  + {"time": "2026-11-13 07:10", "team": "Pickle Men", "type": "add", "add": ["P. Williams"], "drop": [], "pos": "SF,PF", "source": "FA"}
-  + {"time": "2026-11-12 23:46", "team": "Normal MAFIA", "type": "add/drop", "add": ["T. Lyles"], "drop": ["J. Okogie"], "pos": "PF / SG,SF", "source": "FA"}
-  + {"time": "2026-11-12 23:39", "team": "Bomonti Sınırsız", "type": "add/drop", "add": ["J. Goodwin"], "drop": ["M. Robinson"], "pos": "PG,SG / C", "source": "FA"}
+Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 13 Kasım 2026, 10:38 (12 Kasım maçları dahil)
+Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 7: 'Kassablancas', 1: 'Pickle Men', 14: 'Suhayy31', 2: 'Bomonti Sınırsız', 9: 'Kyojins on Rumbling', 3: 'BÇ', 10: 'Los Gerseii', 4: 'EAH Seniors', 11: 'M. Sucks', 5: 'HobaKumpo', 13: 'Splash Brothers', 6: 'Kalidou Koulibaly', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 16: 'Yukatel Metin Akdülger'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 15 oyuncu, IL: ['Evan Mobley', 'Caleb Wilson', 'Jalen Suggs']
