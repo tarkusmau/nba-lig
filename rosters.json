@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 20:58",
+ "updated": "2026-11-13 08:44",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -120,10 +120,11 @@
     "draft": 10
    },
    {
-    "name": "Caleb Wilson",
+    "name": "Rui Hachimura",
     "slot": "F",
-    "status": "Q",
-    "draft": 8
+    "nba": "LAC",
+    "pos": "SF,PF",
+    "draft": 4
    },
    {
     "name": "Paul Reed",
@@ -153,13 +154,6 @@
     "draft": 10
    },
    {
-    "name": "Evan Mobley",
-    "slot": "BN",
-    "nba": "CLE",
-    "pos": "PF,C",
-    "draft": 35
-   },
-   {
     "name": "Darius Garland",
     "slot": "BN",
     "nba": "LAC",
@@ -167,11 +161,23 @@
     "draft": 23
    },
    {
-    "name": "Rui Hachimura",
+    "name": "Patrick Williams",
     "slot": "BN",
-    "nba": "LAC",
+    "nba": "CHI",
     "pos": "SF,PF",
-    "draft": 4
+    "draft": "FA"
+   },
+   {
+    "name": "Evan Mobley",
+    "slot": "IL",
+    "status": "O",
+    "draft": 35
+   },
+   {
+    "name": "Caleb Wilson",
+    "slot": "IL",
+    "status": "O",
+    "draft": 8
    },
    {
     "name": "Jalen Suggs",
@@ -189,11 +195,11 @@
     "draft": "FA"
    },
    {
-    "name": "James Harden",
+    "name": "Jordan Goodwin",
     "slot": "SG",
-    "nba": "CLE",
+    "nba": "PHX",
     "pos": "PG,SG",
-    "draft": 37
+    "draft": "FA"
    },
    {
     "name": "Luka Dončić",
@@ -202,11 +208,11 @@
     "draft": 73
    },
    {
-    "name": "Desmond Bane",
+    "name": "Sion James",
     "slot": "SF",
-    "nba": "ORL",
+    "nba": "CHA",
     "pos": "SG,SF",
-    "draft": 26
+    "draft": "FA"
    },
    {
     "name": "Naz Reid",
@@ -244,32 +250,30 @@
     "draft": 1
    },
    {
-    "name": "Mitchell Robinson",
+    "name": "Kingston Flemings",
     "slot": "Util",
-    "nba": "BOS",
-    "pos": "C",
-    "draft": 1
+    "status": "Q",
+    "draft": "FA"
+   },
+   {
+    "name": "James Harden",
+    "slot": "BN",
+    "nba": "CLE",
+    "pos": "PG,SG",
+    "draft": 37
+   },
+   {
+    "name": "Desmond Bane",
+    "slot": "BN",
+    "nba": "ORL",
+    "pos": "SG,SF",
+    "draft": 26
    },
    {
     "name": "Klay Thompson",
     "slot": "BN",
-    "nba": "MIA",
-    "pos": "SG,SF",
+    "status": "Q",
     "draft": 1
-   },
-   {
-    "name": "Kingston Flemings",
-    "slot": "BN",
-    "nba": "ATL",
-    "pos": "PG",
-    "draft": "FA"
-   },
-   {
-    "name": "Sion James",
-    "slot": "BN",
-    "nba": "CHA",
-    "pos": "SG,SF",
-    "draft": "FA"
    },
    {
     "name": "Brandon Miller",
@@ -352,8 +356,7 @@
    {
     "name": "Pelle Larsson",
     "slot": "BN",
-    "nba": "MIA",
-    "pos": "SG,SF",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -422,9 +425,15 @@
    {
     "name": "Zach Edey",
     "slot": "C",
-    "nba": "MEM",
-    "pos": "C",
+    "status": "O",
     "draft": 15
+   },
+   {
+    "name": "Myles Turner",
+    "slot": "C",
+    "nba": "MIL",
+    "pos": "C",
+    "draft": 5
    },
    {
     "name": "De'Anthony Melton",
@@ -434,16 +443,9 @@
     "draft": "FA"
    },
    {
-    "name": "Jake LaRavia",
-    "slot": "Util",
-    "nba": "LAL",
-    "pos": "SF,PF",
-    "draft": 1
-   },
-   {
     "name": "LeBron James",
     "slot": "BN",
-    "status": "Q",
+    "status": "O",
     "draft": 27
    },
    {
@@ -461,17 +463,11 @@
     "draft": 8
    },
    {
-    "name": "Ronald Holland II",
+    "name": "Tyrese Proctor",
     "slot": "BN",
-    "nba": "DET",
-    "pos": "SF,PF",
+    "nba": "CLE",
+    "pos": "PG,SG",
     "draft": "FA"
-   },
-   {
-    "name": "Myles Turner",
-    "slot": "IL",
-    "status": "P",
-    "draft": 5
    },
    {
     "name": "Chet Holmgren",
@@ -602,7 +598,8 @@
    {
     "name": "Ryan Rollins",
     "slot": "SG",
-    "status": "Q",
+    "nba": "MIL",
+    "pos": "PG,SG",
     "draft": 22
    },
    {
@@ -613,10 +610,11 @@
     "draft": 6
    },
    {
-    "name": "Scottie Barnes",
+    "name": "Keldon Johnson",
     "slot": "SF",
-    "status": "O",
-    "draft": 58
+    "nba": "SAS",
+    "pos": "SF,PF",
+    "draft": 1
    },
    {
     "name": "Obi Toppin",
@@ -647,16 +645,22 @@
     "draft": 7
    },
    {
-    "name": "Keldon Johnson",
-    "slot": "Util",
-    "nba": "SAS",
-    "pos": "SF,PF",
-    "draft": 1
-   },
-   {
     "name": "Collin Sexton",
     "slot": "Util",
     "status": "Q",
+    "draft": 1
+   },
+   {
+    "name": "Dyson Daniels",
+    "slot": "Util",
+    "nba": "ATL",
+    "pos": "SG,SF",
+    "draft": 26
+   },
+   {
+    "name": "Yves Missi",
+    "slot": "BN",
+    "status": "O",
     "draft": 1
    },
    {
@@ -674,17 +678,10 @@
     "draft": "FA"
    },
    {
-    "name": "Dyson Daniels",
-    "slot": "BN",
-    "nba": "ATL",
-    "pos": "SG,SF",
-    "draft": 26
-   },
-   {
-    "name": "Yves Missi",
+    "name": "Scottie Barnes",
     "slot": "IL",
     "status": "O",
-    "draft": 1
+    "draft": 58
    },
    {
     "name": "Brandon Williams",
@@ -850,14 +847,14 @@
    {
     "name": "Charles Bassey",
     "slot": "C",
-    "nba": "GSW",
-    "pos": "C",
+    "status": "P",
     "draft": "FA"
    },
    {
     "name": "Moussa Diabaté",
     "slot": "C",
-    "status": "P",
+    "nba": "CHA",
+    "pos": "C",
     "draft": 1
    },
    {
@@ -870,8 +867,7 @@
    {
     "name": "Giannis Antetokounmpo",
     "slot": "Util",
-    "nba": "MIA",
-    "pos": "PF,C",
+    "status": "P",
     "draft": 63
    },
    {
@@ -915,11 +911,11 @@
   ],
   "Kyojins on Rumbling": [
    {
-    "name": "Payton Pritchard",
+    "name": "Coby White",
     "slot": "PG",
-    "nba": "BOS",
-    "pos": "PG",
-    "draft": 12
+    "nba": "CHA",
+    "pos": "PG,SG",
+    "draft": 8
    },
    {
     "name": "Christian Braun",
@@ -957,6 +953,13 @@
     "draft": "FA"
    },
    {
+    "name": "Alex Sarr",
+    "slot": "C",
+    "nba": "WAS",
+    "pos": "C",
+    "draft": 19
+   },
+   {
     "name": "Wendell Carter Jr.",
     "slot": "C",
     "nba": "ORL",
@@ -965,24 +968,17 @@
    },
    {
     "name": "Alperen Şengün",
-    "slot": "C",
+    "slot": "Util",
     "nba": "HOU",
     "pos": "PF,C",
     "draft": 45
    },
    {
-    "name": "Alex Sarr",
+    "name": "Payton Pritchard",
     "slot": "Util",
-    "nba": "WAS",
-    "pos": "C",
-    "draft": 19
-   },
-   {
-    "name": "Coby White",
-    "slot": "Util",
-    "nba": "CHA",
-    "pos": "PG,SG",
-    "draft": 8
+    "nba": "BOS",
+    "pos": "PG",
+    "draft": 12
    },
    {
     "name": "Franz Wagner",
@@ -1279,14 +1275,15 @@
    {
     "name": "Joel Embiid",
     "slot": "Util",
-    "status": "Q",
+    "nba": "PHI",
+    "pos": "C",
     "draft": 20
    },
    {
-    "name": "Josh Okogie",
+    "name": "Trey Lyles",
     "slot": "Util",
-    "nba": "UTA",
-    "pos": "SG,SF",
+    "nba": "MIN",
+    "pos": "PF",
     "draft": "FA"
    },
    {
@@ -1327,8 +1324,7 @@
    {
     "name": "De'Aaron Fox",
     "slot": "PG",
-    "nba": "SAS",
-    "pos": "PG",
+    "status": "Q",
     "draft": 19
    },
    {
@@ -1516,7 +1512,7 @@
    {
     "name": "Trey Murphy III",
     "slot": "IL",
-    "status": "Q",
+    "status": "D",
     "draft": 38
    },
    {
