@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 20:56",
+ "updated": "2026-11-14 09:40",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -133,14 +133,6 @@
     "draft": 4
    },
    {
-    "name": "Paul Reed",
-    "slot": "C",
-    "id": 6450,
-    "nba": "DET",
-    "pos": "PF,C",
-    "draft": 1
-   },
-   {
     "name": "Rudy Gobert",
     "slot": "C",
     "id": 5197,
@@ -150,7 +142,7 @@
    },
    {
     "name": "Aday Mara",
-    "slot": "Util",
+    "slot": "C",
     "id": 10579,
     "nba": "OKC",
     "pos": "C",
@@ -162,8 +154,23 @@
     "id": 5506,
     "nba": "CHI",
     "pos": "SG,SF",
-    "status": "Q",
     "draft": 10
+   },
+   {
+    "name": "Jalen Suggs",
+    "slot": "Util",
+    "id": 6516,
+    "nba": "ORL",
+    "pos": "PG,SG",
+    "draft": 7
+   },
+   {
+    "name": "Paul Reed",
+    "slot": "BN",
+    "id": 6450,
+    "nba": "DET",
+    "pos": "PF,C",
+    "draft": 1
    },
    {
     "name": "Luke Kennard",
@@ -198,25 +205,16 @@
     "pos": "PF",
     "status": "O",
     "draft": 8
-   },
-   {
-    "name": "Jalen Suggs",
-    "slot": "IL",
-    "id": 6516,
-    "nba": "ORL",
-    "pos": "PG,SG",
-    "status": "O",
-    "draft": 7
    }
   ],
   "Bomonti Sınırsız": [
    {
-    "name": "Ja'Kobe Walter",
+    "name": "James Harden",
     "slot": "PG",
-    "id": 10278,
-    "nba": "TOR",
+    "id": 4563,
+    "nba": "CLE",
     "pos": "PG,SG",
-    "draft": "FA"
+    "draft": 37
    },
    {
     "name": "Jordan Goodwin",
@@ -232,16 +230,16 @@
     "id": 6014,
     "nba": "LAL",
     "pos": "PG,SG",
-    "status": "Q",
+    "status": "P",
     "draft": 73
    },
    {
-    "name": "Sion James",
+    "name": "Desmond Bane",
     "slot": "SF",
-    "id": 10498,
-    "nba": "CHA",
+    "id": 6422,
+    "nba": "ORL",
     "pos": "SG,SF",
-    "draft": "FA"
+    "draft": 26
    },
    {
     "name": "Naz Reid",
@@ -252,11 +250,12 @@
     "draft": 18
    },
    {
-    "name": "Naji Marshall",
+    "name": "Klay Thompson",
     "slot": "F",
-    "id": 6499,
-    "nba": "DAL",
-    "pos": "SG,SF,PF",
+    "id": 4892,
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "status": "O",
     "draft": 1
    },
    {
@@ -265,6 +264,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -293,28 +293,27 @@
     "draft": "FA"
    },
    {
-    "name": "James Harden",
+    "name": "Ja'Kobe Walter",
     "slot": "BN",
-    "id": 4563,
-    "nba": "CLE",
+    "id": 10278,
+    "nba": "TOR",
     "pos": "PG,SG",
-    "draft": 37
+    "draft": "FA"
    },
    {
-    "name": "Desmond Bane",
+    "name": "Sion James",
     "slot": "BN",
-    "id": 6422,
-    "nba": "ORL",
+    "id": 10498,
+    "nba": "CHA",
     "pos": "SG,SF",
-    "draft": 26
+    "draft": "FA"
    },
    {
-    "name": "Klay Thompson",
+    "name": "Naji Marshall",
     "slot": "BN",
-    "id": 4892,
-    "nba": "MIA",
-    "pos": "SG,SF",
-    "status": "Q",
+    "id": 6499,
+    "nba": "DAL",
+    "pos": "SG,SF,PF",
     "draft": 1
    },
    {
@@ -342,7 +341,7 @@
     "id": 10312,
     "nba": "MIA",
     "pos": "SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -680,7 +679,6 @@
     "id": 10275,
     "nba": "ORL",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": "FA"
    },
    {
@@ -908,6 +906,7 @@
     "id": 6402,
     "nba": "CHI",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -1000,7 +999,7 @@
     "id": 6412,
     "nba": "SAC",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -1017,7 +1016,6 @@
     "id": 6595,
     "nba": "GSW",
     "pos": "C",
-    "status": "P",
     "draft": "FA"
    },
    {
@@ -1042,7 +1040,6 @@
     "id": 5185,
     "nba": "MIA",
     "pos": "PF,C",
-    "status": "P",
     "draft": 63
    },
    {
@@ -1139,12 +1136,12 @@
     "draft": 24
    },
    {
-    "name": "Bilal Coulibaly",
+    "name": "Alperen Şengün",
     "slot": "F",
-    "id": 10099,
-    "nba": "WAS",
-    "pos": "SG,SF",
-    "draft": "FA"
+    "id": 6558,
+    "nba": "HOU",
+    "pos": "PF,C",
+    "draft": 45
    },
    {
     "name": "Wendell Carter Jr.",
@@ -1155,12 +1152,12 @@
     "draft": 3
    },
    {
-    "name": "Alperen Şengün",
+    "name": "Onyeka Okongwu",
     "slot": "C",
-    "id": 6558,
-    "nba": "HOU",
-    "pos": "PF,C",
-    "draft": 45
+    "id": 6398,
+    "nba": "ATL",
+    "pos": "C",
+    "draft": 28
    },
    {
     "name": "Coby White",
@@ -1171,12 +1168,20 @@
     "draft": 8
    },
    {
-    "name": "Onyeka Okongwu",
+    "name": "Alex Sarr",
     "slot": "Util",
-    "id": 6398,
-    "nba": "ATL",
+    "id": 10294,
+    "nba": "WAS",
     "pos": "C",
-    "draft": 28
+    "draft": 19
+   },
+   {
+    "name": "Bilal Coulibaly",
+    "slot": "BN",
+    "id": 10099,
+    "nba": "WAS",
+    "pos": "SG,SF",
+    "draft": "FA"
    },
    {
     "name": "Christian Braun",
@@ -1193,14 +1198,6 @@
     "nba": "DAL",
     "pos": "SF,PF",
     "draft": "FA"
-   },
-   {
-    "name": "Alex Sarr",
-    "slot": "BN",
-    "id": 10294,
-    "nba": "WAS",
-    "pos": "C",
-    "draft": 19
    },
    {
     "name": "Mark Williams",
@@ -1408,7 +1405,6 @@
     "id": 6403,
     "nba": "SAS",
     "pos": "SG,SF",
-    "status": "Q",
     "draft": 1
    },
    {
@@ -1594,7 +1590,6 @@
     "id": 5767,
     "nba": "SAS",
     "pos": "PG",
-    "status": "Q",
     "draft": 19
    },
    {
@@ -1654,20 +1649,20 @@
     "draft": 35
    },
    {
-    "name": "Dejounte Murray",
-    "slot": "Util",
-    "id": 5660,
-    "nba": "NOP",
-    "pos": "PG,SG",
-    "draft": 20
-   },
-   {
     "name": "Damian Lillard",
     "slot": "Util",
     "id": 5012,
     "nba": "POR",
     "pos": "PG",
     "draft": 15
+   },
+   {
+    "name": "Miles McBride",
+    "slot": "Util",
+    "id": 6578,
+    "nba": "NYK",
+    "pos": "PG,SG",
+    "draft": 1
    },
    {
     "name": "Duncan Robinson",
@@ -1692,6 +1687,15 @@
     "nba": "TOR",
     "pos": "PF,C",
     "draft": 6
+   },
+   {
+    "name": "Dejounte Murray",
+    "slot": "IL",
+    "id": 5660,
+    "nba": "NOP",
+    "pos": "PG,SG",
+    "status": "O",
+    "draft": 20
    }
   ],
   "Suhayy31": [
@@ -1806,7 +1810,7 @@
     "id": 10304,
     "nba": "OKC",
     "pos": "PG,SG",
-    "status": "Q",
+    "status": "O",
     "draft": 5
    },
    {
@@ -1815,7 +1819,7 @@
     "id": 6559,
     "nba": "NOP",
     "pos": "SG,SF",
-    "status": "D",
+    "status": "O",
     "draft": 38
    },
    {
@@ -2005,7 +2009,7 @@
     "id": 10455,
     "nba": "BKN",
     "pos": "PG",
-    "status": "Q",
+    "status": "P",
     "draft": "FA"
    },
    {

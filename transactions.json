@@ -1,4 +1,5 @@
 [
+  {"time":"2026-11-13 23:23","team":"Splash Brothers","type":"add","add":["M. McBride"],"drop":[],"pos":"PG,SG","source":"FA"},
   {"time":"2026-11-13 19:52","team":"Normal MAFIA","type":"add/drop","add":["B. Miller"],"drop":["T. Lyles"],"pos":"PF / PF","source":"FA"},
   {"time":"2026-11-13 12:23","team":"EAH Seniors","type":"add","add":["I. Jackson"],"drop":[],"pos":"C","source":"FA"},
   {"time":"2026-11-13 12:20","team":"Yukatel Metin Akdülger","type":"add/drop","add":["K. Huerter"],"drop":["S. Aldama"],"pos":"SG,SF / PF","faab":23,"source":"W"},
