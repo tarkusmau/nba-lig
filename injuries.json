@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-14 10:25",
+"updated": "2026-11-14 20:43",
 "source": "ESPN",
 "injuries": [
 {
@@ -60,10 +60,10 @@
 "name": "Mikel Brown Jr.",
 "team": "Brooklyn Nets",
 "status": "Day-To-Day",
-"date": "2026-11-13T22:08Z",
+"date": "2026-11-14T17:19Z",
 "return": "2026-11-14",
 "type": "Illness",
-"note": "Brown (illness) is listed as questionable for Saturday's game against Memphis."
+"note": "Brown (illness) has been upgraded to probable for Saturday's game at Memphis."
 },
 {
 "name": "Nolan Traore",
@@ -102,19 +102,10 @@
 "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
 },
 {
-"name": "Jalen Smith",
-"team": "Chicago Bulls",
-"status": "Day-To-Day",
-"date": "2026-11-14T03:50Z",
-"return": "2026-11-14",
-"type": "Hand",
-"note": "Smith (hand) exited Friday's 125-117 win over the Hawks in overtime and did not return, finishing with 15 points (6-15 FG, 1-6 3Pt, 2-2 FT), 12 rebounds, three assists and three steals across 32 minutes."
-},
-{
 "name": "Dailyn Swain",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-14T00:17Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:00Z",
 "return": "2026-11-14",
 "type": "Back",
 "note": "Swain (back) is out for Friday's game against the Hawks."
@@ -122,11 +113,20 @@
 {
 "name": "Tobe Awaka",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-12T21:40Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:00Z",
 "return": "2026-11-14",
 "type": "Back",
 "note": "Awaka (back) has been ruled out for Friday's game against the Hawks."
+},
+{
+"name": "Jalen Smith",
+"team": "Chicago Bulls",
+"status": "Day-To-Day",
+"date": "2026-11-14T03:50Z",
+"return": "2026-11-14",
+"type": "Hand",
+"note": "Smith (hand) exited Friday's 125-117 win over the Hawks in overtime and did not return, finishing with 15 points (6-15 FG, 1-6 3Pt, 2-2 FT), 12 rebounds, three assists and three steals across 32 minutes."
 },
 {
 "name": "Caleb Wilson",
@@ -140,8 +140,8 @@
 {
 "name": "Evan Mobley",
 "team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-12T22:08Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:01Z",
 "return": "2026-11-14",
 "type": "Toe",
 "note": "Mobley (toe) is out for Friday's game against the Heat."
@@ -428,8 +428,8 @@
 {
 "name": "Quinten Post",
 "team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-12T23:17Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:02Z",
 "return": "2026-11-14",
 "type": "Concussion",
 "note": "Post (concussion) has been ruled out for Friday's game against New Orleans."
@@ -437,8 +437,8 @@
 {
 "name": "Zach Edey",
 "team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-12T23:16Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:02Z",
 "return": "2026-11-14",
 "type": "Ankle",
 "note": "Edey won't play in Friday's game against the Pelicans due to left ankle injury management."
@@ -462,22 +462,22 @@
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
 },
 {
-"name": "Klay Thompson",
-"team": "Miami Heat",
-"status": "Out",
-"date": "2026-11-13T23:21Z",
-"return": "2026-11-14",
-"type": "Ankle",
-"note": "Thompson (ankle) is out for Friday's game against the Cavaliers."
-},
-{
 "name": "Pelle Larsson",
 "team": "Miami Heat",
-"status": "Out",
-"date": "2026-11-13T23:04Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:02Z",
 "return": "2026-11-14",
 "type": "Illness",
 "note": "Larsson (illness) is out for Friday's game against Cleveland."
+},
+{
+"name": "Klay Thompson",
+"team": "Miami Heat",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:01Z",
+"return": "2026-11-14",
+"type": "Ankle",
+"note": "Thompson (ankle) is out for Friday's game against the Cavaliers."
 },
 {
 "name": "Anthony Edwards",
@@ -498,6 +498,15 @@
 "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
 },
 {
+"name": "Bryce McGowens",
+"team": "New Orleans Pelicans",
+"status": "Day-To-Day",
+"date": "2026-11-14T14:59Z",
+"return": "2026-11-14",
+"type": "Elbow",
+"note": "McGowens (elbow) is listed as out for Friday's game against the Grizzlies."
+},
+{
 "name": "Dejounte Murray",
 "team": "New Orleans Pelicans",
 "status": "Out",
@@ -505,15 +514,6 @@
 "return": "2026-11-20",
 "type": "Ankle",
 "note": "Murray (ankle) is out for Friday's game against Memphis."
-},
-{
-"name": "Bryce McGowens",
-"team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-13T18:12Z",
-"return": "2026-11-14",
-"type": "Elbow",
-"note": "McGowens (elbow) is listed as out for Friday's game against the Grizzlies."
 },
 {
 "name": "Yves Missi",
@@ -545,8 +545,8 @@
 {
 "name": "Ajay Mitchell",
 "team": "Oklahoma City Thunder",
-"status": "Out",
-"date": "2026-11-14T02:34Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:07Z",
 "return": "2026-11-15",
 "type": "Ankle",
 "note": "Mitchell (ankle) has been ruled out for Friday's game against the Clippers."
@@ -619,7 +619,7 @@
 "team": "Orlando Magic",
 "status": "Out",
 "date": "2026-10-17T22:19Z",
-"return": "2026-11-18",
+"return": "2026-11-22",
 "type": "Hamstring",
 "note": "Penda was diagnosed with a partially torn right hamstring Saturday, Jason Beede of the Orlando Sentinel reports."
 },
@@ -689,8 +689,8 @@
 {
 "name": "Chris Youngblood",
 "team": "Portland Trail Blazers",
-"status": "Out",
-"date": "2026-11-13T01:06Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:05Z",
 "return": "2026-11-16",
 "type": "Foot",
 "note": "Youngblood (foot) is out for Friday's game against Sacramento."
@@ -725,8 +725,8 @@
 {
 "name": "Precious Achiuwa",
 "team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-13T21:20Z",
+"status": "Day-To-Day",
+"date": "2026-11-14T15:05Z",
 "return": "2026-11-15",
 "type": "Ankle",
 "note": "Achiuwa (ankle) is out for Friday's game against the Trail Blazers."

@@ -1,4 +1,13 @@
 [
+  {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"add","add":["J. Poole"],"drop":[],"pos":"PG,SG","source":"FA"},
+  {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"drop","add":[],"drop":["S. Cissoko"],"pos":"SF,PF"},
+  {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"drop","add":[],"drop":["B. Portis Jr."],"pos":"PF,C"},
+  {"time":"2026-11-14 11:23","team":"Suhayy31","type":"drop","add":[],"drop":["R. Williams III"],"pos":"C"},
+  {"time":"2026-11-14 11:22","team":"Suhayy31","type":"add","add":["C. Martin"],"drop":[],"pos":"SF,PF","source":"FA"},
+  {"time":"2026-11-14 11:14","team":"Suhayy31","type":"drop","add":[],"drop":["B. Stirtz"],"pos":"PG"},
+  {"time":"2026-11-14 11:09","team":"Splash Brothers","type":"add/drop","add":["M. Johnson Jr."],"drop":["M. McBride"],"pos":"PF / PG,SG","source":"FA"},
+  {"time":"2026-11-14 11:09","team":"BÇ","type":"add/drop","add":["M. Wagner"],"drop":["K. Matković"],"pos":"C / PF,C","source":"FA"},
+  {"time":"2026-11-14 11:07","team":"BÇ","type":"add","add":["J. Tyson"],"drop":[],"pos":"SG,SF,PF","source":"FA"},
   {"time":"2026-11-13 23:23","team":"Splash Brothers","type":"add","add":["M. McBride"],"drop":[],"pos":"PG,SG","source":"FA"},
   {"time":"2026-11-13 19:52","team":"Normal MAFIA","type":"add/drop","add":["B. Miller"],"drop":["T. Lyles"],"pos":"PF / PF","source":"FA"},
   {"time":"2026-11-13 12:23","team":"EAH Seniors","type":"add","add":["I. Jackson"],"drop":[],"pos":"C","source":"FA"},

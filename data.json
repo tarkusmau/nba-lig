@@ -843,7 +843,7 @@
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "14 Kasım 2026, 10:25 (13 Kasım maçları dahil)",
+   "updated": "14 Kasım 2026, 20:43 (13 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -877,7 +877,7 @@
      "blk": 21,
      "to": 43,
      "games_played": 32,
-     "games_total": 40
+     "games_total": 43
     },
     {
      "team": "Bomonti Sınırsız",
@@ -894,7 +894,7 @@
      "blk": 14,
      "to": 61,
      "games_played": 32,
-     "games_total": 40
+     "games_total": 42
     },
     {
      "team": "Kyojins on Rumbling",
@@ -928,7 +928,7 @@
      "blk": 23,
      "to": 48,
      "games_played": 32,
-     "games_total": 44
+     "games_total": 45
     },
     {
      "team": "Los Gerseii",
@@ -962,7 +962,7 @@
      "blk": 14,
      "to": 40,
      "games_played": 29,
-     "games_total": 36
+     "games_total": 37
     },
     {
      "team": "M. Sucks",
@@ -979,7 +979,7 @@
      "blk": 24,
      "to": 54,
      "games_played": 31,
-     "games_total": 41
+     "games_total": 42
     },
     {
      "team": "HobaKumpo",
@@ -1013,7 +1013,7 @@
      "blk": 15,
      "to": 65,
      "games_played": 36,
-     "games_total": 46
+     "games_total": 47
     },
     {
      "team": "Kalidou Koulibaly",
@@ -1047,7 +1047,7 @@
      "blk": 9,
      "to": 38,
      "games_played": 33,
-     "games_total": 43
+     "games_total": 44
     },
     {
      "team": "Normal MAFIA",
