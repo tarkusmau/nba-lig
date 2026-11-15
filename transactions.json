@@ -1,4 +1,11 @@
 [
+  {"time":"2026-11-15 18:46","team":"Los Gerseii","type":"add","add":["T. Hendricks"],"drop":[],"pos":"PF,C","source":"FA"},
+  {"time":"2026-11-15 18:36","team":"Los Gerseii","type":"drop","add":[],"drop":["K. Porziņģis"],"pos":"C"},
+  {"time":"2026-11-15 12:08","team":"BÇ","type":"add","add":["G. Williams"],"drop":[],"pos":"PF,C","source":"FA"},
+  {"time":"2026-11-15 11:13","team":"Kassablancas","type":"add","add":["T. McConnell"],"drop":[],"pos":"PG","source":"FA"},
+  {"time":"2026-11-15 11:10","team":"Kassablancas","type":"add/drop","add":["Q. Grimes"],"drop":["Q. Jackson"],"pos":"SG,SF / PG,SG","source":"FA"},
+  {"time":"2026-11-15 11:04","team":"M. Sucks","type":"add/drop","add":["L. Kornet"],"drop":["G. Santos"],"pos":"C / SF,PF","source":"FA"},
+  {"time":"2026-11-15 11:00","team":"Splash Brothers","type":"add/drop","add":["M. Robinson"],"drop":["M. Johnson Jr."],"pos":"C / PF","source":"FA"},
   {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"add","add":["J. Poole"],"drop":[],"pos":"PG,SG","source":"FA"},
   {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"drop","add":[],"drop":["S. Cissoko"],"pos":"SF,PF"},
   {"time":"2026-11-14 11:41","team":"Yukatel Metin Akdülger","type":"drop","add":[],"drop":["B. Portis Jr."],"pos":"PF,C"},

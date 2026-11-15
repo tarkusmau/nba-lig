@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-15 10:27",
+"updated": "2026-11-15 20:41",
 "source": "ESPN",
 "injuries": [
 {
@@ -50,8 +50,8 @@
 {
 "name": "Michael Porter Jr.",
 "team": "Brooklyn Nets",
-"status": "Out",
-"date": "2026-11-15T00:15Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:29Z",
 "return": "2026-11-16",
 "type": "Personal",
 "note": "Porter (personal) is out for Saturday's game against the Grizzlies, Brian Lewis of the New York Post reports."
@@ -77,8 +77,8 @@
 {
 "name": "Jalen Smith",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-14T23:40Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:30Z",
 "return": "2026-11-16",
 "type": "Finger",
 "note": "Smith (finger) has been ruled out for Saturday's game against Minnesota, K.C. Johnson of Chicago Sports Network reports."
@@ -86,8 +86,8 @@
 {
 "name": "Nic Claxton",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-14T23:39Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:30Z",
 "return": "2026-11-16",
 "type": "Hamstring",
 "note": "Claxton (hamstring) is out for Saturday's game against the Timberwolves, K.C. Johnson of Chicago Sports Network reports."
@@ -95,8 +95,8 @@
 {
 "name": "Tobe Awaka",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-14T18:10Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:30Z",
 "return": "2026-11-16",
 "type": "Back",
 "note": "Awaka has been ruled out for Saturday's game against the Timberwolves."
@@ -111,49 +111,49 @@
 "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
 },
 {
-"name": "Peyton Watson",
-"team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-14T22:59Z",
-"return": "2026-11-16",
-"type": "Hamstring",
-"note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
-},
-{
-"name": "James Harden",
-"team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-14T22:57Z",
-"return": "2026-11-16",
-"type": "Calf",
-"note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
-},
-{
-"name": "Donovan Mitchell",
-"team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-14T22:56Z",
-"return": "2026-11-16",
-"type": "Knee",
-"note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
-},
-{
 "name": "Jarrett Allen",
 "team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-14T22:52Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:26Z",
 "return": "2026-11-16",
 "type": "Knee",
 "note": "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
 },
 {
+"name": "Peyton Watson",
+"team": "Cleveland Cavaliers",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:25Z",
+"return": "2026-11-16",
+"type": "Hamstring",
+"note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
+},
+{
 "name": "Evan Mobley",
 "team": "Cleveland Cavaliers",
-"status": "Out",
-"date": "2026-11-14T18:33Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:25Z",
 "return": "2026-11-16",
 "type": "Toe",
 "note": "Mobley (toe) has been ruled out for Saturday's meeting with Dallas."
+},
+{
+"name": "Donovan Mitchell",
+"team": "Cleveland Cavaliers",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:25Z",
+"return": "2026-11-16",
+"type": "Knee",
+"note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
+},
+{
+"name": "James Harden",
+"team": "Cleveland Cavaliers",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:25Z",
+"return": "2026-11-16",
+"type": "Calf",
+"note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
 },
 {
 "name": "Sam Merrill",
@@ -176,8 +176,8 @@
 {
 "name": "Daniel Gafford",
 "team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-15T02:31Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:22Z",
 "return": "2026-11-15",
 "type": "Face",
 "note": "Gafford (face) won't return to Saturday's game against the Cavaliers, Grant Afseth of DallasHoopsJournal.com reports."
@@ -185,8 +185,8 @@
 {
 "name": "Max Christie",
 "team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-14T23:02Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:22Z",
 "return": "2026-11-15",
 "type": "Ankle",
 "note": "Christie (ankle) has been ruled out for Saturday's game against Cleveland."
@@ -231,10 +231,10 @@
 "name": "Duncan Robinson",
 "team": "Detroit Pistons",
 "status": "Day-To-Day",
-"date": "2026-11-15T02:40Z",
-"return": "2026-11-14",
+"date": "2026-11-15T15:58Z",
+"return": "2026-11-17",
 "type": "Thigh",
-"note": "Robinson (thigh) is questionable to return to Saturday's game against Miami."
+"note": "Robinson (thigh) did not return to Saturday's 137-117 win over the Pistons. He finished with 10 points (3-8 FG, 2-6 3Pt, 2-2 FT), one rebound and one assist across 17 minutes."
 },
 {
 "name": "Ugonna Onyenso",
@@ -322,8 +322,8 @@
 "team": "Houston Rockets",
 "status": "Out",
 "date": "2026-11-14T21:52Z",
-"return": "2026-11-15",
-"type": "Calf",
+"return": null,
+"type": null,
 "note": "Adams (calf) has been upgraded to probable for Sunday's game against the Wizards."
 },
 {
@@ -347,29 +347,11 @@
 {
 "name": "Andrew Nembhard",
 "team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-15T01:14Z",
-"return": "2026-11-15",
+"status": "Out",
+"date": "2026-11-15T16:44Z",
+"return": "2026-11-18",
 "type": "Hip",
-"note": "Nembhard is questionable for Sunday's game against the 76ers due to left hip soreness."
-},
-{
-"name": "T.J. McConnell",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-14T21:23Z",
-"return": "2026-11-15",
-"type": "Hamstring",
-"note": "McConnell (hamstring) is listed as probable for Sunday's game against the 76ers."
-},
-{
-"name": "Aaron Nesmith",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-14T21:21Z",
-"return": "2026-11-15",
-"type": "Hand",
-"note": "Nesmith (hand) is listed as questionable for Sunday's game against Philadelphia."
+"note": "Nembhard (hip) has been ruled out for Sunday's game against the 76ers, Tony East of Forbes.com reports."
 },
 {
 "name": "Tyrese Haliburton",
@@ -462,28 +444,37 @@
 "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
 },
 {
-"name": "GG Jackson",
-"team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-15T04:09Z",
-"return": "2026-11-16",
-"type": "Foot",
-"note": "According to Grizzlies head coach Tuomas Iisalo, Jackson suffered a \"relatively serious\" foot injury in Saturday's 129-110 win over Brooklyn, Michael Wallace of the Grizzlies' official site reports."
-},
-{
 "name": "Zach Edey",
 "team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-15T00:43Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:29Z",
 "return": "2026-11-16",
 "type": "Ankle",
 "note": "Edey (ankle) is listed as out for Saturday's game against the Nets."
 },
 {
+"name": "Ty Jerome",
+"team": "Memphis Grizzlies",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:28Z",
+"return": "2026-11-16",
+"type": "Hip",
+"note": "Jerome (hip) has been ruled out for Saturday's game against the Nets."
+},
+{
+"name": "GG Jackson",
+"team": "Memphis Grizzlies",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:28Z",
+"return": "2026-11-16",
+"type": "Foot",
+"note": "According to Grizzlies head coach Tuomas Iisalo, Jackson suffered a \"relatively serious\" foot injury in Saturday's 129-110 win over Brooklyn, Michael Wallace of the Grizzlies' official site reports."
+},
+{
 "name": "Jerami Grant",
 "team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-15T00:35Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:28Z",
 "return": "2026-11-16",
 "type": "Head",
 "note": "Grant (head) is out for Saturday's game against the Nets."
@@ -496,15 +487,6 @@
 "return": "2026-11-16",
 "type": "Concussion",
 "note": "Post (concussion) has been ruled out for Saturday's game against the Nets."
-},
-{
-"name": "Ty Jerome",
-"team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-14T19:44Z",
-"return": "2026-11-16",
-"type": "Hip",
-"note": "Jerome (hip) has been ruled out for Saturday's game against the Nets."
 },
 {
 "name": "Scotty Pippen Jr.",
@@ -527,11 +509,20 @@
 {
 "name": "Pelle Larsson",
 "team": "Miami Heat",
-"status": "Out",
-"date": "2026-11-14T23:26Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:26Z",
 "return": "2026-11-16",
 "type": "Illness",
 "note": "Larsson (illness) has been ruled out for Saturday's game against the Pistons."
+},
+{
+"name": "Ryan Rollins",
+"team": "Milwaukee Bucks",
+"status": "Day-To-Day",
+"date": "2026-11-15T17:23Z",
+"return": "2026-11-15",
+"type": "Illness",
+"note": "Rollins (illness) is questionable to play in Sunday's game against the Hawks."
 },
 {
 "name": "Ousmane Dieng",
@@ -545,8 +536,8 @@
 {
 "name": "Jaylen Clark",
 "team": "Minnesota Timberwolves",
-"status": "Out",
-"date": "2026-11-15T02:08Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:31Z",
 "return": "2026-11-16",
 "type": "Hamstring",
 "note": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
@@ -570,10 +561,19 @@
 "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
 },
 {
+"name": "Bryce McGowens",
+"team": "New Orleans Pelicans",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:24Z",
+"return": "2026-11-16",
+"type": "Elbow",
+"note": "McGowens (elbow) has been ruled out for Saturday's game against the Nuggets."
+},
+{
 "name": "Bennedict Mathurin",
 "team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-14T23:06Z",
+"status": "Day-To-Day",
+"date": "2026-11-15T15:24Z",
 "return": "2026-11-16",
 "type": "Foot",
 "note": "Mathurin is out for Saturday's game against the Nuggets due to left plantar fasciitis."
@@ -586,15 +586,6 @@
 "return": "2026-11-16",
 "type": "Ankle",
 "note": "Watford (ankle) has been ruled out for Saturday's game against Denver."
-},
-{
-"name": "Bryce McGowens",
-"team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-14T17:55Z",
-"return": "2026-11-16",
-"type": "Elbow",
-"note": "McGowens (elbow) has been ruled out for Saturday's game against the Nuggets."
 },
 {
 "name": "Trey Murphy III",
@@ -871,7 +862,7 @@
 "team": "Toronto Raptors",
 "status": "Day-To-Day",
 "date": "2026-11-13T15:37Z",
-"return": "2026-11-14",
+"return": "2026-11-16",
 "type": "Illness",
 "note": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports."
 },

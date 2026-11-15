@@ -843,7 +843,7 @@
   },
   "4": {
    "label": "Hafta 4 (9-15 Kasım)",
-   "updated": "15 Kasım 2026, 10:27 (14 Kasım maçları dahil)",
+   "updated": "15 Kasım 2026, 20:41 (14 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -877,7 +877,7 @@
      "blk": 25,
      "to": 58,
      "games_played": 40,
-     "games_total": 44
+     "games_total": 46
     },
     {
      "team": "Bomonti Sınırsız",
@@ -894,7 +894,7 @@
      "blk": 15,
      "to": 64,
      "games_played": 35,
-     "games_total": 40
+     "games_total": 41
     },
     {
      "team": "Kyojins on Rumbling",
@@ -928,7 +928,7 @@
      "blk": 27,
      "to": 63,
      "games_played": 40,
-     "games_total": 45
+     "games_total": 46
     },
     {
      "team": "Los Gerseii",
@@ -945,7 +945,7 @@
      "blk": 24,
      "to": 56,
      "games_played": 35,
-     "games_total": 41
+     "games_total": 40
     },
     {
      "team": "EAH Seniors",
@@ -967,19 +967,19 @@
     {
      "team": "M. Sucks",
      "gp": 40,
-     "fgm": 161,
-     "fga": 328,
+     "fgm": 167,
+     "fga": 343,
      "ftm": 75,
-     "fta": 96,
-     "tpm": 60,
-     "pts": 457,
-     "reb": 130,
-     "ast": 124,
-     "st": 13,
+     "fta": 97,
+     "tpm": 61,
+     "pts": 470,
+     "reb": 134,
+     "ast": 131,
+     "st": 15,
      "blk": 28,
-     "to": 66,
+     "to": 68,
      "games_played": 40,
-     "games_total": 41
+     "games_total": 46
     },
     {
      "team": "HobaKumpo",
@@ -1030,7 +1030,7 @@
      "blk": 21,
      "to": 54,
      "games_played": 37,
-     "games_total": 44
+     "games_total": 46
     },
     {
      "team": "Kreuzberg Boys",
@@ -1064,7 +1064,7 @@
      "blk": 18,
      "to": 54,
      "games_played": 33,
-     "games_total": 42
+     "games_total": 43
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1081,7 +1081,7 @@
      "blk": 24,
      "to": 55,
      "games_played": 34,
-     "games_total": 37
+     "games_total": 41
     },
     {
      "team": "tarkus maurelius",
@@ -1103,19 +1103,19 @@
     {
      "team": "Kassablancas",
      "gp": 37,
-     "fgm": 167,
-     "fga": 324,
-     "ftm": 74,
-     "fta": 91,
-     "tpm": 47,
-     "pts": 455,
-     "reb": 163,
-     "ast": 103,
+     "fgm": 176,
+     "fga": 340,
+     "ftm": 78,
+     "fta": 99,
+     "tpm": 49,
+     "pts": 479,
+     "reb": 169,
+     "ast": 105,
      "st": 36,
-     "blk": 38,
-     "to": 54,
+     "blk": 40,
+     "to": 56,
      "games_played": 37,
-     "games_total": 46
+     "games_total": 47
     }
    ],
    "pairs": [
