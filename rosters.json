@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 20:43",
+ "updated": "2026-11-15 10:27",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -84,14 +84,6 @@
  },
  "teams": {
   "Pickle Men": [
-   {
-    "name": "Ty Jerome",
-    "slot": "PG",
-    "id": 6212,
-    "nba": "MEM",
-    "pos": "PG,SG",
-    "draft": 7
-   },
    {
     "name": "Keyonte George",
     "slot": "SG",
@@ -189,12 +181,21 @@
     "draft": 7
    },
    {
+    "name": "Ty Jerome",
+    "slot": "IL",
+    "id": 6212,
+    "nba": "MEM",
+    "pos": "PG,SG",
+    "status": "O",
+    "draft": 7
+   },
+   {
     "name": "Evan Mobley",
     "slot": "IL",
     "id": 6514,
     "nba": "CLE",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 35
    },
    {
@@ -214,6 +215,7 @@
     "id": 4563,
     "nba": "CLE",
     "pos": "PG,SG",
+    "status": "O",
     "draft": 37
    },
    {
@@ -230,7 +232,6 @@
     "id": 6014,
     "nba": "LAL",
     "pos": "PG,SG",
-    "status": "P",
     "draft": 73
    },
    {
@@ -255,7 +256,6 @@
     "id": 4892,
     "nba": "MIA",
     "pos": "SG,SF",
-    "status": "Q",
     "draft": 1
    },
    {
@@ -264,7 +264,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -289,7 +289,7 @@
     "id": 10574,
     "nba": "ATL",
     "pos": "PG",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -322,7 +322,6 @@
     "id": 10104,
     "nba": "CHA",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 32
    }
   ],
@@ -397,6 +396,7 @@
     "id": 5826,
     "nba": "CLE",
     "pos": "PG,SG",
+    "status": "O",
     "draft": 49
    },
    {
@@ -437,7 +437,7 @@
     "id": 10312,
     "nba": "MIA",
     "pos": "SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -513,7 +513,7 @@
     "id": 10287,
     "nba": "MEM",
     "pos": "C",
-    "status": "P",
+    "status": "O",
     "draft": 15
    },
    {
@@ -554,7 +554,6 @@
     "id": 3704,
     "nba": "PHI",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 27
    },
    {
@@ -726,12 +725,12 @@
     "draft": 22
    },
    {
-    "name": "Fred VanVleet",
+    "name": "Amen Thompson",
     "slot": "G",
-    "id": 5727,
+    "id": 10108,
     "nba": "HOU",
-    "pos": "PG",
-    "draft": 6
+    "pos": "PG,SG",
+    "draft": 39
    },
    {
     "name": "Keldon Johnson",
@@ -771,7 +770,6 @@
     "id": 10289,
     "nba": "NOP",
     "pos": "C",
-    "status": "O",
     "draft": 1
    },
    {
@@ -799,14 +797,6 @@
     "draft": 10
    },
    {
-    "name": "Amen Thompson",
-    "slot": "BN",
-    "id": 10108,
-    "nba": "HOU",
-    "pos": "PG,SG",
-    "draft": 39
-   },
-   {
     "name": "Collin Sexton",
     "slot": "BN",
     "id": 6019,
@@ -817,12 +807,21 @@
    },
    {
     "name": "Scottie Barnes",
-    "slot": "IL",
+    "slot": "BN",
     "id": 6515,
     "nba": "TOR",
     "pos": "SF,PF,C",
     "status": "O",
     "draft": 58
+   },
+   {
+    "name": "Fred VanVleet",
+    "slot": "IL",
+    "id": 5727,
+    "nba": "HOU",
+    "pos": "PG",
+    "status": "O",
+    "draft": 6
    },
    {
     "name": "Brandon Williams",
@@ -914,7 +913,7 @@
     "id": 6402,
     "nba": "CHI",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1205,6 +1204,7 @@
     "id": 10294,
     "nba": "WAS",
     "pos": "C",
+    "status": "Q",
     "draft": 19
    },
    {
@@ -1224,6 +1224,7 @@
     "id": 6721,
     "nba": "IND",
     "pos": "PG,SG",
+    "status": "Q",
     "draft": 6
    },
    {
@@ -1289,6 +1290,7 @@
     "id": 6219,
     "nba": "CHI",
     "pos": "C",
+    "status": "O",
     "draft": 4
    },
    {
@@ -1365,6 +1367,7 @@
     "id": 6720,
     "nba": "CLE",
     "pos": "SF,PF",
+    "status": "O",
     "draft": 6
    },
    {
@@ -1373,6 +1376,7 @@
     "id": 5350,
     "nba": "MEM",
     "pos": "SF,PF",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1397,6 +1401,7 @@
     "id": 6226,
     "nba": "DAL",
     "pos": "C",
+    "status": "O",
     "draft": 3
    },
    {
@@ -1463,7 +1468,6 @@
     "id": 4725,
     "nba": "BOS",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 19
    }
   ],
@@ -1557,20 +1561,21 @@
     "draft": 73
    },
    {
-    "name": "Joel Embiid",
-    "slot": "BN",
-    "id": 5294,
-    "nba": "PHI",
-    "pos": "C",
-    "draft": 20
-   },
-   {
     "name": "Ryan Kalkbrenner",
     "slot": "BN",
     "id": 10476,
     "nba": "CHA",
     "pos": "C",
     "draft": "FA"
+   },
+   {
+    "name": "Joel Embiid",
+    "slot": "IL",
+    "id": 5294,
+    "nba": "PHI",
+    "pos": "C",
+    "status": "O",
+    "draft": 20
    },
    {
     "name": "Tobias Harris",
@@ -1622,6 +1627,7 @@
     "id": 6073,
     "nba": "DET",
     "pos": "SG,SF",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -1670,7 +1676,6 @@
     "id": 10572,
     "nba": "DAL",
     "pos": "PF",
-    "status": "P",
     "draft": "FA"
    },
    {
@@ -1754,6 +1759,7 @@
     "id": 6025,
     "nba": "BKN",
     "pos": "SF,PF",
+    "status": "O",
     "draft": 25
    },
    {
@@ -1781,13 +1787,13 @@
     "draft": "FA"
    },
    {
-    "name": "Trey Murphy III",
+    "name": "Ajay Mitchell",
     "slot": "Util",
-    "id": 6559,
-    "nba": "NOP",
-    "pos": "SG,SF",
-    "status": "O",
-    "draft": 38
+    "id": 10304,
+    "nba": "OKC",
+    "pos": "PG,SG",
+    "status": "Q",
+    "draft": 5
    },
    {
     "name": "Walker Kessler",
@@ -1811,17 +1817,17 @@
     "id": 6606,
     "nba": "LAL",
     "pos": "PG,SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 39
    },
    {
-    "name": "Ajay Mitchell",
+    "name": "Trey Murphy III",
     "slot": "IL",
-    "id": 10304,
-    "nba": "OKC",
-    "pos": "PG,SG",
-    "status": "Q",
-    "draft": 5
+    "id": 6559,
+    "nba": "NOP",
+    "pos": "SG,SF",
+    "status": "O",
+    "draft": 38
    },
    {
     "name": "Ja Morant",
@@ -1888,6 +1894,7 @@
     "id": 5835,
     "nba": "CLE",
     "pos": "C",
+    "status": "O",
     "draft": 21
    },
    {
@@ -1946,7 +1953,6 @@
     "id": 10588,
     "nba": "BKN",
     "pos": "PG",
-    "status": "P",
     "draft": 1
    },
    {
@@ -1971,6 +1977,7 @@
     "id": 6694,
     "nba": "SAC",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 4
    },
    {
@@ -2003,7 +2010,6 @@
     "id": 10455,
     "nba": "BKN",
     "pos": "PG",
-    "status": "P",
     "draft": "FA"
    },
    {
