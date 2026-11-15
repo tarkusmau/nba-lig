@@ -81,9 +81,10 @@ def matchup_links(html, week=None):
 def parse_matchup(html):
     soup = BeautifulSoup(html, "html.parser")
     text = soup.get_text(" | ", strip=True)
-    gp = re.search(r"(\d+)/\d+ \| Games Played \| (\d+)/\d+", text)
+    gp = re.search(r"(\d+)\s*/\s*\d+[^/]{0,60}?Games Played[^/]{0,60}?(\d+)\s*/\s*\d+", text)
     if not gp:
-        raise ValueError("Games Played bulunamadi")
+        log("UYARI: Games Played okunamadi (canli mac olabilir), mac sayisi 0 yazildi")
+        gp = re.match(r"(0)(0)", "00")
     days = re.findall(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) (\d{1,2})/(\d{1,2})\b", text)
     table = None
     for t in soup.find_all("table"):
@@ -111,7 +112,7 @@ def week_data(week, links):
         html = fetch(f"/matchup?week={w}&mid1={m1}&mid2={m2}")
         t, d = parse_matchup(html)
         txt = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
-        m = re.search(r"(\d+)\s*/\s*(\d+)\s*Games Played\s*(\d+)\s*/\s*(\d+)", txt)
+        m = re.search(r"(\d+)\s*/\s*(\d+)[^/]{0,60}?Games Played[^/]{0,60}?(\d+)\s*/\s*(\d+)", txt)
         if m and len(t) == 2:
             t[0]["games_played"], t[0]["games_total"] = int(m.group(1)), int(m.group(2))
             t[1]["games_played"], t[1]["games_total"] = int(m.group(3)), int(m.group(4))
