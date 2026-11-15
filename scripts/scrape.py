@@ -89,15 +89,22 @@ def parse_matchup(html):
     table = None
     for t in soup.find_all("table"):
         first = t.find("tr")
-        if first and [c.get_text(strip=True) for c in first.find_all(["th", "td"])][:2] == ["Team", "FGM/A*"]:
+        hd = [c.get_text(strip=True) for c in first.find_all(["th", "td"])] if first else []
+        if any(h.startswith("FGM/A") for h in hd) and any(h in ("PTS", "REB") for h in hd) and len(t.find_all("tr")) <= 6:
             table = t; break
     if table is None:
-        raise ValueError("Toplamlar tablosu bulunamadi")
+        open("probe_matchup_live.html", "w", encoding="utf-8").write(html)
+        raise ValueError("Toplamlar tablosu bulunamadi (sayfa probe_matchup_live.html olarak kaydedildi)")
     head = [c.get_text(strip=True) for c in table.find("tr").find_all(["th", "td"])]
+    if head and head[0] != "Team":
+        head[0] = "Team"
     teams = []
     for i, tr in enumerate(table.find_all("tr")[1:3]):
         cells = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+        if len(cells) > len(head):
+            cells = cells[len(cells) - len(head):]
         row = dict(zip(head, cells))
+        row.setdefault("Team", cells[0] if cells else "")
         fgm, fga = pair(row["FGM/A*"]); ftm, fta = pair(row["FTM/A*"])
         t = {"team": row["Team"], "gp": int(gp.group(i + 1)), "fgm": fgm, "fga": fga, "ftm": ftm, "fta": fta,
              "tpm": to_int(row["3PTM"]), "pts": to_int(row["PTS"]), "reb": to_int(row["REB"]), "ast": to_int(row["AST"]),
