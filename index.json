@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 23:35",
+ "updated": "2026-11-15 23:44",
  "files": {
   "boxscores/2026-11-09.json": 28900,
   "boxscores/2026-11-10.json": 21709,
@@ -10,7 +10,7 @@
   "boxscores/2026-11-15.json": 3556,
   "data.json": 18345,
   "draft.json": 16222,
-  "injuries.json": 28391,
+  "injuries.json": 28388,
   "injuries_yahoo.json": 11758,
   "managers.json": 4488,
   "nba_schedule.json": 36043,
@@ -20,7 +20,7 @@
   "players/son14_ort.json": 167455,
   "players/son7_ort.json": 166966,
   "rosters.json": 33754,
-  "run.log": 3805,
+  "run.log": 2775,
   "schedule.json": 164,
   "settings.json": 1923,
   "standings.json": 2079,
