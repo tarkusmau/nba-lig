@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15 20:41",
+ "updated": "2026-11-15 23:35",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -210,13 +210,12 @@
   ],
   "Bomonti Sınırsız": [
    {
-    "name": "James Harden",
+    "name": "Ja'Kobe Walter",
     "slot": "PG",
-    "id": 4563,
-    "nba": "CLE",
+    "id": 10278,
+    "nba": "TOR",
     "pos": "PG,SG",
-    "status": "Q",
-    "draft": 37
+    "draft": "FA"
    },
    {
     "name": "Jordan Goodwin",
@@ -235,12 +234,12 @@
     "draft": 73
    },
    {
-    "name": "Desmond Bane",
+    "name": "Sion James",
     "slot": "SF",
-    "id": 6422,
-    "nba": "ORL",
+    "id": 10498,
+    "nba": "CHA",
     "pos": "SG,SF",
-    "draft": 26
+    "draft": "FA"
    },
    {
     "name": "Naji Marshall",
@@ -251,12 +250,20 @@
     "draft": 1
    },
    {
-    "name": "Klay Thompson",
+    "name": "Naz Reid",
     "slot": "F",
-    "id": 4892,
-    "nba": "MIA",
-    "pos": "SG,SF",
-    "draft": 1
+    "id": 6253,
+    "nba": "CHA",
+    "pos": "PF,C",
+    "draft": 18
+   },
+   {
+    "name": "Kel'el Ware",
+    "slot": "C",
+    "id": 10274,
+    "nba": "MIL",
+    "pos": "C",
+    "draft": 18
    },
    {
     "name": "Jaxson Hayes",
@@ -266,14 +273,6 @@
     "pos": "C",
     "status": "O",
     "draft": "FA"
-   },
-   {
-    "name": "Kel'el Ware",
-    "slot": "C",
-    "id": 10274,
-    "nba": "MIL",
-    "pos": "C",
-    "draft": 18
    },
    {
     "name": "Jamal Shead",
@@ -292,28 +291,29 @@
     "draft": 32
    },
    {
-    "name": "Naz Reid",
+    "name": "Klay Thompson",
     "slot": "BN",
-    "id": 6253,
-    "nba": "CHA",
-    "pos": "PF,C",
-    "draft": 18
-   },
-   {
-    "name": "Ja'Kobe Walter",
-    "slot": "BN",
-    "id": 10278,
-    "nba": "TOR",
-    "pos": "PG,SG",
-    "draft": "FA"
-   },
-   {
-    "name": "Sion James",
-    "slot": "BN",
-    "id": 10498,
-    "nba": "CHA",
+    "id": 4892,
+    "nba": "MIA",
     "pos": "SG,SF",
-    "draft": "FA"
+    "draft": 1
+   },
+   {
+    "name": "James Harden",
+    "slot": "BN",
+    "id": 4563,
+    "nba": "CLE",
+    "pos": "PG,SG",
+    "status": "Q",
+    "draft": 37
+   },
+   {
+    "name": "Desmond Bane",
+    "slot": "BN",
+    "id": 6422,
+    "nba": "ORL",
+    "pos": "SG,SF",
+    "draft": 26
    },
    {
     "name": "Kingston Flemings",
@@ -796,7 +796,6 @@
     "id": 6019,
     "nba": "LAL",
     "pos": "PG,SG",
-    "status": "Q",
     "draft": 1
    },
    {
@@ -1181,7 +1180,6 @@
     "id": 10294,
     "nba": "WAS",
     "pos": "C",
-    "status": "Q",
     "draft": 19
    },
    {
@@ -1423,7 +1421,7 @@
     "id": 6226,
     "nba": "DAL",
     "pos": "C",
-    "status": "Q",
+    "status": "P",
     "draft": 3
    },
    {
@@ -1613,14 +1611,6 @@
   ],
   "Splash Brothers": [
    {
-    "name": "De'Aaron Fox",
-    "slot": "PG",
-    "id": 5767,
-    "nba": "SAS",
-    "pos": "PG",
-    "draft": 19
-   },
-   {
     "name": "Anthony Black",
     "slot": "SG",
     "id": 10095,
@@ -1716,6 +1706,15 @@
     "nba": "POR",
     "pos": "SG,SF,PF",
     "draft": 27
+   },
+   {
+    "name": "De'Aaron Fox",
+    "slot": "IL",
+    "id": 5767,
+    "nba": "SAS",
+    "pos": "PG",
+    "status": "O",
+    "draft": 19
    },
    {
     "name": "Dejounte Murray",
@@ -1877,6 +1876,7 @@
     "id": 4840,
     "nba": "DAL",
     "pos": "PG,SG",
+    "status": "Q",
     "draft": 28
    },
    {
@@ -1896,8 +1896,16 @@
     "draft": 20
    },
    {
-    "name": "Anthony Davis",
+    "name": "Matisse Thybulle",
     "slot": "F",
+    "id": 6208,
+    "nba": "LAL",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Anthony Davis",
+    "slot": "C",
     "id": 5007,
     "nba": "WAS",
     "pos": "PF,C",
@@ -1912,14 +1920,6 @@
     "draft": 1
    },
    {
-    "name": "Brook Lopez",
-    "slot": "C",
-    "id": 4472,
-    "nba": "LAC",
-    "pos": "C",
-    "draft": 1
-   },
-   {
     "name": "Immanuel Quickley",
     "slot": "Util",
     "id": 6417,
@@ -1928,20 +1928,20 @@
     "draft": 8
    },
    {
-    "name": "Matisse Thybulle",
-    "slot": "Util",
-    "id": 6208,
-    "nba": "LAL",
-    "pos": "SG,SF",
-    "draft": "FA"
-   },
-   {
     "name": "Grayson Allen",
-    "slot": "BN",
+    "slot": "Util",
     "id": 6032,
     "nba": "CHA",
     "pos": "SG,SF",
     "draft": 2
+   },
+   {
+    "name": "Brook Lopez",
+    "slot": "BN",
+    "id": 4472,
+    "nba": "LAC",
+    "pos": "C",
+    "draft": 1
    },
    {
     "name": "Jarrett Allen",
@@ -1992,7 +1992,6 @@
     "id": 6694,
     "nba": "SAC",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 4
    },
    {

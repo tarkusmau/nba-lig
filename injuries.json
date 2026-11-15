@@ -1,7 +1,16 @@
 {
-"updated": "2026-11-15 20:41",
+"updated": "2026-11-15 23:35",
 "source": "ESPN",
 "injuries": [
+{
+"name": "Jock Landale",
+"team": "Atlanta Hawks",
+"status": "Day-To-Day",
+"date": "2026-11-15T17:55Z",
+"return": "2026-11-15",
+"type": "Hip",
+"note": "Landale (hip) is listed as questionable for Sunday's game against Milwakee."
+},
 {
 "name": "Kingston Flemings",
 "team": "Atlanta Hawks",
@@ -174,22 +183,40 @@
 "note": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports."
 },
 {
-"name": "Daniel Gafford",
+"name": "Santi Aldama",
 "team": "Dallas Mavericks",
 "status": "Day-To-Day",
-"date": "2026-11-15T15:22Z",
+"date": "2026-11-15T18:19Z",
 "return": "2026-11-15",
-"type": "Face",
-"note": "Gafford (face) won't return to Saturday's game against the Cavaliers, Grant Afseth of DallasHoopsJournal.com reports."
+"type": "Ankle",
+"note": "Aldama (ankle) is listed as questionable for Sunday's game in Boston."
 },
 {
 "name": "Max Christie",
 "team": "Dallas Mavericks",
 "status": "Day-To-Day",
-"date": "2026-11-15T15:22Z",
+"date": "2026-11-15T18:18Z",
 "return": "2026-11-15",
 "type": "Ankle",
-"note": "Christie (ankle) has been ruled out for Saturday's game against Cleveland."
+"note": "Christie (ankle) is doubtful to play Sunday's game against the Celtics."
+},
+{
+"name": "Kyrie Irving",
+"team": "Dallas Mavericks",
+"status": "Day-To-Day",
+"date": "2026-11-15T18:14Z",
+"return": "2026-11-15",
+"type": "Knee",
+"note": "Irving (knee) is questionable to play in Sunday's game against the Celtics."
+},
+{
+"name": "Daniel Gafford",
+"team": "Dallas Mavericks",
+"status": "Day-To-Day",
+"date": "2026-11-15T18:09Z",
+"return": "2026-11-15",
+"type": "Shoulder",
+"note": "Gafford (shoulder) is probable to play in Sunday's game against the Celtics."
 },
 {
 "name": "Dereck Lively II",
@@ -318,15 +345,6 @@
 "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
 },
 {
-"name": "Steven Adams",
-"team": "Houston Rockets",
-"status": "Out",
-"date": "2026-11-14T21:52Z",
-"return": null,
-"type": null,
-"note": "Adams (calf) has been upgraded to probable for Sunday's game against the Wizards."
-},
-{
 "name": "Fred VanVleet",
 "team": "Houston Rockets",
 "status": "Out",
@@ -417,24 +435,6 @@
 "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
 },
 {
-"name": "Adou Thiero",
-"team": "Los Angeles Lakers",
-"status": "Day-To-Day",
-"date": "2026-11-15T00:40Z",
-"return": "2026-11-15",
-"type": "Ankle",
-"note": "Thiero (ankle) is questionable for Sunday's game against the Suns."
-},
-{
-"name": "Collin Sexton",
-"team": "Los Angeles Lakers",
-"status": "Day-To-Day",
-"date": "2026-11-15T00:27Z",
-"return": "2026-11-15",
-"type": "Head",
-"note": "Sexton (head) is questionable for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
-},
-{
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
 "status": "Out",
@@ -516,6 +516,15 @@
 "note": "Larsson (illness) has been ruled out for Saturday's game against the Pistons."
 },
 {
+"name": "Ousmane Dieng",
+"team": "Milwaukee Bucks",
+"status": "Out",
+"date": "2026-11-15T20:13Z",
+"return": "2026-11-18",
+"type": "Finger",
+"note": "Dieng (finger) is listed as out for Sunday's game versus the Hawks."
+},
+{
 "name": "Ryan Rollins",
 "team": "Milwaukee Bucks",
 "status": "Day-To-Day",
@@ -523,15 +532,6 @@
 "return": "2026-11-15",
 "type": "Illness",
 "note": "Rollins (illness) is questionable to play in Sunday's game against the Hawks."
-},
-{
-"name": "Ousmane Dieng",
-"team": "Milwaukee Bucks",
-"status": "Out",
-"date": "2026-11-14T22:40Z",
-"return": "2026-11-18",
-"type": "Finger",
-"note": "Dieng (finger) has been ruled out for Sunday's game against the Hawks."
 },
 {
 "name": "Jaylen Clark",
@@ -660,6 +660,15 @@
 "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports."
 },
 {
+"name": "Jonathan Isaac",
+"team": "Orlando Magic",
+"status": "Out",
+"date": "2026-11-15T18:22Z",
+"return": "2026-11-18",
+"type": "Knee",
+"note": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
+},
+{
 "name": "Noah Penda",
 "team": "Orlando Magic",
 "status": "Out",
@@ -667,15 +676,6 @@
 "return": "2026-11-22",
 "type": "Hamstring",
 "note": "Penda (hamstring) is making progress but remains without a timetable to return to game action, Jason Beede of the Orlando Sentinel reports."
-},
-{
-"name": "Jonathan Isaac",
-"team": "Orlando Magic",
-"status": "Out",
-"date": "2026-11-09T23:10Z",
-"return": "2026-11-16",
-"type": "Knee",
-"note": "Isaac (knee) is out for Tuesday's game against Sacramento."
 },
 {
 "name": "Paolo Banchero",
@@ -795,15 +795,6 @@
 "note": "Raynaud (knee) has been ruled out for Sunday's game against the Thunder."
 },
 {
-"name": "Keegan Murray",
-"team": "Sacramento Kings",
-"status": "Day-To-Day",
-"date": "2026-11-15T01:00Z",
-"return": "2026-11-15",
-"type": "Illness",
-"note": "Murray (illness) is questionable for Sunday's game against the Thunder."
-},
-{
 "name": "Precious Achiuwa",
 "team": "Sacramento Kings",
 "status": "Day-To-Day",
@@ -820,6 +811,15 @@
 "return": "2027-10-01",
 "type": "Achilles",
 "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
+},
+{
+"name": "De'Aaron Fox",
+"team": "San Antonio Spurs",
+"status": "Out",
+"date": "2026-11-15T20:32Z",
+"return": "2026-11-17",
+"type": "Hip",
+"note": "Fox (hip) is listed as questionable for Sunday's game against Utah."
 },
 {
 "name": "Tobias Harris",
@@ -921,15 +921,6 @@
 "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
 },
 {
-"name": "Alex Sarr",
-"team": "Washington Wizards",
-"status": "Day-To-Day",
-"date": "2026-11-14T21:24Z",
-"return": "2026-11-15",
-"type": "Illness",
-"note": "Sarr (illness) is listed as questionable for Sunday's game against Houston."
-},
-{
 "name": "Tre Johnson",
 "team": "Washington Wizards",
 "status": "Day-To-Day",
@@ -937,15 +928,6 @@
 "return": "2026-11-15",
 "type": "Back",
 "note": "Johnson is listed as questionable for Sunday's game against the Rockets due to lower-back soreness."
-},
-{
-"name": "Bub Carrington",
-"team": "Washington Wizards",
-"status": "Day-To-Day",
-"date": "2026-11-14T21:05Z",
-"return": "2026-11-15",
-"type": "Chest",
-"note": "Carrington (chest) is listed as questionable for Sunday's game against Houston."
 },
 {
 "name": "Tristan Vukcevic",
