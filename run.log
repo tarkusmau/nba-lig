@@ -1,20 +1,17 @@
 Guncel hafta: 5
-Hafta 4 yazildi: Hafta 4 (9-15 Kasım) | 16 Kasım 2026, 12:06 (final)
 HATA hafta 5: oran degil: '-/-'
-Hafta 4 eslesmeleri: [['Pickle Men', 'Suhayy31'], ['Bomonti Sınırsız', 'Kyojins on Rumbling'], ['BÇ', 'Los Gerseii'], ['EAH Seniors', 'M. Sucks'], ['HobaKumpo', 'Splash Brothers'], ['Kalidou Koulibaly', 'Kreuzberg Boys'], ['Kassablancas', 'tarkus maurelius'], ['Normal MAFIA', 'Yukatel Metin Akdülger']]
 Puan durumu: 16 takim hesaplandi.
-Islemler: 5 yeni kayit eklendi.
-  + {"time": "2026-11-16 11:31", "team": "Kalidou Koulibaly", "type": "add/drop", "add": ["L. Cryer"], "drop": ["O. Toppin"], "pos": "PG / SF,PF", "source": "FA"}
-  + {"time": "2026-11-16 11:16", "team": "tarkus maurelius", "type": "add/drop", "add": ["J. Small"], "drop": ["M. Sasser"], "pos": "PG,SG / PG", "source": "FA"}
-  + {"time": "2026-11-16 11:10", "team": "BÇ", "type": "drop", "add": [], "drop": ["G. Williams"], "pos": "PF,C"}
-  + {"time": "2026-11-16 11:09", "team": "Suhayy31", "type": "add", "add": ["B. Hield"], "drop": [], "pos": "SG,SF", "source": "FA"}
-  + {"time": "2026-11-16 10:53", "team": "Pickle Men", "type": "add", "add": ["I. Okoro"], "drop": [], "pos": "SG,SF", "source": "FA"}
+Islemler: 4 yeni kayit eklendi.
+  + {"time": "2026-11-16 18:33", "team": "Normal MAFIA", "type": "add/drop", "add": ["B. Portis Jr."], "drop": ["B. Miller"], "pos": "PF,C / PF", "source": "FA"}
+  + {"time": "2026-11-16 12:27", "team": "Splash Brothers", "type": "add", "add": ["R. Williams III"], "drop": [], "pos": "C", "faab": 5, "source": "W"}
+  + {"time": "2026-11-16 12:26", "team": "Bomonti Sınırsız", "type": "add", "add": ["B. Scheierman"], "drop": [], "pos": "SG,SF", "source": "FA"}
+  + {"time": "2026-11-16 12:07", "team": "Kreuzberg Boys", "type": "add/drop", "add": ["N. Clowney"], "drop": ["K. Sanders"], "pos": "PF,C / SG,SF", "source": "FA"}
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 11: 'M. Sucks', 1: 'Pickle Men', 7: 'Kassablancas', 2: 'Bomonti Sınırsız', 4: 'EAH Seniors', 3: 'BÇ', 16: 'Yukatel Metin Akdülger', 5: 'HobaKumpo', 9: 'Kyojins on Rumbling', 6: 'Kalidou Koulibaly', 14: 'Suhayy31', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 10: 'Los Gerseii', 13: 'Splash Brothers'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Evan Mobley', 'Caleb Wilson', 'Ty Jerome']
-Kadro Bomonti Sınırsız: 14 oyuncu, IL: ['Kingston Flemings']
+Kadro Bomonti Sınırsız: 15 oyuncu, IL: ['Jaxson Hayes', 'Kingston Flemings']
 Kadro BÇ: 15 oyuncu, IL: ['Pelle Larsson', 'Jaren Jackson Jr.']
-Kadro EAH Seniors: 15 oyuncu, IL: ['Zach Edey', 'Stephen Curry', 'Chet Holmgren']
+Kadro EAH Seniors: 15 oyuncu, IL: ['Stephen Curry', 'Chet Holmgren']
 Kadro HobaKumpo: 16 oyuncu, IL: ['Tristan da Silva', 'Brandon Ingram', 'Anthony Edwards']
 Kadro Kalidou Koulibaly: 16 oyuncu, IL: ["De'Andre Hunter", 'Brandon Williams', 'Justin Champagnie']
 Kadro Kassablancas: 16 oyuncu, IL: ['Jalen Smith', 'Tyrese Haliburton', 'Kon Knueppel']
@@ -22,8 +19,8 @@ Kadro Kreuzberg Boys: 16 oyuncu, IL: ['Paolo Banchero', 'Dereck Lively II', 'Jus
 Kadro Kyojins on Rumbling: 15 oyuncu, IL: ['Zach LaVine', 'Mark Williams']
 Kadro Los Gerseii: 14 oyuncu, IL: ['Dennis Schröder']
 Kadro M. Sucks: 16 oyuncu, IL: ['Peyton Watson', 'Kawhi Leonard', 'Lauri Markkanen']
-Kadro Normal MAFIA: 15 oyuncu, IL: ['Tobias Harris', 'Jalen Duren', 'Joel Embiid']
-Kadro Splash Brothers: 14 oyuncu, IL: ['Dejounte Murray', "De'Aaron Fox"]
+Kadro Normal MAFIA: 15 oyuncu, IL: ['Tobias Harris', 'Jalen Duren']
+Kadro Splash Brothers: 15 oyuncu, IL: ['Dejounte Murray', "De'Aaron Fox"]
 Kadro Suhayy31: 16 oyuncu, IL: ['Austin Reaves', 'Trey Murphy III', 'Ja Morant']
 Kadro tarkus maurelius: 14 oyuncu, IL: ['Kyrie Irving']
 Kadro Yukatel Metin Akdülger: 15 oyuncu, IL: ['Jimmy Butler III', 'Maxime Raynaud']
@@ -32,19 +29,19 @@ takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: 40 satir.
 Yahoo sakatliklar: 103 kayit.
-Gunluk kadro 2026-11-16: 16 takim, 128 maci olan oyuncu.
+Gunluk kadro 2026-11-16: 16 takim, 131 maci olan oyuncu.
 Gunluk kadro 2026-11-17: 16 takim, 84 maci olan oyuncu.
-Gunluk kadro 2026-11-18: 16 takim, 193 maci olan oyuncu.
+Gunluk kadro 2026-11-18: 16 takim, 195 maci olan oyuncu.
 Gunluk kadro 2026-11-19: 16 takim, 67 maci olan oyuncu.
 Gunluk kadro 2026-11-20: 16 takim, 149 maci olan oyuncu.
-Gunluk kadro 2026-11-21: 16 takim, 97 maci olan oyuncu.
-Gunluk kadro 2026-11-22: 16 takim, 107 maci olan oyuncu.
+Gunluk kadro 2026-11-21: 16 takim, 98 maci olan oyuncu.
+Gunluk kadro 2026-11-22: 16 takim, 109 maci olan oyuncu.
 Gunluk kadro 2026-11-23: 16 takim, 171 maci olan oyuncu.
 Fikstur: {'5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers'}
-Oyuncular bu_sezon_ort: 443 oyuncu (243 kadrolu) yazildi.
-Oyuncular gecen_sezon_ort: 443 oyuncu (243 kadrolu) yazildi.
-Oyuncular son14_ort: 443 oyuncu (243 kadrolu) yazildi.
-Oyuncular son7_ort: 443 oyuncu (243 kadrolu) yazildi.
-Oyuncular projeksiyon_kalan: 443 oyuncu (243 kadrolu) yazildi.
+Oyuncular bu_sezon_ort: 445 oyuncu (245 kadrolu) yazildi.
+Oyuncular gecen_sezon_ort: 445 oyuncu (245 kadrolu) yazildi.
+Oyuncular son14_ort: 445 oyuncu (245 kadrolu) yazildi.
+Oyuncular son7_ort: 445 oyuncu (245 kadrolu) yazildi.
+Oyuncular projeksiyon_kalan: 445 oyuncu (245 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
-Sakatliklar: 102 kayit.
+Sakatliklar: 103 kayit.

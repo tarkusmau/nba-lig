@@ -1,4 +1,8 @@
 [
+  {"time":"2026-11-16 18:33","team":"Normal MAFIA","type":"add/drop","add":["B. Portis Jr."],"drop":["B. Miller"],"pos":"PF,C / PF","source":"FA"},
+  {"time":"2026-11-16 12:27","team":"Splash Brothers","type":"add","add":["R. Williams III"],"drop":[],"pos":"C","faab":5,"source":"W"},
+  {"time":"2026-11-16 12:26","team":"Bomonti Sınırsız","type":"add","add":["B. Scheierman"],"drop":[],"pos":"SG,SF","source":"FA"},
+  {"time":"2026-11-16 12:07","team":"Kreuzberg Boys","type":"add/drop","add":["N. Clowney"],"drop":["K. Sanders"],"pos":"PF,C / SG,SF","source":"FA"},
   {"time":"2026-11-16 11:31","team":"Kalidou Koulibaly","type":"add/drop","add":["L. Cryer"],"drop":["O. Toppin"],"pos":"PG / SF,PF","source":"FA"},
   {"time":"2026-11-16 11:16","team":"tarkus maurelius","type":"add/drop","add":["J. Small"],"drop":["M. Sasser"],"pos":"PG,SG / PG","source":"FA"},
   {"time":"2026-11-16 11:10","team":"BÇ","type":"drop","add":[],"drop":["G. Williams"],"pos":"PF,C"},

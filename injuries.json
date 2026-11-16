@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-16 12:06",
+"updated": "2026-11-16 21:07",
 "source": "ESPN",
 "injuries": [
 {
 "name": "Jock Landale",
 "team": "Atlanta Hawks",
-"status": "Out",
-"date": "2026-11-15T23:22Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:47Z",
 "return": "2026-11-18",
 "type": "Hip",
 "note": "Landale (hip) is out for Sunday's game against Bucks, Brad Rowland of the Locked On Podcast Network reports."
@@ -14,8 +14,8 @@
 {
 "name": "Kingston Flemings",
 "team": "Atlanta Hawks",
-"status": "Out",
-"date": "2026-11-14T23:08Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:47Z",
 "return": "2026-11-18",
 "type": "Back",
 "note": "Flemings (back) has been ruled out for Sunday's game against the Bucks."
@@ -96,10 +96,10 @@
 "name": "Jaylon Tyson",
 "team": "Cleveland Cavaliers",
 "status": "Day-To-Day",
-"date": "2026-11-15T22:09Z",
+"date": "2026-11-16T17:35Z",
 "return": "2026-11-16",
 "type": "Ankle",
-"note": "Tyson (ankle) is questionable for Monday's game against the Bulls."
+"note": "Tyson (ankle) has been downgraded to doubtful for Monday's game against the Bulls."
 },
 {
 "name": "Peyton Watson",
@@ -138,28 +138,28 @@
 "note": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports."
 },
 {
-"name": "Santi Aldama",
-"team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-15T22:27Z",
-"return": "2026-11-18",
-"type": "Ankle",
-"note": "Aldama (ankle) is out for Sunday's game against the Celtics."
-},
-{
 "name": "Max Christie",
 "team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-15T21:24Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:45Z",
 "return": "2026-11-18",
 "type": "Ankle",
 "note": "Christie (ankle) has been ruled out for Sunday's game against the Celtics."
 },
 {
+"name": "Santi Aldama",
+"team": "Dallas Mavericks",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:45Z",
+"return": "2026-11-18",
+"type": "Ankle",
+"note": "Aldama (ankle) is out for Sunday's game against the Celtics."
+},
+{
 "name": "Kyrie Irving",
 "team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-15T21:20Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:44Z",
 "return": "2026-11-18",
 "type": "Knee",
 "note": "Irving (knee) has been ruled out for Sunday's game against the Celtics."
@@ -208,15 +208,6 @@
 "return": "2026-11-17",
 "type": "Thigh",
 "note": "Robinson (thigh) did not return to Saturday's 137-117 win over the Pistons. He finished with 10 points (3-8 FG, 2-6 3Pt, 2-2 FT), one rebound and one assist across 17 minutes."
-},
-{
-"name": "Ugonna Onyenso",
-"team": "Detroit Pistons",
-"status": "Day-To-Day",
-"date": "2026-11-11T15:16Z",
-"return": "2026-11-14",
-"type": "Foot",
-"note": "Onyenso agreed to a two-way contract with the Pistons on Thursday."
 },
 {
 "name": "Isaiah Joe",
@@ -291,6 +282,33 @@
 "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
 },
 {
+"name": "Steven Adams",
+"team": "Houston Rockets",
+"status": "Out",
+"date": "2026-11-16T18:06Z",
+"return": "2026-11-18",
+"type": "Calf",
+"note": "Adams will start in Sunday's game against Washington but will be limited to 15 minutes, Varun Shankar of the Houston Chronicle reports."
+},
+{
+"name": "Julian Phillips",
+"team": "Houston Rockets",
+"status": "Day-To-Day",
+"date": "2026-11-16T15:28Z",
+"return": "2026-11-16",
+"type": "Wrist",
+"note": "Phillips (illness) is available for Wednesday's game against Dallas."
+},
+{
+"name": "Fred VanVleet",
+"team": "Houston Rockets",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:46Z",
+"return": "2026-11-16",
+"type": "Knee",
+"note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
+},
+{
 "name": "Clint Capela",
 "team": "Houston Rockets",
 "status": "Out",
@@ -298,15 +316,6 @@
 "return": "2026-11-16",
 "type": "Ankle",
 "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
-},
-{
-"name": "Fred VanVleet",
-"team": "Houston Rockets",
-"status": "Out",
-"date": "2026-11-14T21:52Z",
-"return": "2026-11-16",
-"type": "Knee",
-"note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
 },
 {
 "name": "Marcus Smart",
@@ -392,29 +401,38 @@
 {
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
-"status": "Out",
-"date": "2026-11-15T00:17Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:42Z",
 "return": "2026-11-17",
 "type": "Heel",
 "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
 },
 {
+"name": "Isaiah Stewart",
+"team": "Memphis Grizzlies",
+"status": "Out",
+"date": "2026-11-16T18:04Z",
+"return": "2026-11-18",
+"type": "Illness",
+"note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
+},
+{
+"name": "Scotty Pippen Jr.",
+"team": "Memphis Grizzlies",
+"status": "Out",
+"date": "2026-11-16T17:16Z",
+"return": "2026-11-25",
+"type": "Back",
+"note": "Pippen (back) is progressing in his recovery but is still considered week-to-week."
+},
+{
 "name": "GG Jackson",
 "team": "Memphis Grizzlies",
 "status": "Out",
-"date": "2026-11-15T22:16Z",
-"return": "2026-11-18",
+"date": "2026-11-16T17:12Z",
+"return": "2027-01-18",
 "type": "Foot",
-"note": "Jackson (foot) is out for Monday's game against Washington."
-},
-{
-"name": "Isaiah Stewart",
-"team": "Memphis Grizzlies",
-"status": "Day-To-Day",
-"date": "2026-11-15T22:15Z",
-"return": "2026-11-16",
-"type": "Illness",
-"note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
+"note": "Jackson will undergo surgery to repair the broken fifth metatarsal in his left foot and is set to miss significant time."
 },
 {
 "name": "Ty Jerome",
@@ -444,15 +462,6 @@
 "note": "Edey (ankle) is questionable for Monday's game against Washington."
 },
 {
-"name": "Scotty Pippen Jr.",
-"team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-10T23:09Z",
-"return": "2026-11-21",
-"type": "Back",
-"note": "Pippen (back) remains out for Wednesday's game against Denver, Michael Wallace of the Grizzlies' official site reports."
-},
-{
 "name": "Richie Saunders",
 "team": "Memphis Grizzlies",
 "status": "Out",
@@ -462,13 +471,31 @@
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
 },
 {
+"name": "Nikola Jovic",
+"team": "Miami Heat",
+"status": "Day-To-Day",
+"date": "2026-11-16T17:41Z",
+"return": "2026-11-16",
+"type": "Illness",
+"note": "Jovic (illness) has been downgraded to questionable for Monday's game against Houston."
+},
+{
 "name": "Pelle Larsson",
 "team": "Miami Heat",
 "status": "Day-To-Day",
-"date": "2026-11-15T22:47Z",
+"date": "2026-11-16T17:39Z",
 "return": "2026-11-16",
 "type": "Illness",
-"note": "Larsson (illness) is questionable to play in Monday's game against the Rockets."
+"note": "Larsson (illness) has been downgraded to doubtful for Monday's game against Houston."
+},
+{
+"name": "Ryan Rollins",
+"team": "Milwaukee Bucks",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:47Z",
+"return": "2026-11-18",
+"type": "Illness",
+"note": "Rollins (illness) is out for Sunday's game against the Hawks."
 },
 {
 "name": "Ousmane Dieng",
@@ -478,15 +505,6 @@
 "return": "2026-12-14",
 "type": "Finger",
 "note": "Dieng will undergo a procedure to repair a fractured left finger Monday, Justin Garcia of the Milwaukee Bucks Radio Network reports."
-},
-{
-"name": "Ryan Rollins",
-"team": "Milwaukee Bucks",
-"status": "Out",
-"date": "2026-11-15T23:19Z",
-"return": "2026-11-18",
-"type": "Illness",
-"note": "Rollins (illness) is out for Sunday's game against the Hawks."
 },
 {
 "name": "Jaylen Clark",
@@ -678,15 +696,6 @@
 "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
 },
 {
-"name": "Drew Timme",
-"team": "Phoenix Suns",
-"status": "Day-To-Day",
-"date": "2026-11-13T16:22Z",
-"return": "2026-11-15",
-"type": "Hand",
-"note": "The Suns claimed Timme off waivers Monday, per Michael Scotto of HoopsHype.com."
-},
-{
 "name": "Mark Williams",
 "team": "Phoenix Suns",
 "status": "Out",
@@ -732,28 +741,28 @@
 "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
 },
 {
-"name": "De'Andre Hunter",
-"team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-16T01:18Z",
-"return": "2026-11-18",
-"type": "Hip",
-"note": "Hunter (hip) is out for Sunday's game against the Thunder."
-},
-{
 "name": "Zach LaVine",
 "team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-16T01:06Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:48Z",
 "return": "2026-11-18",
 "type": "Illness",
 "note": "LaVine is out for Sunday's game against Oklahoma City due to illness, Brandon Rahbar of DailyThunder.com reports."
 },
 {
+"name": "De'Andre Hunter",
+"team": "Sacramento Kings",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:48Z",
+"return": "2026-11-18",
+"type": "Hip",
+"note": "Hunter (hip) is out for Sunday's game against the Thunder."
+},
+{
 "name": "Precious Achiuwa",
 "team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-16T00:24Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:48Z",
 "return": "2026-11-18",
 "type": "Ankle",
 "note": "Achiuwa (ankle) has been ruled out for Sunday's game against the Thunder, Brenden Nunes of KHTK Sactown Sports 1140 reports."
@@ -779,8 +788,8 @@
 {
 "name": "De'Aaron Fox",
 "team": "San Antonio Spurs",
-"status": "Out",
-"date": "2026-11-15T20:33Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:44Z",
 "return": "2026-11-17",
 "type": "Hip",
 "note": "Fox (hip) has been ruled out for Sunday's game against the Jazz."
@@ -833,8 +842,8 @@
 {
 "name": "Jaxson Hayes",
 "team": "Utah Jazz",
-"status": "Out",
-"date": "2026-11-15T00:07Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:44Z",
 "return": "2026-11-17",
 "type": "Knee",
 "note": "Hayes (knee) has been ruled out for Sunday's game against the Spurs."
@@ -878,8 +887,8 @@
 {
 "name": "Tre Johnson",
 "team": "Washington Wizards",
-"status": "Out",
-"date": "2026-11-15T22:31Z",
+"status": "Day-To-Day",
+"date": "2026-11-16T14:47Z",
 "return": "2026-11-16",
 "type": "Back",
 "note": "Johnson (back) won't play in Sunday's game against Houston, Josh Robbins of The Athletic reports."
