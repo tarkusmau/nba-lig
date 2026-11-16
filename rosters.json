@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 00:03",
+ "updated": "2026-11-16 08:09",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -186,7 +186,7 @@
     "id": 6514,
     "nba": "CLE",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 35
    },
    {
@@ -204,7 +204,7 @@
     "id": 6212,
     "nba": "MEM",
     "pos": "PG,SG",
-    "status": "Q",
+    "status": "O",
     "draft": 7
    }
   ],
@@ -304,7 +304,6 @@
     "id": 4563,
     "nba": "CLE",
     "pos": "PG,SG",
-    "status": "Q",
     "draft": 37
    },
    {
@@ -340,6 +339,7 @@
     "id": 10279,
     "nba": "CLE",
     "pos": "SG,SF,PF",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -412,6 +412,7 @@
     "id": 6408,
     "nba": "MEM",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -436,7 +437,6 @@
     "id": 5826,
     "nba": "CLE",
     "pos": "PG,SG",
-    "status": "Q",
     "draft": 49
    },
    {
@@ -762,6 +762,7 @@
     "id": 6166,
     "nba": "SAC",
     "pos": "SF,PF",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -770,7 +771,6 @@
     "id": 6515,
     "nba": "TOR",
     "pos": "SF,PF,C",
-    "status": "O",
     "draft": 58
    },
    {
@@ -787,7 +787,7 @@
     "id": 6734,
     "nba": "MIL",
     "pos": "PG,SG",
-    "status": "Q",
+    "status": "O",
     "draft": 22
    },
    {
@@ -1022,7 +1022,7 @@
     "id": 6412,
     "nba": "SAC",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -1143,12 +1143,12 @@
     "draft": 37
    },
    {
-    "name": "Zach LaVine",
+    "name": "Christian Braun",
     "slot": "SF",
-    "id": 5324,
-    "nba": "SAC",
-    "pos": "PG,SG,SF",
-    "draft": 9
+    "id": 6711,
+    "nba": "DEN",
+    "pos": "SG,SF,PF",
+    "draft": 1
    },
    {
     "name": "Zaccharie Risacher",
@@ -1183,20 +1183,20 @@
     "draft": 19
    },
    {
-    "name": "Christian Braun",
-    "slot": "Util",
-    "id": 6711,
-    "nba": "DEN",
-    "pos": "SG,SF,PF",
-    "draft": 1
-   },
-   {
     "name": "Onyeka Okongwu",
     "slot": "Util",
     "id": 6398,
     "nba": "ATL",
     "pos": "C",
     "draft": 28
+   },
+   {
+    "name": "Malik Monk",
+    "slot": "Util",
+    "id": 5824,
+    "nba": "SAC",
+    "pos": "PG,SG",
+    "draft": "FA"
    },
    {
     "name": "Matas Buzelis",
@@ -1221,6 +1221,15 @@
     "nba": "ORL",
     "pos": "SF,PF",
     "draft": 24
+   },
+   {
+    "name": "Zach LaVine",
+    "slot": "IL",
+    "id": 5324,
+    "nba": "SAC",
+    "pos": "PG,SG,SF",
+    "status": "O",
+    "draft": 9
    },
    {
     "name": "Mark Williams",
@@ -1304,7 +1313,6 @@
     "id": 6219,
     "nba": "CHI",
     "pos": "C",
-    "status": "Q",
     "draft": 4
    },
    {
@@ -1396,7 +1404,6 @@
     "id": 5350,
     "nba": "MEM",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 1
    },
    {
@@ -1421,7 +1428,6 @@
     "id": 6226,
     "nba": "DAL",
     "pos": "C",
-    "status": "P",
     "draft": 3
    },
    {
@@ -1741,7 +1747,6 @@
     "id": 10304,
     "nba": "OKC",
     "pos": "PG,SG",
-    "status": "Q",
     "draft": 5
    },
    {
@@ -1822,7 +1827,6 @@
     "id": 6025,
     "nba": "BKN",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 25
    },
    {
@@ -1855,33 +1859,24 @@
   ],
   "tarkus maurelius": [
    {
-    "name": "N. Alexander-Walker",
+    "name": "Marcus Sasser",
     "slot": "PG",
+    "id": 10114,
+    "nba": "DAL",
+    "pos": "PG",
+    "draft": "FA"
+   },
+   {
+    "name": "N. Alexander-Walker",
+    "slot": "SG",
     "id": 6205,
     "nba": "ATL",
     "pos": "PG,SG",
     "draft": 26
    },
    {
-    "name": "Tari Eason",
-    "slot": "SG",
-    "id": 6707,
-    "nba": "HOU",
-    "pos": "SG,SF,PF",
-    "draft": 2
-   },
-   {
-    "name": "Kyrie Irving",
-    "slot": "G",
-    "id": 4840,
-    "nba": "DAL",
-    "pos": "PG,SG",
-    "status": "Q",
-    "draft": 28
-   },
-   {
     "name": "Cooper Flagg",
-    "slot": "SF",
+    "slot": "G",
     "id": 10468,
     "nba": "DAL",
     "pos": "SG,SF,PF",
@@ -1889,11 +1884,19 @@
    },
    {
     "name": "OG Anunoby",
-    "slot": "PF",
+    "slot": "SF",
     "id": 5836,
     "nba": "NYK",
     "pos": "SF,PF",
     "draft": 20
+   },
+   {
+    "name": "Tari Eason",
+    "slot": "PF",
+    "id": 6707,
+    "nba": "HOU",
+    "pos": "SG,SF,PF",
+    "draft": 2
    },
    {
     "name": "Matisse Thybulle",
@@ -1949,7 +1952,6 @@
     "id": 5835,
     "nba": "CLE",
     "pos": "C",
-    "status": "Q",
     "draft": 21
    },
    {
@@ -1959,6 +1961,15 @@
     "nba": "CLE",
     "pos": "SG",
     "draft": "FA"
+   },
+   {
+    "name": "Kyrie Irving",
+    "slot": "IL",
+    "id": 4840,
+    "nba": "DAL",
+    "pos": "PG,SG",
+    "status": "O",
+    "draft": 28
    }
   ],
   "Yukatel Metin Akdülger": [
