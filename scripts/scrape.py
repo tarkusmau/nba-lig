@@ -116,7 +116,7 @@ def parse_matchup(html):
 def week_data(week, links):
     teams, days = [], []
     for w, m1, m2 in links:
-        html = fetch(f"/matchup?week={w}&mid1={m1}&mid2={m2}")
+        html = fetch(f"/matchup?week={w}&module=matchup&mid1={m1}&mid2={m2}")
         t, d = parse_matchup(html)
         txt = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
         m = re.search(r"(\d+)\s*/\s*(\d+)[^/]{0,60}?Games Played[^/]{0,60}?(\d+)\s*/\s*(\d+)", txt)
@@ -423,7 +423,7 @@ def week_pairs(w, ids):
     for tid, name in sorted(ids.items()):
         if name in done:
             continue
-        html = fetch(f"/matchup?week={w}&mid1={tid}")
+        html = fetch(f"/matchup?week={w}&module=matchup&mid1={tid}")
         others = [n for n in ids.values() if n != name and n in html]
         if not others:
             continue
@@ -466,7 +466,7 @@ def scrape_schedule(current):
     sched = {}
     for w in range(current, current + 4):
         try:
-            html = fetch(f"/matchup?week={w}&mid1={tid}")
+            html = fetch(f"/matchup?week={w}&module=matchup&mid1={tid}")
             if w == current + 1:
                 open("probe_matchup_next.html", "w", encoding="utf-8").write(html)
             names = [n for n in TEAM_INFO if n in html and n.lower() != MY_TEAM]
