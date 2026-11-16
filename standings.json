@@ -1,166 +1,166 @@
 {
- "updated": "2026-11-16 08:09",
+ "updated": "2026-11-16 12:06",
  "note": "kategori bazli H2H; sadece biten haftalar",
  "standings": [
   {
-   "team": "EAH Seniors",
-   "W": 19,
-   "L": 8,
-   "T": 0,
-   "mW": 2,
+   "team": "Yukatel Metin Akdülger",
+   "W": 24,
+   "L": 11,
+   "T": 1,
+   "mW": 3,
    "mL": 1,
    "mT": 0,
-   "pct": 0.704
+   "pct": 0.681
   },
   {
-   "team": "Yukatel Metin Akdülger",
-   "W": 17,
-   "L": 9,
-   "T": 1,
-   "mW": 2,
+   "team": "EAH Seniors",
+   "W": 24,
+   "L": 12,
+   "T": 0,
+   "mW": 3,
    "mL": 1,
    "mT": 0,
-   "pct": 0.648
+   "pct": 0.667
   },
   {
    "team": "BÇ",
-   "W": 16,
-   "L": 9,
+   "W": 22,
+   "L": 12,
    "T": 2,
-   "mW": 2,
+   "mW": 3,
    "mL": 0,
    "mT": 1,
-   "pct": 0.63
+   "pct": 0.639
   },
   {
    "team": "Splash Brothers",
-   "W": 16,
-   "L": 11,
+   "W": 23,
+   "L": 13,
    "T": 0,
-   "mW": 3,
+   "mW": 4,
    "mL": 0,
    "mT": 0,
-   "pct": 0.593
+   "pct": 0.639
+  },
+  {
+   "team": "tarkus maurelius",
+   "W": 20,
+   "L": 15,
+   "T": 1,
+   "mW": 3,
+   "mL": 1,
+   "mT": 0,
+   "pct": 0.569
   },
   {
    "team": "Pickle Men",
-   "W": 14,
-   "L": 11,
+   "W": 19,
+   "L": 15,
    "T": 2,
-   "mW": 1,
+   "mW": 2,
    "mL": 1,
    "mT": 1,
    "pct": 0.556
   },
   {
-   "team": "Los Gerseii",
-   "W": 14,
-   "L": 12,
-   "T": 1,
-   "mW": 1,
-   "mL": 1,
-   "mT": 1,
-   "pct": 0.537
-  },
-  {
-   "team": "tarkus maurelius",
-   "W": 14,
-   "L": 12,
-   "T": 1,
-   "mW": 2,
-   "mL": 1,
-   "mT": 0,
-   "pct": 0.537
-  },
-  {
-   "team": "Kassablancas",
-   "W": 14,
-   "L": 13,
-   "T": 0,
-   "mW": 2,
-   "mL": 1,
-   "mT": 0,
-   "pct": 0.519
-  },
-  {
    "team": "Suhayy31",
-   "W": 14,
-   "L": 13,
+   "W": 18,
+   "L": 18,
    "T": 0,
    "mW": 2,
-   "mL": 1,
+   "mL": 2,
    "mT": 0,
-   "pct": 0.519
+   "pct": 0.5
   },
   {
    "team": "Bomonti Sınırsız",
-   "W": 13,
-   "L": 13,
+   "W": 17,
+   "L": 18,
    "T": 1,
    "mW": 1,
-   "mL": 1,
+   "mL": 2,
    "mT": 1,
-   "pct": 0.5
+   "pct": 0.486
+  },
+  {
+   "team": "Los Gerseii",
+   "W": 17,
+   "L": 18,
+   "T": 1,
+   "mW": 1,
+   "mL": 2,
+   "mT": 1,
+   "pct": 0.486
   },
   {
    "team": "M. Sucks",
-   "W": 13,
-   "L": 13,
+   "W": 17,
+   "L": 18,
    "T": 1,
    "mW": 1,
-   "mL": 1,
+   "mL": 2,
    "mT": 1,
-   "pct": 0.5
+   "pct": 0.486
   },
   {
-   "team": "Normal MAFIA",
-   "W": 12,
-   "L": 14,
-   "T": 1,
-   "mW": 1,
-   "mL": 1,
-   "mT": 1,
-   "pct": 0.463
+   "team": "Kassablancas",
+   "W": 17,
+   "L": 19,
+   "T": 0,
+   "mW": 2,
+   "mL": 2,
+   "mT": 0,
+   "pct": 0.472
   },
   {
    "team": "Kyojins on Rumbling",
-   "W": 11,
-   "L": 15,
+   "W": 16,
+   "L": 19,
    "T": 1,
-   "mW": 0,
+   "mW": 1,
    "mL": 2,
    "mT": 1,
-   "pct": 0.426
+   "pct": 0.458
   },
   {
-   "team": "HobaKumpo",
-   "W": 10,
-   "L": 17,
-   "T": 0,
-   "mW": 0,
-   "mL": 3,
-   "mT": 0,
-   "pct": 0.37
+   "team": "Normal MAFIA",
+   "W": 14,
+   "L": 21,
+   "T": 1,
+   "mW": 1,
+   "mL": 2,
+   "mT": 1,
+   "pct": 0.403
   },
   {
    "team": "Kalidou Koulibaly",
-   "W": 7,
-   "L": 18,
+   "W": 13,
+   "L": 21,
    "T": 2,
-   "mW": 0,
+   "mW": 1,
    "mL": 2,
    "mT": 1,
-   "pct": 0.296
+   "pct": 0.389
+  },
+  {
+   "team": "HobaKumpo",
+   "W": 12,
+   "L": 24,
+   "T": 0,
+   "mW": 0,
+   "mL": 4,
+   "mT": 0,
+   "pct": 0.333
   },
   {
    "team": "Kreuzberg Boys",
-   "W": 5,
-   "L": 21,
+   "W": 8,
+   "L": 27,
    "T": 1,
    "mW": 0,
-   "mL": 3,
+   "mL": 4,
    "mT": 0,
-   "pct": 0.204
+   "pct": 0.236
   }
  ]
 }
