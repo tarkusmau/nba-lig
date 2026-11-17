@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 21:07",
+ "updated": "2026-11-17 10:40",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -130,6 +130,7 @@
     "id": 6396,
     "nba": "CHI",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -327,7 +328,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -355,7 +356,7 @@
     "id": 10279,
     "nba": "CLE",
     "pos": "SG,SF,PF",
-    "status": "D",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -380,15 +381,16 @@
     "id": 5602,
     "nba": "PHI",
     "pos": "SG,SF,PF",
+    "status": "Q",
     "draft": 31
    },
    {
-    "name": "Isaiah Stewart",
+    "name": "Pelle Larsson",
     "slot": "F",
-    "id": 6408,
-    "nba": "MEM",
-    "pos": "PF,C",
-    "status": "Q",
+    "id": 10312,
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "status": "O",
     "draft": 1
    },
    {
@@ -448,12 +450,12 @@
     "draft": 9
    },
    {
-    "name": "Pelle Larsson",
+    "name": "Isaiah Stewart",
     "slot": "IL",
-    "id": 10312,
-    "nba": "MIA",
-    "pos": "SG,SF",
-    "status": "D",
+    "id": 6408,
+    "nba": "MEM",
+    "pos": "PF,C",
+    "status": "O",
     "draft": 1
    },
    {
@@ -497,6 +499,7 @@
     "id": 3704,
     "nba": "PHI",
     "pos": "SF,PF",
+    "status": "O",
     "draft": 27
    },
    {
@@ -529,7 +532,6 @@
     "id": 10287,
     "nba": "MEM",
     "pos": "C",
-    "status": "Q",
     "draft": 15
    },
    {
@@ -609,20 +611,20 @@
     "draft": 4
    },
    {
-    "name": "RJ Barrett",
+    "name": "Ayo Dosunmu",
     "slot": "G",
-    "id": 6165,
-    "nba": "TOR",
-    "pos": "SG,SF,PF",
-    "draft": 6
+    "id": 6580,
+    "nba": "MIN",
+    "pos": "PG,SG",
+    "draft": 5
    },
    {
-    "name": "Brice Sensabaugh",
+    "name": "Saddiq Bey",
     "slot": "SF",
-    "id": 10122,
-    "nba": "UTA",
-    "pos": "SG,SF,PF",
-    "draft": "FA"
+    "id": 6411,
+    "nba": "NOP",
+    "pos": "SF,PF",
+    "draft": 3
    },
    {
     "name": "Kelly Oubre Jr.",
@@ -641,20 +643,21 @@
     "draft": 34
    },
    {
-    "name": "Ivica Zubac",
-    "slot": "C",
-    "id": 5663,
-    "nba": "IND",
-    "pos": "C",
-    "draft": 19
-   },
-   {
     "name": "Neemias Queta",
     "slot": "C",
     "id": 6581,
     "nba": "BOS",
     "pos": "C",
+    "status": "O",
     "draft": 4
+   },
+   {
+    "name": "Joan Beringer",
+    "slot": "C",
+    "id": 10460,
+    "nba": "MIN",
+    "pos": "PF,C",
+    "draft": 2
    },
    {
     "name": "Jalen Brunson",
@@ -673,28 +676,28 @@
     "draft": "FA"
    },
    {
-    "name": "Ayo Dosunmu",
+    "name": "RJ Barrett",
     "slot": "BN",
-    "id": 6580,
-    "nba": "MIN",
-    "pos": "PG,SG",
-    "draft": 5
+    "id": 6165,
+    "nba": "TOR",
+    "pos": "SG,SF,PF",
+    "draft": 6
    },
    {
-    "name": "Saddiq Bey",
+    "name": "Brice Sensabaugh",
     "slot": "BN",
-    "id": 6411,
-    "nba": "NOP",
-    "pos": "SF,PF",
-    "draft": 3
+    "id": 10122,
+    "nba": "UTA",
+    "pos": "SG,SF,PF",
+    "draft": "FA"
    },
    {
-    "name": "Joan Beringer",
+    "name": "Ivica Zubac",
     "slot": "BN",
-    "id": 10460,
-    "nba": "MIN",
-    "pos": "PF,C",
-    "draft": 2
+    "id": 5663,
+    "nba": "IND",
+    "pos": "C",
+    "draft": 19
    },
    {
     "name": "Tristan da Silva",
@@ -730,7 +733,6 @@
     "id": 5727,
     "nba": "HOU",
     "pos": "PG",
-    "status": "P",
     "draft": 6
    },
    {
@@ -739,6 +741,7 @@
     "id": 10108,
     "nba": "HOU",
     "pos": "PG,SG",
+    "status": "O",
     "draft": 39
    },
    {
@@ -969,7 +972,7 @@
     "id": 6402,
     "nba": "CHI",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1280,6 +1283,7 @@
     "id": 6549,
     "nba": "MIN",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 2
    },
    {
@@ -1476,7 +1480,7 @@
     "id": 6720,
     "nba": "CLE",
     "pos": "SF,PF",
-    "status": "Q",
+    "status": "O",
     "draft": 6
    },
    {
@@ -1561,7 +1565,6 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
-    "status": "P",
     "draft": 20
    },
    {
@@ -1678,6 +1681,7 @@
     "id": 5827,
     "nba": "MIA",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 35
    },
    {
@@ -1721,12 +1725,20 @@
     "draft": 19
    },
    {
-    "name": "Duncan Robinson",
+    "name": "De'Aaron Fox",
     "slot": "BN",
+    "id": 5767,
+    "nba": "SAS",
+    "pos": "PG",
+    "draft": 19
+   },
+   {
+    "name": "Duncan Robinson",
+    "slot": "IL",
     "id": 6073,
     "nba": "DET",
     "pos": "SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -1737,15 +1749,6 @@
     "pos": "PG,SG",
     "status": "O",
     "draft": 20
-   },
-   {
-    "name": "De'Aaron Fox",
-    "slot": "IL",
-    "id": 5767,
-    "nba": "SAS",
-    "pos": "PG",
-    "status": "Q",
-    "draft": 19
    }
   ],
   "Suhayy31": [
@@ -1811,6 +1814,7 @@
     "id": 6712,
     "nba": "LAL",
     "pos": "C",
+    "status": "O",
     "draft": 29
    },
    {
@@ -1859,7 +1863,7 @@
     "id": 6606,
     "nba": "LAL",
     "pos": "PG,SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 39
    },
    {
