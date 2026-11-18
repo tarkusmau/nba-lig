@@ -1,5 +1,5 @@
 """Yahoo Fantasy sayfalarini (giris cerezi ile) okuyup data.json ve transactions.json'u gunceller."""
-import datetime, glob, json, os, re, sys, time, urllib.request
+import datetime, glob, json, os, re, sys, time, urllib.request, urllib.error
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 
@@ -20,20 +20,53 @@ def finish(code=0):
     open("run.log", "w", encoding="utf-8").write("\n".join(LOG) + "\n")
     sys.exit(code)
 
-def fetch(path):
+def _merge_cookies(r):
+    """Yahoo'nun gonderdigi yeni (yenilenmis) cerezleri COOKIE dizesine isle."""
+    global COOKIE
+    sc = r.headers.get_all("Set-Cookie") if hasattr(r, "headers") and r.headers else None
+    if not sc:
+        return
+    jar = {}
+    for part in COOKIE.split(";"):
+        if "=" in part:
+            k, v = part.strip().split("=", 1); jar[k] = v
+    for c in sc:
+        kv = c.split(";", 1)[0].strip()
+        if "=" in kv:
+            k, v = kv.split("=", 1)
+            if v and v.lower() not in ("deleted", '""'):
+                jar[k] = v
+    COOKIE = "; ".join(f"{k}={v}" for k, v in jar.items())
+
+def fetch(path, _try=0):
     if LOCAL:
         name = "matchup.html" if path.startswith("/matchup") else ((path + ".html") if path else "home.html")
         return open(os.path.join(LOCAL, name.lstrip("/")), encoding="utf-8").read()
     req = urllib.request.Request(BASE + path, headers={
         "Cookie": COOKIE, "Accept-Language": "en-US,en;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0 Safari/537.36"})
-    time.sleep(1)
-    r = urllib.request.urlopen(req, timeout=40)
-    html = r.read().decode("utf-8", "replace")
-    if "login.yahoo.com" in r.geturl() or "Sign out" not in html:
-        log("HATA: Yahoo girisi gecersiz (cerez suresi dolmus olabilir). YAHOO_COOKIE secret'ini yenile.")
-        finish(1)
-    return html
+    time.sleep(1.5)
+    bad = None
+    try:
+        r = urllib.request.urlopen(req, timeout=40)
+        _merge_cookies(r)
+        html = r.read().decode("utf-8", "replace")
+        if "login.yahoo.com" in r.geturl() or "Sign out" not in html:
+            bad = "giris sayfasina yonlendirdi"
+    except urllib.error.HTTPError as e:
+        _merge_cookies(e)
+        bad = f"HTTP {e.code}" + (" yonlendirme dongusu" if e.code in (301, 302, 303, 307, 308) else f" ({e.reason})")
+    except Exception as e:
+        bad = f"ulasilamadi: {e}"
+    if bad is None:
+        return html
+    if _try < 2:
+        wait = 30 * (_try + 1)
+        log(f"Uyari: {path or '/'} {bad}; {wait} sn sonra tekrar denenecek.")
+        time.sleep(wait)
+        return fetch(path, _try + 1)
+    log(f"HATA: Yahoo {path or '/'} {bad}. Cerez gecersiz ya da Yahoo istekleri kesti. YAHOO_COOKIE secret'ini yenile.")
+    finish(1)
 
 def near_year(m, d):
     """Yil bilgisi olmayan tarih icin bugune en yakin yili sec."""
