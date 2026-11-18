@@ -1155,7 +1155,7 @@
   },
   "5": {
    "label": "Hafta 5 (16-22 Kasım)",
-   "updated": "18 Kasım 2026, 15:18 (17 Kasım maçları dahil)",
+   "updated": "18 Kasım 2026, 20:59 (17 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1308,7 +1308,7 @@
      "blk": 6,
      "to": 14,
      "games_played": 10,
-     "games_total": 36
+     "games_total": 34
     },
     {
      "team": "Suhayy31",
@@ -1325,7 +1325,7 @@
      "blk": 3,
      "to": 8,
      "games_played": 11,
-     "games_total": 36
+     "games_total": 38
     },
     {
      "team": "Kreuzberg Boys",
@@ -1359,7 +1359,7 @@
      "blk": 5,
      "to": 12,
      "games_played": 9,
-     "games_total": 34
+     "games_total": 36
     },
     {
      "team": "Los Gerseii",
@@ -1376,7 +1376,7 @@
      "blk": 10,
      "to": 30,
      "games_played": 15,
-     "games_total": 46
+     "games_total": 48
     },
     {
      "team": "Splash Brothers",

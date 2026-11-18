@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18 15:18",
+"updated": "2026-11-18 20:59",
 "source": "ESPN",
 "injuries": [
 {
@@ -59,8 +59,8 @@
 {
 "name": "Grayson Allen",
 "team": "Charlotte Hornets",
-"status": "Out",
-"date": "2026-11-18T02:19Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:07Z",
 "return": "2026-11-20",
 "type": "Concussion",
 "note": "Allen (concussion-like symptoms) has been ruled out for Tuesday's game against the Lakers."
@@ -228,6 +228,24 @@
 "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
 },
 {
+"name": "Taurean Prince",
+"team": "Detroit Pistons",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:05Z",
+"return": "2026-11-18",
+"type": "Knee",
+"note": "Prince (knee) has been ruled out for Tuesday's game against the Spurs."
+},
+{
+"name": "Ronald Holland II",
+"team": "Detroit Pistons",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:05Z",
+"return": "2026-11-18",
+"type": "Knee",
+"note": "Holland is out for Tuesday's game against San Antonio due to a left knee contusion."
+},
+{
 "name": "Isaiah Joe",
 "team": "Detroit Pistons",
 "status": "Out",
@@ -246,24 +264,6 @@
 "note": "Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports."
 },
 {
-"name": "Taurean Prince",
-"team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-16T22:58Z",
-"return": "2026-11-18",
-"type": "Knee",
-"note": "Prince (knee) has been ruled out for Tuesday's game against the Spurs."
-},
-{
-"name": "Ronald Holland II",
-"team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-16T22:53Z",
-"return": "2026-11-18",
-"type": "Knee",
-"note": "Holland is out for Tuesday's game against San Antonio due to a left knee contusion."
-},
-{
 "name": "Jalen Duren",
 "team": "Detroit Pistons",
 "status": "Out",
@@ -271,6 +271,15 @@
 "return": "2026-11-24",
 "type": "Hamstring",
 "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
+},
+{
+"name": "Brandon Williams",
+"team": "Golden State Warriors",
+"status": "Out",
+"date": "2026-11-18T17:12Z",
+"return": "2026-11-22",
+"type": "Hamstring",
+"note": "Williams (hamstring) has progressed to on-court activities and will be re-evaluated Saturday."
 },
 {
 "name": "Draymond Green",
@@ -298,15 +307,6 @@
 "return": "2026-12-12",
 "type": "Abdomen",
 "note": "Curry has been diagnosed with an oblique abdominal tear and will be re-evaluated in two weeks, Shams Charania of ESPN reports."
-},
-{
-"name": "Brandon Williams",
-"team": "Golden State Warriors",
-"status": "Out",
-"date": "2026-11-10T21:24Z",
-"return": "2026-11-22",
-"type": "Hamstring",
-"note": "Williams (hamstring) will miss at least one week, per Anthony Slater of ESPN.com."
 },
 {
 "name": "Kristaps Porzingis",
@@ -352,15 +352,6 @@
 "return": "2026-11-18",
 "type": "Knee",
 "note": "Thompson (knee) is questionable for Wednesday's game against the Pacers."
-},
-{
-"name": "Julian Phillips",
-"team": "Houston Rockets",
-"status": "Day-To-Day",
-"date": "2026-11-16T15:28Z",
-"return": "2026-11-17",
-"type": "Wrist",
-"note": "Phillips (illness) is available for Wednesday's game against Dallas."
 },
 {
 "name": "T.J. McConnell",
@@ -444,22 +435,22 @@
 "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
 },
 {
-"name": "Walker Kessler",
-"team": "Los Angeles Lakers",
-"status": "Out",
-"date": "2026-11-18T02:57Z",
-"return": "2026-11-18",
-"type": "Lower Leg",
-"note": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports."
-},
-{
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
-"status": "Out",
-"date": "2026-11-17T01:11Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:02Z",
 "return": "2026-11-18",
 "type": "Heel",
 "note": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports."
+},
+{
+"name": "Walker Kessler",
+"team": "Los Angeles Lakers",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:02Z",
+"return": "2026-11-18",
+"type": "Lower Leg",
+"note": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports."
 },
 {
 "name": "GG Jackson",
@@ -545,8 +536,8 @@
 {
 "name": "Zyon Pullin",
 "team": "Minnesota Timberwolves",
-"status": "Out",
-"date": "2026-11-17T19:05Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:04Z",
 "return": "2026-11-19",
 "type": "Quadriceps",
 "note": "Pullin (quadriceps) has been ruled out for Tuesday's game against Portland."
@@ -554,8 +545,8 @@
 {
 "name": "Jonathan Kuminga",
 "team": "Minnesota Timberwolves",
-"status": "Out",
-"date": "2026-11-17T19:03Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:04Z",
 "return": "2026-11-19",
 "type": "Shoulder",
 "note": "Kuminga (shoulder) is out for Tuesday's game against Portland."
@@ -681,10 +672,10 @@
 "name": "Izaiyah Nelson",
 "team": "Orlando Magic",
 "status": "Out",
-"date": "2026-11-17T21:22Z",
+"date": "2026-11-18T17:25Z",
 "return": "2026-11-28",
 "type": "Ankle",
-"note": "Nelson (ankle) has been ruled out for Wednesday's game against the 76ers."
+"note": "Head coach Sean Sweeney said Wednesday that Nelson (ankle) has been doing \"some on-court stuff,\" though Sweeney added that the work has been \"minimal,\" Jason Beede of the Orlando Sentinel reports."
 },
 {
 "name": "Jonathan Isaac",
@@ -761,8 +752,8 @@
 {
 "name": "Deni Avdija",
 "team": "Portland Trail Blazers",
-"status": "Out",
-"date": "2026-11-18T00:28Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T15:04Z",
 "return": "2026-11-19",
 "type": "Foot",
 "note": "Avdija (foot) won't play Tuesday versus Minnesota."
@@ -867,6 +858,24 @@
 "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
 },
 {
+"name": "RJ Barrett",
+"team": "Toronto Raptors",
+"status": "Day-To-Day",
+"date": "2026-11-18T17:47Z",
+"return": "2026-11-18",
+"type": "Hamstring",
+"note": "Barrett posted 22 points (9-17 FG, 2-8 3Pt, 2-6 FT), five rebounds, five assists and a block across 39 minutes in Tuesday's 111-102 loss to the Knicks."
+},
+{
+"name": "Scottie Barnes",
+"team": "Toronto Raptors",
+"status": "Out",
+"date": "2026-11-18T17:46Z",
+"return": "2026-11-20",
+"type": "Groin",
+"note": "Barnes (injury management) has been ruled out for Wednesday's game against Washington, Esfandiar Baraheni of The Athletic reports."
+},
+{
 "name": "Kawhi Leonard",
 "team": "Toronto Raptors",
 "status": "Out",
@@ -896,8 +905,8 @@
 {
 "name": "Jaxson Hayes",
 "team": "Utah Jazz",
-"status": "Out",
-"date": "2026-11-17T01:08Z",
+"status": "Day-To-Day",
+"date": "2026-11-18T14:59Z",
 "return": "2026-11-18",
 "type": "Knee",
 "note": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers."

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 15:18",
+ "updated": "2026-11-18 20:59",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -336,7 +336,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -359,13 +359,12 @@
     "draft": 49
    },
    {
-    "name": "Jaylon Tyson",
+    "name": "Pelle Larsson",
     "slot": "SG",
-    "id": 10279,
-    "nba": "CLE",
-    "pos": "SG,SF,PF",
-    "status": "D",
-    "draft": "FA"
+    "id": 10312,
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "draft": 1
    },
    {
     "name": "Ausar Thompson",
@@ -376,12 +375,12 @@
     "draft": 16
    },
    {
-    "name": "Pelle Larsson",
+    "name": "Dean Wade",
     "slot": "SF",
-    "id": 10312,
-    "nba": "MIA",
-    "pos": "SG,SF",
-    "draft": 1
+    "id": 6256,
+    "nba": "PHI",
+    "pos": "SF,PF",
+    "draft": "FA"
    },
    {
     "name": "Julius Randle",
@@ -432,6 +431,15 @@
     "draft": 9
    },
    {
+    "name": "Jaylon Tyson",
+    "slot": "BN",
+    "id": 10279,
+    "nba": "CLE",
+    "pos": "SG,SF,PF",
+    "status": "D",
+    "draft": "FA"
+   },
+   {
     "name": "Dylan Harper",
     "slot": "BN",
     "id": 10467,
@@ -439,14 +447,6 @@
     "pos": "PG,SG,SF",
     "status": "Q",
     "draft": 11
-   },
-   {
-    "name": "Gradey Dick",
-    "slot": "BN",
-    "id": 10101,
-    "nba": "LAC",
-    "pos": "SG,SF",
-    "draft": "FA"
    },
    {
     "name": "Josh Hart",
@@ -631,6 +631,7 @@
     "id": 6165,
     "nba": "TOR",
     "pos": "SG,SF,PF",
+    "status": "Q",
     "draft": 6
    },
    {
@@ -779,6 +780,7 @@
     "id": 6515,
     "nba": "TOR",
     "pos": "SF,PF,C",
+    "status": "O",
     "draft": 58
    },
    {
@@ -1362,7 +1364,7 @@
     "id": 6549,
     "nba": "MIN",
     "pos": "SF,PF",
-    "status": "O",
+    "status": "Q",
     "draft": 2
    },
    {
@@ -1582,20 +1584,20 @@
     "draft": 20
    },
    {
-    "name": "Christian Anderson",
-    "slot": "Util",
-    "id": 10575,
-    "nba": "CHA",
-    "pos": "PG",
-    "draft": "FA"
-   },
-   {
     "name": "Keon Ellis",
     "slot": "Util",
     "id": 6753,
     "nba": "BKN",
     "pos": "SG,SF",
     "draft": 1
+   },
+   {
+    "name": "Quenton Jackson",
+    "slot": "Util",
+    "id": 6776,
+    "nba": "IND",
+    "pos": "PG,SG",
+    "draft": "FA"
    },
    {
     "name": "Andre Drummond",
@@ -1761,7 +1763,7 @@
     "id": 6401,
     "nba": "POR",
     "pos": "SG,SF,PF",
-    "status": "O",
+    "status": "Q",
     "draft": 27
    },
    {
@@ -1792,20 +1794,20 @@
     "draft": 4
    },
    {
-    "name": "Terrence Shannon Jr.",
+    "name": "Ajay Mitchell",
     "slot": "G",
-    "id": 10280,
-    "nba": "MIN",
-    "pos": "SG,SF",
-    "draft": "FA"
+    "id": 10304,
+    "nba": "OKC",
+    "pos": "PG,SG",
+    "draft": 5
    },
    {
-    "name": "Mikal Bridges",
+    "name": "Michael Porter Jr.",
     "slot": "SF",
-    "id": 6021,
-    "nba": "NYK",
+    "id": 6025,
+    "nba": "BKN",
     "pos": "SF,PF",
-    "draft": 19
+    "draft": 25
    },
    {
     "name": "John Collins",
@@ -1816,10 +1818,10 @@
     "draft": 8
    },
    {
-    "name": "Landry Shamet",
+    "name": "Buddy Hield",
     "slot": "F",
-    "id": 6037,
-    "nba": "NYK",
+    "id": 5637,
+    "nba": "CHI",
     "pos": "SG,SF",
     "draft": "FA"
    },
@@ -1837,7 +1839,7 @@
     "id": 6712,
     "nba": "LAL",
     "pos": "C",
-    "status": "O",
+    "status": "P",
     "draft": 29
    },
    {
@@ -1857,28 +1859,28 @@
     "draft": "FA"
    },
    {
-    "name": "Ajay Mitchell",
+    "name": "Mikal Bridges",
     "slot": "BN",
-    "id": 10304,
-    "nba": "OKC",
-    "pos": "PG,SG",
-    "draft": 5
+    "id": 6021,
+    "nba": "NYK",
+    "pos": "SF,PF",
+    "draft": 19
    },
    {
-    "name": "Buddy Hield",
+    "name": "Terrence Shannon Jr.",
     "slot": "BN",
-    "id": 5637,
-    "nba": "CHI",
+    "id": 10280,
+    "nba": "MIN",
     "pos": "SG,SF",
     "draft": "FA"
    },
    {
-    "name": "Michael Porter Jr.",
+    "name": "Landry Shamet",
     "slot": "BN",
-    "id": 6025,
-    "nba": "BKN",
-    "pos": "SF,PF",
-    "draft": 25
+    "id": 6037,
+    "nba": "NYK",
+    "pos": "SG,SF",
+    "draft": "FA"
    },
    {
     "name": "Austin Reaves",
@@ -1886,7 +1888,7 @@
     "id": 6606,
     "nba": "LAL",
     "pos": "PG,SG,SF",
-    "status": "O",
+    "status": "Q",
     "draft": 39
    },
    {
@@ -2019,7 +2021,7 @@
     "id": 6032,
     "nba": "CHA",
     "pos": "SG,SF",
-    "status": "O",
+    "status": "Q",
     "draft": 2
    }
   ],

@@ -1,7 +1,9 @@
 Guncel hafta: 5
-Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 18 Kasım 2026, 15:18 (17 Kasım maçları dahil)
+Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 18 Kasım 2026, 20:59 (17 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 0 yeni kayit eklendi.
+Islemler: 2 yeni kayit eklendi.
+  + {"time": "2026-11-18 17:53", "team": "BÇ", "type": "add/drop", "add": ["D. Wade"], "drop": ["G. Dick"], "pos": "SF,PF / SG,SF", "source": "FA"}
+  + {"time": "2026-11-18 16:58", "team": "Normal MAFIA", "type": "add/drop", "add": ["Q. Jackson"], "drop": ["C. Anderson"], "pos": "PG,SG / PG", "source": "FA"}
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 11: 'M. Sucks', 1: 'Pickle Men', 7: 'Kassablancas', 2: 'Bomonti Sınırsız', 4: 'EAH Seniors', 3: 'BÇ', 16: 'Yukatel Metin Akdülger', 5: 'HobaKumpo', 9: 'Kyojins on Rumbling', 6: 'Kalidou Koulibaly', 14: 'Suhayy31', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 10: 'Los Gerseii', 13: 'Splash Brothers'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Evan Mobley', 'Caleb Wilson', 'Ty Jerome']
@@ -24,15 +26,15 @@ yoneticiler: 16 satir.
 takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: 40 satir.
-Yahoo sakatliklar: 108 kayit.
-Gunluk kadro 2026-11-18: 16 takim, 194 maci olan oyuncu.
-Gunluk kadro 2026-11-19: 16 takim, 70 maci olan oyuncu.
+Yahoo sakatliklar: 109 kayit.
+Gunluk kadro 2026-11-18: 16 takim, 196 maci olan oyuncu.
+Gunluk kadro 2026-11-19: 16 takim, 69 maci olan oyuncu.
 Gunluk kadro 2026-11-20: 16 takim, 150 maci olan oyuncu.
 Gunluk kadro 2026-11-21: 16 takim, 100 maci olan oyuncu.
-Gunluk kadro 2026-11-22: 16 takim, 110 maci olan oyuncu.
+Gunluk kadro 2026-11-22: 16 takim, 111 maci olan oyuncu.
 Gunluk kadro 2026-11-23: 16 takim, 173 maci olan oyuncu.
 Gunluk kadro 2026-11-24: 16 takim, 45 maci olan oyuncu.
-Gunluk kadro 2026-11-25: 16 takim, 153 maci olan oyuncu.
+Gunluk kadro 2026-11-25: 16 takim, 152 maci olan oyuncu.
 Fikstur: {'5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers'}
 Oyuncular bu_sezon_ort: 448 oyuncu (248 kadrolu) yazildi.
 Oyuncular gecen_sezon_ort: 448 oyuncu (248 kadrolu) yazildi.
@@ -40,5 +42,4 @@ Oyuncular son14_ort: 448 oyuncu (248 kadrolu) yazildi.
 Oyuncular son7_ort: 448 oyuncu (248 kadrolu) yazildi.
 Oyuncular projeksiyon_kalan: 448 oyuncu (248 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
-Box score 2026-11-17: 5 mac.
-Sakatliklar: 108 kayit.
+Sakatliklar: 109 kayit.
