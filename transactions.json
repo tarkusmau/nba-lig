@@ -1,4 +1,7 @@
 [
+  {"time":"2026-11-19 12:47","team":"Kalidou Koulibaly","type":"add/drop","add":["W. Richard"],"drop":["W. Clayton Jr."],"pos":"SG,SF / PG,SG","source":"FA"},
+  {"time":"2026-11-19 11:04","team":"Pickle Men","type":"add/drop","add":["T. Lyles"],"drop":["L. Kennard"],"pos":"PF / SG,SF","source":"FA"},
+  {"time":"2026-11-19 11:00","team":"Suhayy31","type":"add/drop","add":["Y. Konan Niederhäuser"],"drop":["C. Martin"],"pos":"C / SF,PF","source":"FA"},
   {"time":"2026-11-19 02:11","team":"Splash Brothers","type":"add/drop","add":["K. Jakučionis"],"drop":["S. Cissoko"],"pos":"PG,SG / SF,PF","source":"FA"},
   {"time":"2026-11-18 23:56","team":"Kyojins on Rumbling","type":"drop","add":[],"drop":["M. Monk"],"pos":"PG,SG"},
   {"time":"2026-11-18 17:53","team":"BÇ","type":"add/drop","add":["D. Wade"],"drop":["G. Dick"],"pos":"SF,PF / SG,SF","source":"FA"},

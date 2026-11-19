@@ -1155,7 +1155,7 @@
   },
   "5": {
    "label": "Hafta 5 (16-22 Kasım)",
-   "updated": "19 Kasım 2026, 10:41 (18 Kasım maçları dahil)",
+   "updated": "19 Kasım 2026, 20:59 (18 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1172,7 +1172,7 @@
      "blk": 17,
      "to": 36,
      "games_played": 24,
-     "games_total": 46
+     "games_total": 47
     },
     {
      "team": "Kassablancas",
@@ -1223,7 +1223,7 @@
      "blk": 13,
      "to": 32,
      "games_played": 23,
-     "games_total": 38
+     "games_total": 42
     },
     {
      "team": "BÇ",
@@ -1240,7 +1240,7 @@
      "blk": 6,
      "to": 33,
      "games_played": 23,
-     "games_total": 38
+     "games_total": 40
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1308,7 +1308,7 @@
      "blk": 10,
      "to": 32,
      "games_played": 20,
-     "games_total": 36
+     "games_total": 38
     },
     {
      "team": "Suhayy31",
@@ -1325,7 +1325,7 @@
      "blk": 11,
      "to": 20,
      "games_played": 21,
-     "games_total": 38
+     "games_total": 39
     },
     {
      "team": "Kreuzberg Boys",
@@ -1342,7 +1342,7 @@
      "blk": 10,
      "to": 27,
      "games_played": 21,
-     "games_total": 40
+     "games_total": 42
     },
     {
      "team": "Normal MAFIA",
@@ -1359,7 +1359,7 @@
      "blk": 11,
      "to": 37,
      "games_played": 19,
-     "games_total": 36
+     "games_total": 37
     },
     {
      "team": "Los Gerseii",
@@ -1376,7 +1376,7 @@
      "blk": 17,
      "to": 38,
      "games_played": 23,
-     "games_total": 46
+     "games_total": 48
     },
     {
      "team": "Splash Brothers",
