@@ -1,4 +1,6 @@
 [
+  {"time":"2026-11-19 02:11","team":"Splash Brothers","type":"add/drop","add":["K. Jakučionis"],"drop":["S. Cissoko"],"pos":"PG,SG / SF,PF","source":"FA"},
+  {"time":"2026-11-18 23:56","team":"Kyojins on Rumbling","type":"drop","add":[],"drop":["M. Monk"],"pos":"PG,SG"},
   {"time":"2026-11-18 17:53","team":"BÇ","type":"add/drop","add":["D. Wade"],"drop":["G. Dick"],"pos":"SF,PF / SG,SF","source":"FA"},
   {"time":"2026-11-18 16:58","team":"Normal MAFIA","type":"add/drop","add":["Q. Jackson"],"drop":["C. Anderson"],"pos":"PG,SG / PG","source":"FA"},
   {"time":"2026-11-18 13:00","team":"Yukatel Metin Akdülger","type":"add/drop","add":["K. Williams"],"drop":["M. Brown Jr."],"pos":"PF,C / PG","source":"FA"},
