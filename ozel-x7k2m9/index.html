@@ -59,6 +59,42 @@ main>.wrap{padding-top:12px;padding-bottom:28px}
 .pl .pn{flex:1;min-width:0}.pl .pm{font-size:.76rem;color:var(--muted)}.pl .pv{font-variant-numeric:tabular-nums;font-weight:600}
 .big{font-family:"Barlow Condensed",sans-serif;font-size:2rem;font-weight:700;line-height:1}
 .warn{font-size:.82rem;margin:3px 0}.warn.hard{color:var(--bad)}.warn.soft{color:var(--muted)}
+.msel{display:flex;justify-content:center;gap:10px;margin:0 0 12px}
+.msel button{width:36%;font:inherit;font-size:.8rem;padding:4px 0;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
+.msel button.on{background:var(--a);border-color:var(--a);color:#fff;font-weight:600}
+.scol{display:grid;grid-template-columns:1fr 1fr;gap:8px}.scol .card{padding:8px 9px;margin-bottom:0}
+.sp{display:flex;gap:7px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:.86rem;line-height:1.25}
+.sp:last-child{border-bottom:0}.sp input{width:16px;height:16px;margin:1px 0 0;accent-color:var(--a);flex:none}.sp>span>span{display:block}
+.sm{font-size:.74rem;color:var(--muted)}
+.sbar{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:10px 0 18px}
+.btnp{font:inherit;font-weight:600;border:0;border-radius:9px;padding:9px;background:var(--a);color:#fff;cursor:pointer}.btnp:disabled{opacity:.45}
+.btns{font:inherit;border:1px solid var(--line);border-radius:9px;padding:9px;background:var(--panel);color:var(--fg);cursor:pointer}
+.cu{color:var(--ok)}.cd{color:var(--bad)}.cm{color:var(--muted)}
+.rhd{display:flex;justify-content:space-between;align-items:baseline;margin:4px 0 2px}
+.rttl{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.2rem}
+.plb{font-size:.75rem;font-weight:600}
+.hero{border-radius:14px;padding:11px 13px;display:grid;grid-template-columns:1fr 1fr}
+.hero.ok{background:color-mix(in srgb,var(--ok) 13%,transparent);color:var(--ok)}.hero.bad{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}.hero.neu{background:var(--chip);color:var(--fg)}
+.hero>div+div{border-left:1px solid color-mix(in srgb,currentColor 25%,transparent);padding-left:13px}
+.hero .l{font-size:.74rem;opacity:.85}.hero .n{font-size:1.85rem;font-weight:600;line-height:1.15}.hero .n small{font-size:.78rem;font-weight:400}
+.warnl{font-size:.8rem;margin:6px 0 0;color:var(--bad)}.warnl.s{color:var(--muted)}
+.secl{font-size:.75rem;color:var(--muted);font-weight:600;margin:0 0 7px}
+.ibox{border:1px solid var(--line);border-radius:14px;padding:10px 8px 8px;margin-top:14px;background:var(--panel)}
+.igrid,.fgrid{display:grid;grid-template-columns:38px repeat(9,1fr);text-align:center;align-items:center;border:1px solid var(--line);border-radius:10px;font-size:.74rem;font-variant-numeric:tabular-nums}
+.igrid{row-gap:4px;padding:6px 0}.fgrid{padding:6px 0;margin-top:8px;background:var(--chip)}
+.igrid .k{color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:3px}
+.igrid .rl,.fgrid .rl{text-align:left;color:var(--muted);padding-left:6px}.igrid .rl.h{border-bottom:1px solid var(--line);align-self:stretch}
+.igrid .o{color:var(--muted)}.igrid .a{font-weight:600}.fgrid .d{font-size:1rem;font-weight:700}
+.hrl{border-top:1px solid var(--line);margin:20px 0}
+.pcs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pcard{border:1px solid var(--line);border-radius:12px;padding:8px 7px;margin-bottom:8px;background:var(--panel)}
+.pcard.g{border-color:color-mix(in srgb,var(--bad) 45%,var(--line))}.pcard.r{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
+.pcard .nm{font-weight:600;font-size:.95rem;margin-top:1px}
+.sg5,.sg4{display:grid;text-align:center;margin-top:8px;font-variant-numeric:tabular-nums}.sg5{grid-template-columns:repeat(5,1fr)}.sg4{grid-template-columns:repeat(4,1fr);margin-top:6px}
+.sg5>span>span,.sg4>span>span{display:block;font-size:.72rem}.sk{color:var(--muted)}.sv.w{color:var(--ok);font-weight:700}
+.rfoot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.75rem;border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.psep{display:flex;align-items:center;gap:8px;margin:26px 0 8px;color:var(--muted);font-size:.75rem}
+.psep::before,.psep::after{content:"";flex:1;border-top:1px solid var(--line)}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:10px}
 table{border-collapse:collapse;width:100%;font-size:.85rem;font-variant-numeric:tabular-nums}
 th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -122,7 +158,7 @@ nav.tabs button.on{color:var(--a);font-weight:600}
  </section>
 
  <section class="view" id="v-tr" hidden>
-  <div class="sub" id="tr-sub"><button data-m="auto">Öneriler</button><button data-m="sim">Takas dene</button></div>
+  <div class="msel" id="tr-sub"><button data-m="auto">☰ Öneriler</button><button data-m="sim">⇄ Takas dene</button></div>
   <div id="tr-auto">
   <p class="note">Güncel verilerle her açılışta yeniden hesaplanır. Ligdeki bütün oyuncularla 1'e 1, 1'e 2, 2'ye 1, 2'ye 2, 2'ye 3 ve 3'e 2 takaslar denenir; sıralama ilk 4 rakibe karşı haftada kazanılan ek kategoriye göredir (sezonun kalanı, punt hariç) ve +0,15'in altı gösterilmez. Tabloda üst satır şimdiki, alt satır takastan sonraki ilk 4'e karşı kazanma %'si (yeşil artış, kırmızı düşüş). Kurallar: draft $ dengesi sıkı; karşı taraf oyuncuların sağlıklı haldeki değerine göre fazla kaybetmez; waiver seviyesindeki oyuncuların takas değeri yok; orta seviye kategoriler düşmez, güçlü kategoriler ortaya inmez. Açılan yer bostaki en iyi 20 oyuncunun ortalamasıyla (stream) doldurulur. Takas Yahoo'da 2 sabah sonra işlenir.</p>
   <p class="upd" id="tstat">Hesaplanıyor…</p>
@@ -158,8 +194,8 @@ nav.tabs button.on{color:var(--a);font-weight:600}
  <button data-v="lg"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 16v5M7 4h10v5a5 5 0 0 1-10 0zM7 6H4.5a3 3 0 0 0 3 4.5M17 6h2.5a3 3 0 0 1-3 4.5"/></svg>Lig</button>
 </div></nav>
 
-<script src="engine.js"></script>
-<script src="panel.js"></script>
+<script src="engine.js?v=20261121b"></script>
+<script src="panel.js?v=20261121b"></script>
 <script>document.getElementById("tabs").addEventListener("click",function(){document.getElementById("sc").scrollTop=0;});</script>
 </body>
 </html>
