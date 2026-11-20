@@ -54,6 +54,11 @@ main>.wrap{padding-top:12px;padding-bottom:28px}
 .kpi span{display:block;font-size:.76rem;color:var(--muted)}.kpi b{font-size:1.3rem}
 .tag{display:inline-block;padding:0 6px;border-radius:99px;font-size:.68rem;font-weight:600;background:var(--chip);color:var(--muted)}
 .tag.punt{color:var(--bad)}.tag.pri{color:var(--a)}.tag.keep{color:var(--ok)}
+.pl{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.pl:last-child{border-bottom:0}.pl input{width:18px;height:18px;flex:none;accent-color:var(--a)}
+.pl .pn{flex:1;min-width:0}.pl .pm{font-size:.76rem;color:var(--muted)}.pl .pv{font-variant-numeric:tabular-nums;font-weight:600}
+.big{font-family:"Barlow Condensed",sans-serif;font-size:2rem;font-weight:700;line-height:1}
+.warn{font-size:.82rem;margin:3px 0}.warn.hard{color:var(--bad)}.warn.soft{color:var(--muted)}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:10px}
 table{border-collapse:collapse;width:100%;font-size:.85rem;font-variant-numeric:tabular-nums}
 th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -117,10 +122,14 @@ nav.tabs button.on{color:var(--a);font-weight:600}
  </section>
 
  <section class="view" id="v-tr" hidden>
-  <p class="note">Güncel verilerle her açılışta yeniden hesaplanır. Tabloda üst satır şimdiki, alt satır takastan sonraki kazanma %'si (yeşil artış, kırmızı düşüş). Kurallar: draft $ dengesi sıkı, waiver seviyesindeki oyuncuların takas değeri yok, orta seviye kategoriler düşmez, güçlü kategoriler ortaya inmez, ortak takımın genel gücü fazla düşmez. 2'ye 1'de açılan yer bostaki en iyi 20 oyuncunun ortalamasıyla (stream) doldurulur. Takas Yahoo'da 2 sabah sonra işlenir.</p>
+  <div class="sub" id="tr-sub"><button data-m="auto">Öneriler</button><button data-m="sim">Takas dene</button></div>
+  <div id="tr-auto">
+  <p class="note">Güncel verilerle her açılışta yeniden hesaplanır. Ligdeki bütün oyuncularla 1'e 1, 1'e 2, 2'ye 1, 2'ye 2, 2'ye 3 ve 3'e 2 takaslar denenir; sıralama ilk 4 rakibe karşı haftada kazanılan ek kategoriye göredir (sezonun kalanı, punt hariç) ve +0,15'in altı gösterilmez. Tabloda üst satır şimdiki, alt satır takastan sonraki ilk 4'e karşı kazanma %'si (yeşil artış, kırmızı düşüş). Kurallar: draft $ dengesi sıkı; karşı taraf oyuncuların sağlıklı haldeki değerine göre fazla kaybetmez; waiver seviyesindeki oyuncuların takas değeri yok; orta seviye kategoriler düşmez, güçlü kategoriler ortaya inmez. Açılan yer bostaki en iyi 20 oyuncunun ortalamasıyla (stream) doldurulur. Takas Yahoo'da 2 sabah sonra işlenir.</p>
   <p class="upd" id="tstat">Hesaplanıyor…</p>
   <div class="tw"><table class="small" id="t-tr"><thead></thead><tbody></tbody></table></div>
   <div id="tr-cards"></div>
+  </div>
+  <div id="tr-sim" hidden></div>
  </section>
 
  <section class="view" id="v-ro" hidden>
