@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 10:31",
+ "updated": "2026-11-20 10:40",
  "files": {
   "boxscores/2026-11-09.json": 28900,
   "boxscores/2026-11-10.json": 21709,
@@ -24,7 +24,7 @@
   "players/son14_ort.json": 170412,
   "players/son7_ort.json": 169644,
   "rosters.json": 34962,
-  "run.log": 3377,
+  "run.log": 3772,
   "schedule.json": 177,
   "settings.json": 1923,
   "standings.json": 2087,

@@ -1,11 +1,7 @@
 Guncel hafta: 5
-Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 20 Kasım 2026, 10:31 (19 Kasım maçları dahil)
+Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 20 Kasım 2026, 10:40 (19 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 4 yeni kayit eklendi.
-  + {"time": "2026-11-20 09:18", "team": "Splash Brothers", "type": "add", "add": ["L. Dort"], "drop": [], "pos": "SG,SF", "source": "FA"}
-  + {"time": "2026-11-20 03:14", "team": "EAH Seniors", "type": "add", "add": ["S. Hauser"], "drop": [], "pos": "SF,PF", "source": "FA"}
-  + {"time": "2026-11-20 00:59", "team": "Kreuzberg Boys", "type": "add/drop", "add": ["S. Mykhailiuk"], "drop": ["P. Achiuwa"], "pos": "SG,SF / PF,C", "source": "FA"}
-  + {"time": "2026-11-20 00:58", "team": "BÇ", "type": "add/drop", "add": ["G. Santos"], "drop": ["M. Wagner"], "pos": "SF,PF / C", "source": "FA"}
+Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 11: 'M. Sucks', 1: 'Pickle Men', 7: 'Kassablancas', 2: 'Bomonti Sınırsız', 4: 'EAH Seniors', 3: 'BÇ', 16: 'Yukatel Metin Akdülger', 5: 'HobaKumpo', 9: 'Kyojins on Rumbling', 6: 'Kalidou Koulibaly', 14: 'Suhayy31', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 10: 'Los Gerseii', 13: 'Splash Brothers'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Evan Mobley', 'Caleb Wilson', 'Ty Jerome']
@@ -34,17 +30,15 @@ Gunluk kadro 2026-11-21: 16 takim, 99 maci olan oyuncu.
 Gunluk kadro 2026-11-22: 16 takim, 114 maci olan oyuncu.
 Gunluk kadro 2026-11-23: 16 takim, 172 maci olan oyuncu.
 Gunluk kadro 2026-11-24: 16 takim, 44 maci olan oyuncu.
-Uyari: /startingrosters?date=2026-11-25 giris sayfasina yonlendirdi; 30 sn sonra tekrar denenecek.
 Gunluk kadro 2026-11-25: 16 takim, 152 maci olan oyuncu.
 Gunluk kadro 2026-11-26: 16 takim, 0 maci olan oyuncu.
 Gunluk kadro 2026-11-27: 16 takim, 183 maci olan oyuncu.
 Fikstur: {'5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers'}
-Uyari: /players?status=T&pos=P&cut_type=33&stat1=S_AS_2026&myteam=0&sort=AR&sdir=1&count=225 giris sayfasina yonlendirdi; 30 sn sonra tekrar denenecek.
 Oyuncular bu_sezon_ort: 449 oyuncu (249 kadrolu) yazildi.
 Oyuncular gecen_sezon_ort: 449 oyuncu (249 kadrolu) yazildi.
+Uyari: /players?status=T&pos=P&cut_type=33&stat1=S_AL14&myteam=0&sort=AR&sdir=1&count=50 giris sayfasina yonlendirdi; 30 sn sonra tekrar denenecek.
 Oyuncular son14_ort: 449 oyuncu (249 kadrolu) yazildi.
 Oyuncular son7_ort: 449 oyuncu (249 kadrolu) yazildi.
 Oyuncular projeksiyon_kalan: 449 oyuncu (249 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
-Box score 2026-11-19: 4 mac.
 Sakatliklar: 108 kayit.
