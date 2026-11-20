@@ -65,7 +65,7 @@ function chipRow(box, items, active, onPick) {
 function teamOpts(id, val, list) { return `<select id="${id}">${list.map(t => `<option${t === val ? " selected" : ""}>${esc(t)}</option>`).join("")}</select>`; }
 
 // ---------- durum ----------
-let L = null, DATA = null, NOTES = null;
+let L = null, DATA = null, NOTES = null, SR = null, bwOpp = Q.get("o") || null;
 let cur = Q.get("t") === "mafia" ? "Normal MAFIA" : "tarkus maurelius";
 let view = ["win", "tr", "ro", "st", "lg"].includes(Q.get("v")) ? Q.get("v") : "win";
 let winWk = Q.get("ww") || "p";
@@ -91,27 +91,87 @@ function cmp(a, b) { let w = 0, l = 0; CATS.forEach(k => { if (better(k, a[k], b
 
 // ---------- KAZANMA ----------
 function topOnly(team, c) {
-  const out = {}; CATS.forEach(k => out[k] = 0); const opp = L.top.filter(t => t !== team);
+  const out = {}; CATS.forEach(k => out[k] = 0); const opp = L.topFor(team);
   opp.forEach(o => { const oc = L.base[o]; CATS.forEach(k => { out[k] += E.pWin(c, oc, k); }); });
   CATS.forEach(k => out[k] /= opp.length || 1); return out;
 }
 function weekWin(team, w) {
   const V = vals(DATA.weeks[w].teams, false); const me = V.find(v => v.team === team); if (!me) return null;
-  const others = V.filter(v => v !== me), top = others.filter(v => L.top.includes(v.team));
+  const others = V.filter(v => v !== me), top = others.filter(v => L.topFor(team).includes(v.team));
   const sc = (arr, k) => arr.reduce((a, o) => a + (better(k, me[k], o[k]) ? 1 : me[k] === o[k] ? .5 : 0), 0) / (arr.length || 1);
   const all = {}, t6 = {}, rank = {};
   CATS.forEach(k => { all[k] = sc(others, k); t6[k] = sc(top, k); rank[k] = 1 + others.filter(o => better(k, o[k], me[k])).length; });
   return { all, t6, rank, n: others.length };
 }
+// ---------- BU HAFTA (gercek rakibe karsi kalan gunler) ----------
+const TRM = { ocak: 1, şubat: 2, mart: 3, nisan: 4, mayıs: 5, haziran: 6, temmuz: 7, ağustos: 8, eylül: 9, ekim: 10, kasım: 11, aralık: 12 };
+const GUN = ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"];
+function includedDate(upd, ref) {
+  const m = String(upd || "").match(/(\d{1,2})\s+(\S+)\s+maçları dahil/i); if (!m) return null;
+  const mo = TRM[m[2].toLocaleLowerCase("tr")]; if (!mo) return null;
+  let y = +ref.slice(0, 4); const rm = +ref.slice(5, 7); if (mo - rm > 6) y--; else if (rm - mo > 6) y++;
+  return y + "-" + String(mo).padStart(2, "0") + "-" + String(+m[1]).padStart(2, "0");
+}
+function dayPlayers(team, d) {
+  const rows = ((SR.days[d] || {})[team]) || [];
+  const roster = L.rost[team] || [];
+  const ps = rows.filter(r => r.game && !/^IL/.test(r.slot || "")).map(r => {
+    const n = E.normName(r.name); return roster.find(p => E.normName(p.name) === n);
+  }).filter(p => p && !(p.ret && d < p.ret));
+  return ps.sort((a, b) => b.gv - a.gv).slice(0, 10);
+}
+function thisWeek(team, opp) {
+  const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]];
+  const all = Object.keys(SR.days).sort(); const first = all[0];
+  const inc = includedDate(W.updated, first) || E.isoAdd(first, -1);
+  let end = E.isoAdd(inc, 1); while (new Date(end + "T12:00:00Z").getUTCDay() !== 0) end = E.isoAdd(end, 1);
+  const days = all.filter(d => d > inc && d <= end);
+  const C = ["fgm", "fga", "ftm", "fta", "tpm", "pts", "reb", "ast", "st", "blk", "to"];
+  const side = t => { const m = {}, v = {}; C.forEach(k => { m[k] = 0; v[k] = 0; }); const per = [];
+    days.forEach(d => { const ps = dayPlayers(t, d); per.push(ps.length); ps.forEach(p => C.forEach(k => { m[k] += p.pg[k]; v[k] += Math.max(p.pg[k], .3); })); });
+    const cur = W.teams.find(x => x.team === t) || {}; return { m, v, per, cur }; };
+  const A = side(team), B = side(opp), p = {}, now = {}, fin = {};
+  ["fgp", "ftp"].forEach(k => { const mk = k === "fgp" ? "fgm" : "ftm", ak = k === "fgp" ? "fga" : "fta";
+    const na = A.cur[ak] + A.m[ak], nb = B.cur[ak] + B.m[ak], fa = (A.cur[mk] + A.m[mk]) / na, fb = (B.cur[mk] + B.m[mk]) / nb;
+    now[k] = [A.cur[mk] / A.cur[ak], B.cur[mk] / B.cur[ak]]; fin[k] = [fa, fb];
+    p[k] = E.phi((fa - fb) / Math.sqrt(fa * (1 - fa) / na + fb * (1 - fb) / nb || 1e-6)); });
+  ["tpm", "pts", "reb", "ast", "st", "blk", "to"].forEach(k => { const x = A.cur[k] + A.m[k], y = B.cur[k] + B.m[k];
+    now[k] = [A.cur[k], B.cur[k]]; fin[k] = [x, y]; const sdv = Math.sqrt(A.v[k] + B.v[k]) || 1;
+    p[k] = E.phi((k === "to" ? y - x : x - y) / sdv); });
+  let dp = [1]; CATS.forEach(k => { const q = p[k], nx = Array(dp.length + 1).fill(0); dp.forEach((v, i) => { nx[i] += v * (1 - q); nx[i + 1] += v * q; }); dp = nx; });
+  const wp = dp.slice(5).reduce((a, b) => a + b, 0), ex = CATS.reduce((a, k) => a + p[k], 0);
+  return { W, days, p, now, fin, wp, ex, perA: A.per, perB: B.per };
+}
+function renderThisWeek() {
+  const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]], names = W.teams.map(t => t.team);
+  const pr = (W.pairs || []).find(x => x.includes(cur)); const def = pr ? pr.find(t => t !== cur) : names.find(t => t !== cur);
+  if (!names.includes(bwOpp) || bwOpp === cur) bwOpp = def;
+  const r = thisWeek(cur, bwOpp), pct = k => k === "fgp" || k === "ftp";
+  const fx = (k, v) => pct(k) ? f3(v) : Math.round(v);
+  $("win-desc").textContent = (W.label || "") + " · " + (W.updated || "") + ". Mevcut skor + kalan günlerde maçı olan oyuncular (günde en çok 10, IL ve dönmemiş sakatlar hariç).";
+  const plan = PLAN[cur];
+  $("win-rows").innerHTML = `<div class="pick" style="margin-bottom:8px"><span class="mut">Rakip</span> ${teamOpts("bwo", bwOpp, names.filter(t => t !== cur))}</div>` +
+    CATS.map(k => { const v = r.p[k], tag = plan.punt.includes(k) ? ["punt", "punt"] : null;
+      return `<div class="wrow"><div class="wl">${LBL[k]}${tag ? ` <span class="tag ${tag[1]}">${tag[0]}</span>` : ""}</div>
+<div class="bar"><i class="${cls(v)}" style="width:${Math.max(2, Math.round(v * 100))}%"></i></div><div class="wp ${cls(v)}">${pc(v)}</div>
+<div class="ws">Şu an ${fx(k, r.now[k][0])} – ${fx(k, r.now[k][1])} · tahmin <b>${fx(k, r.fin[k][0])} – ${fx(k, r.fin[k][1])}</b></div></div>`; }).join("") +
+    (r.days.length ? `<div class="tw" style="margin-top:10px"><table><thead><tr><th>Gün</th>${r.days.map(d => `<th>${GUN[new Date(d + "T12:00:00Z").getUTCDay()]} ${+d.slice(8)}</th>`).join("")}<th>Top.</th></tr></thead><tbody>
+<tr><td>${esc(SHORT[cur] || cur)}</td>${r.perA.map(n => `<td class="${n < 10 ? "win" : ""}">${n}</td>`).join("")}<td>${r.perA.reduce((a, b) => a + b, 0)}</td></tr>
+<tr><td>Rakip</td>${r.perB.map(n => `<td>${n}</td>`).join("")}<td>${r.perB.reduce((a, b) => a + b, 0)}</td></tr></tbody></table></div>
+<p class="note">Oynayacak oyuncu sayısı. Yeşil günlerde boş aktif yer var: stream için uygun.</p>` : `<p class="note">Bu hafta kalan maç günü yok.</p>`);
+  $("win-kpi").innerHTML = `<div class="kpi"><span>Beklenen kategori</span><b>${r.ex.toFixed(1)} – ${(9 - r.ex).toFixed(1)}</b></div><div class="kpi"><span>Haftayı alma</span><b>${pc(r.wp)}</b></div>`;
+  const s = $("bwo"); if (s) s.onchange = () => { bwOpp = s.value; setQ({ o: bwOpp }); renderWin(); };
+}
 function renderWin() {
-  const items = [["p", "Tahmin"]].concat(DATA ? weekItems() : []);
+  const items = [["p", "Sezon tahmini"]].concat(DATA && SR ? [["bw", "Bu hafta"]] : []).concat(DATA ? weekItems() : []);
   if (DATA && !items.some(i => i[0] === winWk)) winWk = "p";
   if (!DATA && winWk !== "p") { $("win-desc").textContent = "Haftalık veriler yükleniyor…"; return; }
   chipRow($("win-wk"), items, winWk, k => { winWk = k; setQ({ ww: k }); renderWin(); });
+  if (winWk === "bw") return renderThisWeek();
   let r, desc;
   if (winWk === "p") {
     const c = L.base[cur]; r = { all: L.plain(cur, c), t6: topOnly(cur, c), rank: L.probs(cur, c).rank };
-    desc = "Güncel kadroyla bir haftada her kategoriyi kazanma olasılığı. Projeksiyon: bu sezon (maç sayısına göre), geçen sezon, Yahoo projeksiyonu + %10 son 14 gün; oyuncu başına haftada 3,5 maç × oynama oranı.";
+    desc = "Sezonun kalanı (4 Nisan'a kadar) için haftalık ortalama kazanma olasılığı. Projeksiyon: bu sezon (maç sayısına göre), geçen sezon, Yahoo projeksiyonu + %10 son 14 gün; gerçek NBA takvimi. Sakatlar tahmini dönüş tarihine kadar sayılmaz, o haftalarda yerleri bostaki en iyi 20'nin ortalamasıyla dolar; her hafta en iyi 13 oyuncu oynar.";
   } else {
     r = weekWin(cur, winWk);
     const W = DATA.weeks[winWk];
@@ -124,13 +184,13 @@ function renderWin() {
     const v = r.all[k], tag = plan.punt.includes(k) ? ["punt", "punt"] : plan.pri.includes(k) ? ["öncelik", "pri"] : plan.keep.includes(k) ? ["koru", "keep"] : null;
     return `<div class="wrow"><div class="wl">${LBL[k]}${tag ? ` <span class="tag ${tag[1]}">${tag[0]}</span>` : ""}</div>
 <div class="bar"><i class="${cls(v)}" style="width:${Math.max(2, Math.round(v * 100))}%"></i></div><div class="wp ${cls(v)}">${pc(v)}</div>
-<div class="ws">İlk 6'ya karşı <b class="${cls(r.t6[k])}">${pc(r.t6[k])}</b> · ${winWk === "p" ? "ort. sıra" : "sıra"} ${winWk === "p" ? r.rank[k].toFixed(1) : r.rank[k] + "/16"}</div></div>`;
+<div class="ws">İlk 4'e karşı <b class="${cls(r.t6[k])}">${pc(r.t6[k])}</b> · ${winWk === "p" ? "ort. sıra" : "sıra"} ${winWk === "p" ? r.rank[k].toFixed(1) : r.rank[k] + "/16"}</div></div>`;
   }).join("");
   const counted = CATS.filter(k => !plan.punt.includes(k));
   const good = CATS.filter(k => r.all[k] >= .5).length;
   const avg = counted.reduce((a, k) => a + r.all[k], 0) / counted.length;
   const avg6 = counted.reduce((a, k) => a + r.t6[k], 0) / counted.length;
-  $("win-kpi").innerHTML = `<div class="kpi"><span>%50 üstü kategori</span><b>${good} / 9</b></div><div class="kpi"><span>Ortalama · ilk 6 (punt hariç)</span><b>${pc(avg)} · ${pc(avg6)}</b></div>`;
+  $("win-kpi").innerHTML = `<div class="kpi"><span>%50 üstü kategori</span><b>${good} / 9</b></div><div class="kpi"><span>Ortalama · ilk 4 (punt hariç)</span><b>${pc(avg)} · ${pc(avg6)}</b></div>`;
 }
 
 // ---------- TAKASLAR ----------
@@ -164,7 +224,8 @@ function renderRoster() {
   $("repl").textContent = L.repl.toFixed(1);
   $("t-ro").tBodies[0].innerHTML = L.rost[cur].slice().sort((a, b) => b.gv - a.gv).map(p => { const g = p.pg;
     const vc = p.gv > L.repl + 2 ? "win" : p.gv < L.repl ? "loss" : "";
-    return `<tr><td>${esc(p.name)}${p.status ? " (" + esc(p.status) + ")" : ""}</td><td>${esc(p.slot || "")}</td><td>$${p.price}</td><td>${pc(p.avail)}</td><td class="${vc}">${p.gv.toFixed(1)}</td>
+    const rt = p.ret ? " · dönüş " + (+p.ret.slice(8)) + "." + (+p.ret.slice(5, 7)) : "";
+    return `<tr><td>${esc(p.name)}${p.status || rt ? " (" + esc(p.status || "") + rt + ")" : ""}</td><td>${esc(p.slot || "")}</td><td>$${p.price}</td><td>${pc(p.health)}</td><td class="${vc}">${p.gv.toFixed(1)}</td>
 <td>${f3(g.fgm / g.fga)}</td><td>${f3(g.ftm / g.fta)}</td><td>${f1(g.tpm)}</td><td>${f1(g.pts)}</td><td>${f1(g.reb)}</td><td>${f1(g.ast)}</td><td>${f1(g.st)}</td><td>${f1(g.blk)}</td><td>${f1(g.to)}</td></tr>`; }).join("");
 }
 
@@ -256,9 +317,12 @@ function init() {
   const get = f => fetch("../" + f + v).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
   get("data.json").then(d => { DATA = d; addSeason(d); if (!L && view === "win") $("win-desc").textContent = "Oyuncu verileri yükleniyor…"; render(); }).catch(() => { $("lg-out").innerHTML = "<p class='err'>Lig verisi yüklenemedi. Sayfayı yenile.</p>"; });
   Promise.all([get("players/bu_sezon_ort.json"), get("players/gecen_sezon_ort.json"), get("players/projeksiyon_kalan.json"),
-               get("players/son14_ort.json"), get("rosters.json"), get("standings.json"), get("draft.json")])
-    .then(([bu, gecen, proj, son14, rosters, standings, draft]) => {
-      L = new E.League(E.buildPlayers({ bu, gecen, proj, son14 }), rosters, standings, draft);
+               get("players/son14_ort.json"), get("rosters.json"), get("standings.json"), get("draft.json"),
+               get("nba_schedule.json"), get("injuries.json").catch(() => null), get("startingrosters.json").catch(() => null)])
+    .then(([bu, gecen, proj, son14, rosters, standings, draft, schedule, injuries, sr]) => {
+      SR = sr && sr.days ? sr : null;
+      const start = SR ? Object.keys(SR.days).sort()[0] : undefined;
+      L = new E.League(E.buildPlayers({ bu, gecen, proj, son14 }), rosters, standings, draft, { schedule, injuries, start });
       $("pupd").textContent = "Veri: " + (rosters.updated || ""); render();
     }).catch(e => { $("win-desc").innerHTML = "<span class='err'>Veriler yüklenemedi: " + esc(e.message) + "</span>"; $("tstat").textContent = "Veriler yüklenemedi."; });
   fetch("notes.json" + v).then(r => r.ok ? r.json() : null).then(n => { NOTES = n; if (view === "st") renderStrat(); }).catch(() => {});
