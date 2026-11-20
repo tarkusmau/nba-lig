@@ -88,7 +88,9 @@ function buildPlayers(src) {
     let avail = P ? Math.min(1, P.gp / remTeam) : 0.9;
     if (OVERRIDE_AVAIL[base.name] != null) avail = OVERRIDE_AVAIL[base.name];
     const owner = (idx.bu[id] || base)["Roster Status"] || "";
-    out[id] = { id: +id, name: base.name, nba: base.nba, pos: base.pos, owner, pg, avail, w, pgp: P ? P.gp : null,
+    const season = S ? { gp: S.gp, mpg: (idx.bu[id] || {})["MPG"] || "", fgp: S.fga ? S.fgm / S.fga : NaN, ftp: S.fta ? S.ftm / S.fta : NaN,
+      tpm: S.tpm, pts: S.pts, reb: S.reb, ast: S.ast, st: S.st, blk: S.blk, to: S.to } : null;
+    out[id] = { id: +id, name: base.name, nba: base.nba, pos: base.pos, owner, pg, avail, w, pgp: P ? P.gp : null, season,
                 gpS: S ? S.gp : 0 };
   });
   return out;
@@ -297,8 +299,15 @@ League.prototype.evalTrade = function (team, partner, give, get, baseObj, baseAl
     else if (b > 0.8 && a < 0.75) warn.push({ hard: true, t: LBL[k] + " güçlüyken ortaya iniyor (" + Math.round(b * 100) + "% → " + Math.round(a * 100) + "%)" });
   }
   get.filter(x => x.ret).forEach(x => warn.push({ hard: false, t: x.name + " sakat, tahmini dönüş " + x.ret }));
-  return { partner, give, get, myDrop, theirDrop, gain: obj.v - baseObj.v, gPrice, rPrice, fvOut, fvIn,
-           before: baseAll, after: all, top: obj.p, topBefore: baseObj.p, warn };
+  const lgGain = CATS.reduce((a, k) => a + (k in punt ? 0 : all[k] - baseAll[k]), 0);
+  // karsi tarafin gozunden ayni takas
+  const pp = (STRAT[partner] || {}).punt || {}, mov = { [team]: mc };
+  const pTopB = this.topProbs(partner, this.base[partner]), pTopA = this.topProbs(partner, uc, mov);
+  const pAllB = this.plain(partner, this.base[partner]), pAllA = this.plain(partner, uc, mov);
+  const sumD = (a, b) => CATS.reduce((t, k) => t + (k in pp ? 0 : a[k] - b[k]), 0);
+  return { partner, give, get, myDrop, theirDrop, gain: obj.v - baseObj.v, lgGain, gPrice, rPrice, fvOut, fvIn,
+           before: baseAll, after: all, top: obj.p, topBefore: baseObj.p, warn,
+           p: { punt: pp, topBefore: pTopB, top: pTopA, gain: sumD(pTopA, pTopB), lgGain: sumD(pAllA, pAllB) } };
 };
 League.prototype.searchTrades = function (team, opts) {
   opts = opts || {};
