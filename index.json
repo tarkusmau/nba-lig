@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 10:40",
+ "updated": "2026-11-20 21:02",
  "files": {
   "boxscores/2026-11-09.json": 28900,
   "boxscores/2026-11-10.json": 21709,
@@ -14,23 +14,24 @@
   "boxscores/2026-11-19.json": 14200,
   "data.json": 23480,
   "draft.json": 16222,
-  "injuries.json": 28818,
-  "injuries_yahoo.json": 11898,
-  "managers.json": 4486,
+  "injuries.json": 29268,
+  "injuries_yahoo.json": 12002,
+  "managers.json": 4489,
   "nba_schedule.json": 36043,
-  "players/bu_sezon_ort.json": 171306,
-  "players/gecen_sezon_ort.json": 172411,
-  "players/projeksiyon_kalan.json": 172492,
-  "players/son14_ort.json": 170412,
-  "players/son7_ort.json": 169644,
-  "rosters.json": 34962,
-  "run.log": 3772,
+  "ozel-x7k2m9/notes.json": 1804,
+  "players/bu_sezon_ort.json": 171473,
+  "players/gecen_sezon_ort.json": 172518,
+  "players/projeksiyon_kalan.json": 172161,
+  "players/son14_ort.json": 170569,
+  "players/son7_ort.json": 169822,
+  "rosters.json": 34819,
+  "run.log": 3047,
   "schedule.json": 177,
   "settings.json": 1923,
   "standings.json": 2087,
-  "startingrosters.json": 240010,
+  "startingrosters.json": 239015,
   "teamstats_record.json": 3971,
   "teamstats_totals.json": 3720,
-  "transactions.json": 16575
+  "transactions.json": 16976
  }
 }

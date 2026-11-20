@@ -1,4 +1,7 @@
 [
+  {"time":"2026-11-20 19:20","team":"BÇ","type":"add/drop","add":["I. Joe"],"drop":["J. Tyson"],"pos":"SG,SF / SG,SF,PF","source":"FA"},
+  {"time":"2026-11-20 11:41","team":"tarkus maurelius","type":"add/drop","add":["J. Battle"],"drop":["J. Small"],"pos":"SF,PF / PG,SG","source":"FA"},
+  {"time":"2026-11-20 11:20","team":"Kalidou Koulibaly","type":"drop","add":[],"drop":["L. Cryer"],"pos":"PG"},
   {"time":"2026-11-20 09:18","team":"Splash Brothers","type":"add","add":["L. Dort"],"drop":[],"pos":"SG,SF","source":"FA"},
   {"time":"2026-11-20 03:14","team":"EAH Seniors","type":"add","add":["S. Hauser"],"drop":[],"pos":"SF,PF","source":"FA"},
   {"time":"2026-11-20 00:59","team":"Kreuzberg Boys","type":"add/drop","add":["S. Mykhailiuk"],"drop":["P. Achiuwa"],"pos":"SG,SF / PF,C","source":"FA"},

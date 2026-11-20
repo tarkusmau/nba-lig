@@ -1155,7 +1155,7 @@
   },
   "5": {
    "label": "Hafta 5 (16-22 Kasım)",
-   "updated": "20 Kasım 2026, 10:40 (19 Kasım maçları dahil)",
+   "updated": "20 Kasım 2026, 21:02 (19 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1189,7 +1189,7 @@
      "blk": 7,
      "to": 42,
      "games_played": 23,
-     "games_total": 41
+     "games_total": 42
     },
     {
      "team": "Bomonti Sınırsız",
@@ -1206,7 +1206,7 @@
      "blk": 8,
      "to": 41,
      "games_played": 22,
-     "games_total": 35
+     "games_total": 34
     },
     {
      "team": "EAH Seniors",
@@ -1223,7 +1223,7 @@
      "blk": 22,
      "to": 46,
      "games_played": 31,
-     "games_total": 41
+     "games_total": 42
     },
     {
      "team": "BÇ",
@@ -1240,7 +1240,7 @@
      "blk": 7,
      "to": 39,
      "games_played": 27,
-     "games_total": 42
+     "games_total": 44
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1274,7 +1274,7 @@
      "blk": 13,
      "to": 38,
      "games_played": 26,
-     "games_total": 46
+     "games_total": 48
     },
     {
      "team": "Kyojins on Rumbling",
@@ -1308,7 +1308,7 @@
      "blk": 11,
      "to": 40,
      "games_played": 25,
-     "games_total": 38
+     "games_total": 39
     },
     {
      "team": "Suhayy31",
@@ -1325,7 +1325,7 @@
      "blk": 12,
      "to": 29,
      "games_played": 26,
-     "games_total": 39
+     "games_total": 41
     },
     {
      "team": "Kreuzberg Boys",
@@ -1359,7 +1359,7 @@
      "blk": 12,
      "to": 45,
      "games_played": 22,
-     "games_total": 37
+     "games_total": 38
     },
     {
      "team": "Los Gerseii",
@@ -1393,7 +1393,7 @@
      "blk": 15,
      "to": 50,
      "games_played": 27,
-     "games_total": 43
+     "games_total": 44
     },
     {
      "team": "tarkus maurelius",

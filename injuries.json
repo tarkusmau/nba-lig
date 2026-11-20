@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20 10:40",
+"updated": "2026-11-20 21:02",
 "source": "ESPN",
 "injuries": [
 {
@@ -100,6 +100,15 @@
 "return": "2026-11-25",
 "type": "Hamstring",
 "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
+},
+{
+"name": "Jalen Smith",
+"team": "Chicago Bulls",
+"status": "Day-To-Day",
+"date": "2026-11-20T17:41Z",
+"return": "2026-11-20",
+"type": "Illness",
+"note": "Smith (illness) has been downgraded to questionable for Friday's game against the Wizards."
 },
 {
 "name": "Noa Essengue",
@@ -210,6 +219,15 @@
 "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
 },
 {
+"name": "Ronald Holland II",
+"team": "Detroit Pistons",
+"status": "Day-To-Day",
+"date": "2026-11-20T17:46Z",
+"return": "2026-11-20",
+"type": "Knee",
+"note": "Holland (knee) has been upgraded to doubtful for Friday's game against Toronto, Hunter Patterson of The Athletic reports."
+},
+{
 "name": "Taurean Prince",
 "team": "Detroit Pistons",
 "status": "Out",
@@ -226,15 +244,6 @@
 "return": "2026-11-22",
 "type": "Oblique",
 "note": "Okorie (oblique) has been ruled out for Friday's game against Toronto."
-},
-{
-"name": "Ronald Holland II",
-"team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-19T21:41Z",
-"return": "2026-11-22",
-"type": "Knee",
-"note": "Holland (knee) won't play in Friday's game against the Raptors, Blake Murphy of Sportsnet.ca reports."
 },
 {
 "name": "Cade Cunningham",
@@ -606,6 +615,15 @@
 "note": "Murray (ankle) is out for Friday's game against Memphis."
 },
 {
+"name": "Nikola Topic",
+"team": "Oklahoma City Thunder",
+"status": "Out",
+"date": "2026-11-20T17:02Z",
+"return": "2026-11-22",
+"type": "Hip",
+"note": "Topic (hip) is out for Friday's game against New Orleans."
+},
+{
 "name": "Alex Caruso",
 "team": "Oklahoma City Thunder",
 "status": "Day-To-Day",
@@ -687,49 +705,40 @@
 "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
 },
 {
-"name": "Dean Wade",
+"name": "Adem Bona",
 "team": "Philadelphia 76ers",
-"status": "Day-To-Day",
-"date": "2026-11-19T14:47Z",
-"return": "2026-11-21",
-"type": "Hamstring",
-"note": "Wade (hamstring) is out for Wednesday's game in Orlando."
+"status": "Out",
+"date": "2026-11-20T17:33Z",
+"return": "2026-11-23",
+"type": "Back",
+"note": "Bona (back) participated in Friday's practice, though he still needs to go through a full practice with contact before being cleared to return to game action, Adam Aaronson of PhillyVoice.com reports."
 },
 {
 "name": "Tyrese Maxey",
 "team": "Philadelphia 76ers",
 "status": "Day-To-Day",
-"date": "2026-11-19T14:46Z",
+"date": "2026-11-20T17:28Z",
 "return": "2026-11-21",
 "type": "Foot",
-"note": "Maxey (foot) is out for Wednesday's game in Orlando, Ky Carlin of USA Today reports."
+"note": "Maxey (foot) was a full participant in Friday's practice, Tony Jones of The Athletic reports."
 },
 {
 "name": "Jaylen Brown",
 "team": "Philadelphia 76ers",
 "status": "Out",
-"date": "2026-11-18T22:21Z",
+"date": "2026-11-20T17:26Z",
 "return": "2026-11-23",
 "type": "Hamstring",
-"note": "Brown (hamstring) will be re-evaluated at some point this weekend, per Kris Rihm of ESPN.com."
+"note": "Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports."
 },
 {
 "name": "Dominick Barlow",
 "team": "Philadelphia 76ers",
 "status": "Out",
-"date": "2026-11-17T22:12Z",
+"date": "2026-11-20T17:20Z",
 "return": "2026-11-21",
 "type": "Back",
-"note": "Barlow (back) is out for Wednesday's game against Orlando."
-},
-{
-"name": "Adem Bona",
-"team": "Philadelphia 76ers",
-"status": "Out",
-"date": "2026-11-12T16:36Z",
-"return": "2026-11-21",
-"type": "Back",
-"note": "Bona (back) will be re-evaluated in approximately one week after seeing a specialist, Ky Carlin of USA Today reports."
+"note": "Barlow (back) is trending toward making his season debut in Saturday's game against the Bucks, Tony Jones of The Athletic reports."
 },
 {
 "name": "Ariel Hukporti",
