@@ -94,7 +94,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
 
 <section id="toplam">
  <h2>Haftalık toplamlar</h2>
- <p class="note">Yahoo'daki toplamlar, güç sırasına göre.</p>
+ <p class="note">Yahoo'daki toplamlar, güç sırasına göre. Üstteki menüden "Sezon toplamı" seçilirse tüm haftaların toplamı gösterilir.</p>
  <div class="tw"><table id="t-raw"><thead><tr><th>Takım</th><th>Maç</th><th>FGM/A</th><th>FG%</th><th>FTM/A</th><th>FT%</th><th>3PM</th><th>PTS</th><th>REB</th><th>AST</th><th>ST</th><th>BLK</th><th>TO</th></tr></thead><tbody></tbody></table></div>
 </section>
 
@@ -156,10 +156,14 @@ function render(){
  const tpg=$("t-pg").tBodies[0];tpg.textContent="";
  pgs.forEach(({a,w},i)=>tpg.appendChild(row([td(i+1),td(a.team,"l"),td(a.gp??"–"),td(w),td(pct(a.fgp)),td(pct(a.ftp))].concat(["tpm","pts","reb","ast","st","blk","to"].map(k=>td(one(a[k])))),sel(a.team))));
 }
+function addSeason(d){const ks=Object.keys(d.weeks).sort((a,b)=>a-b);const acc={};
+ ks.forEach(k=>d.weeks[k].teams.forEach(t=>{const a=acc[t.team]||(acc[t.team]={team:t.team,gp:0,fgm:0,fga:0,ftm:0,fta:0,tpm:0,pts:0,reb:0,ast:0,st:0,blk:0,to:0});
+  ["gp","fgm","fga","ftm","fta","tpm","pts","reb","ast","st","blk","to"].forEach(f=>a[f]+=(t[f]||0));}));
+ const last=d.weeks[ks[ks.length-1]];d.weeks.all={label:"Sezon toplamı (Hafta "+ks[0]+"-"+ks[ks.length-1]+")",updated:last.updated,teams:Object.values(acc)};}
 function loadWeek(wk){W=DATA.weeks[wk];setWk(W.label||("Hafta "+wk));V=vals(W.teams,false);PG=vals(W.teams,true);$("upd").textContent=W.updated?"Son güncelleme: "+W.updated:"";
  const teams=W.teams.map(t=>t.team);const def="tarkus maurelius";
  opts($("ta"),teams,q("a",def));opts($("tb"),teams,q("b",teams.find(t=>t!==$("ta").value)));opts($("tc"),teams,q("c",def));render();}
-fetch("data.json?v="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;const wks=Object.keys(d.weeks).sort((a,b)=>b-a);
+fetch("data.json?v="+Date.now()).then(r=>r.json()).then(d=>{DATA=d;addSeason(d);const wks=Object.keys(d.weeks).filter(w=>w!=="all").sort((a,b)=>b-a);wks.splice(1,0,"all");
  $("week").replaceChildren(...wks.map(w=>new Option(d.weeks[w].label||("Hafta "+w),w)));$("week").value=q("w",wks[0]);if(!d.weeks[$("week").value])$("week").value=wks[0];
  loadWeek($("week").value);
  $("week").onchange=()=>{setQ("w",$("week").value);loadWeek($("week").value);};
