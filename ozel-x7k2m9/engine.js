@@ -140,8 +140,12 @@ function League(players, rosters, standings, draft, ctx) {
   this.repl = best.reduce((a, p) => a + p.gv, 0) / Math.max(1, best.length); // yedek oyuncu seviyesi
   const avgPg = zero(); best.forEach(p => addTo(avgPg, p.pg, 1 / best.length));
   this.filler = { id: -1, name: "Boş yer (FA stream)", nba: "", pos: "", pg: avgPg, avail: 1, price: 0, wk: weekly({ pg: avgPg }, STREAM_GAMES) };
-  Object.values(this.rost).flat().forEach(p => { p.gv = this.gv(p); this.prep(p); });
-  this.base = {}; this.teams.forEach(t => this.base[t] = cats(this.seasonTotals(this.rost[t])));
+  Object.values(this.rost).flat().forEach(p => { p.gv = this.gv(p); p.fv = this.gv({ ...p, avail: 1 }); this.prep(p); });
+  this.raw = {}; this.base = {};
+  this.teams.forEach(t => { this.raw[t] = this.seasonTotals(this.rost[t]); this.base[t] = cats(this.raw[t]); });
+  // hizli on eleme icin her oyuncunun haftalik ortalama katkisi (en iyi 13'te oynadigi varsayimiyla)
+  Object.values(this.rost).flat().forEach(p => { p.sc = {}; COUNT.forEach(k => p.sc[k] = p.pg[k] * p.seasonG * 7 / this.days); });
+  this.fillSc = {}; COUNT.forEach(k => this.fillSc[k] = this.filler.pg[k] * GAMES_WEEK * FILL_RATE);
 }
 // ---------- takvim ve sakatlik ----------
 // Kalan sezon (bugunden SEASON_END'e) Pazartesi-Pazar haftalarina bolunur; her NBA takiminin haftalik mac tarihleri.
@@ -242,77 +246,107 @@ League.prototype.catWeights = function (team, p) {
 const score = (p, w) => CATS.reduce((a, k) => a + w[k] * p[k], 0);
 
 // ---------- takas aramasi ----------
-function combos(arr, n) { if (n === 1) return arr.map(x => [x]); const out = []; for (let i = 0; i < arr.length; i++) for (let j = i + 1; j < arr.length; j++) out.push([arr[i], arr[j]]); return out; }
-
+// Olcu: ilk 4 rakibe karsi haftada beklenen kategori sayisi (punt haric), sezonun kalani icin.
+// Partnerin kabulu: oyuncularin saglikli haldeki degeri (fv) ve draft $ dengesi.
+const MIN_GAIN = 0.15;      // haftada en az +0,15 kategori
+const PART_TOL = 1.0;       // partner en fazla bu kadar deger (z) kaybedebilir
+const SHAPES = [[1, 1], [1, 2], [2, 1], [2, 2], [2, 3], [3, 2]];
+function combos(arr, n) {
+  const out = [];
+  const rec = (st, acc) => { if (acc.length === n) { out.push(acc.slice()); return; } for (let i = st; i < arr.length; i++) { acc.push(arr[i]); rec(i + 1, acc); acc.pop(); } };
+  rec(0, []); return out;
+}
+League.prototype.topProbs = function (team, c, overrides) {
+  const out = {}; CATS.forEach(k => out[k] = 0); const opp = this.topFor(team);
+  opp.forEach(o => { const oc = (overrides && overrides[o]) || this.base[o]; CATS.forEach(k => out[k] += pWin(c, oc, k)); });
+  CATS.forEach(k => out[k] /= opp.length || 1); return out;
+};
+League.prototype.objective = function (team, c, overrides) {
+  const punt = (STRAT[team] || {}).punt || {}; const p = this.topProbs(team, c, overrides);
+  return { v: CATS.reduce((a, k) => a + (k in punt ? 0 : p[k]), 0), p };
+};
+// Tek bir takasin etkisi (oneri motoru ve "Takas dene" ayni hesabi kullanir)
+League.prototype.evalTrade = function (team, partner, give, get, baseObj, baseAll) {
+  const punt = (STRAT[team] || {}).punt || {};
+  baseObj = baseObj || this.objective(team, this.base[team]);
+  baseAll = baseAll || this.plain(team, this.base[team]);
+  const me = this.rost[team], them = this.rost[partner], ng = give.length, nr = get.length;
+  const newMe = me.filter(x => !give.includes(x)).concat(get);
+  let t, myDrop = null;
+  if (newMe.length > rosterCap(newMe)) {
+    const cand = newMe.filter(x => !x.ret && !get.includes(x)).sort((a, b) => a.fv - b.fv).slice(0, 3);
+    let best = null;
+    cand.forEach(x => { const tt = this.seasonTotals(newMe.filter(y => y !== x)); const o = this.objective(team, cats(tt)).v; if (!best || o > best.o) best = { x, o, tt }; });
+    if (!best) return null;
+    myDrop = best.x; t = best.tt;
+  } else t = this.seasonTotals(newMe, Math.max(0, ng - nr));
+  let newThem = them.filter(x => !get.includes(x)).concat(give), theirDrop = null;
+  if (newThem.length > rosterCap(newThem)) { theirDrop = newThem.filter(x => !x.ret && !give.includes(x)).reduce((a, x) => (!a || x.fv < a.fv ? x : a), null); newThem = newThem.filter(x => x !== theirDrop); }
+  const uc = cats(this.seasonTotals(newThem, Math.max(0, nr - ng)));
+  const ov = { [partner]: uc }, mc = cats(t);
+  const obj = this.objective(team, mc, ov), all = this.plain(team, mc, ov);
+  const gPrice = give.reduce((a, x) => a + x.price, 0), rPrice = get.reduce((a, x) => a + x.price, 0);
+  const fvOut = give.reduce((a, x) => a + x.fv, 0), fvIn = get.reduce((a, x) => a + x.fv, 0);
+  const warn = [];
+  if (Math.abs(gPrice - rPrice) > Math.max(6, 0.2 * Math.max(gPrice, rPrice))) warn.push({ hard: true, t: "Draft $ dengesi açık: " + gPrice + " ↔ " + rPrice });
+  if (fvOut - fvIn < -PART_TOL) warn.push({ hard: true, t: partner + " değer kaybediyor (" + (fvOut - fvIn).toFixed(1) + "): kabul etmesi zor" });
+  for (const k of CATS) {
+    if (k in punt) continue;
+    const b = baseAll[k], a = all[k];
+    if (b >= 0.35 && b <= 0.8 && a < b - MID_TOL) warn.push({ hard: true, t: LBL[k] + " orta seviyedeyken düşüyor (" + Math.round(b * 100) + "% → " + Math.round(a * 100) + "%)" });
+    else if (b > 0.8 && a < 0.75) warn.push({ hard: true, t: LBL[k] + " güçlüyken ortaya iniyor (" + Math.round(b * 100) + "% → " + Math.round(a * 100) + "%)" });
+  }
+  get.filter(x => x.ret).forEach(x => warn.push({ hard: false, t: x.name + " sakat, tahmini dönüş " + x.ret }));
+  return { partner, give, get, myDrop, theirDrop, gain: obj.v - baseObj.v, gPrice, rPrice, fvOut, fvIn,
+           before: baseAll, after: all, top: obj.p, topBefore: baseObj.p, warn };
+};
 League.prototype.searchTrades = function (team, opts) {
   opts = opts || {};
-  // waiver'dan alinabilecek seviyedeki oyuncularin takas degeri yok: sadece yedek seviyesinin ustundekiler
-  const tradeable = list => list.filter(x => x.gv > this.repl);
-  const me = this.rost[team]; const base = this.probs(team, this.base[team]);
-  const W = this.catWeights(team, base.p); const baseScore = score(base.p, W);
-  const res = [];
-  const sumW = list => { const t = zero(); list.forEach(x => addTo(t, x.wk, 1)); return t; };
-  const shapes = opts.shapes || [[1, 1], [2, 1], [1, 2], [2, 2]];
+  const punt = (STRAT[team] || {}).punt || {};
+  const me = this.rost[team];
+  const pool = list => list.filter(x => x.fv > this.repl);   // waiver seviyesinin ustu
+  const baseObj = this.objective(team, this.base[team]);
+  const baseAll = this.plain(team, this.base[team]);
+  const res = []; let evaluated = 0;
+  const myPool = pool(me);
+  const mine = {}; SHAPES.forEach(([ng]) => { if (!mine[ng]) mine[ng] = combos(myPool, ng); });
   for (const partner of this.teams) {
     if (partner === team) continue;
-    const them = this.rost[partner];
-    const pBase = this.plain(partner, this.base[partner]);
-    const pBaseSum = CATS.reduce((a, k) => a + pBase[k], 0);
-    for (const [ng, nr] of shapes) {
-      for (const give of combos(tradeable(me), ng)) {
-        const gPrice = give.reduce((a, x) => a + x.price, 0);
-        const gGv = give.reduce((a, x) => a + x.gv, 0);
-        for (const get of combos(tradeable(them), nr)) {
+    const them = this.rost[partner], thPool = pool(them), theirs = {};
+    for (const [ng, nr] of SHAPES) {
+      if (!theirs[nr]) theirs[nr] = combos(thPool, nr);
+      for (const give of mine[ng]) {
+        const gPrice = give.reduce((a, x) => a + x.price, 0), gFv = give.reduce((a, x) => a + x.fv, 0);
+        for (const get of theirs[nr]) {
           const rPrice = get.reduce((a, x) => a + x.price, 0);
           if (Math.abs(gPrice - rPrice) > Math.max(6, 0.2 * Math.max(gPrice, rPrice))) continue;
-          const rGv = get.reduce((a, x) => a + x.gv, 0);
-          if (rGv - gGv < -1.5) continue; // bariz kotu takaslari ele
-          // benim yeni kadrom: kadro siniri asilirsa en az kayipla biri (sakat olmayan) birakilir; acilan yer stream
-          const newMe = me.filter(x => !give.includes(x)).concat(get);
-          let t, myDrop = null;
-          if (newMe.length > rosterCap(newMe)) {
-            let best = null;
-            newMe.filter(x => !x.ret).forEach(x => { const tt = this.seasonTotals(newMe.filter(y => y !== x)); const s = score(this.probs(team, cats(tt)).p, W); if (!best || s > best.s) best = { x, s, tt }; });
-            myDrop = best.x; t = best.tt;
-            if (get.includes(myDrop)) continue; // aldigini birakmak = daha kucuk takasla ayni
-          } else t = this.seasonTotals(newMe, Math.max(0, ng - nr));
-          // partnerin yeni kadrosu
-          let newThem = them.filter(x => !get.includes(x)).concat(give), theirDrop = null;
-          if (newThem.length > rosterCap(newThem)) { theirDrop = newThem.filter(x => !x.ret).reduce((a, x) => (!a || x.gv < a.gv ? x : a), null); newThem = newThem.filter(x => x !== theirDrop); }
-          const u = this.seasonTotals(newThem, Math.max(0, nr - ng));
-          const uc = cats(u);
-          const ov = { [partner]: uc };
-          const np = this.probs(team, cats(t), ov);
-          // kisitlar: orta seviye kategori dusmesin, guclu kategori ortaya inmesin
-          let bad = false;
-          for (const k of CATS) {
-            if (W[k] <= 0) continue;
-            const b = base.p[k], a = np.p[k];
-            if (b >= 0.35 && b <= 0.8 && a < b - MID_TOL) { bad = true; break; }
-            if (b > 0.8 && a < 0.75) { bad = true; break; }
+          const rFv = get.reduce((a, x) => a + x.fv, 0);
+          if (gFv - rFv < -PART_TOL) continue;           // partner fazla deger kaybetmesin
+          // hizli on eleme (dogrusal yaklasim): umut yoksa tam hesaba girme
+          {
+            const q = { ...this.raw[team] }; give.forEach(x => addTo(q, x.sc, -1)); get.forEach(x => addTo(q, x.sc, 1));
+            if (ng > nr) addTo(q, this.fillSc, ng - nr);
+            if (nr > ng) { const lo = me.filter(x => !give.includes(x) && !x.ret).sort((a, b) => a.fv - b.fv).slice(0, nr - ng); lo.forEach(x => addTo(q, x.sc, -1)); }
+            const qu = { ...this.raw[partner] }; get.forEach(x => addTo(qu, x.sc, -1)); give.forEach(x => addTo(qu, x.sc, 1));
+            if (this.objective(team, cats(q), { [partner]: cats(qu) }).v - baseObj.v < (opts.minGain != null ? opts.minGain : MIN_GAIN) - 0.06) continue;
           }
-          if (bad) continue;
-          const gain = score(np.p, W) - baseScore;
-          if (gain <= 0.02) continue;
-          // partner icin kabul edilebilirlik: genel 9-kat gucu fazla dusmesin
-          const pAfter = this.plain(partner, uc, { [team]: cats(t) });
-          const pDelta = CATS.reduce((a, k) => a + pAfter[k], 0) - pBaseSum;
-          if (pDelta < -0.12) continue;
-          res.push({ partner, give, get, myDrop, theirDrop, gain, pDelta, before: base.p, after: np.p, rankAfter: np.rank, gPrice, rPrice });
+          evaluated++;
+          const ev = this.evalTrade(team, partner, give, get, baseObj, baseAll);
+          if (!ev || ev.gain < (opts.minGain != null ? opts.minGain : MIN_GAIN) || ev.warn.some(w => w.hard)) continue;
+          res.push(ev);
         }
       }
     }
   }
   res.sort((a, b) => b.gain - a.gain);
-  // cesitlilik: ortaga en fazla 2, ayni oyuncuyu veren en fazla 3 takas
   const out = [], perP = {}, perGive = {};
   for (const r of res) {
     const gk = r.give.map(x => x.id).join(",");
-    if ((perP[r.partner] || 0) >= 2 || (perGive[gk] || 0) >= 2) continue;
+    if ((perP[r.partner] || 0) >= 3 || (perGive[gk] || 0) >= 2) continue;
     perP[r.partner] = (perP[r.partner] || 0) + 1; perGive[gk] = (perGive[gk] || 0) + 1;
-    out.push(r); if (out.length >= (opts.limit || 12)) break;
+    out.push(r); if (out.length >= (opts.limit || 15)) break;
   }
-  return { base, W, list: out, considered: res.length };
+  return { base: baseObj, list: out, considered: res.length, evaluated };
 };
 
 G.FantasyEngine = { CATS, LBL, STRAT, buildPlayers, League, weights, cats, teamTotals, pWin, normName, isoAdd, phi };
