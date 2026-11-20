@@ -255,6 +255,12 @@ function pCards(list, other, kind) {
 <div class="sg5">${["fgp", "ftp", "tpm", "pts", "reb"].map(k => cell(p, k)).join("")}</div>
 <div class="sg4">${["ast", "st", "blk", "to"].map(k => cell(p, k)).join("")}</div></div>`; }).join("");
 }
+function winHero(w, cls, gain, lgGain) {
+  const cell = (lbl, b, a, g) => { const d = Math.round((a - b) * 100);
+    const dc = cls === "neu" ? (d > 0 ? "cu" : d < 0 ? "cd" : "") : "";
+    return `<div><div class="l">${lbl}</div><div class="n ${dc}">${d > 0 ? "+" : d < 0 ? "−" : "±"}%${Math.abs(d)}</div><div class="l">${Math.round(b * 100)}% → ${Math.round(a * 100)}% · ${sgn(g)} kat.</div></div>`; };
+  return `<div class="sm" style="margin:2px 0 4px">Haftalık eşleşmeyi kazanma olasılığı (sezonun kalanı)</div><div class="hero ${cls}">${cell("İlk 4'e karşı", w.b.top, w.a.top, gain)}${cell("Lig geneli", w.b.all, w.a.all, lgGain)}</div>`;
+}
 function simResult(x) {
   const me = SHORT[cur] || cur, punt = (E.STRAT[cur] || {}).punt || {};
   const hard = x.warn.filter(w => w.hard), soft = x.warn.filter(w => !w.hard);
@@ -266,7 +272,7 @@ function simResult(x) {
   return `<div id="sim-res">
 <div class="rhd"><span class="rttl">${esc(me)} tarafı</span><span class="plb ${cls === "bad" ? "cd" : cls === "ok" ? "cu" : "cm"}">${verdict}</span></div>
 <div class="sm" style="margin-bottom:6px">${x.give.map(p => esc(shortName(p.name))).join(" + ")} → ${x.get.map(p => esc(shortName(p.name))).join(" + ")} · ${esc(x.partner)}</div>
-<div class="hero ${cls}"><div><div class="l">İlk 4'e karşı</div><div class="n">${sgn(x.gain)} <small>kat./hafta</small></div></div><div><div class="l">Lig geneli</div><div class="n">${sgn(x.lgGain)} <small>kat./hafta</small></div></div></div>
+${winHero(x.win, cls, x.gain, x.lgGain)}
 ${hard.concat(soft).map(w => `<p class="warnl${w.hard ? "" : " s"}">${w.hard ? "⚠ " : ""}${esc(w.t)}</p>`).join("")}
 ${catBox("Kategori etkisi · ilk 4'e karşı kazanma %", x.topBefore, x.top, punt)}
 <div class="hrl"></div>
@@ -276,7 +282,7 @@ ${catBox("Kategori etkisi · ilk 4'e karşı kazanma %", x.topBefore, x.top, pun
 ${drops.length ? `<div class="sm" style="margin-top:4px">${drops.join(" · ")}</div>` : ""}
 <div class="psep">Karşı taraf</div>
 <div class="rhd"><span class="rttl">${esc(x.partner)} tarafı</span></div>
-<div class="hero neu"><div><div class="l">İlk 4'e karşı</div><div class="n ${pg.gain > .02 ? "cu" : pg.gain < -.02 ? "cd" : ""}">${sgn(pg.gain)} <small>kat./hafta</small></div></div><div><div class="l">Lig geneli</div><div class="n ${pg.lgGain > .02 ? "cu" : pg.lgGain < -.02 ? "cd" : ""}">${sgn(pg.lgGain)} <small>kat./hafta</small></div></div></div>
+${winHero(pg.win, "neu", pg.gain, pg.lgGain)}
 <div class="sm" style="margin-top:6px">Değer: ${-val >= 0 ? "+" : "−"}${Math.abs(val).toFixed(1)} · Draft $ ${x.rPrice} ↔ ${x.gPrice}</div>
 ${catBox("Kategori etkisi · " + esc(x.partner) + " için ilk 4'e karşı kazanma %", pg.topBefore, pg.top, pg.punt)}
 <button class="btns" id="sim-new" style="width:100%;margin-top:14px">↑ Yeni takas dene</button></div>`;
