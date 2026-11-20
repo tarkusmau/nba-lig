@@ -263,6 +263,14 @@ League.prototype.topProbs = function (team, c, overrides) {
   opp.forEach(o => { const oc = (overrides && overrides[o]) || this.base[o]; CATS.forEach(k => out[k] += pWin(c, oc, k)); });
   CATS.forEach(k => out[k] /= opp.length || 1); return out;
 };
+// Haftalik eslesmeyi kazanma olasiligi (9 kategoriden en az 5'i; 4,5 beraberlik yarim sayilmaz) rakip listesine karsi ortalama
+League.prototype.weekWin = function (team, c, overrides, opps) {
+  opps = opps || this.teams.filter(t => t !== team); let tot = 0;
+  opps.forEach(o => { const oc = (overrides && overrides[o]) || this.base[o];
+    let dp = [1]; CATS.forEach(k => { const q = pWin(c, oc, k), nx = Array(dp.length + 1).fill(0); dp.forEach((v, i) => { nx[i] += v * (1 - q); nx[i + 1] += v * q; }); dp = nx; });
+    tot += dp.slice(5).reduce((a, b) => a + b, 0); });
+  return opps.length ? tot / opps.length : 0;
+};
 League.prototype.objective = function (team, c, overrides) {
   const punt = (STRAT[team] || {}).punt || {}; const p = this.topProbs(team, c, overrides);
   return { v: CATS.reduce((a, k) => a + (k in punt ? 0 : p[k]), 0), p };
@@ -300,14 +308,17 @@ League.prototype.evalTrade = function (team, partner, give, get, baseObj, baseAl
   }
   get.filter(x => x.ret).forEach(x => warn.push({ hard: false, t: x.name + " sakat, tahmini dönüş " + x.ret }));
   const lgGain = CATS.reduce((a, k) => a + (k in punt ? 0 : all[k] - baseAll[k]), 0);
+  const ww = (tm, cc, ov) => ({ top: this.weekWin(tm, cc, ov, this.topFor(tm)), all: this.weekWin(tm, cc, ov) });
+  const wMeB = ww(team, this.base[team]), wMeA = ww(team, mc, ov);
   // karsi tarafin gozunden ayni takas
   const pp = (STRAT[partner] || {}).punt || {}, mov = { [team]: mc };
   const pTopB = this.topProbs(partner, this.base[partner]), pTopA = this.topProbs(partner, uc, mov);
   const pAllB = this.plain(partner, this.base[partner]), pAllA = this.plain(partner, uc, mov);
   const sumD = (a, b) => CATS.reduce((t, k) => t + (k in pp ? 0 : a[k] - b[k]), 0);
+  const wPB = ww(partner, this.base[partner]), wPA = ww(partner, uc, mov);
   return { partner, give, get, myDrop, theirDrop, gain: obj.v - baseObj.v, lgGain, gPrice, rPrice, fvOut, fvIn,
-           before: baseAll, after: all, top: obj.p, topBefore: baseObj.p, warn,
-           p: { punt: pp, topBefore: pTopB, top: pTopA, gain: sumD(pTopA, pTopB), lgGain: sumD(pAllA, pAllB) } };
+           before: baseAll, after: all, top: obj.p, topBefore: baseObj.p, warn, win: { b: wMeB, a: wMeA },
+           p: { punt: pp, topBefore: pTopB, top: pTopA, gain: sumD(pTopA, pTopB), lgGain: sumD(pAllA, pAllB), win: { b: wPB, a: wPA } } };
 };
 League.prototype.searchTrades = function (team, opts) {
   opts = opts || {};
