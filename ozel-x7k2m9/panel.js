@@ -200,7 +200,7 @@ function renderTrades() {
   $("tr-auto").hidden = trMode !== "auto"; $("tr-sim").hidden = trMode !== "sim";
   if (trMode === "sim") return renderSim();
   const r = tradeCache[cur];
-  if (!r) { $("tstat").textContent = "Hesaplanıyor… (1.000'lerce takas deneniyor, birkaç saniye sürebilir)"; setTimeout(() => { const t0 = performance.now(); tradeCache[cur] = L.searchTrades(cur, { limit: 12 }); tradeCache[cur].ms = Math.round(performance.now() - t0); renderTrades(); }, 40); return; }
+  if (!r) { $("tstat").textContent = "Hesaplanıyor… (1.000'lerce takas deneniyor, birkaç saniye sürebilir)"; setTimeout(() => { try { if (typeof L.evalTrade !== "function") throw new Error("Eski motor dosyası önbellekte kalmış; sayfayı tamamen kapatıp yeniden aç."); const t0 = performance.now(); tradeCache[cur] = L.searchTrades(cur, { limit: 12 }); tradeCache[cur].ms = Math.round(performance.now() - t0); renderTrades(); } catch (e) { $("tstat").innerHTML = "<span class='err'>Takaslar hesaplanamadı: " + esc(e.message) + "</span>"; } }, 40); return; }
   const th = $("t-tr").tHead, tb = $("t-tr").tBodies[0], box = $("tr-cards");
   th.innerHTML = "<tr><th>#</th>" + CATS.map(k => `<th>${LBL[k]}</th>`).join("") + "<th>Kat.</th></tr>";
   if (!r.list.length) { tb.innerHTML = ""; box.innerHTML = ""; $("tstat").textContent = "Anlamlı takas yok: " + r.evaluated + " aday hesaplandı, hiçbiri ilk 4'e karşı haftada +0,15 kategori kazandırmıyor (veya bir kuralı bozuyor)."; return; }
@@ -225,51 +225,84 @@ function renderTrades() {
 }
 
 // ---------- TAKAS DENE ----------
-function plRow(p, set, side) {
-  const rt = p.ret ? " · dönüş " + (+p.ret.slice(8)) + "." + (+p.ret.slice(5, 7)) : "";
-  return `<label class="pl"><input type="checkbox" data-s="${side}" data-id="${p.id}"${set.has(p.id) ? " checked" : ""}>
-<span class="pn">${esc(p.name)}<div class="pm">$${p.price} · ${esc(p.pos || "")}${p.status ? " · " + esc(p.status) : ""}${rt}</div></span><span class="pv ${p.fv > L.repl + 2 ? "win" : p.fv < L.repl ? "loss" : ""}">${p.fv.toFixed(1)}</span></label>`;
+let simRes = null;
+const shortName = n => { const w = String(n).split(" "); return w.length > 1 ? w[0][0] + ". " + w.slice(1).join(" ") : n; };
+const sgn = v => { const r = Math.round(v * 100) / 100; return (r > 0 ? "+" : r < 0 ? "−" : "±") + Math.abs(r).toFixed(2).replace(".", ","); };
+const dcls = (d, punt) => punt ? "cm" : d > .005 ? "cu" : d < -.005 ? "cd" : "";
+function selRow(p, set, side) {
+  const rt = p.ret ? " · " + esc(p.status || "O") + " " + (+p.ret.slice(8)) + "." + (+p.ret.slice(5, 7)) : (p.status ? " · " + esc(p.status) : "");
+  return `<label class="sp"><input type="checkbox" data-s="${side}" data-id="${p.id}"${set.has(p.id) ? " checked" : ""}>
+<span><span>${esc(shortName(p.name))}</span><span class="sm${p.ret ? " cd" : ""}">$${p.price} · ${p.fv.toFixed(1)}${rt}</span></span></label>`;
+}
+function catBox(title, before, after, punt) {
+  const head = CATS.map(k => `<span class="k">${LBL[k]}</span>`).join("");
+  const r1 = CATS.map(k => `<span class="o">${Math.round(before[k] * 100)}</span>`).join("");
+  const r2 = CATS.map(k => `<span class="a ${dcls(after[k] - before[k], k in punt)}">${Math.round(after[k] * 100)}</span>`).join("");
+  const r3 = CATS.map(k => { const d = Math.round((after[k] - before[k]) * 100); return `<span class="d ${dcls(after[k] - before[k], k in punt)}">${d > 0 ? "+" : d < 0 ? "−" : ""}${Math.abs(d)}</span>`; }).join("");
+  return `<div class="ibox"><div class="secl">${title}</div>
+<div class="igrid"><span class="rl h"></span>${head}<span class="rl">Önce</span>${r1}<span class="rl">Sonra</span>${r2}</div>
+<div class="fgrid"><span class="rl">Fark</span>${r3}</div></div>`;
+}
+function pCards(list, other, kind) {
+  const val = (p, k) => { const s = p.season; if (!s) return NaN; return s[k]; };
+  const avg = k => { const v = other.map(p => val(p, k)).filter(isFinite); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : NaN; };
+  const cell = (p, k) => { const v = val(p, k), o = avg(k), pct = k === "fgp" || k === "ftp";
+    const w = isFinite(v) && isFinite(o) && (k === "to" ? v < o : v > o);
+    return `<span><span class="sk">${LBL[k]}</span><span class="sv${w ? " w" : ""}">${!isFinite(v) ? "–" : pct ? f3(v) : f1(v)}</span></span>`; };
+  return list.map(p => { const s = p.season, mp = s && s.mpg ? " · " + parseInt(s.mpg, 10) + " dk" : "";
+    return `<div class="pcard ${kind}"><span class="plb ${kind === "g" ? "cd" : "cu"}">${kind === "g" ? "Veriyorsun" : "Alıyorsun"}</span>
+<div class="nm">${esc(shortName(p.name))}</div><div class="sm">$${p.price} · ${esc(p.pos || "")}${s ? " · " + s.gp + " maç" + mp : " · bu sezon maç yok"}${p.ret ? " · dönüş " + (+p.ret.slice(8)) + "." + (+p.ret.slice(5, 7)) : ""}</div>
+<div class="sg5">${["fgp", "ftp", "tpm", "pts", "reb"].map(k => cell(p, k)).join("")}</div>
+<div class="sg4">${["ast", "st", "blk", "to"].map(k => cell(p, k)).join("")}</div></div>`; }).join("");
+}
+function simResult(x) {
+  const me = SHORT[cur] || cur, punt = (E.STRAT[cur] || {}).punt || {};
+  const hard = x.warn.filter(w => w.hard), soft = x.warn.filter(w => !w.hard);
+  const cls = hard.length ? "bad" : x.gain >= .15 ? "ok" : "neu";
+  const verdict = hard.length ? hard.length + " kural uyarısı" : x.gain >= .15 ? "Uygun ✓" : "Kazanç küçük";
+  const val = x.fvIn - x.fvOut;
+  const drops = [x.myDrop ? "Sen bırakırsın: " + esc(x.myDrop.name) : "", x.give.length > x.get.length ? "Açılan yer stream için kullanılır" : "", x.theirDrop ? esc(x.partner) + " bırakır: " + esc(x.theirDrop.name) : ""].filter(Boolean);
+  const pg = x.p;
+  return `<div id="sim-res">
+<div class="rhd"><span class="rttl">${esc(me)} tarafı</span><span class="plb ${cls === "bad" ? "cd" : cls === "ok" ? "cu" : "cm"}">${verdict}</span></div>
+<div class="sm" style="margin-bottom:6px">${x.give.map(p => esc(shortName(p.name))).join(" + ")} → ${x.get.map(p => esc(shortName(p.name))).join(" + ")} · ${esc(x.partner)}</div>
+<div class="hero ${cls}"><div><div class="l">İlk 4'e karşı</div><div class="n">${sgn(x.gain)} <small>kat./hafta</small></div></div><div><div class="l">Lig geneli</div><div class="n">${sgn(x.lgGain)} <small>kat./hafta</small></div></div></div>
+${hard.concat(soft).map(w => `<p class="warnl${w.hard ? "" : " s"}">${w.hard ? "⚠ " : ""}${esc(w.t)}</p>`).join("")}
+${catBox("Kategori etkisi · ilk 4'e karşı kazanma %", x.topBefore, x.top, punt)}
+<div class="hrl"></div>
+<div class="secl">Oyuncular · bu sezon maç başı</div>
+<div class="pcs"><div>${pCards(x.give, x.get, "g")}</div><div>${pCards(x.get, x.give, "r")}</div></div>
+<div class="rfoot"><span>Draft $ ${x.gPrice} ↔ ${x.rPrice}</span><span>Değer: sen ${val >= 0 ? "+" : "−"}${Math.abs(val).toFixed(1)} · ${esc(x.partner)} ${-val >= 0 ? "+" : "−"}${Math.abs(val).toFixed(1)}</span></div>
+${drops.length ? `<div class="sm" style="margin-top:4px">${drops.join(" · ")}</div>` : ""}
+<div class="psep">Karşı taraf</div>
+<div class="rhd"><span class="rttl">${esc(x.partner)} tarafı</span></div>
+<div class="hero neu"><div><div class="l">İlk 4'e karşı</div><div class="n ${pg.gain > .02 ? "cu" : pg.gain < -.02 ? "cd" : ""}">${sgn(pg.gain)} <small>kat./hafta</small></div></div><div><div class="l">Lig geneli</div><div class="n ${pg.lgGain > .02 ? "cu" : pg.lgGain < -.02 ? "cd" : ""}">${sgn(pg.lgGain)} <small>kat./hafta</small></div></div></div>
+<div class="sm" style="margin-top:6px">Değer: ${-val >= 0 ? "+" : "−"}${Math.abs(val).toFixed(1)} · Draft $ ${x.rPrice} ↔ ${x.gPrice}</div>
+${catBox("Kategori etkisi · " + esc(x.partner) + " için ilk 4'e karşı kazanma %", pg.topBefore, pg.top, pg.punt)}
+<button class="btns" id="sim-new" style="width:100%;margin-top:14px">↑ Yeni takas dene</button></div>`;
 }
 function renderSim() {
   const others = L.teams.filter(t => t !== cur).sort((a, b) => a.localeCompare(b, "tr"));
-  if (!others.includes(simP)) { simP = others[0]; simGet.clear(); }
+  if (!others.includes(simP)) { simP = others[0]; simGet.clear(); simRes = null; }
   const mine = L.rost[cur].slice().sort((a, b) => b.fv - a.fv), theirs = L.rost[simP].slice().sort((a, b) => b.fv - a.fv);
   [...simGive].forEach(id => { if (!mine.some(p => p.id === id)) simGive.delete(id); });
   [...simGet].forEach(id => { if (!theirs.some(p => p.id === id)) simGet.delete(id); });
   const give = mine.filter(p => simGive.has(p.id)), get = theirs.filter(p => simGet.has(p.id));
-  let res = "", mini = "";
-  if (give.length && get.length) {
-    const x = L.evalTrade(cur, simP, give, get);
-    if (!x) res = `<div class="card"><p class="note">Bu takas kadro sınırı nedeniyle hesaplanamadı.</p></div>`;
-    else {
-      const g = x.gain, gc = g >= .15 ? "win" : g < 0 ? "loss" : "";
-      const rows = CATS.map(k => { const d1 = x.top[k] - x.topBefore[k], d2 = x.after[k] - x.before[k], c = d => d > .005 ? "win" : d < -.005 ? "loss" : "";
-        return `<tr><td style="text-align:left">${LBL[k]}</td><td>${pc(x.topBefore[k])}</td><td class="${c(d1)}">${pc(x.top[k])}</td><td>${pc(x.before[k])}</td><td class="${c(d2)}">${pc(x.after[k])}</td></tr>`; }).join("");
-      const info = [];
-      if (x.myDrop) info.push("Sen bırakırsın: " + esc(x.myDrop.name));
-      if (x.give.length > x.get.length) info.push("Açılan yer stream için kullanılır");
-      if (x.theirDrop) info.push(esc(simP) + " bırakır: " + esc(x.theirDrop.name));
-      info.push("Draft $ " + x.gPrice + " ↔ " + x.rPrice);
-      info.push("Oyuncu değeri (sağlıklı hal): verdiğin " + x.fvOut.toFixed(1) + " · aldığın " + x.fvIn.toFixed(1) + " → " + esc(simP) + " için " + (x.fvOut - x.fvIn >= 0 ? "+" : "") + (x.fvOut - x.fvIn).toFixed(1));
-      const hard = x.warn.filter(w => w.hard).length;
-      mini = `<div class="card" style="position:sticky;top:0;z-index:3;padding:8px 12px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="big ${gc}" style="font-size:1.5rem">${g >= 0 ? "+" : "−"}${Math.abs(g).toFixed(2)} kat.</span><span class="${hard ? "loss" : g >= .15 ? "win" : "mut"}" style="font-size:.8rem;text-align:right">${hard ? hard + " kural uyarısı" : g >= .15 ? "Kurallara uyuyor" : "Kazanç küçük"}</span></div>
-<div class="pm" style="font-size:.78rem;color:var(--muted)">Ver: ${give.map(p => esc(p.name)).join(", ")} · Al: ${get.map(p => esc(p.name)).join(", ")} · detay en altta</div></div>`;
-      res = `<div class="card"><div class="upd">İlk 4'e karşı haftada (sezonun kalanı, punt hariç)</div><div class="big ${gc}">${g >= 0 ? "+" : "−"}${Math.abs(g).toFixed(2)} kategori</div>
-${x.warn.map(w => `<p class="warn ${w.hard ? "hard" : "soft"}">${w.hard ? "⚠ " : ""}${esc(w.t)}</p>`).join("")}
-${!x.warn.some(w => w.hard) && g >= .15 ? `<p class="warn win">Kurallara uyuyor ve anlamlı kazanç sağlıyor.</p>` : ""}
-<div class="tw" style="margin-top:8px"><table class="small"><thead><tr><th style="text-align:left">Kat.</th><th>İlk 4</th><th>→</th><th>Lig</th><th>→</th></tr></thead><tbody>${rows}</tbody></table></div>
-<ul class="tcx">${info.map(e => `<li>${e}</li>`).join("")}</ul></div>`;
-    }
-  } else res = `<p class="note">Kendi takımından vereceklerini ve karşı takımdan alacaklarını işaretle; sonuç anında hesaplanır.</p>`;
   const sc = $("sc"), keep = sc ? sc.scrollTop : 0;
-  $("tr-sim").innerHTML = `<div class="pick" style="margin-bottom:8px;grid-template-columns:auto 1fr"><span class="mut">Karşı takım</span> ${teamOpts("simp", simP, others)}</div>` + (mini || res) +
-    `<div class="card"><h3 style="margin-top:0">Ver · ${esc(SHORT[cur] || cur)}</h3>${mine.map(p => plRow(p, simGive, "g")).join("")}</div>` +
-    `<div class="card"><h3 style="margin-top:0">Al · ${esc(simP)}</h3>${theirs.map(p => plRow(p, simGet, "r")).join("")}</div>` + (mini ? res : "") +
-    `<p class="note">Sağdaki sayı oyuncu değeri (sağlıklı hal, 9 kategori z-skoru). Waiver seviyesi ≈ ${L.repl.toFixed(1)}.</p>`;
-  $("simp").onchange = e => { simP = e.target.value; simGet.clear(); renderSim(); };
-  $("tr-sim").querySelectorAll("input[type=checkbox]").forEach(cb => cb.onchange = () => {
-    const set = cb.dataset.s === "g" ? simGive : simGet, id = +cb.dataset.id; cb.checked ? set.add(id) : set.delete(id); renderSim(); });
+  const sum = give.length || get.length ? `Ver: ${give.map(p => esc(shortName(p.name))).join(", ") || "–"} · Al: ${get.map(p => esc(shortName(p.name))).join(", ") || "–"}` : "Vereceklerini solda, alacaklarını sağda işaretle.";
+  $("tr-sim").innerHTML = `<div class="pick" style="margin-bottom:8px;grid-template-columns:auto 1fr"><span class="mut">Karşı takım</span> ${teamOpts("simp", simP, others)}</div>
+<div class="scol"><div class="card"><div class="secl">Ver · ${esc(SHORT[cur] || cur)}</div>${mine.map(p => selRow(p, simGive, "g")).join("")}</div>
+<div class="card"><div class="secl">Al · ${esc(simP)}</div>${theirs.map(p => selRow(p, simGet, "r")).join("")}</div></div>
+<div class="sm" style="margin:6px 0 0">${sum}</div>
+<div class="sbar"><button class="btnp" id="sim-go"${give.length && get.length ? "" : " disabled"}>Hesapla ↓</button><button class="btns" id="sim-clr">Temizle</button></div>` +
+    (simRes === null ? "" : simRes === false ? `<p class="note">Bu takas kadro sınırı nedeniyle hesaplanamadı.</p>` : simResult(simRes));
   if (sc) sc.scrollTop = keep;
+  $("simp").onchange = e => { simP = e.target.value; simGet.clear(); simRes = null; renderSim(); };
+  $("tr-sim").querySelectorAll("input[type=checkbox]").forEach(cb => cb.onchange = () => {
+    const set = cb.dataset.s === "g" ? simGive : simGet, id = +cb.dataset.id; cb.checked ? set.add(id) : set.delete(id); simRes = null; renderSim(); });
+  $("sim-go").onclick = () => { simRes = L.evalTrade(cur, simP, give, get) || false; renderSim(); const r = $("sim-res"); if (r) r.scrollIntoView({ behavior: "smooth", block: "start" }); };
+  $("sim-clr").onclick = () => { simGive.clear(); simGet.clear(); simRes = null; renderSim(); };
+  const nb = $("sim-new"); if (nb) nb.onclick = () => { simGive.clear(); simGet.clear(); simRes = null; renderSim(); if (sc) sc.scrollTo({ top: 0, behavior: "smooth" }); };
 }
 
 // ---------- KADRO ----------
@@ -362,7 +395,7 @@ function render() {
 }
 function init() {
   TEAMS.forEach(t => { const b = document.createElement("button"); b.textContent = SHORT[t]; b.dataset.t = t;
-    b.onclick = () => { if (cur === t) return; cur = t; lgA = t; simGive.clear(); simGet.clear(); simP = null; setQ({ t: t === "Normal MAFIA" ? "mafia" : "tarkus" }); render(); }; $("teams").append(b); });
+    b.onclick = () => { if (cur === t) return; cur = t; lgA = t; simGive.clear(); simGet.clear(); simP = null; simRes = null; setQ({ t: t === "Normal MAFIA" ? "mafia" : "tarkus" }); render(); }; $("teams").append(b); });
   [...$("tabs").children].forEach(b => b.onclick = () => { view = b.dataset.v; setQ({ v: view }); window.scrollTo(0, 0); render(); });
   if (Q.get("a")) lgA = Q.get("a");
   render();
