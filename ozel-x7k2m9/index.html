@@ -16,9 +16,10 @@
 :root{--bg:#f4f5f7;--panel:#fff;--fg:#141922;--muted:#5d6676;--line:#dde1e7;--a:#1f5fd1;--b:#e3792b;--ok:#17834a;--bad:#c23b3b;--chip:#eef1f5;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#0f1319;--panel:#171c24;--fg:#e8ecf2;--muted:#9aa4b5;--line:#2a313c;--a:#5b8ff0;--b:#f0974f;--ok:#43c07a;--bad:#ef6b6b;--chip:#1f2630;color-scheme:dark}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.45;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{margin:0;display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden;background:var(--bg);color:var(--fg);font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;line-height:1.45;-webkit-tap-highlight-color:transparent}
 .wrap{max-width:760px;margin:0 auto;padding:0 14px}
-header.top{position:sticky;top:0;z-index:5;background:var(--bg);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+header.top{flex:none;z-index:5;background:var(--bg);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
 .hrow{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0 8px}
 h1{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.6rem;margin:0;line-height:1}
 h2{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 8px}
@@ -28,7 +29,8 @@ h3{font-size:1rem;margin:12px 0 4px}
 .seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--chip);border-radius:9px;padding:3px;margin-bottom:10px}
 .seg button{font:inherit;font-size:.9rem;border:0;background:none;color:var(--muted);padding:7px;border-radius:7px;cursor:pointer}
 .seg button.on{background:var(--panel);color:var(--fg);font-weight:600;box-shadow:0 0 0 1px var(--line)}
-main{padding-top:12px;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+main{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+main>.wrap{padding-top:12px;padding-bottom:28px}
 .chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;margin-bottom:4px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chips button{flex:none;font:inherit;font-size:.82rem;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer}
@@ -91,7 +93,7 @@ select{font:inherit;font-size:.92rem;padding:8px 10px;border:1px solid var(--lin
 .btn{font:inherit;font-size:.82rem;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer;margin:0 0 10px}
 .notes{white-space:pre-wrap;font-size:.9rem}
 .strat ul{margin:4px 0;padding-left:1.2em;font-size:.9rem}
-nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav.tabs{flex:none;z-index:6;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
 nav.tabs .in{max-width:760px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
 nav.tabs button{font:inherit;font-size:.7rem;border:0;background:none;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 0 8px;cursor:pointer}
 nav.tabs svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -106,7 +108,7 @@ nav.tabs button.on{color:var(--a);font-weight:600}
  <div class="seg" id="teams"></div>
 </div></header>
 
-<main class="wrap">
+<main id="sc"><div class="wrap">
  <section class="view" id="v-win">
   <div class="chips" id="win-wk"></div>
   <p class="note" id="win-desc"></p>
@@ -137,7 +139,7 @@ nav.tabs button.on{color:var(--a);font-weight:600}
   <div class="sub" id="lg-sub"></div>
   <div id="lg-out"></div>
  </section>
-</main>
+</div></main>
 
 <nav class="tabs"><div class="in" id="tabs">
  <button data-v="win"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V5M16 20v-7M21 20H3"/></svg>Kazanma</button>
@@ -149,5 +151,6 @@ nav.tabs button.on{color:var(--a);font-weight:600}
 
 <script src="engine.js"></script>
 <script src="panel.js"></script>
+<script>document.getElementById("tabs").addEventListener("click",function(){document.getElementById("sc").scrollTop=0;});</script>
 </body>
 </html>
