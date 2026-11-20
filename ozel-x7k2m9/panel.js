@@ -71,6 +71,7 @@ let view = ["win", "tr", "ro", "st", "lg"].includes(Q.get("v")) ? Q.get("v") : "
 let winWk = Q.get("ww") || "p";
 let lgWk = Q.get("w") || null, lgSub = Q.get("s") || "h2h", lgA = null, lgB = Q.get("b") || null, catAll = false;
 const tradeCache = {};
+let trMode = Q.get("m") === "sim" ? "sim" : "auto", simP = null; const simGive = new Set(), simGet = new Set();
 
 // ---------- haftalik veri ----------
 function vals(rows, perGame) {
@@ -150,7 +151,7 @@ function renderThisWeek() {
   const fx = (k, v) => pct(k) ? f3(v) : Math.round(v);
   $("win-desc").textContent = (W.label || "") + " · " + (W.updated || "") + ". Mevcut skor + kalan günlerde maçı olan oyuncular (günde en çok 10, IL ve dönmemiş sakatlar hariç).";
   const plan = PLAN[cur];
-  $("win-rows").innerHTML = `<div class="pick" style="margin-bottom:8px"><span class="mut">Rakip</span> ${teamOpts("bwo", bwOpp, names.filter(t => t !== cur))}</div>` +
+  $("win-rows").innerHTML = `<div class="pick" style="margin-bottom:8px;grid-template-columns:auto 1fr"><span class="mut">Rakip</span> ${teamOpts("bwo", bwOpp, names.filter(t => t !== cur))}</div>` +
     CATS.map(k => { const v = r.p[k], tag = plan.punt.includes(k) ? ["punt", "punt"] : null;
       return `<div class="wrow"><div class="wl">${LBL[k]}${tag ? ` <span class="tag ${tag[1]}">${tag[0]}</span>` : ""}</div>
 <div class="bar"><i class="${cls(v)}" style="width:${Math.max(2, Math.round(v * 100))}%"></i></div><div class="wp ${cls(v)}">${pc(v)}</div>
@@ -195,28 +196,80 @@ function renderWin() {
 
 // ---------- TAKASLAR ----------
 function renderTrades() {
+  [...$("tr-sub").children].forEach(b => { b.classList.toggle("on", b.dataset.m === trMode); b.onclick = () => { trMode = b.dataset.m; setQ({ m: trMode }); renderTrades(); }; });
+  $("tr-auto").hidden = trMode !== "auto"; $("tr-sim").hidden = trMode !== "sim";
+  if (trMode === "sim") return renderSim();
   const r = tradeCache[cur];
-  if (!r) { $("tstat").textContent = "Hesaplanıyor…"; setTimeout(() => { const t0 = performance.now(); tradeCache[cur] = L.searchTrades(cur, { limit: 12 }); tradeCache[cur].ms = Math.round(performance.now() - t0); renderTrades(); }, 40); return; }
+  if (!r) { $("tstat").textContent = "Hesaplanıyor… (1.000'lerce takas deneniyor, birkaç saniye sürebilir)"; setTimeout(() => { const t0 = performance.now(); tradeCache[cur] = L.searchTrades(cur, { limit: 12 }); tradeCache[cur].ms = Math.round(performance.now() - t0); renderTrades(); }, 40); return; }
   const th = $("t-tr").tHead, tb = $("t-tr").tBodies[0], box = $("tr-cards");
-  th.innerHTML = "<tr><th>#</th>" + CATS.map(k => `<th>${LBL[k]}</th>`).join("") + "<th>Puan</th></tr>";
-  if (!r.list.length) { tb.innerHTML = ""; box.innerHTML = ""; $("tstat").textContent = "Kurallara uyan takas bulunamadı."; return; }
-  tb.innerHTML = r.list.map((x, i) => "<tr><td>T" + (i + 1) + "</td>" + CATS.map(k => { const d = x.after[k] - x.before[k];
-    return `<td class="ba${d > .005 ? " up" : d < -.005 ? " dn" : ""}"><span class="o">${pc(x.before[k])}</span><span class="n">${pc(x.after[k])}</span></td>`; }).join("") + `<td>+${x.gain.toFixed(2)}</td></tr>`).join("");
+  th.innerHTML = "<tr><th>#</th>" + CATS.map(k => `<th>${LBL[k]}</th>`).join("") + "<th>Kat.</th></tr>";
+  if (!r.list.length) { tb.innerHTML = ""; box.innerHTML = ""; $("tstat").textContent = "Anlamlı takas yok: " + r.evaluated + " aday hesaplandı, hiçbiri ilk 4'e karşı haftada +0,15 kategori kazandırmıyor (veya bir kuralı bozuyor)."; return; }
+  tb.innerHTML = r.list.map((x, i) => "<tr><td>T" + (i + 1) + "</td>" + CATS.map(k => { const d = x.top[k] - x.topBefore[k];
+    return `<td class="ba${d > .005 ? " up" : d < -.005 ? " dn" : ""}"><span class="o">${pc(x.topBefore[k])}</span><span class="n">${pc(x.top[k])}</span></td>`; }).join("") + `<td>+${x.gain.toFixed(2)}</td></tr>`).join("");
   const nm = p => esc(p.name) + " ($" + p.price + (p.status ? ", " + esc(p.status) : "") + ")";
   box.innerHTML = r.list.map((x, i) => {
-    const ch = CATS.map(k => [k, Math.round((x.after[k] - x.before[k]) * 100)]).filter(([, d]) => d !== 0).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
+    const ch = CATS.map(k => [k, Math.round((x.top[k] - x.topBefore[k]) * 100)]).filter(([, d]) => d !== 0).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
       .map(([k, d]) => `<span class="dch ${d > 0 ? "up" : "dn"}">${LBL[k]} ${d > 0 ? "+" : "−"}${Math.abs(d)}</span>`).join("");
     const ex = [];
     if (x.myDrop) ex.push("Sen bırakırsın: " + esc(x.myDrop.name));
     if (x.give.length > x.get.length) ex.push("Açılan yer stream için kullanılır (bostaki en iyi 20'nin ortalaması)");
     if (x.theirDrop) ex.push(esc(x.partner) + " bırakır: " + esc(x.theirDrop.name));
+    ex.push("İlk 4'e karşı haftada +" + x.gain.toFixed(2) + " kategori (sezonun kalanı, sakatlar dönüş tarihinden sonra)");
     ex.push("Draft $ " + x.gPrice + " ↔ " + x.rPrice);
-    ex.push(esc(x.partner) + " için genel güç " + (x.pDelta >= 0 ? "+" : "") + (x.pDelta * 100 / 9).toFixed(1) + " puan/kategori");
-    ex.push("Takas sonrası ortalama sıralar: " + CATS.map(k => LBL[k] + " " + x.rankAfter[k].toFixed(1)).join(", "));
+    ex.push("Oyuncu değeri (sağlıklı hal): verdiğin " + x.fvOut.toFixed(1) + " · aldığın " + x.fvIn.toFixed(1) + " → " + esc(x.partner) + " için " + (x.fvOut - x.fvIn >= 0 ? "+" : "") + (x.fvOut - x.fvIn).toFixed(1));
+    ex.push("Lig geneli kazanma: " + CATS.map(k => LBL[k] + " " + pc(x.before[k]) + "→" + pc(x.after[k])).join(", "));
     return `<details class="tc"><summary><div class="tch"><span>T${i + 1} · ${esc(x.partner)}</span><span class="car">▾</span></div>
 <div class="tcb">Ver ${x.give.map(nm).join(" + ")}<br>Al ${x.get.map(nm).join(" + ")}</div>${ch}</summary><ul class="tcx">${ex.map(e => `<li>${e}</li>`).join("")}</ul></details>`;
   }).join("");
-  $("tstat").textContent = r.considered + " uygun takas bulundu, en iyi " + r.list.length + " tanesi" + (r.ms != null ? " (" + r.ms + " ms)" : "") + ". Karta dokununca detay açılır.";
+  $("tstat").textContent = r.evaluated + " aday hesaplandı, " + r.considered + " tanesi eşiği geçti; en iyi " + r.list.length + " tanesi" + (r.ms != null ? " (" + (r.ms / 1000).toFixed(1) + " sn)" : "") + ". Tablo: ilk 4'e karşı kategori kazanma %, son sütun haftada kazanılan ek kategori. Karta dokununca detay açılır.";
+}
+
+// ---------- TAKAS DENE ----------
+function plRow(p, set, side) {
+  const rt = p.ret ? " · dönüş " + (+p.ret.slice(8)) + "." + (+p.ret.slice(5, 7)) : "";
+  return `<label class="pl"><input type="checkbox" data-s="${side}" data-id="${p.id}"${set.has(p.id) ? " checked" : ""}>
+<span class="pn">${esc(p.name)}<div class="pm">$${p.price} · ${esc(p.pos || "")}${p.status ? " · " + esc(p.status) : ""}${rt}</div></span><span class="pv ${p.fv > L.repl + 2 ? "win" : p.fv < L.repl ? "loss" : ""}">${p.fv.toFixed(1)}</span></label>`;
+}
+function renderSim() {
+  const others = L.teams.filter(t => t !== cur).sort((a, b) => a.localeCompare(b, "tr"));
+  if (!others.includes(simP)) { simP = others[0]; simGet.clear(); }
+  const mine = L.rost[cur].slice().sort((a, b) => b.fv - a.fv), theirs = L.rost[simP].slice().sort((a, b) => b.fv - a.fv);
+  [...simGive].forEach(id => { if (!mine.some(p => p.id === id)) simGive.delete(id); });
+  [...simGet].forEach(id => { if (!theirs.some(p => p.id === id)) simGet.delete(id); });
+  const give = mine.filter(p => simGive.has(p.id)), get = theirs.filter(p => simGet.has(p.id));
+  let res = "", mini = "";
+  if (give.length && get.length) {
+    const x = L.evalTrade(cur, simP, give, get);
+    if (!x) res = `<div class="card"><p class="note">Bu takas kadro sınırı nedeniyle hesaplanamadı.</p></div>`;
+    else {
+      const g = x.gain, gc = g >= .15 ? "win" : g < 0 ? "loss" : "";
+      const rows = CATS.map(k => { const d1 = x.top[k] - x.topBefore[k], d2 = x.after[k] - x.before[k], c = d => d > .005 ? "win" : d < -.005 ? "loss" : "";
+        return `<tr><td style="text-align:left">${LBL[k]}</td><td>${pc(x.topBefore[k])}</td><td class="${c(d1)}">${pc(x.top[k])}</td><td>${pc(x.before[k])}</td><td class="${c(d2)}">${pc(x.after[k])}</td></tr>`; }).join("");
+      const info = [];
+      if (x.myDrop) info.push("Sen bırakırsın: " + esc(x.myDrop.name));
+      if (x.give.length > x.get.length) info.push("Açılan yer stream için kullanılır");
+      if (x.theirDrop) info.push(esc(simP) + " bırakır: " + esc(x.theirDrop.name));
+      info.push("Draft $ " + x.gPrice + " ↔ " + x.rPrice);
+      info.push("Oyuncu değeri (sağlıklı hal): verdiğin " + x.fvOut.toFixed(1) + " · aldığın " + x.fvIn.toFixed(1) + " → " + esc(simP) + " için " + (x.fvOut - x.fvIn >= 0 ? "+" : "") + (x.fvOut - x.fvIn).toFixed(1));
+      const hard = x.warn.filter(w => w.hard).length;
+      mini = `<div class="card" style="position:sticky;top:0;z-index:3;padding:8px 12px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="big ${gc}" style="font-size:1.5rem">${g >= 0 ? "+" : "−"}${Math.abs(g).toFixed(2)} kat.</span><span class="${hard ? "loss" : g >= .15 ? "win" : "mut"}" style="font-size:.8rem;text-align:right">${hard ? hard + " kural uyarısı" : g >= .15 ? "Kurallara uyuyor" : "Kazanç küçük"}</span></div>
+<div class="pm" style="font-size:.78rem;color:var(--muted)">Ver: ${give.map(p => esc(p.name)).join(", ")} · Al: ${get.map(p => esc(p.name)).join(", ")} · detay en altta</div></div>`;
+      res = `<div class="card"><div class="upd">İlk 4'e karşı haftada (sezonun kalanı, punt hariç)</div><div class="big ${gc}">${g >= 0 ? "+" : "−"}${Math.abs(g).toFixed(2)} kategori</div>
+${x.warn.map(w => `<p class="warn ${w.hard ? "hard" : "soft"}">${w.hard ? "⚠ " : ""}${esc(w.t)}</p>`).join("")}
+${!x.warn.some(w => w.hard) && g >= .15 ? `<p class="warn win">Kurallara uyuyor ve anlamlı kazanç sağlıyor.</p>` : ""}
+<div class="tw" style="margin-top:8px"><table class="small"><thead><tr><th style="text-align:left">Kat.</th><th>İlk 4</th><th>→</th><th>Lig</th><th>→</th></tr></thead><tbody>${rows}</tbody></table></div>
+<ul class="tcx">${info.map(e => `<li>${e}</li>`).join("")}</ul></div>`;
+    }
+  } else res = `<p class="note">Kendi takımından vereceklerini ve karşı takımdan alacaklarını işaretle; sonuç anında hesaplanır.</p>`;
+  const sc = $("sc"), keep = sc ? sc.scrollTop : 0;
+  $("tr-sim").innerHTML = `<div class="pick" style="margin-bottom:8px;grid-template-columns:auto 1fr"><span class="mut">Karşı takım</span> ${teamOpts("simp", simP, others)}</div>` + (mini || res) +
+    `<div class="card"><h3 style="margin-top:0">Ver · ${esc(SHORT[cur] || cur)}</h3>${mine.map(p => plRow(p, simGive, "g")).join("")}</div>` +
+    `<div class="card"><h3 style="margin-top:0">Al · ${esc(simP)}</h3>${theirs.map(p => plRow(p, simGet, "r")).join("")}</div>` + (mini ? res : "") +
+    `<p class="note">Sağdaki sayı oyuncu değeri (sağlıklı hal, 9 kategori z-skoru). Waiver seviyesi ≈ ${L.repl.toFixed(1)}.</p>`;
+  $("simp").onchange = e => { simP = e.target.value; simGet.clear(); renderSim(); };
+  $("tr-sim").querySelectorAll("input[type=checkbox]").forEach(cb => cb.onchange = () => {
+    const set = cb.dataset.s === "g" ? simGive : simGet, id = +cb.dataset.id; cb.checked ? set.add(id) : set.delete(id); renderSim(); });
+  if (sc) sc.scrollTop = keep;
 }
 
 // ---------- KADRO ----------
@@ -309,7 +362,7 @@ function render() {
 }
 function init() {
   TEAMS.forEach(t => { const b = document.createElement("button"); b.textContent = SHORT[t]; b.dataset.t = t;
-    b.onclick = () => { if (cur === t) return; cur = t; lgA = t; setQ({ t: t === "Normal MAFIA" ? "mafia" : "tarkus" }); render(); }; $("teams").append(b); });
+    b.onclick = () => { if (cur === t) return; cur = t; lgA = t; simGive.clear(); simGet.clear(); simP = null; setQ({ t: t === "Normal MAFIA" ? "mafia" : "tarkus" }); render(); }; $("teams").append(b); });
   [...$("tabs").children].forEach(b => b.onclick = () => { view = b.dataset.v; setQ({ v: view }); window.scrollTo(0, 0); render(); });
   if (Q.get("a")) lgA = Q.get("a");
   render();
