@@ -5,6 +5,13 @@ const CATS = ["fgp", "ftp", "tpm", "pts", "reb", "ast", "st", "blk", "to"];
 const LBL = { fgp: "FG%", ftp: "FT%", tpm: "3PM", pts: "PTS", reb: "REB", ast: "AST", st: "ST", blk: "BLK", to: "TO" };
 const COUNT = ["fgm", "fga", "ftm", "fta", "tpm", "pts", "reb", "ast", "st", "blk", "to"];
 const GAMES_WEEK = 3.5;           // oyuncu basina haftalik ortalama mac
+const ACTIVE = 13;                // aktif kadro yeri (IL haric)
+const TOP_N = 4;
+const MID_TOL = 0.03;
+const SEASON_END = "2027-04-04";   // fantezi sezonunun son gunu (22. hafta)
+const HEALTHY = 0.92;              // sakatliktan donen oyuncunun oynama orani
+const OUT_DEFAULT_DAYS = 7;        // donus tarihi bilinmeyen Out oyuncu
+const FILL_RATE = 0.95;            // bos aktif yere bostan alinan oyuncunun oynama orani               // orta seviye kategoride izin verilen en fazla dusus (3 puan)                  // takaslar ve "ilk N" gorunumu: puan durumunda ilk 4 rakip
 const STREAM_GAMES = 4.5;         // acik kadro yeri: haftalik 4 add ile stream
 const CV = { tpm: .16, pts: .09, reb: .09, ast: .11, st: .17, blk: .2, to: .12 };
 const OVERRIDE_AVAIL = { "Anthony Davis": 0.85 };
@@ -16,6 +23,9 @@ const STRAT = {
 
 // ---------- yardimcilar ----------
 const num = v => { if (v == null) return NaN; const x = parseFloat(String(v).replace(/,/g, "")); return isFinite(x) ? x : NaN; };
+const normName = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+  .replace(/[^a-z ]/g, "").replace(/\b(jr|sr|ii|iii|iv)\b/g, "").replace(/\s+/g, " ").trim();
+const isoAdd = (d, n) => { const x = new Date(d + "T12:00:00Z"); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); };
 const pair = v => { const m = String(v || "").replace(/,/g, "").match(/([\d.]+)\s*\/\s*([\d.]+)/); return m ? [+m[1], +m[2]] : [NaN, NaN]; };
 function phi(x) { // standart normal CDF
   const t = 1 / (1 + 0.2316419 * Math.abs(x));
@@ -78,7 +88,7 @@ function buildPlayers(src) {
     let avail = P ? Math.min(1, P.gp / remTeam) : 0.9;
     if (OVERRIDE_AVAIL[base.name] != null) avail = OVERRIDE_AVAIL[base.name];
     const owner = (idx.bu[id] || base)["Roster Status"] || "";
-    out[id] = { id: +id, name: base.name, nba: base.nba, pos: base.pos, owner, pg, avail, w,
+    out[id] = { id: +id, name: base.name, nba: base.nba, pos: base.pos, owner, pg, avail, w, pgp: P ? P.gp : null,
                 gpS: S ? S.gp : 0 };
   });
   return out;
@@ -102,8 +112,9 @@ function pWin(a, b, k) {
 }
 
 // ---------- lig modeli ----------
-function League(players, rosters, standings, draft) {
+function League(players, rosters, standings, draft, ctx) {
   this.P = players;
+  this.calendar(ctx || {});
   this.price = {};
   (draft || []).forEach(d => { this.price[d.id] = d.cost; });
   this.rost = {};
@@ -116,7 +127,9 @@ function League(players, rosters, standings, draft) {
   });
   this.teams = Object.keys(this.rost);
   const st = (standings && standings.standings) || [];
-  const top = st.slice().sort((a, b) => b.pct - a.pct).slice(0, 6).map(s => s.team);
+  this.order = st.slice().sort((a, b) => b.pct - a.pct).map(s => s.team);
+  const top = this.order.slice(0, TOP_N + 1);
+  this.topFor = team => this.order.filter(t => t !== team).slice(0, TOP_N);
   this.oppW = t => (top.includes(t) ? 2 : 1);
   this.top = top;
   // Bostaki en iyi 20 oyuncunun ortalamasi = acik kadro yeri (stream)
@@ -127,9 +140,66 @@ function League(players, rosters, standings, draft) {
   this.repl = best.reduce((a, p) => a + p.gv, 0) / Math.max(1, best.length); // yedek oyuncu seviyesi
   const avgPg = zero(); best.forEach(p => addTo(avgPg, p.pg, 1 / best.length));
   this.filler = { id: -1, name: "Boş yer (FA stream)", nba: "", pos: "", pg: avgPg, avail: 1, price: 0, wk: weekly({ pg: avgPg }, STREAM_GAMES) };
-  Object.values(this.rost).flat().forEach(p => p.gv = this.gv(p));
-  this.base = {}; this.teams.forEach(t => this.base[t] = cats(teamTotals(this.rost[t])));
+  Object.values(this.rost).flat().forEach(p => { p.gv = this.gv(p); this.prep(p); });
+  this.base = {}; this.teams.forEach(t => this.base[t] = cats(this.seasonTotals(this.rost[t])));
 }
+// ---------- takvim ve sakatlik ----------
+// Kalan sezon (bugunden SEASON_END'e) Pazartesi-Pazar haftalarina bolunur; her NBA takiminin haftalik mac tarihleri.
+League.prototype.calendar = function (ctx) {
+  const days = (ctx.schedule && ctx.schedule.days) || {};
+  const all = Object.keys(days).sort();
+  const start = ctx.start || new Date().toISOString().slice(0, 10);
+  this.start = start;
+  this.teamRem = {};
+  all.filter(d => d >= start).forEach(d => days[d].forEach(g => [g.away, g.home].forEach(t => this.teamRem[t] = (this.teamRem[t] || 0) + 1)));
+  const weeks = []; let cur = null;
+  for (let d = start; d <= SEASON_END; d = isoAdd(d, 1)) {
+    const dow = new Date(d + "T12:00:00Z").getUTCDay();
+    if (!cur || dow === 1) { cur = { from: d, to: d, n: 0, tg: {} }; weeks.push(cur); }
+    cur.to = d; cur.n++;
+    (days[d] || []).forEach(g => [g.away, g.home].forEach(t => (cur.tg[t] = cur.tg[t] || []).push(d)));
+  }
+  const teams = Object.keys(this.teamRem);
+  weeks.forEach(w => { w.avg = teams.length ? teams.reduce((a, t) => a + (w.tg[t] || []).length, 0) / teams.length : GAMES_WEEK * w.n / 7; });
+  this.weeks = weeks; this.days = weeks.reduce((a, w) => a + w.n, 0) || 7;
+  this.inj = {};
+  const list = (ctx.injuries && (ctx.injuries.injuries || ctx.injuries)) || [];
+  (Array.isArray(list) ? list : []).forEach(x => { this.inj[normName(x.name)] = { status: x.status || "", ret: x.return || null, type: x.type || "" }; });
+};
+// Oyuncunun kalan sezondaki haftalik beklenen mac sayilari (donus tarihinden once 0)
+League.prototype.prep = function (p) {
+  const inj = this.inj[normName(p.name)];
+  let ret = null;
+  if (inj && /^out/i.test(inj.status)) ret = inj.ret && inj.ret > this.start ? inj.ret : isoAdd(this.start, OUT_DEFAULT_DAYS);
+  else if (/^(O|INJ)$/.test(p.status || "")) ret = isoAdd(this.start, OUT_DEFAULT_DAYS);
+  // oynama orani: Yahoo'nun kalan mac projeksiyonu / takimin (donusten sonraki) kalan maci.
+  // Yahoo sakatligi zaten dusmusse cift sayilmaz; dusmemisse oran 1'de kesilir.
+  let health;
+  const rem = (this.teamRem[p.nba] || 0) - (ret ? this.missed(p.nba, ret) : 0);
+  if (OVERRIDE_AVAIL[p.name] != null) health = OVERRIDE_AVAIL[p.name];
+  else if (p.pgp != null && rem > 0) health = Math.min(1, p.pgp / rem);
+  else health = ret ? HEALTHY : p.avail;
+  p.ret = ret; p.health = health; p.injType = inj ? inj.type : "";
+  p.gw = this.weeks.map(w => health * (w.tg[p.nba] || []).filter(d => !ret || d >= ret).length);
+  p.seasonG = p.gw.reduce((a, b) => a + b, 0);
+};
+// Kalan sezonun haftalik ortalama takim toplami: her hafta oynayabilen en iyi 13 oyuncu, eksik yerler bostan
+// (bostaki en iyi 20'nin ortalamasi). "opened": takasla acilan yer sayisi -> haftalik 4 add ile stream (+mac).
+League.prototype.seasonTotals = function (list, opened) {
+  const sorted = list.slice().sort((a, b) => b.gv - a.gv);
+  const t = zero(); let fill = 0;
+  this.weeks.forEach((w, i) => {
+    let n = 0;
+    for (const x of sorted) { if (n >= ACTIVE) break; const g = x.gw[i]; if (g > 0) { addTo(t, x.pg, g); n++; } }
+    fill += (ACTIVE - n) * w.avg * FILL_RATE;
+    if (opened) fill += opened * Math.max(0, STREAM_GAMES - w.avg) * w.n / 7;
+  });
+  addTo(t, this.filler.pg, fill);
+  const k = 7 / this.days; COUNT.forEach(c => t[c] *= k);
+  return t;
+};
+League.prototype.missed = function (nba, ret) { return this.weeks.reduce((a, w) => a + (w.tg[nba] || []).filter(d => d < ret).length, 0); };
+const rosterCap = list => ACTIVE + Math.min(3, list.filter(x => x.ret).length);
 League.prototype.isRostered = function (p) { return p.owner && p.owner !== "FA" && !/^W/.test(p.owner); };
 // genel deger: 9 kategori z-skoru (yuzdeler hacimle agirlikli), hafta basina
 League.prototype.genericZ = function (pool) {
@@ -182,11 +252,10 @@ League.prototype.searchTrades = function (team, opts) {
   const W = this.catWeights(team, base.p); const baseScore = score(base.p, W);
   const res = [];
   const sumW = list => { const t = zero(); list.forEach(x => addTo(t, x.wk, 1)); return t; };
-  const myTot = teamTotals(me);
   const shapes = opts.shapes || [[1, 1], [2, 1], [1, 2], [2, 2]];
   for (const partner of this.teams) {
     if (partner === team) continue;
-    const them = this.rost[partner]; const theirTot = teamTotals(them);
+    const them = this.rost[partner];
     const pBase = this.plain(partner, this.base[partner]);
     const pBaseSum = CATS.reduce((a, k) => a + pBase[k], 0);
     for (const [ng, nr] of shapes) {
@@ -198,19 +267,19 @@ League.prototype.searchTrades = function (team, opts) {
           if (Math.abs(gPrice - rPrice) > Math.max(6, 0.2 * Math.max(gPrice, rPrice))) continue;
           const rGv = get.reduce((a, x) => a + x.gv, 0);
           if (rGv - gGv < -1.5) continue; // bariz kotu takaslari ele
-          // benim yeni toplamim
-          const t = { ...myTot }; addTo(t, sumW(give), -1); addTo(t, sumW(get), 1);
-          let myDrop = null;
-          if (nr > ng) { // fazla oyuncu: en az kayipla birini birak
+          // benim yeni kadrom: kadro siniri asilirsa en az kayipla biri (sakat olmayan) birakilir; acilan yer stream
+          const newMe = me.filter(x => !give.includes(x)).concat(get);
+          let t, myDrop = null;
+          if (newMe.length > rosterCap(newMe)) {
             let best = null;
-            me.filter(x => !give.includes(x)).concat(get).forEach(x => { const tt = { ...t }; addTo(tt, x.wk, -1); const s = score(this.probs(team, cats(tt)).p, W); if (!best || s > best.s) best = { x, s, tt }; });
-            myDrop = best.x; Object.assign(t, best.tt);
-          } else if (ng > nr) { addTo(t, this.filler.wk, ng - nr); }
-          // partnerin yeni toplami
-          const u = { ...theirTot }; addTo(u, sumW(get), -1); addTo(u, sumW(give), 1);
-          let theirDrop = null;
-          if (ng > nr) { const pool = them.filter(x => !get.includes(x)).concat(give); theirDrop = pool.reduce((a, x) => (!a || x.gv < a.gv ? x : a), null); addTo(u, theirDrop.wk, -1); }
-          else if (nr > ng) addTo(u, this.filler.wk, nr - ng);
+            newMe.filter(x => !x.ret).forEach(x => { const tt = this.seasonTotals(newMe.filter(y => y !== x)); const s = score(this.probs(team, cats(tt)).p, W); if (!best || s > best.s) best = { x, s, tt }; });
+            myDrop = best.x; t = best.tt;
+            if (get.includes(myDrop)) continue; // aldigini birakmak = daha kucuk takasla ayni
+          } else t = this.seasonTotals(newMe, Math.max(0, ng - nr));
+          // partnerin yeni kadrosu
+          let newThem = them.filter(x => !get.includes(x)).concat(give), theirDrop = null;
+          if (newThem.length > rosterCap(newThem)) { theirDrop = newThem.filter(x => !x.ret).reduce((a, x) => (!a || x.gv < a.gv ? x : a), null); newThem = newThem.filter(x => x !== theirDrop); }
+          const u = this.seasonTotals(newThem, Math.max(0, nr - ng));
           const uc = cats(u);
           const ov = { [partner]: uc };
           const np = this.probs(team, cats(t), ov);
@@ -219,7 +288,7 @@ League.prototype.searchTrades = function (team, opts) {
           for (const k of CATS) {
             if (W[k] <= 0) continue;
             const b = base.p[k], a = np.p[k];
-            if (b >= 0.35 && b <= 0.8 && a < b - 0.015) { bad = true; break; }
+            if (b >= 0.35 && b <= 0.8 && a < b - MID_TOL) { bad = true; break; }
             if (b > 0.8 && a < 0.75) { bad = true; break; }
           }
           if (bad) continue;
@@ -246,6 +315,6 @@ League.prototype.searchTrades = function (team, opts) {
   return { base, W, list: out, considered: res.length };
 };
 
-G.FantasyEngine = { CATS, LBL, STRAT, buildPlayers, League, weights, cats, teamTotals, pWin };
+G.FantasyEngine = { CATS, LBL, STRAT, buildPlayers, League, weights, cats, teamTotals, pWin, normName, isoAdd, phi };
 if (typeof module !== "undefined") module.exports = G.FantasyEngine;
 })(typeof globalThis !== "undefined" ? globalThis : this);
