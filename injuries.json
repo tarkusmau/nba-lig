@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21 20:49",
+"updated": "2026-11-21 23:01",
 "source": "ESPN",
 "injuries": [
 {
@@ -183,6 +183,15 @@
 "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
 },
 {
+"name": "P.J. Washington",
+"team": "Dallas Mavericks",
+"status": "Day-To-Day",
+"date": "2026-11-21T19:22Z",
+"return": "2026-11-21",
+"type": "Illness",
+"note": "Washington (illness/shoulder) has been downgraded from questionable to doubtful ahead of Saturday's game against the Clippers."
+},
+{
 "name": "Tobi Lawal",
 "team": "Dallas Mavericks",
 "status": "Out",
@@ -190,15 +199,6 @@
 "return": "2026-11-22",
 "type": "Groin",
 "note": "Lawal (groin) is out for Saturday's game against the Clippers."
-},
-{
-"name": "P.J. Washington",
-"team": "Dallas Mavericks",
-"status": "Day-To-Day",
-"date": "2026-11-20T22:40Z",
-"return": "2026-11-21",
-"type": "Shoulder",
-"note": "Washington (shoulder) is listed as questionable for Saturday's game versus the Clippers."
 },
 {
 "name": "Walter Clayton Jr.",
@@ -462,15 +462,6 @@
 "note": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain."
 },
 {
-"name": "Ty Jerome",
-"team": "Memphis Grizzlies",
-"status": "Out",
-"date": "2026-11-20T23:11Z",
-"return": "2026-11-21",
-"type": "Hip",
-"note": "Jerome (hip) is probable for Saturday's game in Minnesota."
-},
-{
 "name": "GG Jackson",
 "team": "Memphis Grizzlies",
 "status": "Out",
@@ -543,6 +534,24 @@
 "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
 },
 {
+"name": "Trey Murphy III",
+"team": "New Orleans Pelicans",
+"status": "Out",
+"date": "2026-11-21T18:22Z",
+"return": "2026-11-23",
+"type": "Knee",
+"note": "Murphy (knee) has been ruled out for Saturday's game against the Spurs."
+},
+{
+"name": "Trendon Watford",
+"team": "New Orleans Pelicans",
+"status": "Out",
+"date": "2026-11-21T18:21Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Watford (ankle) is out for Saturday's game against the Spurs."
+},
+{
 "name": "Bryce McGowens",
 "team": "New Orleans Pelicans",
 "status": "Out",
@@ -550,15 +559,6 @@
 "return": "2026-11-27",
 "type": "Elbow",
 "note": "McGowens (elbow) has been ruled out for Friday's game against the Thunder."
-},
-{
-"name": "Trendon Watford",
-"team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-19T21:09Z",
-"return": "2026-11-27",
-"type": "Ankle",
-"note": "Watford (ankle) has been ruled out for Friday's game against Oklahoma City."
 },
 {
 "name": "Bennedict Mathurin",

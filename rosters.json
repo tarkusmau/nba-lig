@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 20:49",
+ "updated": "2026-11-21 23:01",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -93,12 +93,12 @@
     "draft": 23
    },
    {
-    "name": "Keyonte George",
+    "name": "Ty Jerome",
     "slot": "SG",
-    "id": 10100,
-    "nba": "UTA",
+    "id": 6212,
+    "nba": "MEM",
     "pos": "PG,SG",
-    "draft": 27
+    "draft": 7
    },
    {
     "name": "Isaac Okoro",
@@ -117,12 +117,12 @@
     "draft": 4
    },
    {
-    "name": "Trey Lyles",
+    "name": "Paul Reed",
     "slot": "PF",
-    "id": 5472,
-    "nba": "MIN",
-    "pos": "PF",
-    "draft": "FA"
+    "id": 6450,
+    "nba": "DET",
+    "pos": "PF,C",
+    "draft": 1
    },
    {
     "name": "Caleb Martin",
@@ -165,6 +165,14 @@
     "draft": 10
    },
    {
+    "name": "Keyonte George",
+    "slot": "BN",
+    "id": 10100,
+    "nba": "UTA",
+    "pos": "PG,SG",
+    "draft": 27
+   },
+   {
     "name": "Jalen Suggs",
     "slot": "BN",
     "id": 6516,
@@ -179,14 +187,6 @@
     "nba": "CHI",
     "pos": "SG,SF",
     "draft": 10
-   },
-   {
-    "name": "Paul Reed",
-    "slot": "BN",
-    "id": 6450,
-    "nba": "DET",
-    "pos": "PF,C",
-    "draft": 1
    },
    {
     "name": "Evan Mobley",
@@ -205,15 +205,6 @@
     "pos": "PF",
     "status": "O",
     "draft": 8
-   },
-   {
-    "name": "Ty Jerome",
-    "slot": "IL",
-    "id": 6212,
-    "nba": "MEM",
-    "pos": "PG,SG",
-    "status": "O",
-    "draft": 7
    }
   ],
   "Bomonti Sınırsız": [
@@ -540,12 +531,12 @@
     "draft": 1
    },
    {
-    "name": "Derrick Jones Jr.",
+    "name": "Zach Edey",
     "slot": "Util",
-    "id": 5747,
-    "nba": "LAC",
-    "pos": "SF,PF",
-    "draft": "FA"
+    "id": 10287,
+    "nba": "MEM",
+    "pos": "C",
+    "draft": 15
    },
    {
     "name": "Sam Hauser",
@@ -556,11 +547,11 @@
     "draft": "FA"
    },
    {
-    "name": "Ziaire Williams",
+    "name": "Derrick Jones Jr.",
     "slot": "BN",
-    "id": 6552,
-    "nba": "LAL",
-    "pos": "SG,SF",
+    "id": 5747,
+    "nba": "LAC",
+    "pos": "SF,PF",
     "draft": "FA"
    },
    {
@@ -578,14 +569,6 @@
     "nba": "CLE",
     "pos": "PG,SG",
     "draft": "FA"
-   },
-   {
-    "name": "Zach Edey",
-    "slot": "IL",
-    "id": 10287,
-    "nba": "MEM",
-    "pos": "C",
-    "draft": 15
    },
    {
     "name": "Stephen Curry",
@@ -1025,20 +1008,20 @@
     "draft": 14
    },
    {
-    "name": "Nique Clifford",
+    "name": "Jared McCain",
     "slot": "G",
-    "id": 10469,
+    "id": 10276,
     "nba": "OKC",
-    "pos": "SG,SF",
-    "draft": "FA"
+    "pos": "PG,SG",
+    "draft": 1
    },
    {
-    "name": "DeMar DeRozan",
+    "name": "Nate Ament",
     "slot": "SF",
-    "id": 4614,
-    "nba": "DEN",
-    "pos": "SF,PF",
-    "draft": 16
+    "id": 10581,
+    "nba": "MIL",
+    "pos": "SF",
+    "draft": "FA"
    },
    {
     "name": "Mario Hezonja",
@@ -1089,12 +1072,12 @@
     "draft": "FA"
    },
    {
-    "name": "Jared McCain",
+    "name": "DeMar DeRozan",
     "slot": "BN",
-    "id": 10276,
-    "nba": "OKC",
-    "pos": "PG,SG",
-    "draft": 1
+    "id": 4614,
+    "nba": "DEN",
+    "pos": "SF,PF",
+    "draft": 16
    },
    {
     "name": "Cade Cunningham",
@@ -1468,12 +1451,12 @@
     "draft": 6
    },
    {
-    "name": "Deandre Ayton",
+    "name": "Danny Wolf",
     "slot": "BN",
-    "id": 5958,
-    "nba": "WAS",
-    "pos": "C",
-    "draft": 4
+    "id": 10456,
+    "nba": "BKN",
+    "pos": "PF,C",
+    "draft": "FA"
    },
    {
     "name": "Jerami Grant",
@@ -1787,12 +1770,12 @@
     "draft": 4
    },
    {
-    "name": "Ajay Mitchell",
+    "name": "Tyler Kolek",
     "slot": "G",
-    "id": 10304,
-    "nba": "OKC",
+    "id": 10314,
+    "nba": "NYK",
     "pos": "PG,SG",
-    "draft": 5
+    "draft": "FA"
    },
    {
     "name": "Landry Shamet",
@@ -1832,7 +1815,7 @@
     "id": 6174,
     "nba": "DAL",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "D",
     "draft": 1
    },
    {
@@ -1844,12 +1827,12 @@
     "draft": 19
    },
    {
-    "name": "Trey Murphy III",
-    "slot": "Util",
-    "id": 6559,
-    "nba": "NOP",
-    "pos": "SG,SF",
-    "draft": 38
+    "name": "Ajay Mitchell",
+    "slot": "BN",
+    "id": 10304,
+    "nba": "OKC",
+    "pos": "PG,SG",
+    "draft": 5
    },
    {
     "name": "Michael Porter Jr.",
@@ -1874,6 +1857,15 @@
     "nba": "MIA",
     "pos": "PG",
     "draft": 5
+   },
+   {
+    "name": "Trey Murphy III",
+    "slot": "IL",
+    "id": 6559,
+    "nba": "NOP",
+    "pos": "SG,SF",
+    "status": "O",
+    "draft": 38
    },
    {
     "name": "Austin Reaves",
