@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 21:02",
+ "updated": "2026-11-21 10:31",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -266,18 +266,18 @@
     "draft": 26
    },
    {
-    "name": "Kel'el Ware",
-    "slot": "C",
-    "id": 10274,
-    "nba": "MIL",
-    "pos": "C",
-    "draft": 18
-   },
-   {
     "name": "Goga Bitadze",
     "slot": "C",
     "id": 6206,
     "nba": "ORL",
+    "pos": "C",
+    "draft": "FA"
+   },
+   {
+    "name": "Jaxson Hayes",
+    "slot": "C",
+    "id": 6170,
+    "nba": "UTA",
     "pos": "C",
     "draft": "FA"
    },
@@ -298,6 +298,14 @@
     "draft": 37
    },
    {
+    "name": "Kel'el Ware",
+    "slot": "BN",
+    "id": 10274,
+    "nba": "MIL",
+    "pos": "C",
+    "draft": 18
+   },
+   {
     "name": "Klay Thompson",
     "slot": "BN",
     "id": 4892,
@@ -314,14 +322,6 @@
     "draft": 1
    },
    {
-    "name": "Baylor Scheierman",
-    "slot": "BN",
-    "id": 10277,
-    "nba": "BOS",
-    "pos": "SG,SF",
-    "draft": "FA"
-   },
-   {
     "name": "Dejounte Murray",
     "slot": "IL",
     "id": 5660,
@@ -331,20 +331,12 @@
     "draft": 20
    },
    {
-    "name": "Jaxson Hayes",
-    "slot": "IL",
-    "id": 6170,
-    "nba": "UTA",
-    "pos": "C",
-    "draft": "FA"
-   },
-   {
     "name": "Kingston Flemings",
     "slot": "IL",
     "id": 10574,
     "nba": "ATL",
     "pos": "PG",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    }
   ],
@@ -435,6 +427,7 @@
     "id": 6256,
     "nba": "PHI",
     "pos": "SF,PF",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -536,7 +529,6 @@
     "id": 5471,
     "nba": "MIL",
     "pos": "C",
-    "status": "Q",
     "draft": 5
    },
    {
@@ -594,7 +586,6 @@
     "id": 10287,
     "nba": "MEM",
     "pos": "C",
-    "status": "Q",
     "draft": 15
    },
    {
@@ -788,7 +779,6 @@
     "id": 6166,
     "nba": "SAC",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": "FA"
    },
    {
@@ -824,12 +814,12 @@
     "draft": 6
    },
    {
-    "name": "Cameron Boozer",
+    "name": "Ryan Rollins",
     "slot": "Util",
-    "id": 10592,
-    "nba": "MEM",
-    "pos": "PF,C",
-    "draft": 25
+    "id": 6734,
+    "nba": "MIL",
+    "pos": "PG,SG",
+    "draft": 22
    },
    {
     "name": "Keldon Johnson",
@@ -848,12 +838,13 @@
     "draft": "FA"
    },
    {
-    "name": "Ryan Rollins",
-    "slot": "BN",
-    "id": 6734,
-    "nba": "MIL",
-    "pos": "PG,SG",
-    "draft": 22
+    "name": "Cameron Boozer",
+    "slot": "IL",
+    "id": 10592,
+    "nba": "MEM",
+    "pos": "PF,C",
+    "status": "O",
+    "draft": 25
    },
    {
     "name": "Brandon Williams",
@@ -913,7 +904,7 @@
     "id": 6402,
     "nba": "CHI",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -946,7 +937,7 @@
     "id": 5582,
     "nba": "IND",
     "pos": "PG",
-    "status": "P",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -955,7 +946,7 @@
     "id": 5754,
     "nba": "OKC",
     "pos": "SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1007,7 +998,6 @@
     "id": 5840,
     "nba": "MIL",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 1
    }
   ],
@@ -1026,7 +1016,6 @@
     "id": 6512,
     "nba": "DET",
     "pos": "PG,SG",
-    "status": "P",
     "draft": 66
    },
    {
@@ -1171,12 +1160,12 @@
     "draft": 37
    },
    {
-    "name": "Christian Braun",
+    "name": "Franz Wagner",
     "slot": "SF",
-    "id": 6711,
-    "nba": "DEN",
-    "pos": "SG,SF,PF",
-    "draft": 1
+    "id": 6550,
+    "nba": "ORL",
+    "pos": "SF,PF",
+    "draft": 24
    },
    {
     "name": "Matas Buzelis",
@@ -1187,12 +1176,12 @@
     "draft": 23
    },
    {
-    "name": "Franz Wagner",
+    "name": "Bilal Coulibaly",
     "slot": "F",
-    "id": 6550,
-    "nba": "ORL",
-    "pos": "SF,PF",
-    "draft": 24
+    "id": 10099,
+    "nba": "WAS",
+    "pos": "SG,SF",
+    "draft": "FA"
    },
    {
     "name": "Alex Sarr",
@@ -1219,21 +1208,20 @@
     "draft": 3
    },
    {
-    "name": "Bilal Coulibaly",
-    "slot": "Util",
-    "id": 10099,
-    "nba": "WAS",
-    "pos": "SG,SF",
-    "draft": "FA"
-   },
-   {
     "name": "Alperen Şengün",
-    "slot": "BN",
+    "slot": "Util",
     "id": 6558,
     "nba": "HOU",
     "pos": "PF,C",
-    "status": "Q",
     "draft": 45
+   },
+   {
+    "name": "Christian Braun",
+    "slot": "BN",
+    "id": 6711,
+    "nba": "DEN",
+    "pos": "SG,SF,PF",
+    "draft": 1
    },
    {
     "name": "Payton Pritchard",
@@ -1268,7 +1256,6 @@
     "id": 6721,
     "nba": "IND",
     "pos": "PG,SG",
-    "status": "Q",
     "draft": 6
    },
    {
@@ -1489,7 +1476,6 @@
     "id": 6720,
     "nba": "CLE",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 6
    },
    {
@@ -1765,7 +1751,6 @@
     "id": 6038,
     "nba": "POR",
     "pos": "C",
-    "status": "P",
     "draft": "FA"
    },
    {
@@ -1836,20 +1821,13 @@
     "draft": 29
    },
    {
-    "name": "Y. Konan Niederhäuser",
+    "name": "P.J. Washington",
     "slot": "C",
-    "id": 10441,
-    "nba": "LAC",
-    "pos": "C",
-    "draft": "FA"
-   },
-   {
-    "name": "Davion Mitchell",
-    "slot": "Util",
-    "id": 6551,
-    "nba": "MIA",
-    "pos": "PG",
-    "draft": 5
+    "id": 6174,
+    "nba": "DAL",
+    "pos": "PF,C",
+    "status": "Q",
+    "draft": 1
    },
    {
     "name": "Mikal Bridges",
@@ -1858,6 +1836,22 @@
     "nba": "NYK",
     "pos": "SF,PF",
     "draft": 19
+   },
+   {
+    "name": "Trey Murphy III",
+    "slot": "Util",
+    "id": 6559,
+    "nba": "NOP",
+    "pos": "SG,SF",
+    "draft": 38
+   },
+   {
+    "name": "Davion Mitchell",
+    "slot": "BN",
+    "id": 6551,
+    "nba": "MIA",
+    "pos": "PG",
+    "draft": 5
    },
    {
     "name": "Terrence Shannon Jr.",
@@ -1876,14 +1870,6 @@
     "draft": "FA"
    },
    {
-    "name": "P.J. Washington",
-    "slot": "BN",
-    "id": 6174,
-    "nba": "DAL",
-    "pos": "PF,C",
-    "draft": 1
-   },
-   {
     "name": "Austin Reaves",
     "slot": "IL",
     "id": 6606,
@@ -1891,15 +1877,6 @@
     "pos": "PG,SG,SF",
     "status": "O",
     "draft": 39
-   },
-   {
-    "name": "Trey Murphy III",
-    "slot": "IL",
-    "id": 6559,
-    "nba": "NOP",
-    "pos": "SG,SF",
-    "status": "O",
-    "draft": 38
    },
    {
     "name": "Ja Morant",
@@ -1998,6 +1975,7 @@
     "id": 5836,
     "nba": "NYK",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 20
    },
    {
@@ -2049,6 +2027,7 @@
     "id": 10455,
     "nba": "BKN",
     "pos": "PG",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -2113,6 +2092,7 @@
     "id": 5765,
     "nba": "BOS",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 61
    },
    {
@@ -2129,6 +2109,7 @@
     "id": 5842,
     "nba": "BOS",
     "pos": "PG,SG",
+    "status": "Q",
     "draft": 33
    },
    {
