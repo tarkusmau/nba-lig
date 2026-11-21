@@ -1155,7 +1155,7 @@
   },
   "5": {
    "label": "Hafta 5 (16-22 Kasım)",
-   "updated": "21 Kasım 2026, 10:31 (20 Kasım maçları dahil)",
+   "updated": "21 Kasım 2026, 20:49 (20 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1172,7 +1172,7 @@
      "blk": 22,
      "to": 56,
      "games_played": 37,
-     "games_total": 47
+     "games_total": 49
     },
     {
      "team": "Kassablancas",
@@ -1189,7 +1189,7 @@
      "blk": 10,
      "to": 49,
      "games_played": 31,
-     "games_total": 39
+     "games_total": 41
     },
     {
      "team": "Bomonti Sınırsız",
@@ -1206,7 +1206,7 @@
      "blk": 9,
      "to": 59,
      "games_played": 31,
-     "games_total": 35
+     "games_total": 37
     },
     {
      "team": "EAH Seniors",
@@ -1223,7 +1223,7 @@
      "blk": 22,
      "to": 46,
      "games_played": 33,
-     "games_total": 42
+     "games_total": 44
     },
     {
      "team": "BÇ",
@@ -1257,7 +1257,7 @@
      "blk": 13,
      "to": 55,
      "games_played": 31,
-     "games_total": 40
+     "games_total": 45
     },
     {
      "team": "HobaKumpo",
@@ -1274,7 +1274,7 @@
      "blk": 19,
      "to": 44,
      "games_played": 34,
-     "games_total": 48
+     "games_total": 46
     },
     {
      "team": "Kyojins on Rumbling",
@@ -1308,7 +1308,7 @@
      "blk": 13,
      "to": 54,
      "games_played": 34,
-     "games_total": 39
+     "games_total": 42
     },
     {
      "team": "Suhayy31",
@@ -1325,7 +1325,7 @@
      "blk": 16,
      "to": 39,
      "games_played": 33,
-     "games_total": 43
+     "games_total": 45
     },
     {
      "team": "Kreuzberg Boys",
@@ -1359,7 +1359,7 @@
      "blk": 17,
      "to": 59,
      "games_played": 30,
-     "games_total": 38
+     "games_total": 44
     },
     {
      "team": "Los Gerseii",
@@ -1410,7 +1410,7 @@
      "blk": 17,
      "to": 58,
      "games_played": 32,
-     "games_total": 41
+     "games_total": 40
     },
     {
      "team": "M. Sucks",
@@ -1427,7 +1427,7 @@
      "blk": 15,
      "to": 60,
      "games_played": 33,
-     "games_total": 47
+     "games_total": 46
     }
    ],
    "pairs": [

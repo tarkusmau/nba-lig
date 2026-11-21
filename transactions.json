@@ -1,4 +1,11 @@
 [
+  {"time":"2026-11-21 15:25","team":"tarkus maurelius","type":"add/drop","add":["T. Fall"],"drop":["J. Battle"],"pos":"C / SF,PF","source":"FA"},
+  {"time":"2026-11-21 14:25","team":"Kassablancas","type":"add/drop","add":["A. Graves"],"drop":["T. McConnell"],"pos":"PF / PG","source":"FA"},
+  {"time":"2026-11-21 13:53","team":"Kalidou Koulibaly","type":"add","add":["K. Caldwell-Pope"],"drop":[],"pos":"SG,SF","source":"FA"},
+  {"time":"2026-11-21 12:58","team":"Normal MAFIA","type":"add/drop","add":["M. Robinson"],"drop":["K. Ellis"],"pos":"C / SG,SF","source":"FA"},
+  {"time":"2026-11-21 12:46","team":"Yukatel Metin Akdülger","type":"add","add":["M. Brown Jr."],"drop":[],"pos":"PG","source":"FA"},
+  {"time":"2026-11-21 12:45","team":"HobaKumpo","type":"add/drop","add":["S. Aldama"],"drop":["I. Collier"],"pos":"PF / PG,SG","source":"FA"},
+  {"time":"2026-11-21 12:19","team":"Pickle Men","type":"add/drop","add":["C. Martin"],"drop":["J. LaRavia"],"pos":"SF,PF / SF,PF","faab":2,"source":"W"},
   {"time":"2026-11-21 03:49","team":"Suhayy31","type":"drop","add":[],"drop":["Y. Konan Niederhäuser"],"pos":"C"},
   {"time":"2026-11-20 21:07","team":"Bomonti Sınırsız","type":"drop","add":[],"drop":["B. Scheierman"],"pos":"SG,SF"},
   {"time":"2026-11-20 19:20","team":"BÇ","type":"add/drop","add":["I. Joe"],"drop":["J. Tyson"],"pos":"SG,SF / SG,SF,PF","source":"FA"},
