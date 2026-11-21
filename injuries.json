@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21 23:01",
+"updated": "2026-11-22 00:24",
 "source": "ESPN",
 "injuries": [
 {
@@ -57,22 +57,31 @@
 "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
 },
 {
-"name": "Jayson Tatum",
+"name": "Mitchell Robinson",
 "team": "Boston Celtics",
-"status": "Day-To-Day",
-"date": "2026-11-21T01:07Z",
-"return": "2026-11-21",
-"type": "Rest",
-"note": "Tatum (rest) is listed as questionable for Saturday's game against Sacramento."
+"status": "Out",
+"date": "2026-11-21T20:55Z",
+"return": "2026-11-22",
+"type": "Illness",
+"note": "Robinson (illness) has been ruled out for Saturday's game against the Kings, Keith Smith of Spotrac.com reports."
 },
 {
 "name": "Derrick White",
 "team": "Boston Celtics",
-"status": "Day-To-Day",
-"date": "2026-11-21T01:00Z",
-"return": "2026-11-21",
+"status": "Out",
+"date": "2026-11-21T20:53Z",
+"return": "2026-11-22",
 "type": "Shoulder",
-"note": "White (shoulder) is questionable to play in Saturday's game against Sacramento."
+"note": "White (shoulder) has been ruled out for Saturday's game against Sacramento."
+},
+{
+"name": "Jayson Tatum",
+"team": "Boston Celtics",
+"status": "Out",
+"date": "2026-11-21T20:51Z",
+"return": "2026-11-22",
+"type": "Rest",
+"note": "Tatum (rest) has been ruled out for Saturday's game against the Kings."
 },
 {
 "name": "Nolan Traore",
@@ -492,10 +501,19 @@
 "name": "Myron Gardner",
 "team": "Miami Heat",
 "status": "Day-To-Day",
-"date": "2026-11-19T14:45Z",
+"date": "2026-11-21T20:35Z",
 "return": "2026-11-22",
 "type": "Hamstring",
-"note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
+"note": "Gardner (hamstring) is probable for Sunday's game against the Thunder."
+},
+{
+"name": "Giannis Antetokounmpo",
+"team": "Miami Heat",
+"status": "Day-To-Day",
+"date": "2026-11-21T20:33Z",
+"return": "2026-11-22",
+"type": "Groin",
+"note": "Antetokounmpo (groin) is listed as questionable for Sunday's game against Oklahoma City, Ira Winderman of the South Florida Sun Sentinel reports."
 },
 {
 "name": "Ousmane Dieng",
@@ -660,6 +678,15 @@
 "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports."
 },
 {
+"name": "Jonathan Isaac",
+"team": "Orlando Magic",
+"status": "Out",
+"date": "2026-11-21T21:09Z",
+"return": "2026-11-29",
+"type": "Knee",
+"note": "Isaac (knee) is out for Sunday's game against the Wizards."
+},
+{
 "name": "Izaiyah Nelson",
 "team": "Orlando Magic",
 "status": "Out",
@@ -669,20 +696,11 @@
 "note": "Head coach Sean Sweeney said Wednesday that Nelson (ankle) has been doing \"some on-court stuff,\" though Sweeney added that the work has been \"minimal,\" Jason Beede of the Orlando Sentinel reports."
 },
 {
-"name": "Jonathan Isaac",
-"team": "Orlando Magic",
-"status": "Out",
-"date": "2026-11-15T18:22Z",
-"return": "2026-11-22",
-"type": "Knee",
-"note": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
-},
-{
 "name": "Noah Penda",
 "team": "Orlando Magic",
 "status": "Out",
 "date": "2026-11-14T17:33Z",
-"return": "2026-11-22",
+"return": "2026-11-29",
 "type": "Hamstring",
 "note": "Penda (hamstring) is making progress but remains without a timetable to return to game action, Jason Beede of the Orlando Sentinel reports."
 },
@@ -798,10 +816,10 @@
 "name": "Precious Achiuwa",
 "team": "Sacramento Kings",
 "status": "Day-To-Day",
-"date": "2026-11-21T14:55Z",
+"date": "2026-11-21T21:19Z",
 "return": "2026-11-21",
 "type": "Lower Leg",
-"note": "Achiuwa (lower leg) has been ruled out for Friday's game against the Lakers."
+"note": "Achiuwa (lower leg) is questionable for Saturday's game against the Celtics."
 },
 {
 "name": "Maxime Raynaud",

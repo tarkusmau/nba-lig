@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 23:01",
+ "updated": "2026-11-22 00:24",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-21": {
@@ -807,7 +807,8 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "IL",
@@ -1187,7 +1188,8 @@
      "name": "Mitchell Robinson",
      "nba": "BOS",
      "pos": "C",
-     "game": "@ SAC 10:00 pm"
+     "game": "@ SAC 10:00 pm",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -1545,7 +1547,7 @@
      "nba": "BOS",
      "pos": "PG,SG",
      "game": "@ SAC 10:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SG",
@@ -1565,7 +1567,7 @@
      "nba": "BOS",
      "pos": "SF,PF",
      "game": "@ SAC 10:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "PF",
@@ -2435,7 +2437,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "vs OKC 6:00 pm"
+     "game": "vs OKC 6:00 pm",
+     "status": "Q"
     },
     {
      "slot": "Util",
@@ -2857,7 +2860,8 @@
      "name": "Mitchell Robinson",
      "nba": "BOS",
      "pos": "C",
-     "game": "@ GSW 8:30 pm"
+     "game": "@ GSW 8:30 pm",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -3224,7 +3228,7 @@
      "nba": "BOS",
      "pos": "PG,SG",
      "game": "@ GSW 8:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -3245,7 +3249,7 @@
      "nba": "BOS",
      "pos": "SF,PF",
      "game": "@ GSW 8:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -4144,7 +4148,8 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -4575,7 +4580,8 @@
      "slot": "Util",
      "name": "Mitchell Robinson",
      "nba": "BOS",
-     "pos": "C"
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -4956,7 +4962,7 @@
      "name": "Derrick White",
      "nba": "BOS",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -4976,7 +4982,7 @@
      "name": "Jayson Tatum",
      "nba": "BOS",
      "pos": "SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -5802,7 +5808,8 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -6215,7 +6222,8 @@
      "name": "Mitchell Robinson",
      "nba": "BOS",
      "pos": "C",
-     "game": "@ WAS 8:00 pm"
+     "game": "@ WAS 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -6569,7 +6577,7 @@
      "nba": "BOS",
      "pos": "PG,SG",
      "game": "@ WAS 8:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -6590,7 +6598,7 @@
      "nba": "BOS",
      "pos": "SF,PF",
      "game": "@ WAS 8:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -7476,7 +7484,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ PHI 5:00 pm"
+     "game": "@ PHI 5:00 pm",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -7901,7 +7910,8 @@
      "slot": "Util",
      "name": "Mitchell Robinson",
      "nba": "BOS",
-     "pos": "C"
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -8277,7 +8287,7 @@
      "name": "Derrick White",
      "nba": "BOS",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -8297,7 +8307,7 @@
      "name": "Jayson Tatum",
      "nba": "BOS",
      "pos": "SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -9110,7 +9120,8 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -9504,7 +9515,8 @@
      "slot": "Util",
      "name": "Mitchell Robinson",
      "nba": "BOS",
-     "pos": "C"
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -9849,7 +9861,7 @@
      "name": "Derrick White",
      "nba": "BOS",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -9868,7 +9880,7 @@
      "name": "Jayson Tatum",
      "nba": "BOS",
      "pos": "SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -10761,7 +10773,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ NYK 7:00 pm"
+     "game": "@ NYK 7:00 pm",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -11197,7 +11210,8 @@
      "name": "Mitchell Robinson",
      "nba": "BOS",
      "pos": "C",
-     "game": "vs ATL 8:00 pm"
+     "game": "vs ATL 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -11585,7 +11599,7 @@
      "nba": "BOS",
      "pos": "PG,SG",
      "game": "vs ATL 8:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -11607,7 +11621,7 @@
      "nba": "BOS",
      "pos": "SF,PF",
      "game": "vs ATL 8:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
@@ -12492,7 +12506,8 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -12877,7 +12892,8 @@
      "slot": "Util",
      "name": "Mitchell Robinson",
      "nba": "BOS",
-     "pos": "C"
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -13237,7 +13253,7 @@
      "name": "Derrick White",
      "nba": "BOS",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "G",
@@ -13257,7 +13273,7 @@
      "name": "Jayson Tatum",
      "nba": "BOS",
      "pos": "SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "F",
