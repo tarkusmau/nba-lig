@@ -149,8 +149,14 @@ def parse_matchup(html):
 def week_data(week, links):
     teams, days = [], []
     for w, m1, m2 in links:
-        html = fetch(f"/matchup?week={w}&module=matchup&mid1={m1}&mid2={m2}")
-        t, d = parse_matchup(html)
+        # Canli mac sirasinda varsayilan gorunum "Live" sekmesi (toplamlar yok); once "Totals" sekmesini iste
+        html = fetch(f"/matchup?date=totals&week={w}&mid1={m1}&mid2={m2}")
+        try:
+            t, d = parse_matchup(html)
+        except ValueError:
+            log(f"Uyari: totals gorunumu okunamadi (mid1={m1}), eski adresle tekrar deneniyor.")
+            html = fetch(f"/matchup?week={w}&module=matchup&mid1={m1}&mid2={m2}")
+            t, d = parse_matchup(html)
         txt = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
         m = re.search(r"(\d+)\s*/\s*(\d+)[^/]{0,60}?Games Played[^/]{0,60}?(\d+)\s*/\s*(\d+)", txt)
         if m and len(t) == 2:
