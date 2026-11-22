@@ -1155,7 +1155,7 @@
   },
   "5": {
    "label": "Hafta 5 (16-22 Kasım)",
-   "updated": "22 Kasım 2026, 10:31 (21 Kasım maçları dahil)",
+   "updated": "22 Kasım 2026, 20:48 (21 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1206,7 +1206,7 @@
      "blk": 10,
      "to": 59,
      "games_played": 33,
-     "games_total": 37
+     "games_total": 38
     },
     {
      "team": "EAH Seniors",
@@ -1223,7 +1223,7 @@
      "blk": 30,
      "to": 60,
      "games_played": 43,
-     "games_total": 44
+     "games_total": 46
     },
     {
      "team": "BÇ",
@@ -1257,7 +1257,7 @@
      "blk": 13,
      "to": 61,
      "games_played": 36,
-     "games_total": 42
+     "games_total": 45
     },
     {
      "team": "HobaKumpo",
@@ -1274,7 +1274,7 @@
      "blk": 25,
      "to": 62,
      "games_played": 41,
-     "games_total": 46
+     "games_total": 49
     },
     {
      "team": "Kyojins on Rumbling",
@@ -1325,7 +1325,7 @@
      "blk": 16,
      "to": 50,
      "games_played": 40,
-     "games_total": 44
+     "games_total": 48
     },
     {
      "team": "Kreuzberg Boys",
@@ -1342,7 +1342,7 @@
      "blk": 15,
      "to": 59,
      "games_played": 36,
-     "games_total": 42
+     "games_total": 43
     },
     {
      "team": "Normal MAFIA",
@@ -1359,7 +1359,7 @@
      "blk": 22,
      "to": 63,
      "games_played": 36,
-     "games_total": 43
+     "games_total": 44
     },
     {
      "team": "Los Gerseii",
@@ -1410,7 +1410,7 @@
      "blk": 19,
      "to": 65,
      "games_played": 37,
-     "games_total": 41
+     "games_total": 42
     },
     {
      "team": "M. Sucks",
@@ -1427,7 +1427,7 @@
      "blk": 19,
      "to": 71,
      "games_played": 40,
-     "games_total": 44
+     "games_total": 46
     }
    ],
    "pairs": [
