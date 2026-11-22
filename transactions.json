@@ -1,4 +1,9 @@
 [
+  {"time":"2026-11-23 00:00","team":"Kalidou Koulibaly","type":"add/drop","add":["Z. Collins"],"drop":["C. Sexton"],"pos":"C / PG,SG","source":"FA"},
+  {"time":"2026-11-22 23:59","team":"Kalidou Koulibaly","type":"drop","add":[],"drop":["K. Caldwell-Pope"],"pos":"SG,SF"},
+  {"time":"2026-11-22 23:26","team":"tarkus maurelius","type":"add","add":["M. Johnson Jr."],"drop":[],"pos":"PF","source":"FA"},
+  {"time":"2026-11-22 23:26","team":"tarkus maurelius","type":"drop","add":[],"drop":["T. Fall"],"pos":"C"},
+  {"time":"2026-11-22 21:51","team":"Bomonti Sınırsız","type":"drop","add":[],"drop":["S. James"],"pos":"SG,SF"},
   {"time":"2026-11-22 19:11","team":"Pickle Men","type":"add","add":["B. Scheierman"],"drop":[],"pos":"SG,SF","source":"FA"},
   {"time":"2026-11-22 14:34","team":"Kreuzberg Boys","type":"add/drop","add":["W. Clayton Jr."],"drop":["N. Ament"],"pos":"PG,SG / SF","source":"FA"},
   {"time":"2026-11-22 13:21","team":"Normal MAFIA","type":"drop","add":[],"drop":["D. Cardwell"],"pos":"PF,C"},
