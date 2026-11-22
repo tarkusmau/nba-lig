@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22 00:35",
+ "updated": "2026-11-22 10:31",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -186,6 +186,7 @@
     "id": 5506,
     "nba": "CHI",
     "pos": "SG,SF",
+    "status": "Q",
     "draft": 10
    },
    {
@@ -902,6 +903,7 @@
     "id": 6163,
     "nba": "NOP",
     "pos": "PF,C",
+    "status": "O",
     "draft": 17
    },
    {
@@ -921,21 +923,21 @@
     "draft": 3
    },
    {
-    "name": "Alex Caruso",
-    "slot": "Util",
-    "id": 5754,
-    "nba": "OKC",
-    "pos": "SG,SF",
-    "status": "Q",
-    "draft": 1
-   },
-   {
     "name": "Allen Graves",
     "slot": "Util",
     "id": 10570,
     "nba": "TOR",
     "pos": "PF",
     "draft": "FA"
+   },
+   {
+    "name": "Jalen Smith",
+    "slot": "Util",
+    "id": 6402,
+    "nba": "CHI",
+    "pos": "PF,C",
+    "status": "Q",
+    "draft": 1
    },
    {
     "name": "Ace Bailey",
@@ -959,16 +961,15 @@
     "id": 5069,
     "nba": "GSW",
     "pos": "PF,C",
-    "status": "P",
     "draft": 1
    },
    {
-    "name": "Jalen Smith",
+    "name": "Alex Caruso",
     "slot": "IL",
-    "id": 6402,
-    "nba": "CHI",
-    "pos": "PF,C",
-    "status": "Q",
+    "id": 5754,
+    "nba": "OKC",
+    "pos": "SG,SF",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1085,6 +1086,7 @@
     "id": 6512,
     "nba": "DET",
     "pos": "PG,SG",
+    "status": "P",
     "draft": 66
    },
    {
@@ -1586,11 +1588,12 @@
     "draft": "FA"
    },
    {
-    "name": "Shai Gilgeous-Alexander",
+    "name": "S. Gilgeous-Alexander",
     "slot": "BN",
     "id": 6022,
     "nba": "OKC",
     "pos": "PG",
+    "status": "Q",
     "draft": 73
    },
    {
@@ -1660,7 +1663,6 @@
     "id": 6401,
     "nba": "POR",
     "pos": "SG,SF,PF",
-    "status": "Q",
     "draft": 27
    },
    {
@@ -1677,6 +1679,7 @@
     "id": 5658,
     "nba": "IND",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 19
    },
    {
@@ -1817,7 +1820,7 @@
     "id": 6174,
     "nba": "DAL",
     "pos": "PF,C",
-    "status": "D",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1919,7 +1922,7 @@
     "id": 5836,
     "nba": "NYK",
     "pos": "SF,PF",
-    "status": "D",
+    "status": "O",
     "draft": 20
    },
    {
@@ -2061,7 +2064,7 @@
     "id": 5432,
     "nba": "NYK",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 47
    },
    {
