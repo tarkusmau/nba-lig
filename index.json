@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 10:51",
+ "updated": "2026-11-23 10:56",
  "files": {
   "boxscores/2026-11-09.json": 28900,
   "boxscores/2026-11-10.json": 21709,
@@ -24,11 +24,11 @@
   "ozel-x7k2m9/notes.json": 1887,
   "players/bu_sezon_ort.json": 170203,
   "players/gecen_sezon_ort.json": 171094,
-  "players/projeksiyon_kalan.json": 171297,
+  "players/projeksiyon_kalan.json": 171601,
   "players/son14_ort.json": 169227,
-  "players/son7_ort.json": 168303,
+  "players/son7_ort.json": 162397,
   "rosters.json": 34443,
-  "run.log": 3564,
+  "run.log": 3047,
   "schedule.json": 177,
   "settings.json": 1923,
   "standings.json": 2087,
