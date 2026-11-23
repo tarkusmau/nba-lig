@@ -90,11 +90,24 @@ main>.wrap{padding-top:12px;padding-bottom:28px}
 .pcard{border:1px solid var(--line);border-radius:12px;padding:8px 7px;margin-bottom:8px;background:var(--panel)}
 .pcard.g{border-color:color-mix(in srgb,var(--bad) 45%,var(--line))}.pcard.r{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
 .pcard .nm{font-weight:600;font-size:.95rem;margin-top:1px}
-.sg5,.sg4{display:grid;text-align:center;margin-top:8px;font-variant-numeric:tabular-nums}.sg5{grid-template-columns:repeat(5,1fr)}.sg4{grid-template-columns:repeat(4,1fr);margin-top:6px}
+.sg5,.sg4{display:grid;text-align:center;margin-top:8px;font-variant-numeric:tabular-nums}.sg5{grid-template-columns:repeat(6,1fr)}.sg4{grid-template-columns:repeat(4,1fr);margin-top:6px}
 .sg5>span>span,.sg4>span>span{display:block;font-size:.72rem}.sk{color:var(--muted)}.sv.w{color:var(--ok);font-weight:700}
 .rfoot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.75rem;border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
 .psep{display:flex;align-items:center;gap:8px;margin:26px 0 8px;color:var(--muted);font-size:.75rem}
 .psep::before,.psep::after{content:"";flex:1;border-top:1px solid var(--line)}
+#fo-sub{flex-wrap:wrap;gap:6px}#fo-sub button{width:auto;padding:4px 11px}
+.fc{border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin-top:8px;background:var(--panel)}
+.ftop{display:flex;justify-content:space-between;align-items:baseline;gap:6px}.fnm{font-weight:600;font-size:.92rem}.fnm small{font-weight:400;font-size:.72rem;color:var(--muted)}
+.fr{font-weight:700;font-size:.92rem;white-space:nowrap}
+.fwk{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin-top:6px;text-align:center}.fwk span{border-radius:4px;font-size:.7rem;padding:1px 0;background:var(--chip);color:var(--muted)}
+.fwk .g{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok);font-weight:600}.fwk .gl{background:var(--ok);color:#fff;font-weight:700}.fwk .past{opacity:.45}
+.fst{display:grid;grid-template-columns:repeat(9,1fr);text-align:center;margin-top:6px;font-variant-numeric:tabular-nums}.fst>span>span{display:block}.fst .k{font-size:.66rem;color:var(--muted)}.fst .n{font-size:.82rem;font-weight:600}
+.fln{font-size:.72rem;color:var(--muted);margin-top:4px}
+.finj{background:var(--chip);border-radius:10px;padding:7px 10px;margin-top:14px}.fih{font-weight:700}.fih small{font-weight:400;color:var(--muted)}
+.fsrch{width:100%;font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--fg);margin-bottom:8px}
+.fgr{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}.fgr label{font-size:.72rem;color:var(--muted);display:flex;flex-direction:column;gap:2px}.fgr select{font:inherit;font-size:.82rem;padding:5px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg)}
+.fchips{display:flex;flex-wrap:wrap;gap:5px;margin:4px 0 6px}.fch{font:inherit;font-size:.74rem;padding:3px 9px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}.fch.on{background:color-mix(in srgb,var(--a) 15%,transparent);border-color:var(--a);color:var(--a);font-weight:600}
+.fpt td{font-variant-numeric:tabular-nums}.fpt td.hl{background:color-mix(in srgb,var(--ok) 14%,transparent);color:var(--ok);font-weight:600}.fpt tr[data-id]{cursor:pointer}.fopen td{padding:0 0 6px!important;text-align:left}.fopen .fc *{white-space:normal}.fopen .fc{position:sticky;left:0;width:calc(min(100vw,760px) - 34px);box-sizing:border-box;margin-top:4px}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:10px}
 table{border-collapse:collapse;width:100%;font-size:.85rem;font-variant-numeric:tabular-nums}
 th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -135,8 +148,8 @@ select{font:inherit;font-size:.92rem;padding:8px 10px;border:1px solid var(--lin
 .notes{white-space:pre-wrap;font-size:.9rem}
 .strat ul{margin:4px 0;padding-left:1.2em;font-size:.9rem}
 nav.tabs{flex:none;z-index:6;background:var(--panel);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
-nav.tabs .in{max-width:760px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
-nav.tabs button{font:inherit;font-size:.7rem;border:0;background:none;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 0 8px;cursor:pointer}
+nav.tabs .in{max-width:760px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)}
+nav.tabs button{font:inherit;font-size:.66rem;border:0;background:none;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;padding:7px 0 8px;cursor:pointer}
 nav.tabs svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 nav.tabs button.on{color:var(--a);font-weight:600}
 .err{color:var(--bad)}
@@ -173,7 +186,11 @@ nav.tabs button.on{color:var(--a);font-weight:600}
   <div class="tw"><table class="small" id="t-ro"><thead><tr><th>Oyuncu</th><th>Yer</th><th>Draft $</th><th>Oynama</th><th>Değer</th><th>FG%</th><th>FT%</th><th>3PM</th><th>PTS</th><th>REB</th><th>AST</th><th>ST</th><th>BLK</th><th>TO</th></tr></thead><tbody></tbody></table></div>
  </section>
 
- <section class="view" id="v-st" hidden>
+ <section class="view" id="v-fo" hidden>
+  <div class="msel" id="fo-sub"><button data-f="pl">Oyuncular</button><button data-f="gen">Genel fırsatlar</button><button data-f="inj">Sakatlık fırsatları</button><button data-f="fit">Takıma göre</button></div>
+  <div id="fo-out"><p class="note">Yükleniyor…</p></div>
+</section>
+<section class="view" id="v-st" hidden>
   <div class="card strat"><h2>Strateji</h2><div id="strat"></div></div>
   <div class="card"><h2>Claude notları</h2><p class="upd" id="nupd"></p><div class="notes" id="notes">Henüz not yok.</div></div>
  </section>
@@ -190,12 +207,13 @@ nav.tabs button.on{color:var(--a);font-weight:600}
  <button data-v="win"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V5M16 20v-7M21 20H3"/></svg>Kazanma</button>
  <button data-v="tr"><svg viewBox="0 0 24 24"><path d="M4 8h15l-4-4M20 16H5l4 4"/></svg>Takaslar</button>
  <button data-v="ro"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20c0-2.8-1.6-5-4-6"/></svg>Kadro</button>
+ <button data-v="fo"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M11 8v6M8 11h6"/></svg>Fırsatlar</button>
  <button data-v="st"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Strateji</button>
  <button data-v="lg"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 16v5M7 4h10v5a5 5 0 0 1-10 0zM7 6H4.5a3 3 0 0 0 3 4.5M17 6h2.5a3 3 0 0 1-3 4.5"/></svg>Lig</button>
 </div></nav>
 
-<script src="engine.js?v=20261121c"></script>
-<script src="panel.js?v=20261121c"></script>
+<script src="engine.js?v=20261123a"></script>
+<script src="panel.js?v=20261123a"></script>
 <script>document.getElementById("tabs").addEventListener("click",function(){document.getElementById("sc").scrollTop=0;});</script>
 </body>
 </html>
