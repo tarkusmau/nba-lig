@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 02:07",
+ "updated": "2026-11-23 10:51",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -273,6 +273,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -702,7 +703,6 @@
     "id": 5601,
     "nba": "LAC",
     "pos": "SG,SF,PF",
-    "status": "O",
     "draft": 12
    },
    {
@@ -953,6 +953,7 @@
     "id": 10094,
     "nba": "SAS",
     "pos": "C",
+    "status": "Q",
     "draft": 90
    },
    {
@@ -1460,7 +1461,7 @@
     "id": 5350,
     "nba": "MEM",
     "pos": "SF,PF",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1632,6 +1633,7 @@
     "id": 5767,
     "nba": "SAS",
     "pos": "PG",
+    "status": "Q",
     "draft": 19
    },
    {
@@ -1659,15 +1661,6 @@
     "draft": 1
    },
    {
-    "name": "Pascal Siakam",
-    "slot": "C",
-    "id": 5658,
-    "nba": "IND",
-    "pos": "PF,C",
-    "status": "Q",
-    "draft": 19
-   },
-   {
     "name": "Naz Reid",
     "slot": "C",
     "id": 6253,
@@ -1690,6 +1683,14 @@
     "nba": "POR",
     "pos": "PG",
     "draft": 15
+   },
+   {
+    "name": "Pascal Siakam",
+    "slot": "BN",
+    "id": 5658,
+    "nba": "IND",
+    "pos": "PF,C",
+    "draft": 19
    },
    {
     "name": "Deni Avdija",
@@ -2010,14 +2011,6 @@
     "draft": 33
    },
    {
-    "name": "Mikel Brown Jr.",
-    "slot": "G",
-    "id": 10588,
-    "nba": "BKN",
-    "pos": "PG",
-    "draft": 1
-   },
-   {
     "name": "Kevin Huerter",
     "slot": "SF",
     "id": 6030,
@@ -2047,7 +2040,6 @@
     "id": 5432,
     "nba": "NYK",
     "pos": "PF,C",
-    "status": "Q",
     "draft": 47
    },
    {
@@ -2097,6 +2089,14 @@
     "nba": "NOP",
     "pos": "PG,SG",
     "draft": 1
+   },
+   {
+    "name": "Bennett Stirtz",
+    "slot": "BN",
+    "id": 10573,
+    "nba": "OKC",
+    "pos": "PG",
+    "draft": "FA"
    },
    {
     "name": "Nolan Traore",

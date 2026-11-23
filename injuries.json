@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-23 02:07",
+"updated": "2026-11-23 10:51",
 "source": "ESPN",
 "injuries": [
 {
@@ -327,15 +327,6 @@
 "note": "McConnell (hamstring) is listed as out for Sunday's game in New York."
 },
 {
-"name": "Pascal Siakam",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-21T22:19Z",
-"return": "2026-11-22",
-"type": "Hip",
-"note": "Siakam (hip) is listed as questionable for Sunday's game against New York."
-},
-{
 "name": "Tyrese Haliburton",
 "team": "Indiana Pacers",
 "status": "Out",
@@ -363,15 +354,6 @@
 "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
 },
 {
-"name": "Brandon Ingram",
-"team": "LA Clippers",
-"status": "Out",
-"date": "2026-11-20T20:20Z",
-"return": null,
-"type": null,
-"note": "Ingram (Achilles) is expected to make his season and team debut Monday against the Rockets, per Shams Charania of ESPN."
-},
-{
 "name": "Bradley Beal",
 "team": "LA Clippers",
 "status": "Out",
@@ -393,19 +375,19 @@
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
 "status": "Out",
-"date": "2026-11-22T20:25Z",
-"return": "2026-11-23",
+"date": "2026-11-23T01:09Z",
+"return": "2026-11-27",
 "type": "Heel",
-"note": "Reaves (heel) was a full participant in Sunday's practice, Thuc Nhi Nguyen of the Los Angeles Times reports."
+"note": "Reaves (heel) has been ruled out for Monday's game against the Jazz, Jovan Buha of The Athletic reports."
 },
 {
 "name": "Jerami Grant",
 "team": "Memphis Grizzlies",
-"status": "Day-To-Day",
-"date": "2026-11-22T22:21Z",
-"return": "2026-11-23",
+"status": "Out",
+"date": "2026-11-23T04:04Z",
+"return": "2026-12-12",
 "type": "Calf",
-"note": "Grant (calf) has been ruled out for Monday's game against the Hornets."
+"note": "Grant was diagnosed with a grade 1 left calf strain and will be re-evaluated in two weeks."
 },
 {
 "name": "Cameron Boozer",
@@ -543,6 +525,15 @@
 "note": "Murray (ankle) is out for Friday's game against Memphis."
 },
 {
+"name": "Miles McBride",
+"team": "New York Knicks",
+"status": "Out",
+"date": "2026-11-23T00:04Z",
+"return": "2026-11-25",
+"type": "Abdomen",
+"note": "McBride (abdomen) has been ruled out for Sunday's game against the Pacers."
+},
+{
 "name": "OG Anunoby",
 "team": "New York Knicks",
 "status": "Out",
@@ -550,15 +541,6 @@
 "return": "2026-11-25",
 "type": "Calf",
 "note": "Anunoby (calf) won't play Sunday against the Pacers."
-},
-{
-"name": "Karl-Anthony Towns",
-"team": "New York Knicks",
-"status": "Day-To-Day",
-"date": "2026-11-22T18:09Z",
-"return": "2026-11-22",
-"type": "Illness",
-"note": "Towns (illness) is questionable to play in Sunday's game against the Pacers."
 },
 {
 "name": "Jordan Clarkson",
@@ -726,10 +708,10 @@
 "name": "Ryan Dunn",
 "team": "Phoenix Suns",
 "status": "Day-To-Day",
-"date": "2026-11-22T18:34Z",
+"date": "2026-11-22T23:24Z",
 "return": "2026-11-23",
 "type": "Quadriceps",
-"note": "Dunn (quadriceps) was a full participant in Sunday's practice, Duane Rankin of The Arizona Republic reports."
+"note": "Dunn (quadriceps) is listed as questionable for Monday's game against the Pelicans."
 },
 {
 "name": "Mark Williams",
@@ -795,6 +777,33 @@
 "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
 },
 {
+"name": "Victor Wembanyama",
+"team": "San Antonio Spurs",
+"status": "Day-To-Day",
+"date": "2026-11-23T04:52Z",
+"return": "2026-11-23",
+"type": "Back",
+"note": "Wembanyama (back) is questionable for Monday's game against the Kings, Jared Weiss of The Athletic reports."
+},
+{
+"name": "De'Aaron Fox",
+"team": "San Antonio Spurs",
+"status": "Day-To-Day",
+"date": "2026-11-23T01:39Z",
+"return": "2026-11-23",
+"type": "Lower Leg",
+"note": "Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports."
+},
+{
+"name": "Jordan McLaughlin",
+"team": "San Antonio Spurs",
+"status": "Day-To-Day",
+"date": "2026-11-23T01:38Z",
+"return": "2026-11-23",
+"type": "Shoulder",
+"note": "McLaughlin (shoulder) is listed as questionable for Monday's game against the Kings."
+},
+{
 "name": "Dylan Harper",
 "team": "San Antonio Spurs",
 "status": "Out",
@@ -858,6 +867,15 @@
 "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports."
 },
 {
+"name": "Jaxson Hayes",
+"team": "Utah Jazz",
+"status": "Out",
+"date": "2026-11-23T01:16Z",
+"return": "2026-11-23",
+"type": "Knee",
+"note": "Hayes (knee) has been ruled out for the remainder of Sunday's game against the Mavericks, Grant Afseth of DallasHoopsJournal.com reports."
+},
+{
 "name": "Jusuf Nurkic",
 "team": "Utah Jazz",
 "status": "Out",
@@ -883,24 +901,6 @@
 "return": "2026-12-14",
 "type": "Knee",
 "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
-},
-{
-"name": "Bub Carrington",
-"team": "Washington Wizards",
-"status": "Day-To-Day",
-"date": "2026-11-22T18:21Z",
-"return": null,
-"type": null,
-"note": "Carrington (illness) has been downgraded to questionable for Sunday's game against the Magic."
-},
-{
-"name": "Deandre Ayton",
-"team": "Washington Wizards",
-"status": "Day-To-Day",
-"date": "2026-11-22T17:28Z",
-"return": "2026-11-22",
-"type": "Illness",
-"note": "Ayton (illness) is questionable to play in Sunday's game against Orlando."
 },
 {
 "name": "Tristan Vukcevic",
