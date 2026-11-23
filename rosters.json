@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:22",
+ "updated": "2026-11-23 21:06",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -138,7 +138,7 @@
     "id": 10579,
     "nba": "OKC",
     "pos": "C",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -273,7 +273,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -368,13 +368,13 @@
     "draft": "FA"
    },
    {
-    "name": "Dean Wade",
+    "name": "Jaylen Brown",
     "slot": "PF",
-    "id": 6256,
+    "id": 5602,
     "nba": "PHI",
-    "pos": "SF,PF",
+    "pos": "SG,SF,PF",
     "status": "P",
-    "draft": "FA"
+    "draft": 31
    },
    {
     "name": "Julius Randle",
@@ -457,15 +457,6 @@
     "pos": "PF,C",
     "status": "O",
     "draft": 30
-   },
-   {
-    "name": "Jaylen Brown",
-    "slot": "IL",
-    "id": 5602,
-    "nba": "PHI",
-    "pos": "SG,SF,PF",
-    "status": "P",
-    "draft": 31
    }
   ],
   "EAH Seniors": [
@@ -972,26 +963,26 @@
     "id": 5754,
     "nba": "OKC",
     "pos": "SG,SF",
-    "status": "O",
+    "status": "Q",
     "draft": 1
    }
   ],
   "Kreuzberg Boys": [
    {
-    "name": "Cade Cunningham",
+    "name": "Scoot Henderson",
     "slot": "PG",
-    "id": 6512,
-    "nba": "DET",
-    "pos": "PG,SG",
-    "draft": 66
+    "id": 10048,
+    "nba": "POR",
+    "pos": "PG",
+    "draft": 1
    },
    {
-    "name": "Walter Clayton Jr.",
+    "name": "Stephon Castle",
     "slot": "SG",
-    "id": 10461,
-    "nba": "DAL",
+    "id": 10290,
+    "nba": "SAS",
     "pos": "PG,SG",
-    "draft": "FA"
+    "draft": 14
    },
    {
     "name": "Jared McCain",
@@ -1026,21 +1017,21 @@
     "draft": 5
    },
    {
-    "name": "Charles Bassey",
-    "slot": "C",
-    "id": 6595,
-    "nba": "GSW",
-    "pos": "C",
-    "draft": "FA"
-   },
-   {
     "name": "Giannis Antetokounmpo",
     "slot": "C",
     "id": 5185,
     "nba": "MIA",
     "pos": "PF,C",
-    "status": "O",
+    "status": "Q",
     "draft": 63
+   },
+   {
+    "name": "Noah Clowney",
+    "slot": "C",
+    "id": 10121,
+    "nba": "BKN",
+    "pos": "PF,C",
+    "draft": "FA"
    },
    {
     "name": "Moussa Diabaté",
@@ -1059,27 +1050,27 @@
     "draft": "FA"
    },
    {
-    "name": "Stephon Castle",
+    "name": "Cade Cunningham",
     "slot": "BN",
-    "id": 10290,
-    "nba": "SAS",
+    "id": 6512,
+    "nba": "DET",
     "pos": "PG,SG",
-    "draft": 14
+    "draft": 66
    },
    {
-    "name": "Scoot Henderson",
+    "name": "Walter Clayton Jr.",
     "slot": "BN",
-    "id": 10048,
-    "nba": "POR",
-    "pos": "PG",
-    "draft": 1
+    "id": 10461,
+    "nba": "DAL",
+    "pos": "PG,SG",
+    "draft": "FA"
    },
    {
-    "name": "Noah Clowney",
+    "name": "Charles Bassey",
     "slot": "BN",
-    "id": 10121,
-    "nba": "BKN",
-    "pos": "PF,C",
+    "id": 6595,
+    "nba": "GSW",
+    "pos": "C",
     "draft": "FA"
    },
    {
@@ -1227,12 +1218,12 @@
   ],
   "Los Gerseii": [
    {
-    "name": "Andrew Nembhard",
+    "name": "Collin Gillespie",
     "slot": "PG",
-    "id": 6721,
-    "nba": "IND",
+    "id": 6751,
+    "nba": "PHX",
     "pos": "PG,SG",
-    "draft": 6
+    "draft": 2
    },
    {
     "name": "Bones Hyland",
@@ -1291,21 +1282,29 @@
     "draft": 25
    },
    {
-    "name": "Nic Claxton",
-    "slot": "Util",
-    "id": 6219,
-    "nba": "CHI",
-    "pos": "C",
-    "status": "O",
-    "draft": 4
-   },
-   {
     "name": "Taylor Hendricks",
     "slot": "Util",
     "id": 10110,
     "nba": "MEM",
     "pos": "PF,C",
     "draft": "FA"
+   },
+   {
+    "name": "Andrew Nembhard",
+    "slot": "Util",
+    "id": 6721,
+    "nba": "IND",
+    "pos": "PG,SG",
+    "draft": 6
+   },
+   {
+    "name": "Nic Claxton",
+    "slot": "BN",
+    "id": 6219,
+    "nba": "CHI",
+    "pos": "C",
+    "status": "Q",
+    "draft": 4
    },
    {
     "name": "Kyshawn George",
@@ -1322,14 +1321,6 @@
     "nba": "DEN",
     "pos": "C",
     "draft": 90
-   },
-   {
-    "name": "Collin Gillespie",
-    "slot": "BN",
-    "id": 6751,
-    "nba": "PHX",
-    "pos": "PG,SG",
-    "draft": 2
    },
    {
     "name": "Dennis Schröder",
@@ -1428,7 +1419,7 @@
     "id": 4725,
     "nba": "BOS",
     "pos": "SF,PF",
-    "status": "O",
+    "status": "P",
     "draft": 19
    },
    {
@@ -1498,7 +1489,7 @@
     "id": 6022,
     "nba": "OKC",
     "pos": "PG",
-    "status": "O",
+    "status": "Q",
     "draft": 73
    },
    {
@@ -1547,6 +1538,7 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
+    "status": "Q",
     "draft": 20
    },
    {
@@ -1839,7 +1831,7 @@
     "id": 6174,
     "nba": "DAL",
     "pos": "PF,C",
-    "status": "O",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -1981,7 +1973,7 @@
     "id": 5836,
     "nba": "NYK",
     "pos": "SF,PF",
-    "status": "O",
+    "status": "Q",
     "draft": 20
    }
   ],

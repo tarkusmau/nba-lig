@@ -1467,7 +1467,7 @@
   },
   "6": {
    "label": "Hafta 6 (23-29 Kasım)",
-   "updated": "23 Kasım 2026, 15:22 (22 Kasım maçları dahil)",
+   "updated": "23 Kasım 2026, 21:06 (22 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1484,7 +1484,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 40
+     "games_total": 43
     },
     {
      "team": "M. Sucks",
@@ -1501,7 +1501,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 34
+     "games_total": 42
     },
     {
      "team": "BÇ",
@@ -1535,7 +1535,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 27
+     "games_total": 42
     },
     {
      "team": "EAH Seniors",
@@ -1654,7 +1654,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 40
+     "games_total": 43
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1671,7 +1671,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 30
+     "games_total": 36
     },
     {
      "team": "Normal MAFIA",
@@ -1688,7 +1688,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 28
+     "games_total": 31
     },
     {
      "team": "Suhayy31",
@@ -1739,7 +1739,7 @@
      "blk": 0,
      "to": 0,
      "games_played": 0,
-     "games_total": 36
+     "games_total": 39
     }
    ],
    "pairs": [
