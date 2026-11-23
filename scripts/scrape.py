@@ -93,11 +93,15 @@ def updated_str(final=False):
 
 def to_int(v):
     v = v.strip()
+    if v in ("-", ""):
+        return 0  # hafta yeni basladi, henuz mac yok
     if not re.fullmatch(r"-?\d+", v):
         raise ValueError(f"sayi degil: {v!r}")
     return int(v)
 
 def pair(v):
+    if re.fullmatch(r"\s*-?\s*/\s*-?\s*", v or "") or (v or "").strip() in ("-", ""):
+        return 0, 0  # hafta yeni basladi: '-/-'
     m = re.fullmatch(r"\s*(\d+)\s*/\s*(\d+)\s*", v)
     if not m:
         raise ValueError(f"oran degil: {v!r}")
