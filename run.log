@@ -1,18 +1,7 @@
 Guncel hafta: 6
-Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 23 Kasım 2026, 15:14 (final)
-Uyari: totals gorunumu okunamadi (mid1=1), eski adresle tekrar deneniyor.
-HATA hafta 6: oran degil: '-/-'
-Hafta 5 eslesmeleri: [['Pickle Men', 'Kassablancas'], ['Bomonti Sınırsız', 'EAH Seniors'], ['BÇ', 'Yukatel Metin Akdülger'], ['HobaKumpo', 'Kyojins on Rumbling'], ['Kalidou Koulibaly', 'Suhayy31'], ['Kreuzberg Boys', 'Normal MAFIA'], ['Los Gerseii', 'Splash Brothers'], ['M. Sucks', 'tarkus maurelius']]
+Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 23 Kasım 2026, 15:22 (22 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 8 yeni kayit eklendi.
-  + {"time": "2026-11-23 14:52", "team": "EAH Seniors", "type": "add/drop", "add": ["O. Toppin"], "drop": ["S. Hauser"], "pos": "SF,PF / SF,PF", "source": "FA"}
-  + {"time": "2026-11-23 14:37", "team": "tarkus maurelius", "type": "add/drop", "add": ["S. Cissoko"], "drop": ["M. Johnson Jr."], "pos": "SF,PF / PF", "source": "FA"}
-  + {"time": "2026-11-23 14:36", "team": "tarkus maurelius", "type": "add", "add": ["D. Barlow"], "drop": [], "pos": "PF,C", "source": "FA"}
-  + {"time": "2026-11-23 13:03", "team": "Suhayy31", "type": "add/drop", "add": ["Y. Konan Niederhäuser"], "drop": ["T. Kolek"], "pos": "C / PG,SG", "source": "FA"}
-  + {"time": "2026-11-23 12:56", "team": "Normal MAFIA", "type": "add", "add": ["P. Achiuwa"], "drop": [], "pos": "PF,C", "source": "FA"}
-  + {"time": "2026-11-23 12:44", "team": "HobaKumpo", "type": "drop", "add": [], "drop": ["S. Aldama"], "pos": "PF"}
-  + {"time": "2026-11-23 12:35", "team": "Splash Brothers", "type": "drop", "add": [], "drop": ["R. Williams III"], "pos": "C"}
-  + {"time": "2026-11-23 11:14", "team": "Splash Brothers", "type": "drop", "add": [], "drop": ["L. Dort"], "pos": "SG,SF"}
+Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Norman Powell', 'Evan Mobley', 'Caleb Wilson']

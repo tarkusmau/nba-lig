@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:14",
+ "updated": "2026-11-23 15:22",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-23": {
@@ -351,10 +351,10 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF",
-     "game": "@ HOU 8:30 pm"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF",
+     "game": "vs BKN 7:30 pm"
     },
     {
      "slot": "PF",
@@ -386,17 +386,24 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF",
+     "game": "vs OKC 7:30 pm"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF",
      "game": "@ CHA 7:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF",
-     "game": "vs BKN 7:30 pm"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF",
+     "game": "@ HOU 8:30 pm"
     },
     {
      "slot": "BN",
@@ -409,13 +416,6 @@
      "name": "De'Anthony Melton",
      "nba": "GSW",
      "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF",
-     "game": "vs OKC 7:30 pm"
     },
     {
      "slot": "IL",
@@ -2040,9 +2040,9 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF"
     },
     {
      "slot": "PF",
@@ -2070,15 +2070,21 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -2091,12 +2097,6 @@
      "name": "De'Anthony Melton",
      "nba": "GSW",
      "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF"
     },
     {
      "slot": "IL",
@@ -3659,10 +3659,10 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF",
-     "game": "@ MEM 8:00 pm"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF",
+     "game": "@ OKC 7:30 pm"
     },
     {
      "slot": "PF",
@@ -3694,17 +3694,23 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF",
      "game": "vs LAC 8:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF",
-     "game": "@ OKC 7:30 pm"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF",
+     "game": "@ MEM 8:00 pm"
     },
     {
      "slot": "BN",
@@ -3718,12 +3724,6 @@
      "nba": "GSW",
      "pos": "PG,SG",
      "game": "vs SAC 10:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF"
     },
     {
      "slot": "IL",
@@ -5323,9 +5323,9 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF"
     },
     {
      "slot": "PF",
@@ -5353,15 +5353,21 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -5374,12 +5380,6 @@
      "name": "De'Anthony Melton",
      "nba": "GSW",
      "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF"
     },
     {
      "slot": "IL",
@@ -6907,10 +6907,10 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF",
-     "game": "vs NOP 9:30 pm"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF",
+     "game": "vs MEM 8:30 pm"
     },
     {
      "slot": "PF",
@@ -6942,17 +6942,24 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF",
+     "game": "vs PHI 7:30 pm"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF",
      "game": "@ MIN 8:30 pm"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF",
-     "game": "vs MEM 8:30 pm"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF",
+     "game": "vs NOP 9:30 pm"
     },
     {
      "slot": "BN",
@@ -6967,13 +6974,6 @@
      "nba": "GSW",
      "pos": "PG,SG",
      "game": "@ POR 9:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF",
-     "game": "vs PHI 7:30 pm"
     },
     {
      "slot": "IL",
@@ -8617,9 +8617,9 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF"
     },
     {
      "slot": "PF",
@@ -8649,15 +8649,22 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF",
+     "game": "@ CHI 8:00 pm"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -8670,13 +8677,6 @@
      "name": "De'Anthony Melton",
      "nba": "GSW",
      "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF",
-     "game": "@ CHI 8:00 pm"
     },
     {
      "slot": "IL",
@@ -10264,10 +10264,10 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF",
-     "game": "@ GSW 8:30 pm"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF",
+     "game": "@ SAC 9:00 pm"
     },
     {
      "slot": "PF",
@@ -10297,17 +10297,23 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF",
      "game": "vs LAL 4:00 pm"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF",
-     "game": "@ SAC 9:00 pm"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF",
+     "game": "@ GSW 8:30 pm"
     },
     {
      "slot": "BN",
@@ -10322,12 +10328,6 @@
      "nba": "GSW",
      "pos": "PG,SG",
      "game": "vs LAC 8:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF"
     },
     {
      "slot": "IL",
@@ -11958,9 +11958,9 @@
     },
     {
      "slot": "SF",
-     "name": "Derrick Jones Jr.",
-     "nba": "LAC",
-     "pos": "SF,PF"
+     "name": "Jaden McDaniels",
+     "nba": "MIN",
+     "pos": "SF"
     },
     {
      "slot": "PF",
@@ -11989,15 +11989,21 @@
     },
     {
      "slot": "Util",
+     "name": "Obi Toppin",
+     "nba": "IND",
+     "pos": "SF,PF"
+    },
+    {
+     "slot": "Util",
      "name": "Jaylen Wells",
      "nba": "MEM",
      "pos": "SG,SF"
     },
     {
-     "slot": "Util",
-     "name": "Jaden McDaniels",
-     "nba": "MIN",
-     "pos": "SF"
+     "slot": "BN",
+     "name": "Derrick Jones Jr.",
+     "nba": "LAC",
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -12010,12 +12016,6 @@
      "name": "De'Anthony Melton",
      "nba": "GSW",
      "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Obi Toppin",
-     "nba": "IND",
-     "pos": "SF,PF"
     },
     {
      "slot": "IL",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:14",
+ "updated": "2026-11-23 15:22",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -494,12 +494,12 @@
     "draft": "FA"
    },
    {
-    "name": "Derrick Jones Jr.",
+    "name": "Jaden McDaniels",
     "slot": "SF",
-    "id": 5747,
-    "nba": "LAC",
-    "pos": "SF,PF",
-    "draft": "FA"
+    "id": 6420,
+    "nba": "MIN",
+    "pos": "SF",
+    "draft": 8
    },
    {
     "name": "Toumani Camara",
@@ -534,6 +534,14 @@
     "draft": 15
    },
    {
+    "name": "Obi Toppin",
+    "slot": "Util",
+    "id": 6400,
+    "nba": "IND",
+    "pos": "SF,PF",
+    "draft": "FA"
+   },
+   {
     "name": "Jaylen Wells",
     "slot": "Util",
     "id": 10340,
@@ -542,12 +550,12 @@
     "draft": "FA"
    },
    {
-    "name": "Jaden McDaniels",
-    "slot": "Util",
-    "id": 6420,
-    "nba": "MIN",
-    "pos": "SF",
-    "draft": 8
+    "name": "Derrick Jones Jr.",
+    "slot": "BN",
+    "id": 5747,
+    "nba": "LAC",
+    "pos": "SF,PF",
+    "draft": "FA"
    },
    {
     "name": "Corey Kispert",
@@ -563,14 +571,6 @@
     "id": 6057,
     "nba": "GSW",
     "pos": "PG,SG",
-    "draft": "FA"
-   },
-   {
-    "name": "Obi Toppin",
-    "slot": "BN",
-    "id": 6400,
-    "nba": "IND",
-    "pos": "SF,PF",
     "draft": "FA"
    },
    {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:14",
+ "updated": "2026-11-23 15:22",
  "files": {
   "boxscores/2026-11-09.json": 28900,
   "boxscores/2026-11-10.json": 21709,
@@ -15,7 +15,7 @@
   "boxscores/2026-11-20.json": 29857,
   "boxscores/2026-11-21.json": 20249,
   "boxscores/2026-11-22.json": 24053,
-  "data.json": 23501,
+  "data.json": 28375,
   "draft.json": 16222,
   "injuries.json": 27621,
   "injuries_yahoo.json": 11494,
@@ -28,7 +28,7 @@
   "players/son14_ort.json": 169146,
   "players/son7_ort.json": 168238,
   "rosters.json": 34324,
-  "run.log": 2848,
+  "run.log": 4368,
   "schedule.json": 188,
   "settings.json": 1923,
   "standings.json": 2084,
