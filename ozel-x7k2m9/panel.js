@@ -65,9 +65,9 @@ function chipRow(box, items, active, onPick) {
 function teamOpts(id, val, list) { return `<select id="${id}">${list.map(t => `<option${t === val ? " selected" : ""}>${esc(t)}</option>`).join("")}</select>`; }
 
 // ---------- durum ----------
-let L = null, DATA = null, NOTES = null, SR = null, bwOpp = Q.get("o") || null;
+let L = null, DATA = null, NOTES = null, SR = null, RAW = null, GD = {}, bwOpp = Q.get("o") || null;
 let cur = Q.get("t") === "mafia" ? "Normal MAFIA" : "tarkus maurelius";
-let view = ["win", "tr", "ro", "st", "lg"].includes(Q.get("v")) ? Q.get("v") : "win";
+let view = ["win", "tr", "ro", "fo", "st", "lg"].includes(Q.get("v")) ? Q.get("v") : "win";
 let winWk = Q.get("ww") || "p";
 let lgWk = Q.get("w") || null, lgSub = Q.get("s") || "h2h", lgA = null, lgB = Q.get("b") || null, catAll = false;
 const tradeCache = {};
@@ -113,23 +113,27 @@ function includedDate(upd, ref) {
   let y = +ref.slice(0, 4); const rm = +ref.slice(5, 7); if (mo - rm > 6) y--; else if (rm - mo > 6) y++;
   return y + "-" + String(mo).padStart(2, "0") + "-" + String(+m[1]).padStart(2, "0");
 }
-function dayPlayers(team, d) {
+function dayPlayers(team, d, extra) {
   const rows = ((SR.days[d] || {})[team]) || [];
   const roster = L.rost[team] || [];
-  const ps = rows.filter(r => r.game && !/^IL/.test(r.slot || "")).map(r => {
+  const ps = rows.filter(r => r.game && !/^IL/.test(r.slot || "") && !/^(O|INJ|D)$/.test(r.status || "")).map(r => {
     const n = E.normName(r.name); return roster.find(p => E.normName(p.name) === n);
   }).filter(p => p && !(p.ret && d < p.ret));
+  (extra || []).forEach(x => { if (GD[x.nba] && GD[x.nba].has(d) && !(x.ret && d < x.ret)) ps.push(x); });
   return ps.sort((a, b) => b.gv - a.gv).slice(0, 10);
 }
-function thisWeek(team, opp) {
-  const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]];
+function weekDays() {
+  // Kalan gunler: Yahoo gunluk kadro verisinin ilk gunu (ABD'de "bugun", maclari henuz oynanmamis) ile o haftanin Pazar'i arasi
   const all = Object.keys(SR.days).sort(); const first = all[0];
-  const inc = includedDate(W.updated, first) || E.isoAdd(first, -1);
-  let end = E.isoAdd(inc, 1); while (new Date(end + "T12:00:00Z").getUTCDay() !== 0) end = E.isoAdd(end, 1);
-  const days = all.filter(d => d > inc && d <= end);
+  let end = first; while (new Date(end + "T12:00:00Z").getUTCDay() !== 0) end = E.isoAdd(end, 1);
+  return all.filter(d => d <= end);
+}
+function thisWeek(team, opp, extra) {
+  const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]];
+  const days = weekDays();
   const C = ["fgm", "fga", "ftm", "fta", "tpm", "pts", "reb", "ast", "st", "blk", "to"];
   const side = t => { const m = {}, v = {}; C.forEach(k => { m[k] = 0; v[k] = 0; }); const per = [];
-    days.forEach(d => { const ps = dayPlayers(t, d); per.push(ps.length); ps.forEach(p => C.forEach(k => { m[k] += p.pg[k]; v[k] += Math.max(p.pg[k], .3); })); });
+    days.forEach(d => { const ps = dayPlayers(t, d, t === team ? extra : null); per.push(ps.length); ps.forEach(p => C.forEach(k => { m[k] += p.pg[k]; v[k] += Math.max(p.pg[k], .3); })); });
     const cur = W.teams.find(x => x.team === t) || {}; return { m, v, per, cur }; };
   const A = side(team), B = side(opp), p = {}, now = {}, fin = {};
   ["fgp", "ftp"].forEach(k => { const mk = k === "fgp" ? "fgm" : "ftm", ak = k === "fgp" ? "fga" : "fta";
@@ -311,6 +315,176 @@ function renderSim() {
   const nb = $("sim-new"); if (nb) nb.onclick = () => { simGive.clear(); simGet.clear(); simRes = null; renderSim(); if (sc) sc.scrollTo({ top: 0, behavior: "smooth" }); };
 }
 
+// ---------- FIRSATLAR ----------
+const BOXMAP = { NY: "NYK", GS: "GSW", UTAH: "UTA", WSH: "WAS", NO: "NOP", SA: "SAS", PHO: "PHX" };
+const KS = ["fgp", "ftp", "tpm", "pts", "reb", "ast", "st", "blk", "to"];
+const PERS = [["bu", "Bu sezon"], ["s14", "Son 14 gün"], ["s7", "Son 7 gün"], ["gec", "Geçen sezon"], ["proj", "Projeksiyon"]];
+const GUNK = ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"];
+let foTab = ["pl", "gen", "inj", "fit"].includes(Q.get("f")) ? Q.get("f") : "gen";
+const FL = { q: "", nba: "", own: "FA", pos: "", per: "s14", sort: "val", g: 0, cats: new Set(), healthy: true, up: false, min20: false };
+let OPP = null, oppOpen = null; const FIT = {};
+function loadOpp(get, start) {
+  const ds = [1, 2, 3, 4].map(i => E.isoAdd(start, -i));
+  Promise.all([get("players/son7_ort.json").catch(() => null)].concat(ds.map(d => get("boxscores/" + d + ".json").catch(() => null))))
+    .then(([s7, ...bx]) => { RAW.son7 = s7; RAW.box = bx.map((b, i) => b ? { d: ds[i], b } : null).filter(Boolean).reverse(); OPP = null; if (view === "fo") renderOpp(); });
+}
+const num = x => { const v = parseFloat(String(x).replace(/,/g, "")); return isFinite(v) ? v : NaN; };
+const mins = x => { const m = String(x || "").match(/^(\d+):(\d+)/); return m ? +m[1] + (+m[2]) / 60 : NaN; };
+function rowStats(r, totals) {
+  if (!r) return null; const gp = num(r["GP*"]); if (!(gp > 0)) return null;
+  const fg = String(r["FGM / A*"] || "").split("/").map(num), ft = String(r["FTM / A*"] || "").split("/").map(num), k = totals ? 1 / gp : 1;
+  const s = { gp, mpg: mins(r.MPG), fgm: fg[0] * k, fga: fg[1] * k, ftm: ft[0] * k, fta: ft[1] * k, tpm: num(r["3PTM"]) * k, pts: num(r.PTS) * k,
+    reb: num(r.REB) * k, ast: num(r.AST) * k, st: num(r.ST) * k, blk: num(r.BLK) * k, to: num(r.TO) * k };
+  s.fgp = s.fga > 0 ? s.fgm / s.fga : NaN; s.ftp = s.fta > 0 ? s.ftm / s.fta : NaN; return s;
+}
+function boxStats(q) {
+  const fg = String(q.fg || "0-0").split("-").map(Number), ft = String(q.ft || "0-0").split("-").map(Number), n = x => +x || 0;
+  return { mpg: n(q.min), fgm: fg[0], fga: fg[1], ftm: ft[0], fta: ft[1], tpm: n(q["3pm"]), pts: n(q.pts), reb: n(q.reb), ast: n(q.ast), st: n(q.stl), blk: n(q.blk), to: n(q.to),
+    fgp: fg[1] ? fg[0] / fg[1] : NaN, ftp: ft[1] ? ft[0] / ft[1] : NaN };
+}
+function avgStats(arr) {
+  if (!arr.length) return null; const o = {}; ["mpg", "fgm", "fga", "ftm", "fta", "tpm", "pts", "reb", "ast", "st", "blk", "to"].forEach(k => o[k] = arr.reduce((a, s) => a + s[k], 0) / arr.length);
+  o.fgp = o.fga ? o.fgm / o.fga : NaN; o.ftp = o.fta ? o.ftm / o.fta : NaN; o.gp = arr.length; return o;
+}
+// kategori z-skorlari (yuzde kategoriler hacim agirlikli); asist her zaman ayri tutulur
+function zRef(list) {
+  const pool = list.filter(s => s && s.mpg >= 15); const R = {};
+  const mfg = pool.reduce((a, s) => a + s.fgm, 0) / Math.max(1, pool.reduce((a, s) => a + s.fga, 0));
+  const mft = pool.reduce((a, s) => a + s.ftm, 0) / Math.max(1, pool.reduce((a, s) => a + s.fta, 0));
+  const f = { fgp: s => s.fgm - mfg * s.fga, ftp: s => s.ftm - mft * s.fta, tpm: s => s.tpm, pts: s => s.pts, reb: s => s.reb, ast: s => s.ast, st: s => s.st, blk: s => s.blk, to: s => -s.to };
+  KS.forEach(k => { const v = pool.map(f[k]); const m = v.reduce((a, b) => a + b, 0) / (v.length || 1); const sd = Math.sqrt(v.reduce((a, b) => a + (b - m) ** 2, 0) / (v.length || 1)) || 1; R[k] = { f: f[k], m, sd }; });
+  return R;
+}
+const zc = (s, R, k) => s ? (R[k].f(s) - R[k].m) / R[k].sd : NaN;
+function zval(s, R, punt) { if (!s) return -99; return KS.reduce((a, k) => a + (k in punt ? 0 : (zc(s, R, k) || 0)), 0); }
+function buildOpp() {
+  const idx = f => { const m = {}; ((RAW[f] || {}).players || []).forEach(r => m[r.id] = r); return m; };
+  const src = { bu: idx("bu"), s14: idx("son14"), s7: idx("son7"), gec: idx("gecen"), proj: idx("proj") };
+  const box = {};
+  RAW.box.forEach(({ d, b }) => Object.values(b.games || {}).forEach(g => (g.players || []).forEach(q => {
+    if (!("min" in q)) return; const n = E.normName(q.n); (box[n] = box[n] || []).push({ d, st5: !!q.st, s: boxStats(q) }); })));
+  const inj = {}; ((RAW.injuries || {}).injuries || []).forEach(x => inj[E.normName(x.name)] = x);
+  const wk = weekDays(); let mon = wk[0]; while (new Date(mon + "T12:00:00Z").getUTCDay() !== 1) mon = E.isoAdd(mon, -1);
+  const allWeek = [0, 1, 2, 3, 4, 5, 6].map(i => E.isoAdd(mon, i));
+  const list = Object.values(src.bu).map(r => {
+    const n = E.normName(r.name), own = r["Roster Status"] || "FA", fa = own === "FA" || /^W/.test(own);
+    const per = {}; Object.keys(src).forEach(k => per[k] = rowStats(src[k][r.id], k === "proj"));
+    const ij = inj[n] || null, out = !!(ij && /^out/i.test(ij.status)) || /^(O|INJ)$/.test(r.status || "");
+    const P = L.P[r.id] || null;
+    return { id: r.id, name: r.name, nba: r.nba, pos: r.pos || "", own: fa ? "FA" : own, waiver: /^W/.test(own) ? own : "", fa, status: r.status || "", per, bx: (box[n] || []).slice(-5), inj: ij, out,
+      ret: out && ij && ij.return ? ij.return : null, pg: P && P.pg, nameN: n,
+      days: allWeek.map(d => !!(GD[r.nba] && GD[r.nba].has(d))), left: wk.filter(d => GD[r.nba] && GD[r.nba].has(d)).length, wkn: allWeek.filter(d => GD[r.nba] && GD[r.nba].has(d)).length };
+  });
+  const REF = {}; PERS.forEach(([k]) => REF[k] = zRef(list.map(p => p.per[k])));
+  list.forEach(p => { p.last2 = avgStats(p.bx.slice(-2).map(b => b.s)); p.lastMin = p.bx.length ? p.bx[p.bx.length - 1].s.mpg : NaN;
+    const base = p.per.bu ? p.per.bu.mpg : NaN; p.trend = p.last2 && isFinite(base) ? p.last2.mpg - base : (p.last2 ? p.last2.mpg : NaN); });
+  OPP = { list, allWeek, wk, REF };
+}
+const short = n => { const w = String(n).split(" "); return w.length > 1 ? w[0][0] + ". " + w.slice(1).join(" ") : n; };
+function wkStrip(p, light) {
+  return `<div class="fwk">${OPP.allWeek.map((d, i) => { const g = p.days[i], past = !OPP.wk.includes(d);
+    return `<span class="${g ? (light && light.has(d) && !past ? "gl" : "g") : ""}${past ? " past" : ""}">${GUNK[i]}</span>`; }).join("")}</div>`;
+}
+function statRow(s) {
+  const v = (k) => !s ? "–" : (k === "fgp" || k === "ftp") ? f3(s[k]) : f1(s[k]);
+  return `<div class="fst">${KS.map(k => `<span><span class="k">${LBL[k]}</span><span class="n">${v(k)}</span></span>`).join("")}</div>`;
+}
+const boxLine = b => `${Math.round(b.s.mpg)} dk ${b.s.pts}p ${b.s.reb}r${b.s.tpm ? " " + b.s.tpm + "x3" : ""}${b.s.st ? " " + b.s.st + "st" : ""}${b.s.blk ? " " + b.s.blk + "b" : ""}${b.st5 ? " (ilk 5)" : ""}`;
+function fcard(p, right, ctx, light) {
+  const s = p.per.bu;
+  return `<div class="fc"><div class="ftop"><span class="fnm">${esc(p.name)} <small>${esc(p.nba)} · ${esc(p.pos)}${p.fa ? "" : " · " + esc(p.own)}${p.waiver ? " · waiver" : ""}${p.status ? " · " + esc(p.status) : ""}</small></span>${right || ""}</div>
+${wkStrip(p, light)}${statRow(s)}<div class="fln">${s ? "Bu sezon " + s.gp + " maç, " + Math.round(s.mpg || 0) + " dk" : "Bu sezon maç yok"}${p.bx.length ? " · Son: " + p.bx.slice(-2).map(boxLine).join(" · ") : ""}${ctx ? " · " + ctx : ""}</div></div>`;
+}
+// takim arkadasi sakatliklari (son 3 gun, MPG >= 18)
+function recentInjuries() {
+  const now = Date.now(), byName = {}; OPP.list.forEach(p => byName[p.nameN] = p);
+  return ((RAW.injuries || {}).injuries || []).filter(x => /^out|day/i.test(x.status) && x.date && now - Date.parse(x.date) < 3.5 * 864e5)
+    .map(x => ({ x, p: byName[E.normName(x.name)] })).filter(o => o.p && o.p.per.bu && o.p.per.bu.mpg >= 18 && /^out/i.test(o.x.status))
+    .sort((a, b) => b.p.per.bu.mpg - a.p.per.bu.mpg);
+}
+function teamInjCtx(p, inj) { const o = inj.filter(i => i.p.nba === p.nba && i.p.id !== p.id); return o.length ? o.slice(0, 2).map(i => short(i.p.name) + " yok").join(", ") : ""; }
+function renderOpp() {
+  if (!RAW || !RAW.box) return; if (!OPP) buildOpp();
+  [...$("fo-sub").children].forEach(b => { b.classList.toggle("on", b.dataset.f === foTab); b.onclick = () => { foTab = b.dataset.f; setQ({ f: foTab }); renderOpp(); }; });
+  const box = $("fo-out"), inj = recentInjuries(), R = OPP.REF;
+  const pool = OPP.list.filter(p => p.fa && !p.out);
+  if (foTab === "gen") {
+    const L2 = pool.filter(p => p.last2 && p.lastMin >= 16).map(p => ({ p, sc: zval(p.last2, R.bu, { ast: 1 }) + 0.12 * Math.max(0, p.trend || 0) })).sort((a, b) => b.sc - a.sc).slice(0, 15);
+    box.innerHTML = `<p class="note">Bostaki en formda oyuncular: son 2 maçın değeri (asist hariç) ve dakika artışı. Takvimde yeşil: bu hafta maçı olan günler.</p>` +
+      (L2.map(({ p }) => fcard(p, `<span class="fr ${p.trend >= 4 ? "cu" : ""}">${p.trend >= 4 ? "↑ " : ""}${Math.round(p.last2.mpg)} dk</span>`, teamInjCtx(p, inj))).join("") || `<p class="note">Son maçlarda öne çıkan serbest oyuncu yok.</p>`);
+  } else if (foTab === "inj") {
+    const blocks = inj.map(({ x, p }) => {
+      const mates = pool.filter(q => q.nba === p.nba && q.id !== p.id && (q.lastMin >= 12 || (q.per.bu && q.per.bu.mpg >= 12)))
+        .sort((a, b) => (b.lastMin || 0) - (a.lastMin || 0)).slice(0, 3);
+      if (!mates.length) return "";
+      const rt = x.return ? (+x.return.slice(8)) + "." + (+x.return.slice(5, 7)) : "?";
+      return `<div class="finj"><div class="fih">${esc(p.name)} · ${esc(p.nba)} <small>${esc(p.fa ? "FA" : p.own)}</small></div><div class="sm">${esc(x.type || "")} · ${esc(x.status)} · tahmini dönüş ${rt} · sezon ${Math.round(p.per.bu.mpg)} dk</div></div>` +
+        mates.map(q => fcard(q, `<span class="fr">${isFinite(q.lastMin) ? Math.round(q.lastMin) + " dk" : ""}</span>`, "")).join("");
+    }).filter(Boolean);
+    box.innerHTML = `<p class="note">Son 3 günde sakatlanan rotasyon oyuncuları (sezonda 18+ dk) ve takımında dakika alabilecek serbest oyuncular.</p>` + (blocks.join("") || `<p class="note">Son 3 günde yerden fırsat yaratan sakatlık yok.</p>`);
+  } else if (foTab === "fit") renderFit(box, pool, inj);
+  else renderPlayers(box);
+}
+function renderFit(box, pool, inj) {
+  if (!DATA || !SR) { box.innerHTML = `<p class="note">Haftalık veri yükleniyor…</p>`; return; }
+  const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]]; const pr = (W.pairs || []).find(x => x.includes(cur)); if (!pr) { box.innerHTML = `<p class="note">Bu hafta eşleşme bulunamadı.</p>`; return; }
+  const opp = pr.find(t => t !== cur), punt = (E.STRAT[cur] || {}).punt || {};
+  const key = cur + "|" + W.updated;
+  if (!FIT[key]) {
+    const exP = r => CATS.reduce((a, k) => a + (k in punt ? 0 : r.p[k]), 0);
+    const base = thisWeek(cur, opp), b0 = exP(base);
+    const cand = pool.filter(p => p.pg && p.left > 0 && ((p.lastMin >= 15) || (p.per.bu && p.per.bu.mpg >= 18)));
+    const rows = cand.map(p => { const r = thisWeek(cur, opp, [{ id: p.id, name: p.name, nba: p.nba, pg: p.pg, gv: -50, ret: p.ret }]); return { p, d: exP(r) - b0 }; })
+      .sort((a, b) => b.d - a.d).slice(0, 15);
+    const light = new Set(base.days.filter((d, i) => base.perA[i] < 8));
+    FIT[key] = { rows, opp, b0, wp: base.wp, light };
+  }
+  const F = FIT[key];
+  box.innerHTML = `<p class="note">${esc(SHORT[cur] || cur)} · bu haftaki rakip <b>${esc(F.opp)}</b>. Sağdaki sayı: oyuncu kalan maçlarında kadroya eklenirse haftada kazanılan ek kategori (punt hariç). Koyu yeşil: maç var ve o gün kadronda boş yer çok.</p>` +
+    F.rows.map(({ p, d }) => fcard(p, `<span class="fr ${d >= .15 ? "cu" : d < 0 ? "cd" : ""}">${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(2).replace(".", ",")} kat.</span>`, teamInjCtx(p, inj), F.light)).join("");
+}
+function renderPlayers(box) {
+  const R = OPP.REF[FL.per], teams = [...new Set(OPP.list.map(p => p.nba))].sort(), owners = [...new Set(OPP.list.filter(p => !p.fa).map(p => p.own))].sort((a, b) => a.localeCompare(b, "tr"));
+  const sel = (id, val, opts) => `<select id="${id}">${opts.map(([v, t]) => `<option value="${esc(v)}"${String(v) === String(val) ? " selected" : ""}>${esc(t)}</option>`).join("")}</select>`;
+  const chip = (k, t, on) => `<button class="fch${on ? " on" : ""}" data-c="${k}">${t}</button>`;
+  let L1 = OPP.list.filter(p => {
+    if (FL.q && !p.nameN.includes(E.normName(FL.q))) return false;
+    if (FL.nba && p.nba !== FL.nba) return false;
+    if (FL.own === "FA" && !p.fa) return false; if (FL.own && FL.own !== "FA" && p.own !== FL.own) return false;
+    if (FL.pos && !p.pos.split(",").includes(FL.pos)) return false;
+    if (FL.g && p.wkn < FL.g) return false;
+    if (FL.healthy && p.out) return false;
+    const s = p.per[FL.per]; if (!s) return false;
+    if (FL.min20 && !(s.mpg >= 20)) return false;
+    if (FL.up && !(p.trend >= 4)) return false;
+    for (const k of FL.cats) if (!(zc(s, R, k) > 0.4)) return false;
+    return true;
+  });
+  const key = p => FL.sort === "val" ? zval(p.per[FL.per], R, { ast: 1 }) : FL.sort === "fgp" || FL.sort === "ftp" ? zc(p.per[FL.per], R, FL.sort) : FL.sort === "to" ? -p.per[FL.per].to : p.per[FL.per][FL.sort];
+  L1.sort((a, b) => (key(b) || -99) - (key(a) || -99)); const n = L1.length; L1 = L1.slice(0, 60);
+  const v = (s, k) => (k === "fgp" || k === "ftp") ? f3(s[k]) : f1(s[k]);
+  box.innerHTML = `<input id="fq" type="search" placeholder="Oyuncu ara" value="${esc(FL.q)}" class="fsrch">
+<div class="fgr">
+<label>NBA takımı ${sel("f-nba", FL.nba, [["", "Tümü"]].concat(teams.map(t => [t, t])))}</label>
+<label>Fantezi takımı ${sel("f-own", FL.own, [["", "Tümü"], ["FA", "Boşta (FA)"]].concat(owners.map(t => [t, t])))}</label>
+<label>Pozisyon ${sel("f-pos", FL.pos, [["", "Tümü"], ["PG", "PG"], ["SG", "SG"], ["SF", "SF"], ["PF", "PF"], ["C", "C"]])}</label>
+<label>Dönem ${sel("f-per", FL.per, PERS)}</label>
+<label>Sırala ${sel("f-sort", FL.sort, [["val", "Değer (asist hariç)"], ["pts", "PTS"], ["reb", "REB"], ["tpm", "3PM"], ["st", "ST"], ["blk", "BLK"], ["fgp", "FG%"], ["ftp", "FT%"], ["to", "Düşük TO"], ["ast", "AST"]])}</label>
+<label>Bu hafta maç ${sel("f-g", FL.g, [[0, "Hepsi"], [2, "2+"], [3, "3+"], [4, "4"]])}</label></div>
+<div class="sm">Kategori filtresi (seçilenlerde lig ortalamasının üstü)</div>
+<div class="fchips">${["fgp", "ftp", "tpm", "pts", "reb", "st", "blk", "to"].map(k => chip(k, k === "to" ? "Düşük TO" : LBL[k], FL.cats.has(k))).join("")}</div>
+<div class="fchips">${chip("healthy", "Sağlıklı", FL.healthy)}${chip("up", "Dakika ↑", FL.up)}${chip("min20", "Min. 20 dk", FL.min20)}</div>
+<p class="sm">${n} oyuncu${n > 60 ? " (ilk 60)" : ""} · satıra dokununca kart açılır</p>
+<div class="tw"><table class="small fpt"><thead><tr><th>Oyuncu</th>${KS.map(k => `<th>${LBL[k]}</th>`).join("")}</tr></thead><tbody>${L1.map(p => { const s = p.per[FL.per];
+    return `<tr data-id="${p.id}"><td><b>${esc(short(p.name))}</b><div class="sm">${esc(p.nba)} · ${esc(p.pos)} · <span class="${p.fa ? "cu" : ""}">${esc(p.fa ? "FA" : p.own)}</span> · ${p.wkn}</div></td>${KS.map(k => `<td class="${FL.cats.has(k) ? "hl" : ""}">${v(s, k)}</td>`).join("")}</tr>` +
+      (oppOpen === p.id ? `<tr class="fopen"><td colspan="10">${fcard(p, "", teamInjCtx(p, recentInjuries()))}</td></tr>` : ""); }).join("")}</tbody></table></div>`;
+  const re = () => renderPlayers(box);
+  $("fq").oninput = e => { FL.q = e.target.value; const pos = e.target.selectionStart; re(); const q = $("fq"); q.focus(); q.setSelectionRange(pos, pos); };
+  [["f-nba", "nba"], ["f-own", "own"], ["f-pos", "pos"], ["f-per", "per"], ["f-sort", "sort"], ["f-g", "g"]].forEach(([id, k]) => $(id).onchange = e => { FL[k] = k === "g" ? +e.target.value : e.target.value; re(); });
+  box.querySelectorAll(".fch").forEach(b => b.onclick = () => { const c = b.dataset.c; if (["healthy", "up", "min20"].includes(c)) FL[c] = !FL[c]; else FL.cats.has(c) ? FL.cats.delete(c) : FL.cats.add(c); re(); });
+  box.querySelectorAll("tr[data-id]").forEach(tr => tr.onclick = () => { const id = +tr.dataset.id; oppOpen = oppOpen === id ? null : id; re(); });
+}
+
 // ---------- KADRO ----------
 function renderRoster() {
   $("repl").textContent = L.repl.toFixed(1);
@@ -391,13 +565,13 @@ function renderLeague() {
 }
 
 // ---------- gezinme ----------
-function needsModel(v) { return v === "win" || v === "tr" || v === "ro"; }
+function needsModel(v) { return v === "win" || v === "tr" || v === "ro" || v === "fo"; }
 function render() {
   [...$("teams").children].forEach(b => b.classList.toggle("on", b.dataset.t === cur));
   [...$("tabs").children].forEach(b => b.classList.toggle("on", b.dataset.v === view));
-  ["win", "tr", "ro", "st", "lg"].forEach(v => $("v-" + v).hidden = v !== view);
+  ["win", "tr", "ro", "fo", "st", "lg"].forEach(v => $("v-" + v).hidden = v !== view);
   if (needsModel(view) && !L) return;
-  if (view === "win") renderWin(); else if (view === "tr") renderTrades(); else if (view === "ro") renderRoster(); else if (view === "st") renderStrat(); else renderLeague();
+  if (view === "win") renderWin(); else if (view === "tr") renderTrades(); else if (view === "ro") renderRoster(); else if (view === "fo") renderOpp(); else if (view === "st") renderStrat(); else renderLeague();
 }
 function init() {
   TEAMS.forEach(t => { const b = document.createElement("button"); b.textContent = SHORT[t]; b.dataset.t = t;
@@ -413,9 +587,12 @@ function init() {
                get("nba_schedule.json"), get("injuries.json").catch(() => null), get("startingrosters.json").catch(() => null)])
     .then(([bu, gecen, proj, son14, rosters, standings, draft, schedule, injuries, sr]) => {
       SR = sr && sr.days ? sr : null;
+      RAW = { bu, gecen, proj, son14, injuries, schedule, son7: null, box: [] };
+      Object.entries((schedule && schedule.days) || {}).forEach(([d, gs]) => gs.forEach(g => [g.away, g.home].forEach(t => (GD[t] = GD[t] || new Set()).add(d))));
       const start = SR ? Object.keys(SR.days).sort()[0] : undefined;
       L = new E.League(E.buildPlayers({ bu, gecen, proj, son14 }), rosters, standings, draft, { schedule, injuries, start });
       $("pupd").textContent = "Veri: " + (rosters.updated || ""); render();
+      loadOpp(get, start);
     }).catch(e => { $("win-desc").innerHTML = "<span class='err'>Veriler yüklenemedi: " + esc(e.message) + "</span>"; $("tstat").textContent = "Veriler yüklenemedi."; });
   fetch("notes.json" + v).then(r => r.ok ? r.json() : null).then(n => { NOTES = n; if (view === "st") renderStrat(); }).catch(() => {});
 }
