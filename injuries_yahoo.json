@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-23 10:56",
+ "updated": "2026-11-23 15:14",
  "injuries": [
   {
-   "name": "De'Aaron Fox",
-   "note": "Lower Leg",
+   "name": "Ebuka Okorie",
+   "note": "Oblique",
    "status": "Q",
-   "nba": "SAS",
+   "nba": "DET",
    "pos": "PG"
   },
   {
@@ -16,13 +16,6 @@
    "pos": "PG,SG"
   },
   {
-   "name": "Victor Wembanyama",
-   "note": "Back",
-   "status": "Q",
-   "nba": "SAS",
-   "pos": "C"
-  },
-  {
    "name": "Ryan Dunn",
    "note": "Quadriceps",
    "status": "Q",
@@ -30,11 +23,18 @@
    "pos": "SF,PF"
   },
   {
-   "name": "Collin Murray-Boyles",
-   "note": "Concussion",
-   "status": "P",
-   "nba": "TOR",
-   "pos": "PF,C"
+   "name": "De'Aaron Fox",
+   "note": "Lower Leg",
+   "status": "Q",
+   "nba": "SAS",
+   "pos": "PG"
+  },
+  {
+   "name": "Victor Wembanyama",
+   "note": "Back",
+   "status": "Q",
+   "nba": "SAS",
+   "pos": "C"
   },
   {
    "name": "Dean Wade",
@@ -51,18 +51,18 @@
    "pos": "PF,C"
   },
   {
-   "name": "Jaylen Brown",
-   "note": "Hamstring",
+   "name": "Grant Nelson",
+   "note": "Ankle",
    "status": "P",
-   "nba": "PHI",
-   "pos": "SG,SF,PF"
+   "nba": "BKN",
+   "pos": "PF"
   },
   {
-   "name": "Brandon Miller",
-   "note": "Knee",
+   "name": "Collin Murray-Boyles",
+   "note": "Concussion",
    "status": "P",
-   "nba": "CHA",
-   "pos": "SF,PF"
+   "nba": "TOR",
+   "pos": "PF,C"
   },
   {
    "name": "Trey Murphy III",
@@ -72,25 +72,18 @@
    "pos": "SG,SF"
   },
   {
-   "name": "Grant Nelson",
-   "note": "Ankle",
-   "status": "P",
-   "nba": "BKN",
-   "pos": "PF"
-  },
-  {
-   "name": "Ben Simmons",
-   "note": "Achilles",
-   "status": "OFS",
-   "nba": "SAC",
-   "pos": "PG"
-  },
-  {
-   "name": "Henri Veesaar",
+   "name": "Brandon Miller",
    "note": "Knee",
-   "status": "OFS",
-   "nba": "ATL",
-   "pos": "C"
+   "status": "P",
+   "nba": "CHA",
+   "pos": "SF,PF"
+  },
+  {
+   "name": "Jaylen Brown",
+   "note": "Hamstring",
+   "status": "P",
+   "nba": "PHI",
+   "pos": "SG,SF,PF"
   },
   {
    "name": "Ariel Hukporti",
@@ -100,46 +93,18 @@
    "pos": "C"
   },
   {
-   "name": "RJ Barrett",
-   "note": "Hamstring",
-   "status": "O",
-   "nba": "TOR",
-   "pos": "SG,SF,PF"
-  },
-  {
-   "name": "Ja Morant",
-   "note": "Hamstring",
-   "status": "O",
-   "nba": "POR",
-   "pos": "PG"
-  },
-  {
-   "name": "Jaxson Hayes",
+   "name": "Henri Veesaar",
    "note": "Knee",
-   "status": "O",
-   "nba": "UTA",
+   "status": "OFS",
+   "nba": "ATL",
    "pos": "C"
   },
   {
-   "name": "GG Jackson",
-   "note": "Foot",
-   "status": "O",
-   "nba": "MEM",
-   "pos": "SF,PF,C"
-  },
-  {
-   "name": "Chris Youngblood",
-   "note": "Heel",
-   "status": "O",
-   "nba": "POR",
-   "pos": "SG"
-  },
-  {
-   "name": "P.J. Washington",
-   "note": "Illness",
-   "status": "O",
-   "nba": "DAL",
-   "pos": "PF,C"
+   "name": "Ben Simmons",
+   "note": "Achilles",
+   "status": "OFS",
+   "nba": "SAC",
+   "pos": "PG"
   },
   {
    "name": "Grant Williams",
@@ -156,11 +121,46 @@
    "pos": "C"
   },
   {
+   "name": "P.J. Washington",
+   "note": "Illness",
+   "status": "O",
+   "nba": "DAL",
+   "pos": "PF,C"
+  },
+  {
    "name": "Anthony Edwards",
    "note": "Knee",
    "status": "O",
    "nba": "MIN",
    "pos": "PG,SG"
+  },
+  {
+   "name": "Chris Youngblood",
+   "note": "Heel",
+   "status": "O",
+   "nba": "POR",
+   "pos": "SG"
+  },
+  {
+   "name": "Jaxson Hayes",
+   "note": "Knee",
+   "status": "O",
+   "nba": "UTA",
+   "pos": "C"
+  },
+  {
+   "name": "RJ Barrett",
+   "note": "Hamstring",
+   "status": "O",
+   "nba": "TOR",
+   "pos": "SG,SF,PF"
+  },
+  {
+   "name": "Ja Morant",
+   "note": "Hamstring",
+   "status": "O",
+   "nba": "POR",
+   "pos": "PG"
   },
   {
    "name": "Tyrese Haliburton",
@@ -184,11 +184,11 @@
    "pos": "SG,SF"
   },
   {
-   "name": "Ebuka Okorie",
-   "note": "Oblique",
+   "name": "GG Jackson",
+   "note": "Foot",
    "status": "O",
-   "nba": "DET",
-   "pos": "PG"
+   "nba": "MEM",
+   "pos": "SF,PF,C"
   },
   {
    "name": "Mitchell Robinson",

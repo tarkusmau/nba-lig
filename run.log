@@ -1,43 +1,54 @@
-Guncel hafta: 5
-Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 23 Kasım 2026, 10:56 (22 Kasım maçları dahil)
+Guncel hafta: 6
+Hafta 5 yazildi: Hafta 5 (16-22 Kasım) | 23 Kasım 2026, 15:14 (final)
+Uyari: totals gorunumu okunamadi (mid1=1), eski adresle tekrar deneniyor.
+HATA hafta 6: oran degil: '-/-'
+Hafta 5 eslesmeleri: [['Pickle Men', 'Kassablancas'], ['Bomonti Sınırsız', 'EAH Seniors'], ['BÇ', 'Yukatel Metin Akdülger'], ['HobaKumpo', 'Kyojins on Rumbling'], ['Kalidou Koulibaly', 'Suhayy31'], ['Kreuzberg Boys', 'Normal MAFIA'], ['Los Gerseii', 'Splash Brothers'], ['M. Sucks', 'tarkus maurelius']]
 Puan durumu: 16 takim hesaplandi.
-Islemler: 0 yeni kayit eklendi.
-Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 11: 'M. Sucks', 1: 'Pickle Men', 7: 'Kassablancas', 2: 'Bomonti Sınırsız', 4: 'EAH Seniors', 3: 'BÇ', 16: 'Yukatel Metin Akdülger', 5: 'HobaKumpo', 9: 'Kyojins on Rumbling', 6: 'Kalidou Koulibaly', 14: 'Suhayy31', 8: 'Kreuzberg Boys', 12: 'Normal MAFIA', 10: 'Los Gerseii', 13: 'Splash Brothers'}
+Islemler: 8 yeni kayit eklendi.
+  + {"time": "2026-11-23 14:52", "team": "EAH Seniors", "type": "add/drop", "add": ["O. Toppin"], "drop": ["S. Hauser"], "pos": "SF,PF / SF,PF", "source": "FA"}
+  + {"time": "2026-11-23 14:37", "team": "tarkus maurelius", "type": "add/drop", "add": ["S. Cissoko"], "drop": ["M. Johnson Jr."], "pos": "SF,PF / PF", "source": "FA"}
+  + {"time": "2026-11-23 14:36", "team": "tarkus maurelius", "type": "add", "add": ["D. Barlow"], "drop": [], "pos": "PF,C", "source": "FA"}
+  + {"time": "2026-11-23 13:03", "team": "Suhayy31", "type": "add/drop", "add": ["Y. Konan Niederhäuser"], "drop": ["T. Kolek"], "pos": "C / PG,SG", "source": "FA"}
+  + {"time": "2026-11-23 12:56", "team": "Normal MAFIA", "type": "add", "add": ["P. Achiuwa"], "drop": [], "pos": "PF,C", "source": "FA"}
+  + {"time": "2026-11-23 12:44", "team": "HobaKumpo", "type": "drop", "add": [], "drop": ["S. Aldama"], "pos": "PF"}
+  + {"time": "2026-11-23 12:35", "team": "Splash Brothers", "type": "drop", "add": [], "drop": ["R. Williams III"], "pos": "C"}
+  + {"time": "2026-11-23 11:14", "team": "Splash Brothers", "type": "drop", "add": [], "drop": ["L. Dort"], "pos": "SG,SF"}
+Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Norman Powell', 'Evan Mobley', 'Caleb Wilson']
 Kadro Bomonti Sınırsız: 14 oyuncu, IL: ['Dejounte Murray']
 Kadro BÇ: 16 oyuncu, IL: ['Dylan Harper', 'Jaren Jackson Jr.', 'Jaylen Brown']
 Kadro EAH Seniors: 15 oyuncu, IL: ['Stephen Curry', 'Chet Holmgren']
-Kadro HobaKumpo: 16 oyuncu, IL: ['Brandon Ingram', 'Anthony Edwards', 'RJ Barrett']
-Kadro Kalidou Koulibaly: 15 oyuncu, IL: ['Brandon Williams', 'Justin Champagnie']
+Kadro HobaKumpo: 15 oyuncu, IL: ['Anthony Edwards', 'RJ Barrett']
+Kadro Kalidou Koulibaly: 15 oyuncu, IL: ['Cameron Boozer', 'Brandon Williams', 'Justin Champagnie']
 Kadro Kassablancas: 16 oyuncu, IL: ['Tyrese Haliburton', 'Kon Knueppel', 'Alex Caruso']
 Kadro Kreuzberg Boys: 16 oyuncu, IL: ['Paolo Banchero', 'Dereck Lively II', 'Jusuf Nurkić']
 Kadro Kyojins on Rumbling: 14 oyuncu, IL: ['Mark Williams']
 Kadro Los Gerseii: 14 oyuncu, IL: ['Dennis Schröder']
 Kadro M. Sucks: 16 oyuncu, IL: ['Jerami Grant', 'Kawhi Leonard', 'Lauri Markkanen']
-Kadro Normal MAFIA: 15 oyuncu, IL: ['CJ McCollum', 'Tobias Harris', 'Jalen Duren']
-Kadro Splash Brothers: 16 oyuncu, IL: ['Collin Murray-Boyles', 'Robert Williams III', 'Duncan Robinson']
-Kadro Suhayy31: 16 oyuncu, IL: ['Trey Murphy III', 'Austin Reaves', 'Ja Morant']
-Kadro tarkus maurelius: 14 oyuncu, IL: ['OG Anunoby']
+Kadro Normal MAFIA: 16 oyuncu, IL: ['CJ McCollum', 'Tobias Harris', 'Jalen Duren']
+Kadro Splash Brothers: 14 oyuncu, IL: ['Duncan Robinson']
+Kadro Suhayy31: 16 oyuncu, IL: ['P.J. Washington', 'Austin Reaves', 'Ja Morant']
+Kadro tarkus maurelius: 15 oyuncu, IL: ['Grayson Allen', 'OG Anunoby']
 Kadro Yukatel Metin Akdülger: 16 oyuncu, IL: ['Nolan Traore', 'Jimmy Butler III', 'Maxime Raynaud']
 yoneticiler: 16 satir.
 takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: 40 satir.
 Yahoo sakatliklar: 104 kayit.
-Gunluk kadro 2026-11-23: 16 takim, 161 maci olan oyuncu.
-Gunluk kadro 2026-11-24: 16 takim, 49 maci olan oyuncu.
-Gunluk kadro 2026-11-25: 16 takim, 146 maci olan oyuncu.
+Gunluk kadro 2026-11-23: 16 takim, 165 maci olan oyuncu.
+Gunluk kadro 2026-11-24: 16 takim, 46 maci olan oyuncu.
+Gunluk kadro 2026-11-25: 16 takim, 148 maci olan oyuncu.
 Gunluk kadro 2026-11-26: 16 takim, 0 maci olan oyuncu.
-Gunluk kadro 2026-11-27: 16 takim, 182 maci olan oyuncu.
-Gunluk kadro 2026-11-28: 16 takim, 78 maci olan oyuncu.
-Gunluk kadro 2026-11-29: 16 takim, 164 maci olan oyuncu.
-Gunluk kadro 2026-11-30: 16 takim, 109 maci olan oyuncu.
-Fikstur: {'5': 'M. Sucks', '6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers'}
-Oyuncular bu_sezon_ort: 445 oyuncu (245 kadrolu) yazildi.
-Oyuncular gecen_sezon_ort: 445 oyuncu (245 kadrolu) yazildi.
-Oyuncular son14_ort: 445 oyuncu (245 kadrolu) yazildi.
-Oyuncular son7_ort: 445 oyuncu (245 kadrolu) yazildi.
-Oyuncular projeksiyon_kalan: 445 oyuncu (245 kadrolu) yazildi.
+Gunluk kadro 2026-11-27: 16 takim, 180 maci olan oyuncu.
+Gunluk kadro 2026-11-28: 16 takim, 80 maci olan oyuncu.
+Gunluk kadro 2026-11-29: 16 takim, 163 maci olan oyuncu.
+Gunluk kadro 2026-11-30: 16 takim, 107 maci olan oyuncu.
+Fikstur: {'6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers', '9': 'Kyojins on Rumbling'}
+Oyuncular bu_sezon_ort: 444 oyuncu (244 kadrolu) yazildi.
+Oyuncular gecen_sezon_ort: 444 oyuncu (244 kadrolu) yazildi.
+Oyuncular son14_ort: 444 oyuncu (244 kadrolu) yazildi.
+Oyuncular son7_ort: 444 oyuncu (244 kadrolu) yazildi.
+Oyuncular projeksiyon_kalan: 444 oyuncu (244 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
 Sakatliklar: 104 kayit.
