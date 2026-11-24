@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 21:06",
+ "updated": "2026-11-24 09:56",
  "tables": [
   {
    "headers": [
@@ -89,9 +89,9 @@
      "Email": "--hidden--",
      "Waiver Budget": "$192",
      "Waiver Priority": "5",
-     "Moves": "7",
+     "Moves": "8",
      "Trades": "1",
-     "Last League Activity": "Mon Nov 23 6:21am EST"
+     "Last League Activity": "Mon Nov 23 7:36pm EST"
     },
     {
      "Team Name": "Los Gerseii",
@@ -141,7 +141,7 @@
      "Waiver Priority": "8",
      "Moves": "18",
      "Trades": "2",
-     "Last League Activity": "Mon Nov 23 6:53am EST"
+     "Last League Activity": "Mon Nov 23 2:16pm EST"
     },
     {
      "Team Name": "Suhayy31",
@@ -171,7 +171,7 @@
      "Waiver Priority": "6",
      "Moves": "25",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 7:35am EST"
+     "Last League Activity": "Mon Nov 23 2:46pm EST"
     }
    ]
   }

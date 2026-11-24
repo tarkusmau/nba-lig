@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 21:06",
+ "updated": "2026-11-24 09:56",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -138,7 +138,7 @@
     "id": 10579,
     "nba": "OKC",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -256,7 +256,6 @@
     "id": 10104,
     "nba": "CHA",
     "pos": "SF,PF",
-    "status": "P",
     "draft": 32
    },
    {
@@ -273,7 +272,7 @@
     "id": 6170,
     "nba": "UTA",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -373,7 +372,6 @@
     "id": 5602,
     "nba": "PHI",
     "pos": "SG,SF,PF",
-    "status": "P",
     "draft": 31
    },
    {
@@ -879,7 +877,6 @@
     "id": 6163,
     "nba": "NOP",
     "pos": "PF,C",
-    "status": "P",
     "draft": 17
    },
    {
@@ -896,7 +893,7 @@
     "id": 10094,
     "nba": "SAS",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": 90
    },
    {
@@ -963,7 +960,7 @@
     "id": 5754,
     "nba": "OKC",
     "pos": "SG,SF",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    }
   ],
@@ -1055,6 +1052,7 @@
     "id": 6512,
     "nba": "DET",
     "pos": "PG,SG",
+    "status": "P",
     "draft": 66
    },
    {
@@ -1111,11 +1109,11 @@
     "draft": 8
    },
    {
-    "name": "Bilal Coulibaly",
+    "name": "Jaylon Tyson",
     "slot": "SG",
-    "id": 10099,
-    "nba": "WAS",
-    "pos": "SG,SF",
+    "id": 10279,
+    "nba": "CLE",
+    "pos": "SG,SF,PF",
     "draft": "FA"
    },
    {
@@ -1263,6 +1261,7 @@
     "id": 6406,
     "nba": "IND",
     "pos": "SG,SF",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1303,7 +1302,6 @@
     "id": 6219,
     "nba": "CHI",
     "pos": "C",
-    "status": "Q",
     "draft": 4
    },
    {
@@ -1419,7 +1417,6 @@
     "id": 4725,
     "nba": "BOS",
     "pos": "SF,PF",
-    "status": "P",
     "draft": 19
    },
    {
@@ -1484,12 +1481,11 @@
     "draft": "FA"
    },
    {
-    "name": "S. Gilgeous-Alexander",
+    "name": "Shai Gilgeous-Alexander",
     "slot": "G",
     "id": 6022,
     "nba": "OKC",
     "pos": "PG",
-    "status": "Q",
     "draft": 73
    },
    {
@@ -1522,6 +1518,7 @@
     "id": 10476,
     "nba": "CHA",
     "pos": "C",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -1538,7 +1535,7 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": 20
    },
    {
@@ -1625,7 +1622,7 @@
     "id": 5767,
     "nba": "SAS",
     "pos": "PG",
-    "status": "Q",
+    "status": "O",
     "draft": 19
    },
    {
@@ -1653,14 +1650,6 @@
     "draft": 27
    },
    {
-    "name": "Pascal Siakam",
-    "slot": "C",
-    "id": 5658,
-    "nba": "IND",
-    "pos": "PF,C",
-    "draft": 19
-   },
-   {
     "name": "Naz Reid",
     "slot": "C",
     "id": 6253,
@@ -1669,21 +1658,28 @@
     "draft": 18
    },
    {
+    "name": "Collin Murray-Boyles",
+    "slot": "C",
+    "id": 10443,
+    "nba": "TOR",
+    "pos": "PF,C",
+    "draft": 6
+   },
+   {
+    "name": "Pascal Siakam",
+    "slot": "Util",
+    "id": 5658,
+    "nba": "IND",
+    "pos": "PF,C",
+    "draft": 19
+   },
+   {
     "name": "Damian Lillard",
     "slot": "Util",
     "id": 5012,
     "nba": "POR",
     "pos": "PG",
     "draft": 15
-   },
-   {
-    "name": "Collin Murray-Boyles",
-    "slot": "Util",
-    "id": 10443,
-    "nba": "TOR",
-    "pos": "PF,C",
-    "status": "P",
-    "draft": 6
    },
    {
     "name": "Kasparas Jakučionis",
@@ -1766,7 +1762,6 @@
     "id": 6559,
     "nba": "NOP",
     "pos": "SG,SF",
-    "status": "P",
     "draft": 38
    },
    {
@@ -2081,15 +2076,6 @@
     "nba": "DEN",
     "pos": "SF,PF",
     "draft": 2
-   },
-   {
-    "name": "Nolan Traore",
-    "slot": "IL",
-    "id": 10455,
-    "nba": "BKN",
-    "pos": "PG",
-    "status": "O",
-    "draft": "FA"
    },
    {
     "name": "Jimmy Butler III",
