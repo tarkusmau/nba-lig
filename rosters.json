@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 13:58",
+ "updated": "2026-11-24 20:55",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -1473,10 +1473,10 @@
   ],
   "Normal MAFIA": [
    {
-    "name": "Kris Dunn",
+    "name": "Daniss Jenkins",
     "slot": "PG",
-    "id": 5636,
-    "nba": "LAC",
+    "id": 10316,
+    "nba": "DET",
     "pos": "PG,SG",
     "draft": "FA"
    },
@@ -1521,21 +1521,21 @@
     "draft": 1
    },
    {
-    "name": "Ryan Kalkbrenner",
-    "slot": "C",
-    "id": 10476,
-    "nba": "CHA",
-    "pos": "C",
-    "status": "Q",
-    "draft": "FA"
-   },
-   {
     "name": "Precious Achiuwa",
     "slot": "C",
     "id": 6412,
     "nba": "SAC",
     "pos": "PF,C",
     "draft": "FA"
+   },
+   {
+    "name": "Mitchell Robinson",
+    "slot": "C",
+    "id": 6047,
+    "nba": "BOS",
+    "pos": "C",
+    "status": "O",
+    "draft": 1
    },
    {
     "name": "Joel Embiid",
@@ -1555,29 +1555,29 @@
     "draft": 1
    },
    {
+    "name": "Ryan Kalkbrenner",
+    "slot": "BN",
+    "id": 10476,
+    "nba": "CHA",
+    "pos": "C",
+    "status": "Q",
+    "draft": "FA"
+   },
+   {
+    "name": "Kris Dunn",
+    "slot": "BN",
+    "id": 5636,
+    "nba": "LAC",
+    "pos": "PG,SG",
+    "draft": "FA"
+   },
+   {
     "name": "Andre Drummond",
     "slot": "BN",
     "id": 5015,
     "nba": "NYK",
     "pos": "C",
     "draft": "FA"
-   },
-   {
-    "name": "Daniss Jenkins",
-    "slot": "BN",
-    "id": 10316,
-    "nba": "DET",
-    "pos": "PG,SG",
-    "draft": "FA"
-   },
-   {
-    "name": "Mitchell Robinson",
-    "slot": "BN",
-    "id": 6047,
-    "nba": "BOS",
-    "pos": "C",
-    "status": "O",
-    "draft": 1
    },
    {
     "name": "CJ McCollum",

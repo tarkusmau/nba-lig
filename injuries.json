@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-24 13:58",
+"updated": "2026-11-24 20:55",
 "source": "ESPN",
 "injuries": [
 {
@@ -282,6 +282,24 @@
 "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
 },
 {
+"name": "T.J. McConnell",
+"team": "Indiana Pacers",
+"status": "Day-To-Day",
+"date": "2026-11-24T16:02Z",
+"return": "2026-11-27",
+"type": "Hamstring",
+"note": "McConnell (hamstring) was assigned to the G League's Noblesville Boom on Tuesday."
+},
+{
+"name": "Tyrese Haliburton",
+"team": "Indiana Pacers",
+"status": "Out",
+"date": "2026-11-24T15:57Z",
+"return": "2026-12-13",
+"type": "Hamstring",
+"note": "Haliburton (hamstring) was assigned to the G League's Noblesville Boom on Tuesday."
+},
+{
 "name": "Aaron Nesmith",
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
@@ -291,15 +309,6 @@
 "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness."
 },
 {
-"name": "T.J. McConnell",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-24T04:40Z",
-"return": "2026-11-27",
-"type": "Hamstring",
-"note": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness."
-},
-{
 "name": "Larry Nance Jr.",
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
@@ -307,24 +316,6 @@
 "return": "2026-11-27",
 "type": "Ankle",
 "note": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports."
-},
-{
-"name": "Tyrese Haliburton",
-"team": "Indiana Pacers",
-"status": "Out",
-"date": "2026-11-20T20:41Z",
-"return": "2026-12-13",
-"type": "Hamstring",
-"note": "Haliburton (hamstring) is expected to miss at least two more weeks, Shams Charania of ESPN reports."
-},
-{
-"name": "Johnny Furphy",
-"team": "Indiana Pacers",
-"status": "Out",
-"date": "2026-10-30T19:06Z",
-"return": "2027-01-02",
-"type": "Knee",
-"note": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com."
 },
 {
 "name": "Ben Sheppard",
@@ -417,6 +408,15 @@
 "note": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports."
 },
 {
+"name": "Donte DiVincenzo",
+"team": "Minnesota Timberwolves",
+"status": "Out",
+"date": "2026-11-24T17:10Z",
+"return": "2027-01-03",
+"type": "Achilles",
+"note": "DiVincenzo (Achilles) has been cleared for team basketball activities and is targeting a return to game action in January, Jon Krawczynski of The Athletic reports."
+},
+{
 "name": "Jaylen Clark",
 "team": "Minnesota Timberwolves",
 "status": "Out",
@@ -433,15 +433,6 @@
 "return": "2026-12-21",
 "type": "Knee",
 "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced."
-},
-{
-"name": "Donte DiVincenzo",
-"team": "Minnesota Timberwolves",
-"status": "Out",
-"date": "2026-10-05T20:53Z",
-"return": "2027-04-02",
-"type": "Achilles",
-"note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
 },
 {
 "name": "Trendon Watford",
@@ -793,6 +784,15 @@
 "return": "2026-12-14",
 "type": "Knee",
 "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
+},
+{
+"name": "Tre Mann",
+"team": "Washington Wizards",
+"status": "Day-To-Day",
+"date": "2026-11-24T16:47Z",
+"return": "2026-11-24",
+"type": "Illness",
+"note": "Mann (illness) has been downgraded to questionable for Tuesday's game against Boston."
 },
 {
 "name": "Tristan Vukcevic",

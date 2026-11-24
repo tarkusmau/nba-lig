@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 13:58",
+ "updated": "2026-11-24 20:55",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-24": {
@@ -1090,9 +1090,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
-     "pos": "PG,SG"
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "@ ORL 7:00 pm"
     },
     {
      "slot": "SG",
@@ -1127,16 +1128,17 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "game": "@ WAS 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -1153,24 +1155,22 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "@ ORL 7:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "game": "@ WAS 8:00 pm",
-     "status": "O"
     },
     {
      "slot": "IL",
@@ -2132,9 +2132,10 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF",
+     "game": "@ POR 10:00 pm"
     },
     {
      "slot": "PF",
@@ -2165,23 +2166,22 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF",
-     "game": "@ POR 10:00 pm"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF",
      "game": "vs SAC 10:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C"
     },
     {
      "slot": "BN",
@@ -2746,10 +2746,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
-     "pos": "PG,SG",
-     "game": "@ MEM 8:00 pm"
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG"
     },
     {
      "slot": "SG",
@@ -2785,18 +2784,17 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "vs CHI 7:00 pm",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "@ GSW 10:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -2815,23 +2813,25 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "vs CHI 7:00 pm",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG",
+     "game": "@ MEM 8:00 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C",
      "game": "vs CLE 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "status": "O"
     },
     {
      "slot": "IL",
@@ -3762,9 +3762,9 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF"
     },
     {
      "slot": "PF",
@@ -3792,21 +3792,21 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C"
     },
     {
      "slot": "BN",
@@ -4326,8 +4326,8 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
      "pos": "PG,SG"
     },
     {
@@ -4362,16 +4362,16 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -4388,22 +4388,22 @@
     },
     {
      "slot": "BN",
-     "name": "Andre Drummond",
-     "nba": "NYK",
-     "pos": "C"
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "status": "Q"
     },
     {
      "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
+     "name": "Kris Dunn",
+     "nba": "LAC",
      "pos": "PG,SG"
     },
     {
      "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "status": "O"
+     "name": "Andre Drummond",
+     "nba": "NYK",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -5357,10 +5357,10 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "vs BKN 7:30 pm"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF",
+     "game": "vs LAL 9:30 pm"
     },
     {
      "slot": "PF",
@@ -5389,24 +5389,24 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF",
-     "game": "vs LAL 9:30 pm"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "vs BKN 7:30 pm"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C",
-     "game": "@ LAC 9:30 pm"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF",
      "game": "@ POR 9:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C",
+     "game": "@ LAC 9:30 pm"
     },
     {
      "slot": "BN",
@@ -5984,10 +5984,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
      "pos": "PG,SG",
-     "game": "vs NOP 9:30 pm"
+     "game": "vs MIL 7:30 pm"
     },
     {
      "slot": "SG",
@@ -6024,16 +6024,17 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "game": "vs ATL 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -6052,25 +6053,24 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG",
+     "game": "vs NOP 9:30 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C",
      "game": "vs MIA 7:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "vs MIL 7:30 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "game": "vs ATL 8:00 pm",
-     "status": "O"
     },
     {
      "slot": "IL",
@@ -7042,9 +7042,9 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF"
     },
     {
      "slot": "PF",
@@ -7074,21 +7074,21 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C"
     },
     {
      "slot": "BN",
@@ -7636,8 +7636,8 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
      "pos": "PG,SG"
     },
     {
@@ -7675,17 +7675,16 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "vs BKN 6:00 pm",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -7704,22 +7703,23 @@
     },
     {
      "slot": "BN",
-     "name": "Andre Drummond",
-     "nba": "NYK",
-     "pos": "C"
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "vs BKN 6:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
+     "name": "Kris Dunn",
+     "nba": "LAC",
      "pos": "PG,SG"
     },
     {
      "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "status": "O"
+     "name": "Andre Drummond",
+     "nba": "NYK",
+     "pos": "C"
     },
     {
      "slot": "IL",
@@ -8682,10 +8682,10 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "vs DEN 6:00 pm"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF",
+     "game": "vs BOS 4:00 pm"
     },
     {
      "slot": "PF",
@@ -8715,24 +8715,24 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF",
-     "game": "vs BOS 4:00 pm"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "vs DEN 6:00 pm"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C",
-     "game": "@ POR 6:00 pm"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF",
      "game": "vs LAC 8:30 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C",
+     "game": "@ POR 6:00 pm"
     },
     {
      "slot": "BN",
@@ -9304,10 +9304,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
+     "name": "Daniss Jenkins",
+     "nba": "DET",
      "pos": "PG,SG",
-     "game": "@ GSW 8:30 pm"
+     "game": "vs ORL 6:00 pm"
     },
     {
      "slot": "SG",
@@ -9343,17 +9343,18 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "vs MIN 9:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "game": "@ SAS 4:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -9370,25 +9371,24 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG",
+     "game": "@ GSW 8:30 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C",
      "game": "vs ATL 6:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "vs ORL 6:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "game": "@ SAS 4:00 pm",
-     "status": "O"
     },
     {
      "slot": "IL",
@@ -10357,9 +10357,10 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF",
+     "game": "@ MIL 8:00 pm"
     },
     {
      "slot": "PF",
@@ -10390,23 +10391,22 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF",
-     "game": "@ MIL 8:00 pm"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
+     "name": "Will Richard",
+     "nba": "GSW",
+     "pos": "SG,SF"
+    },
+    {
+     "slot": "BN",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C",
      "game": "@ SAC 10:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Will Richard",
-     "nba": "GSW",
-     "pos": "SG,SF"
     },
     {
      "slot": "BN",
@@ -10962,9 +10962,10 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
-     "pos": "PG,SG"
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG",
+     "game": "vs DEN 7:00 pm"
     },
     {
      "slot": "SG",
@@ -11000,18 +11001,18 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "game": "vs WAS 7:00 pm",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C",
      "game": "vs NOP 10:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "game": "@ DAL 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -11029,24 +11030,23 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "game": "vs WAS 7:00 pm",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG",
-     "game": "vs DEN 7:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "game": "@ DAL 8:00 pm",
-     "status": "O"
     },
     {
      "slot": "IL",
@@ -12027,10 +12027,9 @@
     },
     {
      "slot": "SF",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "@ HOU 8:30 pm"
+     "name": "Keldon Johnson",
+     "nba": "SAS",
+     "pos": "SF,PF"
     },
     {
      "slot": "PF",
@@ -12060,22 +12059,23 @@
     },
     {
      "slot": "Util",
-     "name": "Keldon Johnson",
-     "nba": "SAS",
-     "pos": "SF,PF"
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "@ HOU 8:30 pm"
     },
     {
      "slot": "Util",
-     "name": "Yves Missi",
-     "nba": "NOP",
-     "pos": "C"
-    },
-    {
-     "slot": "BN",
      "name": "Will Richard",
      "nba": "GSW",
      "pos": "SG,SF",
      "game": "vs UTA 10:00 pm"
+    },
+    {
+     "slot": "BN",
+     "name": "Yves Missi",
+     "nba": "NOP",
+     "pos": "C"
     },
     {
      "slot": "BN",
@@ -12638,10 +12638,9 @@
    "Normal MAFIA": [
     {
      "slot": "PG",
-     "name": "Kris Dunn",
-     "nba": "LAC",
-     "pos": "PG,SG",
-     "game": "@ PHX 9:00 pm"
+     "name": "Daniss Jenkins",
+     "nba": "DET",
+     "pos": "PG,SG"
     },
     {
      "slot": "SG",
@@ -12678,16 +12677,16 @@
     },
     {
      "slot": "C",
-     "name": "Ryan Kalkbrenner",
-     "nba": "CHA",
-     "pos": "C",
-     "status": "Q"
-    },
-    {
-     "slot": "C",
      "name": "Precious Achiuwa",
      "nba": "SAC",
      "pos": "PF,C"
+    },
+    {
+     "slot": "C",
+     "name": "Mitchell Robinson",
+     "nba": "BOS",
+     "pos": "C",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -12705,23 +12704,24 @@
     },
     {
      "slot": "BN",
+     "name": "Ryan Kalkbrenner",
+     "nba": "CHA",
+     "pos": "C",
+     "status": "Q"
+    },
+    {
+     "slot": "BN",
+     "name": "Kris Dunn",
+     "nba": "LAC",
+     "pos": "PG,SG",
+     "game": "@ PHX 9:00 pm"
+    },
+    {
+     "slot": "BN",
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C",
      "game": "@ CHI 8:00 pm"
-    },
-    {
-     "slot": "BN",
-     "name": "Daniss Jenkins",
-     "nba": "DET",
-     "pos": "PG,SG"
-    },
-    {
-     "slot": "BN",
-     "name": "Mitchell Robinson",
-     "nba": "BOS",
-     "pos": "C",
-     "status": "O"
     },
     {
      "slot": "IL",
