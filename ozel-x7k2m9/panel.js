@@ -322,7 +322,7 @@ const PERS = [["bu", "Bu sezon"], ["s14", "Son 14 gün"], ["s7", "Son 7 gün"], 
 const GUNK = ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"];
 let foTab = ["pl", "gen", "inj", "fit"].includes(Q.get("f")) ? Q.get("f") : "gen";
 const FL = { q: "", nba: "", own: "FA", pos: "", per: "s14", sort: "val", g: 0, cats: new Set(), healthy: true, up: false, min20: false };
-let OPP = null, oppOpen = null; const FIT = {};
+let OPP = null; const FIT = {};
 function loadOpp(get, start) {
   const ds = [1, 2, 3, 4].map(i => E.isoAdd(start, -i));
   Promise.all([get("players/son7_ort.json").catch(() => null)].concat(ds.map(d => get("boxscores/" + d + ".json").catch(() => null))))
@@ -392,7 +392,7 @@ function statRow(s) {
 const boxLine = b => `${Math.round(b.s.mpg)} dk ${b.s.pts}p ${b.s.reb}r${b.s.tpm ? " " + b.s.tpm + "x3" : ""}${b.s.st ? " " + b.s.st + "st" : ""}${b.s.blk ? " " + b.s.blk + "b" : ""}${b.st5 ? " (ilk 5)" : ""}`;
 function fcard(p, right, ctx, light) {
   const s = p.per.bu;
-  return `<div class="fc"><div class="ftop"><span class="fnm">${esc(p.name)} <small>${esc(p.nba)} · ${esc(p.pos)}${p.fa ? "" : " · " + esc(p.own)}${p.waiver ? " · waiver" : ""}${p.status ? " · " + esc(p.status) : ""}</small></span>${right || ""}</div>
+  return `<div class="fc" data-pid="${p.id}"><div class="ftop"><span class="fnm">${esc(p.name)} <small>${esc(p.nba)} · ${esc(p.pos)}${p.fa ? "" : " · " + esc(p.own)}${p.waiver ? " · waiver" : ""}${p.status ? " · " + esc(p.status) : ""}</small></span>${right || ""}</div>
 ${wkStrip(p, light)}${statRow(s)}<div class="fln">${s ? "Bu sezon " + s.gp + " maç, " + Math.round(s.mpg || 0) + " dk" : "Bu sezon maç yok"}${p.bx.length ? " · Son: " + p.bx.slice(-2).map(boxLine).join(" · ") : ""}${ctx ? " · " + ctx : ""}</div></div>`;
 }
 // takim arkadasi sakatliklari (son 3 gun, MPG >= 18)
@@ -405,6 +405,7 @@ function recentInjuries() {
 function teamInjCtx(p, inj) { const o = inj.filter(i => i.p.nba === p.nba && i.p.id !== p.id); return o.length ? o.slice(0, 2).map(i => short(i.p.name) + " yok").join(", ") : ""; }
 function renderOpp() {
   if (!RAW || !RAW.box) return; if (!OPP) buildOpp();
+  $("fo-out").onclick = e => { const c = e.target.closest(".fc[data-pid]"); if (c) openPlayer(+c.dataset.pid); };
   [...$("fo-sub").children].forEach(b => { b.classList.toggle("on", b.dataset.f === foTab); b.onclick = () => { foTab = b.dataset.f; setQ({ f: foTab }); renderOpp(); }; });
   const box = $("fo-out"), inj = recentInjuries(), R = OPP.REF;
   const pool = OPP.list.filter(p => p.fa && !p.out);
@@ -474,15 +475,111 @@ function renderPlayers(box) {
 <div class="sm">Kategori filtresi (seçilenlerde lig ortalamasının üstü)</div>
 <div class="fchips">${["fgp", "ftp", "tpm", "pts", "reb", "st", "blk", "to"].map(k => chip(k, k === "to" ? "Düşük TO" : LBL[k], FL.cats.has(k))).join("")}</div>
 <div class="fchips">${chip("healthy", "Sağlıklı", FL.healthy)}${chip("up", "Dakika ↑", FL.up)}${chip("min20", "Min. 20 dk", FL.min20)}</div>
-<p class="sm">${n} oyuncu${n > 60 ? " (ilk 60)" : ""} · satıra dokununca kart açılır</p>
+<p class="sm">${n} oyuncu${n > 60 ? " (ilk 60)" : ""} · oyuncuya dokununca detay penceresi açılır</p>
 <div class="tw"><table class="small fpt"><thead><tr><th>Oyuncu</th>${KS.map(k => `<th>${LBL[k]}</th>`).join("")}</tr></thead><tbody>${L1.map(p => { const s = p.per[FL.per];
     return `<tr data-id="${p.id}"><td><b>${esc(short(p.name))}</b><div class="sm">${esc(p.nba)} · ${esc(p.pos)} · <span class="${p.fa ? "cu" : ""}">${esc(p.fa ? "FA" : p.own)}</span> · ${p.wkn}</div></td>${KS.map(k => `<td class="${FL.cats.has(k) ? "hl" : ""}">${v(s, k)}</td>`).join("")}</tr>` +
-      (oppOpen === p.id ? `<tr class="fopen"><td colspan="10">${fcard(p, "", teamInjCtx(p, recentInjuries()))}</td></tr>` : ""); }).join("")}</tbody></table></div>`;
+""; }).join("")}</tbody></table></div>`;
   const re = () => renderPlayers(box);
   $("fq").oninput = e => { FL.q = e.target.value; const pos = e.target.selectionStart; re(); const q = $("fq"); q.focus(); q.setSelectionRange(pos, pos); };
   [["f-nba", "nba"], ["f-own", "own"], ["f-pos", "pos"], ["f-per", "per"], ["f-sort", "sort"], ["f-g", "g"]].forEach(([id, k]) => $(id).onchange = e => { FL[k] = k === "g" ? +e.target.value : e.target.value; re(); });
   box.querySelectorAll(".fch").forEach(b => b.onclick = () => { const c = b.dataset.c; if (["healthy", "up", "min20"].includes(c)) FL[c] = !FL[c]; else FL.cats.has(c) ? FL.cats.delete(c) : FL.cats.add(c); re(); });
-  box.querySelectorAll("tr[data-id]").forEach(tr => tr.onclick = () => { const id = +tr.dataset.id; oppOpen = oppOpen === id ? null : id; re(); });
+  box.querySelectorAll("tr[data-id]").forEach(tr => tr.onclick = () => openPlayer(+tr.dataset.id));
+}
+
+// ---------- OYUNCU PENCERESI ----------
+let PM = null, PMtab = "g", GL = null, GLI = null, DRAFT = null, TX = null;
+const getX = f => fetch("../" + f + "?h=" + Math.floor(Date.now() / 36e5)).then(r => r.ok ? r.json() : null).catch(() => null);
+function openPlayer(id) {
+  if (!OPP) return; const p = OPP.list.find(x => x.id === id); if (!p) return;
+  PM = p; PMtab = "g"; $("pm").hidden = false; document.body.style.overflow = "hidden";
+  if (!history.state || !history.state.pm) history.pushState({ pm: 1 }, "");
+  renderPM();
+  if (!GL) Promise.all([getX("gamelog.json"), getX("draft.json"), getX("transactions.json")]).then(([g, d, t]) => {
+    GL = g || { p: {} }; GLI = {}; Object.keys(GL.p).forEach(k => GLI[E.normName(k)] = GL.p[k]);
+    DRAFT = {}; (d || []).forEach(x => DRAFT[x.id] = x); TX = t || []; if (PM) renderPM(); });
+}
+function closePM() { PM = null; $("pm").hidden = true; document.body.style.overflow = ""; }
+window.addEventListener("popstate", () => { if (PM) closePM(); });
+const ddmm = d => (+d.slice(8)) + "." + (+d.slice(5, 7));
+function glStats(r) { return { mpg: r[4], pts: r[5], reb: r[6], ast: r[7], st: r[8], blk: r[9], to: r[10], tpm: r[11], fgm: r[12], fga: r[13], ftm: r[14], fta: r[15], fgp: r[13] ? r[12] / r[13] : NaN, ftp: r[15] ? r[14] / r[15] : NaN }; }
+function pmGames(p) { return ((GLI || {})[p.nameN] || []).slice().reverse(); }
+function renderPM() {
+  const p = PM; if (!p) return; const dr = DRAFT && DRAFT[p.id];
+  const price = dr ? "$" + dr.cost : DRAFT ? "draft dışı" : "";
+  $("pm-h").innerHTML = `<div class="pmn">${esc(p.name)}</div><div class="sm">${esc(p.nba)} · ${esc(p.pos)} · <span class="${p.fa ? "cu" : ""}">${esc(p.fa ? (p.waiver ? "Waiver" : "Boşta (FA)") : p.own)}</span>${price ? " · " + price : ""}${p.status ? ` · <span class="cd">${esc(p.status)}</span>` : ""}</div>`;
+  [...$("pm-sub").children].forEach(b => { b.classList.toggle("on", b.dataset.t === PMtab); b.onclick = () => { PMtab = b.dataset.t; renderPM(); }; });
+  const box = $("pm-out"); box.scrollTop = 0;
+  if (!GL) { box.innerHTML = `<p class="note">Maç kayıtları yükleniyor…</p>`; return; }
+  box.innerHTML = PMtab === "g" ? pmLog(p) : pmSum(p);
+}
+function pmLog(p) {
+  const gs = pmGames(p), played = gs.filter(r => r.length > 5).map(glStats);
+  if (!gs.length) return `<p class="note">Bu oyuncu için kayıtlı maç yok.</p>`;
+  const fgc = s => s.fga >= 5 ? (s.fgp >= .55 ? "cu" : s.fgp < .4 ? "cd" : "") : "", ftc = s => s.fta >= 3 ? (s.ftp >= .85 ? "cu" : s.ftp < .65 ? "cd" : "") : "";
+  const avgRow = (lbl, arr) => { const a = avgStats(arr); return a ? `<tr class="pavg"><td colspan="2">${lbl}</td><td>${Math.round(a.mpg)}</td><td>${f3(a.fgp)}</td><td>${f3(a.ftp)}</td>${["tpm", "pts", "reb", "st", "blk", "to", "ast"].map(k => `<td>${f1(a[k])}</td>`).join("")}</tr>` : ""; };
+  const first = gl => (GL.dates || [])[0];
+  return `<p class="sm">${played.length} maç oynadı${gs.length > played.length ? ", " + (gs.length - played.length) + " maçta yok" : ""} · kayıtlar ${ddmm(first() || gs[gs.length - 1][0])} tarihinden beri · ● ilk 5 · FG/FT yeşil iyi, kırmızı kötü</p>
+<div class="tw"><table class="small plog"><thead><tr><th>Tarih</th><th>Rakip</th><th>DK</th><th>FG</th><th>FT</th><th>3P</th><th>PTS</th><th>REB</th><th>ST</th><th>BLK</th><th>TO</th><th>AST</th></tr></thead><tbody>
+${avgRow("Son 5 ort.", played.slice(0, 5))}${played.length > 5 ? avgRow("Tümü ort.", played) : ""}
+${gs.map(r => { if (r.length <= 5) return `<tr class="dnp"><td>${ddmm(r[0])}</td><td>${esc(r[2])}</td><td colspan="10">Oynamadı · ${esc(String(r[4]).toLowerCase())}</td></tr>`;
+    const s = glStats(r); return `<tr><td>${ddmm(r[0])}${r[3] ? " ●" : ""}</td><td>${esc(r[2])}</td><td>${s.mpg}</td><td class="${fgc(s)}">${s.fgm}-${s.fga}</td><td class="${ftc(s)}">${s.ftm}-${s.fta}</td><td>${s.tpm}</td><td>${s.pts}</td><td>${s.reb}</td><td>${s.st}</td><td>${s.blk}</td><td>${s.to}</td><td class="mut">${s.ast}</td></tr>`; }).join("")}
+</tbody></table></div>`;
+}
+function pmSum(p) {
+  const R = OPP.REF.bu, s = p.per.bu, gs = pmGames(p), played = gs.filter(r => r.length > 5).map(glStats);
+  const l3 = avgStats(played.slice(0, 3)), punt = (E.STRAT[cur] || {}).punt || { ast: 1 };
+  const out = [];
+  // durum
+  const ij = p.inj, raw = ((RAW.bu || {}).players || []).find(r => r.id === p.id) || {};
+  out.push(`<h4>Durum</h4><div class="pgrid">
+<div><span>Sahibi</span><b>${esc(p.fa ? (p.waiver ? "Waiver" : "Boşta") : p.own)}</b></div>
+<div><span>Draft</span><b>${DRAFT && DRAFT[p.id] ? "$" + DRAFT[p.id].cost : "–"}</b></div>
+<div><span>Sahiplik</span><b>${esc(raw["% Ros"] || "–")}</b></div>
+<div><span>Bu hafta</span><b>${p.left} maç kaldı</b></div></div>
+${ij ? `<div class="pinj"><b>${esc(ij.status)}</b> · ${esc(ij.type || "")}${ij.return ? " · tahmini dönüş " + ddmm(ij.return) : ""}<div class="sm">${esc(ij.note || "")}</div></div>` : ""}${wkStrip(p)}`);
+  out.push(`<h4>Bu sezon ortalaması</h4><div class="psea">${s ? `<div class="sm">${s.gp} maç · ${Math.round(s.mpg || 0)} dk</div>` + statRow(s) : `<p class="note">Bu sezon maç yok.</p>`}</div>`);
+  // donemler
+  const rows = [["Son 3 maç", l3]].concat(PERS.map(([k, t]) => [t, p.per[k]]));
+  const better = (k, a, b) => k === "to" ? a < b : a > b, thr = { fgp: .02, ftp: .03, mpg: 2, tpm: .3, pts: 2, reb: 1, ast: 1, st: .2, blk: .2, to: .3 };
+  out.push(`<h4>Dönem karşılaştırması</h4><p class="sm">Renkler bu sezona göre: yeşil daha iyi, kırmızı daha kötü.</p><div class="tw"><table class="small plog"><thead><tr><th></th><th>DK</th>${KS.map(k => `<th>${LBL[k]}</th>`).join("")}</tr></thead><tbody>
+${rows.map(([t, x]) => `<tr><td><b>${t}</b></td>${["mpg"].concat(KS).map(k => { if (!x || !isFinite(x[k])) return "<td>–</td>"; const v = k === "fgp" || k === "ftp" ? f3(x[k]) : k === "mpg" ? Math.round(x[k]) : f1(x[k]);
+    const c = t === "Bu sezon" || !s || !isFinite(s[k]) || k === "ast" ? "" : Math.abs(x[k] - s[k]) < thr[k] ? "" : better(k, x[k], s[k]) ? "cu" : "cd"; return `<td class="${c}">${v}</td>`; }).join("")}</tr>`).join("")}</tbody></table></div>`);
+  // kategori profili
+  if (s) {
+    const z = {}; KS.forEach(k => z[k] = zc(s, R, k));
+    const all = OPP.list.filter(q => q.per.bu && q.per.bu.mpg >= 10).map(q => zval(q.per.bu, R, { ast: 1 })).sort((a, b) => b - a), my = zval(s, R, { ast: 1 }), rank = all.filter(v => v > my).length + 1;
+    out.push(`<h4>Kategori profili (bu sezon)</h4><p class="sm">Asist hariç değer sıralaması: <b>${rank}.</b> / ${all.length} oyuncu (10+ dk). Çubuk: lig ortalamasına göre.</p>
+<div class="pbars">${KS.map(k => { const v = Math.max(-2.5, Math.min(2.5, z[k] || 0)), w = Math.abs(v) / 2.5 * 50;
+      return `<div class="pbar${k in punt ? " pun" : ""}"><span>${LBL[k]}</span><div class="pt"><i class="${v >= 0 ? "pos" : "neg"}" style="${v >= 0 ? "left:50%" : "right:50%"};width:${w}%"></i></div><em>${(z[k] >= 0 ? "+" : "") + (z[k] || 0).toFixed(1)}</em></div>`; }).join("")}</div>`);
+  }
+  // oneriler
+  const tips = [], zs = s ? KS.filter(k => !(k in punt)).map(k => [k, zc(s, R, k)]) : [];
+  const good = zs.filter(x => x[1] >= .7).sort((a, b) => b[1] - a[1]).map(x => LBL[x[0]]), bad = zs.filter(x => x[1] <= -.7).sort((a, b) => a[1] - b[1]).map(x => LBL[x[0]]);
+  if (good.length) tips.push(`Güçlü olduğu kategoriler: <b>${good.join(", ")}</b>${bad.length ? ` · zayıf: <b class="cd">${bad.join(", ")}</b>` : ""}.`);
+  else if (bad.length) tips.push(`Belirgin güçlü kategorisi yok; zayıf: <b class="cd">${bad.join(", ")}</b>.`);
+  if (s && l3 && l3.mpg - s.mpg >= 4) tips.push(`Dakikası artıyor: son 3 maçta ${Math.round(l3.mpg)} dk, sezonda ${Math.round(s.mpg)} dk.`);
+  if (s && l3 && s.mpg - l3.mpg >= 4) tips.push(`Dakikası düşüyor: son 3 maçta ${Math.round(l3.mpg)} dk, sezonda ${Math.round(s.mpg)} dk.`);
+  const st5 = played.slice(0, 5).length ? gs.filter(r => r.length > 5).slice(0, 5).filter(r => r[3]).length : 0;
+  if (played.length >= 3) tips.push(st5 ? `Son ${Math.min(5, played.length)} maçta ${st5} kez ilk 5'te başladı.` : `Son ${Math.min(5, played.length)} maçta hep yedekten girdi.`);
+  const mates = ((RAW.injuries || {}).injuries || []).map(x => ({ x, q: OPP.list.find(q => q.nameN === E.normName(x.name)) }))
+    .filter(o => o.q && o.q.nba === p.nba && o.q.id !== p.id && /^out/i.test(o.x.status) && o.q.per.bu && o.q.per.bu.mpg >= 20);
+  if (mates.length) tips.push(`Takımda eksik: ${mates.map(o => `${esc(short(o.q.name))} (${o.x.return ? "dönüş " + ddmm(o.x.return) : "dönüş belirsiz"})`).join(", ")}.${l3 && s && l3.mpg - s.mpg >= 4 ? " Artan dakikası bu eksiklere bağlı olabilir; dönüşlerinde rolü küçülebilir." : ""}`);
+  if (p.left >= 3) tips.push(`Bu hafta ${p.left} maçı kaldı; stream için takvimi uygun.`); else if (p.left <= 1) tips.push(`Bu hafta en fazla ${p.left} maçı kaldı.`);
+  if (p.ret) tips.push(`Sakat; tahmini dönüş ${ddmm(p.ret)}. Dönüşe yakın ucuza alınabilir.`);
+  const dr = DRAFT && DRAFT[p.id];
+  if (s && dr && dr.cost <= 10 && zval(s, R, { ast: 1 }) > 3) tips.push(`Draft fiyatı ($${dr.cost}) üretimine göre düşük; takas hedefi olabilir.`);
+  if (s && dr && dr.cost >= 30 && zval(s, R, { ast: 1 }) < 0) tips.push(`Draft fiyatına ($${dr.cost}) göre beklentinin altında üretiyor.`);
+  if (p.fa && p.pg && DATA && SR && !p.out) {
+    const ks = weekKeys(), W = DATA.weeks[ks[ks.length - 1]], pr = (W.pairs || []).find(x => x.includes(cur));
+    if (pr) { const opp = pr.find(t => t !== cur), ex = r => CATS.reduce((a, k) => a + (k in punt ? 0 : r.p[k]), 0);
+      const d = ex(thisWeek(cur, opp, [{ id: p.id, name: p.name, nba: p.nba, pg: p.pg, gv: -50, ret: p.ret }])) - ex(thisWeek(cur, opp));
+      tips.push(`${esc(SHORT[cur] || cur)} için bu hafta (${esc(opp)} maçı): <b class="${d >= .15 ? "cu" : ""}">${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(2).replace(".", ",")} kategori</b> ekler.`); }
+  }
+  out.push(`<h4>Değerlendirme</h4><ul class="ptips">${tips.map(t => `<li>${t}</li>`).join("")}</ul>`);
+  // islemler
+  const sn = short(p.name), tx = (TX || []).filter(t => (t.add || []).includes(sn) || (t.drop || []).includes(sn)).slice(0, 8);
+  if (tx.length) out.push(`<h4>Ligdeki işlemler</h4><ul class="ptips">${tx.map(t => `<li>${ddmm(t.time.slice(0, 10))} · ${esc(t.team)} ${(t.add || []).includes(sn) ? "aldı" : "bıraktı"}${t.type === "trade" ? " (takas)" : ""}</li>`).join("")}</ul>`);
+  return out.join("");
 }
 
 // ---------- KADRO ----------
