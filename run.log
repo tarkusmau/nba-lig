@@ -1,9 +1,7 @@
 Guncel hafta: 6
-Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 24 Kasım 2026, 09:56 (23 Kasım maçları dahil)
+Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 24 Kasım 2026, 13:58 (23 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 2 yeni kayit eklendi.
-  + {"time": "2026-11-24 03:36", "team": "Kyojins on Rumbling", "type": "add/drop", "add": ["J. Tyson"], "drop": ["B. Coulibaly"], "pos": "SG,SF,PF / SG,SF", "source": "FA"}
-  + {"time": "2026-11-23 22:46", "team": "Yukatel Metin Akdülger", "type": "drop", "add": [], "drop": ["N. Traore"], "pos": "PG"}
+Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Norman Powell', 'Evan Mobley', 'Caleb Wilson']
@@ -11,7 +9,7 @@ Kadro Bomonti Sınırsız: 14 oyuncu, IL: ['Dejounte Murray']
 Kadro BÇ: 15 oyuncu, IL: ['Dylan Harper', 'Jaren Jackson Jr.']
 Kadro EAH Seniors: 15 oyuncu, IL: ['Stephen Curry', 'Chet Holmgren']
 Kadro HobaKumpo: 15 oyuncu, IL: ['Anthony Edwards', 'RJ Barrett']
-Kadro Kalidou Koulibaly: 15 oyuncu, IL: ['Cameron Boozer', 'Brandon Williams', 'Justin Champagnie']
+Kadro Kalidou Koulibaly: 16 oyuncu, IL: ['Cameron Boozer', 'Brandon Williams', 'Justin Champagnie']
 Kadro Kassablancas: 16 oyuncu, IL: ['Tyrese Haliburton', 'Kon Knueppel', 'Alex Caruso']
 Kadro Kreuzberg Boys: 16 oyuncu, IL: ['Paolo Banchero', 'Dereck Lively II', 'Jusuf Nurkić']
 Kadro Kyojins on Rumbling: 14 oyuncu, IL: ['Mark Williams']
@@ -27,20 +25,20 @@ takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: 40 satir.
 Yahoo sakatliklar: 92 kayit.
-Gunluk kadro 2026-11-24: 16 takim, 45 maci olan oyuncu.
-Gunluk kadro 2026-11-25: 16 takim, 147 maci olan oyuncu.
+Gunluk kadro 2026-11-24: 16 takim, 46 maci olan oyuncu.
+Gunluk kadro 2026-11-25: 16 takim, 146 maci olan oyuncu.
 Gunluk kadro 2026-11-26: 16 takim, 0 maci olan oyuncu.
-Gunluk kadro 2026-11-27: 16 takim, 178 maci olan oyuncu.
+Gunluk kadro 2026-11-27: 16 takim, 179 maci olan oyuncu.
 Gunluk kadro 2026-11-28: 16 takim, 77 maci olan oyuncu.
-Gunluk kadro 2026-11-29: 16 takim, 164 maci olan oyuncu.
-Gunluk kadro 2026-11-30: 16 takim, 105 maci olan oyuncu.
-Gunluk kadro 2026-12-01: 16 takim, 136 maci olan oyuncu.
+Gunluk kadro 2026-11-29: 16 takim, 165 maci olan oyuncu.
+Gunluk kadro 2026-11-30: 16 takim, 107 maci olan oyuncu.
+Gunluk kadro 2026-12-01: 16 takim, 135 maci olan oyuncu.
 Fikstur: {'6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers', '9': 'Kyojins on Rumbling'}
-Oyuncular bu_sezon_ort: 442 oyuncu (242 kadrolu) yazildi.
-Oyuncular gecen_sezon_ort: 442 oyuncu (242 kadrolu) yazildi.
-Oyuncular son14_ort: 442 oyuncu (242 kadrolu) yazildi.
-Oyuncular son7_ort: 442 oyuncu (242 kadrolu) yazildi.
-Oyuncular projeksiyon_kalan: 442 oyuncu (242 kadrolu) yazildi.
+Oyuncular bu_sezon_ort: 443 oyuncu (243 kadrolu) yazildi.
+Oyuncular gecen_sezon_ort: 443 oyuncu (243 kadrolu) yazildi.
+Oyuncular son14_ort: 443 oyuncu (243 kadrolu) yazildi.
+Oyuncular son7_ort: 443 oyuncu (243 kadrolu) yazildi.
+Oyuncular projeksiyon_kalan: 443 oyuncu (243 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
-Box score 2026-11-23: 10 mac.
+Gamelog: 35 gun, 501 oyuncu (21 eski gun eklendi).
 Sakatliklar: 92 kayit.
