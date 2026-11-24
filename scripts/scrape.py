@@ -600,6 +600,86 @@ def scrape_nba_schedule():
     log(f"NBA takvimi: {len(days)} gun yazildi (tum sezon: {full}).")
     return days
 
+def fetch_box(gid):
+    j = get_json(f"{ESPN}/summary?event={gid}")
+    pl = []
+    for tm in j.get("boxscore", {}).get("players", []):
+        ab = tm.get("team", {}).get("abbreviation")
+        for st in tm.get("statistics", []):
+            lab = st.get("labels") or st.get("names") or []
+            for a in st.get("athletes", []):
+                r = {"n": a.get("athlete", {}).get("displayName"), "t": ab, "st": bool(a.get("starter"))}
+                if a.get("didNotPlay") or not a.get("stats"):
+                    r["out"] = a.get("reason") or "DNP"
+                else:
+                    v = dict(zip(lab, a["stats"]))
+                    r.update({"min": v.get("MIN"), "pts": v.get("PTS"), "reb": v.get("REB"), "ast": v.get("AST"),
+                              "stl": v.get("STL"), "blk": v.get("BLK"), "to": v.get("TO"),
+                              "3pm": (v.get("3PT") or "").split("-")[0], "fg": v.get("FG"), "ft": v.get("FT")})
+                pl.append(r)
+    return {"match": " / ".join(sorted({p["t"] for p in pl if p.get("t")})), "players": pl}
+
+SEASON_START = datetime.date(2026, 10, 20)
+
+def gl_rows(ds, games):
+    """Bir gunun box score'larini oyuncu satirlarina cevirir: [tarih, takim, rakip, ilk5, dk, pts, reb, ast, stl, blk, to, 3pm, fgm, fga, ftm, fta] ya da [tarih, takim, rakip, ilk5, 'DNP sebebi']."""
+    out = []
+    for g in games.values():
+        tms = sorted({p["t"] for p in g.get("players", []) if p.get("t")})
+        for p in g.get("players", []):
+            t = p.get("t"); opp = next((x for x in tms if x != t), "")
+            T, O = ESPN_TO_YAHOO.get(t, t), ESPN_TO_YAHOO.get(opp, opp)
+            if "out" in p:
+                out.append((p["n"], [ds, T, O, int(bool(p.get("st"))), str(p["out"])[:40]])); continue
+            n = lambda k: int(m.group()) if (m := re.search(r"-?\d+", str(p.get(k) or ""))) else 0
+            sp = lambda k: [int(x) if x.isdigit() else 0 for x in (str(p.get(k) or "0-0").split("-") + ["0"])[:2]]
+            fg, ft = sp("fg"), sp("ft")
+            out.append((p["n"], [ds, T, O, int(bool(p.get("st"))), n("min"), n("pts"), n("reb"), n("ast"), n("stl"), n("blk"), n("to"), n("3pm")] + fg + ft))
+    return out
+
+def build_gamelog(max_backfill=30):
+    """Sezon boyu oyuncu mac kayitlari (gamelog.json). Box score dosyalari 14 gun tutulur, kayitlar burada kalici."""
+    fn = "gamelog.json"
+    gl = json.load(open(fn, encoding="utf-8")) if os.path.exists(fn) else {"dates": [], "p": {}}
+    P, have = gl["p"], set(gl["dates"])
+    def put(ds, rows):
+        for k in list(P):
+            P[k] = [r for r in P[k] if r[0] != ds]
+        for name, r in rows:
+            P.setdefault(name, []).append(r)
+        have.add(ds)
+    today = NOW.date()
+    # 1) eksik eski gunleri ESPN'den doldur (ilk calismada sezon basina kadar)
+    d, done = SEASON_START, 0
+    while d < today - datetime.timedelta(days=4) and done < max_backfill:
+        ds = d.isoformat()
+        if ds not in have and not os.path.exists(f"boxscores/{ds}.json"):
+            try:
+                evs = get_json(f"{ESPN}/scoreboard?dates={d:%Y%m%d}").get("events", [])
+                games = {}
+                for e in evs:
+                    if e["competitions"][0]["status"]["type"].get("completed"):
+                        games[e["id"]] = fetch_box(e["id"])
+                put(ds, gl_rows(ds, games)); done += 1
+            except Exception as ex:
+                log(f"HATA gamelog {ds}: {ex}")
+        d += datetime.timedelta(days=1)
+    # 2) mevcut box score dosyalarini (son gunler) yeniden isle
+    for f in sorted(glob.glob("boxscores/*.json")):
+        ds = os.path.basename(f)[:10]
+        put(ds, gl_rows(ds, json.load(open(f, encoding="utf-8")).get("games", {})))
+    for k in P:
+        P[k].sort(key=lambda r: r[0])
+    gl["dates"] = sorted(have); gl["updated"] = NOW.strftime("%Y-%m-%d %H:%M")
+    json.dump(gl, open(fn, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    log(f"Gamelog: {len(gl['dates'])} gun, {len(P)} oyuncu" + (f" ({done} eski gun eklendi)" if done else "") + ".")
+    for f in glob.glob("boxscores/*.json"):
+        try:
+            if datetime.date.fromisoformat(os.path.basename(f)[:10]) < today - datetime.timedelta(days=14):
+                os.remove(f)
+        except ValueError:
+            pass
+
 def scrape_boxscores(days):
     os.makedirs("boxscores", exist_ok=True)
     today = NOW.date()
@@ -625,33 +705,11 @@ def scrape_boxscores(days):
             if g["id"] in out:
                 continue
             try:
-                j = get_json(f"{ESPN}/summary?event={g['id']}")
+                out[g["id"]] = fetch_box(g["id"])
             except Exception as ex:
                 log(f"HATA boxscore {g['id']}: {ex}"); continue
-            pl = []
-            for tm in j.get("boxscore", {}).get("players", []):
-                ab = tm.get("team", {}).get("abbreviation")
-                for st in tm.get("statistics", []):
-                    lab = st.get("labels") or st.get("names") or []
-                    for a in st.get("athletes", []):
-                        r = {"n": a.get("athlete", {}).get("displayName"), "t": ab, "st": bool(a.get("starter"))}
-                        if a.get("didNotPlay") or not a.get("stats"):
-                            r["out"] = a.get("reason") or "DNP"
-                        else:
-                            v = dict(zip(lab, a["stats"]))
-                            r.update({"min": v.get("MIN"), "pts": v.get("PTS"), "reb": v.get("REB"), "ast": v.get("AST"),
-                                      "stl": v.get("STL"), "blk": v.get("BLK"), "to": v.get("TO"),
-                                      "3pm": (v.get("3PT") or "").split("-")[0], "fg": v.get("FG"), "ft": v.get("FT")})
-                        pl.append(r)
-            out[g["id"]] = {"match": " / ".join(sorted({p["t"] for p in pl if p.get("t")})), "players": pl}
         json.dump({"date": ds, "games": out}, open(fn, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
         log(f"Box score {ds}: {len(out)} mac.")
-    for f in glob.glob("boxscores/*.json"):
-        try:
-            if datetime.date.fromisoformat(os.path.basename(f)[:10]) < today - datetime.timedelta(days=14):
-                os.remove(f)
-        except ValueError:
-            pass
 
 def scrape_injuries():
     d = get_json("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries")
@@ -864,7 +922,7 @@ def main():
         days = scrape_nba_schedule()
     except Exception as ex:
         log(f"HATA NBA takvimi: {ex}")
-    for name, fn in (("box score", lambda: scrape_boxscores(days)), ("sakatliklar", scrape_injuries)):
+    for name, fn in (("box score", lambda: scrape_boxscores(days)), ("gamelog", build_gamelog), ("sakatliklar", scrape_injuries)):
         try:
             fn()
         except Exception as ex:
