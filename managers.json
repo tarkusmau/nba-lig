@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 09:56",
+ "updated": "2026-11-24 13:55",
  "tables": [
   {
    "headers": [
@@ -27,11 +27,11 @@
      "Team Name": "BÇ",
      "Manager": "Burak",
      "Email": "burakcelikturkk@gmail.com",
-     "Waiver Budget": "$200",
+     "Waiver Budget": "$165",
      "Waiver Priority": "14",
-     "Moves": "21",
+     "Moves": "22",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 10:27am EST"
+     "Last League Activity": "Tue Nov 24 4:19am EST"
     },
     {
      "Team Name": "EAH Seniors",
@@ -51,7 +51,7 @@
      "Waiver Priority": "2",
      "Moves": "11",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 4:44am EST"
+     "Last League Activity": "Tue Nov 24 3:06am EST"
     },
     {
      "Team Name": "Kalidou Koulibaly",
@@ -59,9 +59,9 @@
      "Email": "hakankutuk7556@gmail.com",
      "Waiver Budget": "$155",
      "Waiver Priority": "4",
-     "Moves": "15",
+     "Moves": "16",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 3:19am EST"
+     "Last League Activity": "Tue Nov 24 4:19am EST"
     },
     {
      "Team Name": "Kassablancas",
@@ -139,9 +139,9 @@
      "Email": "mast3rly@gmail.com",
      "Waiver Budget": "$160",
      "Waiver Priority": "8",
-     "Moves": "18",
+     "Moves": "19",
      "Trades": "2",
-     "Last League Activity": "Mon Nov 23 2:16pm EST"
+     "Last League Activity": "Tue Nov 24 4:23am EST"
     },
     {
      "Team Name": "Suhayy31",
@@ -171,7 +171,7 @@
      "Waiver Priority": "6",
      "Moves": "25",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 2:46pm EST"
+     "Last League Activity": "Tue Nov 24 4:20am EST"
     }
    ]
   }

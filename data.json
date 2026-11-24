@@ -1467,7 +1467,7 @@
   },
   "6": {
    "label": "Hafta 6 (23-29 Kasım)",
-   "updated": "24 Kasım 2026, 09:56 (23 Kasım maçları dahil)",
+   "updated": "24 Kasım 2026, 13:55 (23 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1484,7 +1484,7 @@
      "blk": 2,
      "to": 20,
      "games_played": 9,
-     "games_total": 41
+     "games_total": 43
     },
     {
      "team": "M. Sucks",
@@ -1518,7 +1518,7 @@
      "blk": 5,
      "to": 15,
      "games_played": 8,
-     "games_total": 42
+     "games_total": 36
     },
     {
      "team": "Kreuzberg Boys",
@@ -1569,7 +1569,7 @@
      "blk": 8,
      "to": 13,
      "games_played": 9,
-     "games_total": 33
+     "games_total": 42
     },
     {
      "team": "Kalidou Koulibaly",
@@ -1603,7 +1603,7 @@
      "blk": 3,
      "to": 19,
      "games_played": 10,
-     "games_total": 38
+     "games_total": 41
     },
     {
      "team": "Kyojins on Rumbling",
@@ -1637,7 +1637,7 @@
      "blk": 1,
      "to": 15,
      "games_played": 10,
-     "games_total": 41
+     "games_total": 44
     },
     {
      "team": "Los Gerseii",
@@ -1654,7 +1654,7 @@
      "blk": 6,
      "to": 11,
      "games_played": 10,
-     "games_total": 41
+     "games_total": 43
     },
     {
      "team": "Yukatel Metin Akdülger",
@@ -1671,7 +1671,7 @@
      "blk": 5,
      "to": 8,
      "games_played": 6,
-     "games_total": 30
+     "games_total": 32
     },
     {
      "team": "Normal MAFIA",
@@ -1688,7 +1688,7 @@
      "blk": 2,
      "to": 9,
      "games_played": 7,
-     "games_total": 28
+     "games_total": 31
     },
     {
      "team": "Suhayy31",
@@ -1739,7 +1739,7 @@
      "blk": 7,
      "to": 16,
      "games_played": 7,
-     "games_total": 37
+     "games_total": 39
     }
    ],
    "pairs": [
