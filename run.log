@@ -1,7 +1,17 @@
+Uyari: / HTTP 302 yonlendirme dongusu; 30 sn sonra tekrar denenecek.
 Guncel hafta: 6
-Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 25 Kasım 2026, 10:01 (24 Kasım maçları dahil)
+Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 25 Kasım 2026, 20:22 (24 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 0 yeni kayit eklendi.
+Islemler: 9 yeni kayit eklendi.
+  + {"time": "2026-11-25 18:16", "team": "Normal MAFIA", "type": "add/drop", "add": ["R. Williams III"], "drop": ["R. Kalkbrenner"], "pos": "C / C", "source": "FA"}
+  + {"time": "2026-11-25 17:08", "team": "Pickle Men", "type": "add/drop", "add": ["O. Ighodaro"], "drop": ["B. Scheierman"], "pos": "C / SG,SF", "source": "FA"}
+  + {"time": "2026-11-25 15:16", "team": "EAH Seniors", "type": "add/drop", "add": ["K. Porter Jr."], "drop": ["C. Kispert"], "pos": "PG,SG / SG,SF", "source": "FA"}
+  + {"time": "2026-11-25 12:30", "team": "Splash Brothers", "type": "add", "add": ["C. Anderson"], "drop": [], "pos": "PG", "source": "FA"}
+  + {"time": "2026-11-25 12:20", "team": "EAH Seniors", "type": "add/drop", "add": ["D. Wade"], "drop": ["T. Proctor"], "pos": "SF,PF / PG,SG", "faab": 5, "source": "W"}
+  + {"time": "2026-11-25 12:20", "team": "Normal MAFIA", "type": "add/drop", "add": ["L. Dort"], "drop": ["Q. Jackson"], "pos": "SG,SF / PG,SG", "faab": 13, "source": "W"}
+  + {"time": "2026-11-25 12:20", "team": "Normal MAFIA", "type": "add/drop", "add": ["B. Coulibaly"], "drop": ["M. Robinson"], "pos": "SG,SF / C", "faab": 23, "source": "W"}
+  + {"time": "2026-11-25 12:20", "team": "HobaKumpo", "type": "drop", "add": [], "drop": ["R. Sheppard"], "pos": "PG,SG"}
+  + {"time": "2026-11-25 11:51", "team": "Suhayy31", "type": "add/drop", "add": ["L. Kornet"], "drop": ["H. Jones"], "pos": "C / SG,SF", "source": "FA"}
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
 Draft: 208 secim yazildi.
 Kadro Pickle Men: 16 oyuncu, IL: ['Norman Powell', 'Evan Mobley', 'Caleb Wilson']
@@ -24,13 +34,13 @@ yoneticiler: 16 satir.
 takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: 40 satir.
-Yahoo sakatliklar: 93 kayit.
-Gunluk kadro 2026-11-25: 16 takim, 145 maci olan oyuncu.
+Yahoo sakatliklar: 94 kayit.
+Gunluk kadro 2026-11-25: 16 takim, 148 maci olan oyuncu.
 Gunluk kadro 2026-11-26: 16 takim, 0 maci olan oyuncu.
-Gunluk kadro 2026-11-27: 16 takim, 181 maci olan oyuncu.
-Gunluk kadro 2026-11-28: 16 takim, 75 maci olan oyuncu.
-Gunluk kadro 2026-11-29: 16 takim, 167 maci olan oyuncu.
-Gunluk kadro 2026-11-30: 16 takim, 107 maci olan oyuncu.
+Gunluk kadro 2026-11-27: 16 takim, 182 maci olan oyuncu.
+Gunluk kadro 2026-11-28: 16 takim, 76 maci olan oyuncu.
+Gunluk kadro 2026-11-29: 16 takim, 166 maci olan oyuncu.
+Gunluk kadro 2026-11-30: 16 takim, 106 maci olan oyuncu.
 Gunluk kadro 2026-12-01: 16 takim, 135 maci olan oyuncu.
 Gunluk kadro 2026-12-02: 16 takim, 144 maci olan oyuncu.
 Fikstur: {'6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers', '9': 'Kyojins on Rumbling'}
@@ -40,6 +50,5 @@ Oyuncular son14_ort: 443 oyuncu (243 kadrolu) yazildi.
 Oyuncular son7_ort: 443 oyuncu (243 kadrolu) yazildi.
 Oyuncular projeksiyon_kalan: 443 oyuncu (243 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
-Box score 2026-11-24: 3 mac.
 Gamelog: 36 gun, 501 oyuncu.
-Sakatliklar: 93 kayit.
+Sakatliklar: 94 kayit.

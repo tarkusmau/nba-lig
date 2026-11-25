@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 10:01",
+ "updated": "2026-11-25 20:22",
  "tables": [
   {
    "headers": [
@@ -37,11 +37,11 @@
      "Team Name": "EAH Seniors",
      "Manager": "anıl",
      "Email": "kantutancerrah@gmail.com",
-     "Waiver Budget": "$174",
+     "Waiver Budget": "$169",
      "Waiver Priority": "3",
-     "Moves": "17",
+     "Moves": "19",
      "Trades": "0",
-     "Last League Activity": "Tue Nov 24 11:42pm EST"
+     "Last League Activity": "Wed Nov 25 7:16am EST"
     },
     {
      "Team Name": "HobaKumpo",
@@ -50,8 +50,8 @@
      "Waiver Budget": "$175",
      "Waiver Priority": "2",
      "Moves": "11",
-     "Trades": "0",
-     "Last League Activity": "Tue Nov 24 3:06am EST"
+     "Trades": "1",
+     "Last League Activity": "Wed Nov 25 4:20am EST"
     },
     {
      "Team Name": "Kalidou Koulibaly",
@@ -117,11 +117,11 @@
      "Team Name": "Normal MAFIA",
      "Manager": "mafia16",
      "Email": "omercanulucay@yahoo.com",
-     "Waiver Budget": "$169",
+     "Waiver Budget": "$133",
      "Waiver Priority": "9",
-     "Moves": "20",
+     "Moves": "23",
      "Trades": "0",
-     "Last League Activity": "Tue Nov 24 6:31am EST"
+     "Last League Activity": "Wed Nov 25 10:16am EST"
     },
     {
      "Team Name": "Pickle Men",
@@ -129,9 +129,9 @@
      "Email": "sergendevran@yahoo.com",
      "Waiver Budget": "$198",
      "Waiver Priority": "11",
-     "Moves": "15",
+     "Moves": "16",
      "Trades": "0",
-     "Last League Activity": "Sun Nov 22 11:11am EST"
+     "Last League Activity": "Wed Nov 25 9:08am EST"
     },
     {
      "Team Name": "Splash Brothers",
@@ -139,9 +139,9 @@
      "Email": "mast3rly@gmail.com",
      "Waiver Budget": "$160",
      "Waiver Priority": "8",
-     "Moves": "19",
-     "Trades": "2",
-     "Last League Activity": "Tue Nov 24 4:23am EST"
+     "Moves": "20",
+     "Trades": "3",
+     "Last League Activity": "Wed Nov 25 4:32am EST"
     },
     {
      "Team Name": "Suhayy31",
@@ -149,9 +149,9 @@
      "Email": "eymenfrnc@gmail.com",
      "Waiver Budget": "$183",
      "Waiver Priority": "16",
-     "Moves": "19",
+     "Moves": "20",
      "Trades": "0",
-     "Last League Activity": "Tue Nov 24 2:54pm EST"
+     "Last League Activity": "Wed Nov 25 3:51am EST"
     },
     {
      "Team Name": "tarkus maurelius",
@@ -171,7 +171,7 @@
      "Waiver Priority": "6",
      "Moves": "27",
      "Trades": "0",
-     "Last League Activity": "Tue Nov 24 6:10pm EST"
+     "Last League Activity": "Wed Nov 25 4:10am EST"
     }
    ]
   }

@@ -1467,7 +1467,7 @@
   },
   "6": {
    "label": "Hafta 6 (23-29 Kasım)",
-   "updated": "25 Kasım 2026, 10:01 (24 Kasım maçları dahil)",
+   "updated": "25 Kasım 2026, 20:22 (24 Kasım maçları dahil)",
    "teams": [
     {
      "team": "Pickle Men",
@@ -1484,7 +1484,7 @@
      "blk": 4,
      "to": 27,
      "games_played": 13,
-     "games_total": 41
+     "games_total": 42
     },
     {
      "team": "M. Sucks",
@@ -1569,7 +1569,7 @@
      "blk": 10,
      "to": 16,
      "games_played": 11,
-     "games_total": 42
+     "games_total": 34
     },
     {
      "team": "Kalidou Koulibaly",
@@ -1637,7 +1637,7 @@
      "blk": 2,
      "to": 21,
      "games_played": 12,
-     "games_total": 44
+     "games_total": 43
     },
     {
      "team": "Los Gerseii",
@@ -1671,7 +1671,7 @@
      "blk": 7,
      "to": 14,
      "games_played": 10,
-     "games_total": 32
+     "games_total": 34
     },
     {
      "team": "Normal MAFIA",
@@ -1688,7 +1688,7 @@
      "blk": 2,
      "to": 17,
      "games_played": 10,
-     "games_total": 27
+     "games_total": 32
     },
     {
      "team": "Suhayy31",
@@ -1705,7 +1705,7 @@
      "blk": 7,
      "to": 14,
      "games_played": 11,
-     "games_total": 33
+     "games_total": 38
     },
     {
      "team": "tarkus maurelius",

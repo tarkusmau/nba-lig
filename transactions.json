@@ -1,4 +1,13 @@
 [
+  {"time":"2026-11-25 18:16","team":"Normal MAFIA","type":"add/drop","add":["R. Williams III"],"drop":["R. Kalkbrenner"],"pos":"C / C","source":"FA"},
+  {"time":"2026-11-25 17:08","team":"Pickle Men","type":"add/drop","add":["O. Ighodaro"],"drop":["B. Scheierman"],"pos":"C / SG,SF","source":"FA"},
+  {"time":"2026-11-25 15:16","team":"EAH Seniors","type":"add/drop","add":["K. Porter Jr."],"drop":["C. Kispert"],"pos":"PG,SG / SG,SF","source":"FA"},
+  {"time":"2026-11-25 12:30","team":"Splash Brothers","type":"add","add":["C. Anderson"],"drop":[],"pos":"PG","source":"FA"},
+  {"time":"2026-11-25 12:20","team":"EAH Seniors","type":"add/drop","add":["D. Wade"],"drop":["T. Proctor"],"pos":"SF,PF / PG,SG","faab":5,"source":"W"},
+  {"time":"2026-11-25 12:20","team":"Normal MAFIA","type":"add/drop","add":["L. Dort"],"drop":["Q. Jackson"],"pos":"SG,SF / PG,SG","faab":13,"source":"W"},
+  {"time":"2026-11-25 12:20","team":"Normal MAFIA","type":"add/drop","add":["B. Coulibaly"],"drop":["M. Robinson"],"pos":"SG,SF / C","faab":23,"source":"W"},
+  {"time":"2026-11-25 12:20","team":"HobaKumpo","type":"drop","add":[],"drop":["R. Sheppard"],"pos":"PG,SG"},
+  {"time":"2026-11-25 11:51","team":"Suhayy31","type":"add/drop","add":["L. Kornet"],"drop":["H. Jones"],"pos":"C / SG,SF","source":"FA"},
   {"time":"2026-11-25 02:10","team":"Yukatel Metin Akdülger","type":"add","add":["K. Murray"],"drop":[],"pos":"SG,SF","source":"FA"},
   {"time":"2026-11-25 01:56","team":"Yukatel Metin Akdülger","type":"add/drop","add":["D. DiVincenzo"],"drop":["B. Stirtz"],"pos":"SG,SF / PG","source":"FA"},
   {"time":"2026-11-25 00:33","team":"Kalidou Koulibaly","type":"add/drop","add":["J. Green"],"drop":["Z. Collins"],"pos":"SG,SF / C","source":"FA"},

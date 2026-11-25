@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-25 10:01",
+"updated": "2026-11-25 20:22",
 "source": "ESPN",
 "injuries": [
 {
@@ -444,6 +444,15 @@
 "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced."
 },
 {
+"name": "Julian Reese",
+"team": "New Orleans Pelicans",
+"status": "Day-To-Day",
+"date": "2026-11-25T16:11Z",
+"return": "2026-11-25",
+"type": "Knee",
+"note": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
+},
+{
 "name": "Trendon Watford",
 "team": "New Orleans Pelicans",
 "status": "Out",
@@ -681,10 +690,10 @@
 "name": "Maxime Raynaud",
 "team": "Sacramento Kings",
 "status": "Out",
-"date": "2026-11-25T04:21Z",
+"date": "2026-11-25T16:25Z",
 "return": "2026-12-02",
 "type": "Knee",
-"note": "Raynaud (knee) is out for Wednesday's game against the Warriors."
+"note": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
 },
 {
 "name": "Ben Simmons",
