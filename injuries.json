@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-25 04:25",
+"updated": "2026-11-25 10:01",
 "source": "ESPN",
 "injuries": [
 {
@@ -163,15 +163,6 @@
 "return": "2026-11-27",
 "type": "Groin",
 "note": "Lawal (groin) is out for Tuesday's game against Denver."
-},
-{
-"name": "P.J. Washington",
-"team": "Dallas Mavericks",
-"status": "Day-To-Day",
-"date": "2026-11-23T23:21Z",
-"return": "2026-11-24",
-"type": "Illness",
-"note": "Washington (illness) is questionable for Tuesday's game against the Nuggets."
 },
 {
 "name": "Dereck Lively II",
@@ -690,10 +681,10 @@
 "name": "Maxime Raynaud",
 "team": "Sacramento Kings",
 "status": "Out",
-"date": "2026-11-18T05:54Z",
-"return": "2026-11-25",
+"date": "2026-11-25T04:21Z",
+"return": "2026-12-02",
 "type": "Knee",
-"note": "Raynaud (knee) will remain on the inactive list for Wednesday's game against the Suns."
+"note": "Raynaud (knee) is out for Wednesday's game against the Warriors."
 },
 {
 "name": "Ben Simmons",
@@ -705,22 +696,22 @@
 "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
 },
 {
-"name": "Victor Wembanyama",
-"team": "San Antonio Spurs",
-"status": "Day-To-Day",
-"date": "2026-11-24T06:06Z",
-"return": "2026-11-25",
-"type": "Back",
-"note": "Wembanyama (back) won't play Monday against the Kings, Jeff McDonald of the San Antonio Express-News reports."
-},
-{
 "name": "De'Aaron Fox",
 "team": "San Antonio Spurs",
 "status": "Day-To-Day",
-"date": "2026-11-24T06:06Z",
+"date": "2026-11-25T01:27Z",
 "return": "2026-11-25",
 "type": "Lower Leg",
-"note": "Fox (shin) has been ruled out for Monday's game against the Kings, Jeff McDonald of the San Antonio Express-News reports."
+"note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers."
+},
+{
+"name": "Victor Wembanyama",
+"team": "San Antonio Spurs",
+"status": "Day-To-Day",
+"date": "2026-11-25T01:23Z",
+"return": "2026-11-25",
+"type": "Back",
+"note": "Wembanyama (back) is questionable for Wednesday's game in Portland."
 },
 {
 "name": "Dylan Harper",
