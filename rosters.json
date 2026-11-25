@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 20:55",
+ "updated": "2026-11-25 04:25",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -186,7 +186,7 @@
     "id": 10579,
     "nba": "OKC",
     "pos": "C",
-    "status": "Q",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -420,6 +420,7 @@
     "id": 5843,
     "nba": "NYK",
     "pos": "SG,SF",
+    "status": "Q",
     "draft": 16
    },
    {
@@ -763,12 +764,12 @@
     "draft": 10
    },
    {
-    "name": "Zach Collins",
+    "name": "Yves Missi",
     "slot": "C",
-    "id": 5823,
-    "nba": "CHI",
+    "id": 10289,
+    "nba": "NOP",
     "pos": "C",
-    "draft": "FA"
+    "draft": 1
    },
    {
     "name": "Keldon Johnson",
@@ -779,12 +780,12 @@
     "draft": 1
    },
    {
-    "name": "Yves Missi",
+    "name": "Javonte Green",
     "slot": "Util",
-    "id": 10289,
-    "nba": "NOP",
-    "pos": "C",
-    "draft": 1
+    "id": 6269,
+    "nba": "DET",
+    "pos": "SG,SF",
+    "draft": "FA"
    },
    {
     "name": "Will Richard",
@@ -893,6 +894,7 @@
     "id": 6402,
     "nba": "CHI",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -968,7 +970,6 @@
     "id": 5754,
     "nba": "OKC",
     "pos": "SG,SF",
-    "status": "O",
     "draft": 1
    }
   ],
@@ -979,7 +980,7 @@
     "id": 6512,
     "nba": "DET",
     "pos": "PG,SG",
-    "status": "P",
+    "status": "O",
     "draft": 66
    },
    {
@@ -1543,7 +1544,7 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
-    "status": "Q",
+    "status": "D",
     "draft": 20
    },
    {
@@ -1560,7 +1561,7 @@
     "id": 10476,
     "nba": "CHA",
     "pos": "C",
-    "status": "Q",
+    "status": "D",
     "draft": "FA"
    },
    {
@@ -1773,28 +1774,29 @@
     "draft": 38
    },
    {
-    "name": "Walker Kessler",
+    "name": "P.J. Washington",
     "slot": "C",
-    "id": 6712,
-    "nba": "LAL",
-    "pos": "C",
-    "draft": 29
-   },
-   {
-    "name": "Y. Konan Niederhäuser",
-    "slot": "C",
-    "id": 10441,
-    "nba": "LAC",
-    "pos": "C",
-    "draft": "FA"
+    "id": 6174,
+    "nba": "DAL",
+    "pos": "PF,C",
+    "status": "Q",
+    "draft": 1
    },
    {
     "name": "John Collins",
-    "slot": "Util",
+    "slot": "C",
     "id": 5832,
     "nba": "DET",
     "pos": "PF,C",
     "draft": 8
+   },
+   {
+    "name": "Walker Kessler",
+    "slot": "Util",
+    "id": 6712,
+    "nba": "LAL",
+    "pos": "C",
+    "draft": 29
    },
    {
     "name": "Terrence Shannon Jr.",
@@ -1827,15 +1829,6 @@
     "nba": "NYK",
     "pos": "SF,PF",
     "draft": 19
-   },
-   {
-    "name": "P.J. Washington",
-    "slot": "IL",
-    "id": 6174,
-    "nba": "DAL",
-    "pos": "PF,C",
-    "status": "Q",
-    "draft": 1
    },
    {
     "name": "Austin Reaves",
@@ -1976,7 +1969,7 @@
     "id": 5836,
     "nba": "NYK",
     "pos": "SF,PF",
-    "status": "Q",
+    "status": "O",
     "draft": 20
    }
   ],
@@ -1998,12 +1991,12 @@
     "draft": "FA"
    },
    {
-    "name": "Bennett Stirtz",
+    "name": "Darryn Peterson",
     "slot": "G",
-    "id": 10573,
-    "nba": "OKC",
-    "pos": "PG",
-    "draft": "FA"
+    "id": 10590,
+    "nba": "UTA",
+    "pos": "PG,SG",
+    "draft": 7
    },
    {
     "name": "Cameron Johnson",
@@ -2035,6 +2028,7 @@
     "id": 5432,
     "nba": "NYK",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 47
    },
    {
@@ -2051,6 +2045,7 @@
     "id": 10571,
     "nba": "GSW",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 5
    },
    {
@@ -2060,14 +2055,6 @@
     "nba": "NOP",
     "pos": "PG,SG",
     "draft": 1
-   },
-   {
-    "name": "Darryn Peterson",
-    "slot": "BN",
-    "id": 10590,
-    "nba": "UTA",
-    "pos": "PG,SG",
-    "draft": 7
    },
    {
     "name": "Devin Booker",
@@ -2084,6 +2071,23 @@
     "nba": "SAC",
     "pos": "SF,PF",
     "draft": 4
+   },
+   {
+    "name": "Kris Murray",
+    "slot": "BN",
+    "id": 10119,
+    "nba": "MEM",
+    "pos": "SG,SF",
+    "draft": "FA"
+   },
+   {
+    "name": "Donte DiVincenzo",
+    "slot": "IL",
+    "id": 6028,
+    "nba": "MIN",
+    "pos": "SG,SF",
+    "status": "O",
+    "draft": 1
    },
    {
     "name": "Jimmy Butler III",

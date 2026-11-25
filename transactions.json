@@ -1,4 +1,8 @@
 [
+  {"time":"2026-11-25 02:10","team":"Yukatel Metin Akdülger","type":"add","add":["K. Murray"],"drop":[],"pos":"SG,SF","source":"FA"},
+  {"time":"2026-11-25 01:56","team":"Yukatel Metin Akdülger","type":"add/drop","add":["D. DiVincenzo"],"drop":["B. Stirtz"],"pos":"SG,SF / PG","source":"FA"},
+  {"time":"2026-11-25 00:33","team":"Kalidou Koulibaly","type":"add/drop","add":["J. Green"],"drop":["Z. Collins"],"pos":"SG,SF / C","source":"FA"},
+  {"time":"2026-11-24 22:54","team":"Suhayy31","type":"drop","add":[],"drop":["Y. Konan Niederhäuser"],"pos":"C"},
   {"time":"2026-11-24 12:23","team":"Splash Brothers","type":"add/drop","add":["L. Garza"],"drop":["K. Jakučionis"],"pos":"C / PG,SG","source":"FA"},
   {"time":"2026-11-24 12:19","team":"Kalidou Koulibaly","type":"add","add":["C. Sexton"],"drop":[],"pos":"PG,SG","faab":0,"source":"W"},
   {"time":"2026-11-24 12:19","team":"BÇ","type":"add/drop","add":["M. Brown Jr."],"drop":["G. Santos"],"pos":"PG / SF,PF","faab":35,"source":"W"},
