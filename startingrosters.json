@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 12:52",
+ "updated": "2026-11-26 20:02",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-26": {
@@ -149,6 +149,13 @@
      "pos": "C"
     },
     {
+     "slot": "C",
+     "name": "Jaxson Hayes",
+     "nba": "UTA",
+     "pos": "C",
+     "status": "Q"
+    },
+    {
      "slot": "Util",
      "name": "Jamal Shead",
      "nba": "TOR",
@@ -165,13 +172,6 @@
      "name": "Naji Marshall",
      "nba": "DAL",
      "pos": "SG,SF,PF"
-    },
-    {
-     "slot": "BN",
-     "name": "Jaxson Hayes",
-     "nba": "UTA",
-     "pos": "C",
-     "status": "Q"
     },
     {
      "slot": "BN",
@@ -2095,9 +2095,10 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
-     "pos": "PG,SG"
+     "name": "Collin Sexton",
+     "nba": "LAL",
+     "pos": "PG,SG",
+     "game": "@ SAS 9:30 pm"
     },
     {
      "slot": "SG",
@@ -2108,9 +2109,10 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ BOS 8:00 pm"
     },
     {
      "slot": "SF",
@@ -2134,16 +2136,17 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C",
      "game": "@ LAC 9:30 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "vs BKN 7:30 pm"
     },
     {
      "slot": "Util",
@@ -2161,24 +2164,21 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "vs BKN 7:30 pm"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "@ BOS 8:00 pm"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
-     "pos": "PG,SG",
-     "game": "@ SAS 9:30 pm"
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": "PG,SG"
     },
     {
      "slot": "IL",
@@ -3790,10 +3790,9 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
-     "pos": "PG,SG",
-     "game": "vs PHI 8:30 pm"
+     "name": "Collin Sexton",
+     "nba": "LAL",
+     "pos": "PG,SG"
     },
     {
      "slot": "SG",
@@ -3804,10 +3803,9 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG",
-     "game": "vs PHI 8:30 pm"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "SF",
@@ -3829,16 +3827,15 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C",
-     "game": "vs PHI 8:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
@@ -3854,21 +3851,24 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C",
+     "game": "vs PHI 8:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG",
+     "game": "vs PHI 8:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
-     "pos": "PG,SG"
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": "PG,SG",
+     "game": "vs PHI 8:30 pm"
     },
     {
      "slot": "IL",
@@ -5444,9 +5444,10 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
-     "pos": "PG,SG"
+     "name": "Collin Sexton",
+     "nba": "LAL",
+     "pos": "PG,SG",
+     "game": "@ MEM 4:00 pm"
     },
     {
      "slot": "SG",
@@ -5456,9 +5457,10 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ NYK 6:00 pm"
     },
     {
      "slot": "SF",
@@ -5483,16 +5485,17 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C",
      "game": "@ POR 6:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "vs DEN 6:00 pm"
     },
     {
      "slot": "Util",
@@ -5510,24 +5513,21 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "vs DEN 6:00 pm"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "@ NYK 6:00 pm"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
-     "pos": "PG,SG",
-     "game": "@ MEM 4:00 pm"
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": "PG,SG"
     },
     {
      "slot": "IL",
@@ -7131,10 +7131,10 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
+     "name": "Collin Sexton",
+     "nba": "LAL",
      "pos": "PG,SG",
-     "game": "vs LAL 7:30 pm"
+     "game": "@ HOU 7:30 pm"
     },
     {
      "slot": "SG",
@@ -7145,10 +7145,9 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG",
-     "game": "vs LAL 7:30 pm"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "SF",
@@ -7172,17 +7171,16 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C",
-     "game": "vs LAL 7:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C",
      "game": "@ SAC 10:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
@@ -7200,22 +7198,24 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C",
+     "game": "vs LAL 7:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG",
+     "game": "vs LAL 7:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
+     "name": "Amen Thompson",
+     "nba": "HOU",
      "pos": "PG,SG",
-     "game": "@ HOU 7:30 pm"
+     "game": "vs LAL 7:30 pm"
     },
     {
      "slot": "IL",
@@ -8811,10 +8811,9 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
-     "pos": "PG,SG",
-     "game": "vs TOR 8:30 pm"
+     "name": "Collin Sexton",
+     "nba": "LAL",
+     "pos": "PG,SG"
     },
     {
      "slot": "SG",
@@ -8824,10 +8823,10 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG",
-     "game": "vs TOR 8:30 pm"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "@ MIA 7:30 pm"
     },
     {
      "slot": "SF",
@@ -8850,16 +8849,16 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C",
-     "game": "vs TOR 8:30 pm"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "@ HOU 8:30 pm"
     },
     {
      "slot": "Util",
@@ -8875,23 +8874,24 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "@ HOU 8:30 pm"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C",
+     "game": "vs TOR 8:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "@ MIA 7:30 pm"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG",
+     "game": "vs TOR 8:30 pm"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
-     "pos": "PG,SG"
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": "PG,SG",
+     "game": "vs TOR 8:30 pm"
     },
     {
      "slot": "IL",
@@ -10498,9 +10498,10 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
-     "pos": "PG,SG"
+     "name": "Collin Sexton",
+     "nba": "LAL",
+     "pos": "PG,SG",
+     "game": "@ NOP 8:00 pm"
     },
     {
      "slot": "SG",
@@ -10511,9 +10512,9 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF"
     },
     {
      "slot": "SF",
@@ -10537,16 +10538,16 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C",
      "game": "vs LAL 8:00 pm"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C"
     },
     {
      "slot": "Util",
@@ -10563,22 +10564,21 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
-     "pos": "PG,SG",
-     "game": "@ NOP 8:00 pm"
+     "name": "Amen Thompson",
+     "nba": "HOU",
+     "pos": "PG,SG"
     },
     {
      "slot": "IL",
@@ -12164,8 +12164,8 @@
    "Kalidou Koulibaly": [
     {
      "slot": "PG",
-     "name": "Amen Thompson",
-     "nba": "HOU",
+     "name": "Collin Sexton",
+     "nba": "LAL",
      "pos": "PG,SG"
     },
     {
@@ -12176,9 +12176,10 @@
     },
     {
      "slot": "G",
-     "name": "Fred VanVleet",
-     "nba": "HOU",
-     "pos": "PG"
+     "name": "Dyson Daniels",
+     "nba": "ATL",
+     "pos": "SG,SF",
+     "game": "vs IND 7:00 pm"
     },
     {
      "slot": "SF",
@@ -12200,15 +12201,16 @@
     },
     {
      "slot": "C",
-     "name": "Jabari Smith Jr.",
-     "nba": "HOU",
-     "pos": "PF,C"
-    },
-    {
-     "slot": "C",
      "name": "Yves Missi",
      "nba": "NOP",
      "pos": "C"
+    },
+    {
+     "slot": "C",
+     "name": "Scottie Barnes",
+     "nba": "TOR",
+     "pos": "SF,PF,C",
+     "game": "@ SAS 8:00 pm"
     },
     {
      "slot": "Util",
@@ -12225,22 +12227,20 @@
     },
     {
      "slot": "BN",
-     "name": "Scottie Barnes",
-     "nba": "TOR",
-     "pos": "SF,PF,C",
-     "game": "@ SAS 8:00 pm"
+     "name": "Jabari Smith Jr.",
+     "nba": "HOU",
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
-     "name": "Dyson Daniels",
-     "nba": "ATL",
-     "pos": "SG,SF",
-     "game": "vs IND 7:00 pm"
+     "name": "Fred VanVleet",
+     "nba": "HOU",
+     "pos": "PG"
     },
     {
      "slot": "BN",
-     "name": "Collin Sexton",
-     "nba": "LAL",
+     "name": "Amen Thompson",
+     "nba": "HOU",
      "pos": "PG,SG"
     },
     {

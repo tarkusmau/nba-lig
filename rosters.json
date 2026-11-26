@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 12:52",
+ "updated": "2026-11-26 20:02",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -275,6 +275,15 @@
     "draft": 18
    },
    {
+    "name": "Jaxson Hayes",
+    "slot": "C",
+    "id": 6170,
+    "nba": "UTA",
+    "pos": "C",
+    "status": "Q",
+    "draft": "FA"
+   },
+   {
     "name": "Jamal Shead",
     "slot": "Util",
     "id": 10333,
@@ -297,15 +306,6 @@
     "nba": "DAL",
     "pos": "SG,SF,PF",
     "draft": 1
-   },
-   {
-    "name": "Jaxson Hayes",
-    "slot": "BN",
-    "id": 6170,
-    "nba": "UTA",
-    "pos": "C",
-    "status": "Q",
-    "draft": "FA"
    },
    {
     "name": "Kingston Flemings",

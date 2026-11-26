@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-26 12:52",
+"updated": "2026-11-26 20:02",
 "source": "ESPN",
 "injuries": [
 {
@@ -192,6 +192,15 @@
 "note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
 },
 {
+"name": "Jalen Duren",
+"team": "Detroit Pistons",
+"status": "Out",
+"date": "2026-11-26T15:31Z",
+"return": "2026-11-30",
+"type": "Hamstring",
+"note": "Detroit recalled Duren (hamstring) from the G League's Motor City Cruise on Wednesday."
+},
+{
 "name": "Cade Cunningham",
 "team": "Detroit Pistons",
 "status": "Day-To-Day",
@@ -226,15 +235,6 @@
 "return": "2026-11-27",
 "type": "Quadriceps",
 "note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports."
-},
-{
-"name": "Jalen Duren",
-"team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-24T18:27Z",
-"return": "2026-11-30",
-"type": "Hamstring",
-"note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports."
 },
 {
 "name": "Stephen Curry",
@@ -568,6 +568,15 @@
 "return": "2027-01-02",
 "type": "Knee",
 "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports."
+},
+{
+"name": "Colin Castleton",
+"team": "Orlando Magic",
+"status": "Day-To-Day",
+"date": "2026-11-26T16:10Z",
+"return": "2026-11-27",
+"type": "Calf",
+"note": "Castleton totaled five points (2-4 FG, 1-1 3Pt) and four rebounds in seven minutes during Tuesday's 132-116 preseason win over the Cavaliers."
 },
 {
 "name": "Jonathan Isaac",
