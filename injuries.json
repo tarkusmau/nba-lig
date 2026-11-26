@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-25 20:22",
+"updated": "2026-11-26 03:59",
 "source": "ESPN",
 "injuries": [
 {
@@ -68,11 +68,20 @@
 {
 "name": "Ryan Kalkbrenner",
 "team": "Charlotte Hornets",
-"status": "Day-To-Day",
-"date": "2026-11-24T22:33Z",
-"return": "2026-11-25",
+"status": "Out",
+"date": "2026-11-25T17:41Z",
+"return": "2026-11-28",
 "type": "Hip",
-"note": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls."
+"note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
+},
+{
+"name": "Grayson Allen",
+"team": "Charlotte Hornets",
+"status": "Out",
+"date": "2026-11-25T17:39Z",
+"return": "2026-11-28",
+"type": "Concussion",
+"note": "Allen (concussion) has been ruled out for Wednesday's game against Chicago."
 },
 {
 "name": "Dennis Schroder",
@@ -82,24 +91,6 @@
 "return": "2026-12-12",
 "type": "Hamstring",
 "note": "Schroder (hamstring) is out for Wednesday's game the Bulls."
-},
-{
-"name": "Sion James",
-"team": "Charlotte Hornets",
-"status": "Day-To-Day",
-"date": "2026-11-24T22:30Z",
-"return": "2026-11-25",
-"type": "Undisclosed",
-"note": "James is probable for Wednesday's game against the Bulls due to general soreness."
-},
-{
-"name": "Grayson Allen",
-"team": "Charlotte Hornets",
-"status": "Out",
-"date": "2026-11-24T22:29Z",
-"return": "2026-11-25",
-"type": "Concussion",
-"note": "Allen (concussion) is listed as questionable for Wednesday's game versus Chicago."
 },
 {
 "name": "Kon Knueppel",
@@ -113,11 +104,11 @@
 {
 "name": "Jalen Smith",
 "team": "Chicago Bulls",
-"status": "Day-To-Day",
-"date": "2026-11-24T18:21Z",
-"return": "2026-11-25",
+"status": "Out",
+"date": "2026-11-25T22:07Z",
+"return": "2026-11-28",
 "type": "Illness",
-"note": "Smith (illness) is listed as questionable for Wednesday's game against the Hornets."
+"note": "Smith (illness) is listed as out for Wednesday's game against Charlotte."
 },
 {
 "name": "Norman Powell",
@@ -194,8 +185,8 @@
 {
 "name": "Cade Cunningham",
 "team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-24T23:36Z",
+"status": "Day-To-Day",
+"date": "2026-11-25T19:00Z",
 "return": "2026-11-27",
 "type": "Knee",
 "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando."
@@ -357,10 +348,10 @@
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
 "status": "Out",
-"date": "2026-11-24T01:31Z",
+"date": "2026-11-25T20:33Z",
 "return": "2026-11-27",
 "type": "Heel",
-"note": "Coach JJ Redick stated Monday that the team is optimistic Reaves (heel) will return for Friday's game against San Antonio, Daniel Starkand of LakersNation.com reports."
+"note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports."
 },
 {
 "name": "Scotty Pippen Jr.",
@@ -406,15 +397,6 @@
 "return": "2026-12-01",
 "type": "Knee",
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
-},
-{
-"name": "Giannis Antetokounmpo",
-"team": "Miami Heat",
-"status": "Day-To-Day",
-"date": "2026-11-24T22:07Z",
-"return": "2026-11-25",
-"type": "Groin",
-"note": "Antetokounmpo (groin) is questionable for Wednesday's game in Philadelphia."
 },
 {
 "name": "Donte DiVincenzo",
@@ -480,13 +462,22 @@
 "note": "Murray (ankle) is out for Friday's game against Memphis."
 },
 {
+"name": "OG Anunoby",
+"team": "New York Knicks",
+"status": "Out",
+"date": "2026-11-25T23:19Z",
+"return": "2026-11-27",
+"type": "Calf",
+"note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports."
+},
+{
 "name": "Miles McBride",
 "team": "New York Knicks",
-"status": "Day-To-Day",
-"date": "2026-11-24T21:56Z",
-"return": "2026-11-25",
+"status": "Out",
+"date": "2026-11-25T17:57Z",
+"return": "2026-11-27",
 "type": "Groin",
-"note": "McBride (adductor) is listed as questionable for Wednesday's game versus Cleveland."
+"note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
 },
 {
 "name": "Jordan Clarkson",
@@ -496,33 +487,6 @@
 "return": "2026-11-27",
 "type": "Foot",
 "note": "Clarkson (foot) is out for Wednesday's game against Cleveland."
-},
-{
-"name": "Josh Hart",
-"team": "New York Knicks",
-"status": "Day-To-Day",
-"date": "2026-11-24T21:54Z",
-"return": "2026-11-25",
-"type": "Shoulder",
-"note": "Hart (shoulder) is listed as questionable for Wednesday's game against Cleveland."
-},
-{
-"name": "OG Anunoby",
-"team": "New York Knicks",
-"status": "Out",
-"date": "2026-11-24T21:53Z",
-"return": "2026-11-27",
-"type": "Calf",
-"note": "Anunoby (calf) is out for Wednesday's game against Cleveland."
-},
-{
-"name": "Karl-Anthony Towns",
-"team": "New York Knicks",
-"status": "Day-To-Day",
-"date": "2026-11-24T21:50Z",
-"return": "2026-11-25",
-"type": "Knee",
-"note": "Towns (knee) is questionable for Wednesday's game against Cleveland."
 },
 {
 "name": "Nikola Topic",
@@ -624,13 +588,22 @@
 "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
 },
 {
+"name": "Jaylen Brown",
+"team": "Philadelphia 76ers",
+"status": "Out",
+"date": "2026-11-25T23:30Z",
+"return": "2026-11-27",
+"type": "Hamstring",
+"note": "Brown (hamstring) won't return to Wednesday's game against Miami, Kyle Neubeck of AllPHLY.com reports. He finished with six points (2-8 FG, 0-1 3Pt, 2-2 FT), one rebound and one assist over 17 minutes."
+},
+{
 "name": "Joel Embiid",
 "team": "Philadelphia 76ers",
-"status": "Day-To-Day",
-"date": "2026-11-24T22:09Z",
+"status": "Out",
+"date": "2026-11-25T20:07Z",
 "return": "2026-11-27",
 "type": "Illness",
-"note": "Embiid (illness) is listed as doubtful for Wednesday's game versus Miami."
+"note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports."
 },
 {
 "name": "Ariel Hukporti",
@@ -687,13 +660,22 @@
 "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
 },
 {
+"name": "Zach LaVine",
+"team": "Sacramento Kings",
+"status": "Out",
+"date": "2026-11-25T22:40Z",
+"return": "2026-11-29",
+"type": "Knee",
+"note": "LaVine (knee) is listed as out for Wednesday's game versus the Warriors."
+},
+{
 "name": "Maxime Raynaud",
 "team": "Sacramento Kings",
 "status": "Out",
-"date": "2026-11-25T16:25Z",
+"date": "2026-11-25T21:38Z",
 "return": "2026-12-02",
 "type": "Knee",
-"note": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
+"note": "Raynaud (knee) was recalled from the G League's Stockton Kings on Wednesday, Marc J. Spears of ESPN.com reports."
 },
 {
 "name": "Ben Simmons",
