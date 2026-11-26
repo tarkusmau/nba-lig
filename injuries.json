@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-26 03:59",
+"updated": "2026-11-26 12:52",
 "source": "ESPN",
 "injuries": [
 {
@@ -57,6 +57,15 @@
 "note": "Robinson (illness) is out for Tuesday's game against Washington, Taylor Snow of the Celtics' official site reports."
 },
 {
+"name": "Moritz Wagner",
+"team": "Brooklyn Nets",
+"status": "Out",
+"date": "2026-11-26T02:48Z",
+"return": "2026-11-27",
+"type": "Knee",
+"note": "Wagner (knee) will not return to Wednesday's game against the Bucks, C.J. Holmes of the New York Daily News reports."
+},
+{
 "name": "Nolan Traore",
 "team": "Brooklyn Nets",
 "status": "Out",
@@ -68,8 +77,8 @@
 {
 "name": "Ryan Kalkbrenner",
 "team": "Charlotte Hornets",
-"status": "Out",
-"date": "2026-11-25T17:41Z",
+"status": "Day-To-Day",
+"date": "2026-11-26T05:30Z",
 "return": "2026-11-28",
 "type": "Hip",
 "note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
@@ -104,8 +113,8 @@
 {
 "name": "Jalen Smith",
 "team": "Chicago Bulls",
-"status": "Out",
-"date": "2026-11-25T22:07Z",
+"status": "Day-To-Day",
+"date": "2026-11-26T05:29Z",
 "return": "2026-11-28",
 "type": "Illness",
 "note": "Smith (illness) is listed as out for Wednesday's game against Charlotte."
@@ -228,31 +237,13 @@
 "note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports."
 },
 {
-"name": "Yaxel Lendeborg",
-"team": "Golden State Warriors",
-"status": "Day-To-Day",
-"date": "2026-11-24T23:20Z",
-"return": "2026-11-25",
-"type": "Illness",
-"note": "Lendeborg is questionable for Wednesday's game against the Kings with an illness."
-},
-{
-"name": "Brandon Williams",
-"team": "Golden State Warriors",
-"status": "Out",
-"date": "2026-11-24T20:58Z",
-"return": "2026-11-25",
-"type": "Hamstring",
-"note": "Head coach Steve Kerr said Tuesday that Williams (hamstring) is questionable to play Wednesday against the Kings, per Dalton Johnson of NBC Sports Bay Area."
-},
-{
 "name": "Stephen Curry",
 "team": "Golden State Warriors",
 "status": "Out",
-"date": "2026-11-12T17:03Z",
+"date": "2026-11-26T01:36Z",
 "return": "2026-12-12",
 "type": "Abdomen",
-"note": "Curry has been diagnosed with an oblique abdominal tear and will be re-evaluated in two weeks, Shams Charania of ESPN reports."
+"note": "Curry (abdomen) will be re-evaluated Friday after Thanksgiving, Anthony Slater of ESPN.com reports."
 },
 {
 "name": "Kristaps Porzingis",
@@ -354,6 +345,15 @@
 "note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports."
 },
 {
+"name": "Zach Edey",
+"team": "Memphis Grizzlies",
+"status": "Day-To-Day",
+"date": "2026-11-26T03:43Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Edey (ankle) did not return to Wednesday's 115-97 win over the Clippers. He finished with seven points (3-4 FG, 1-1 FT), four rebounds, two assists and two blocks across nine minutes."
+},
+{
 "name": "Scotty Pippen Jr.",
 "team": "Memphis Grizzlies",
 "status": "Out",
@@ -399,6 +399,15 @@
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
 },
 {
+"name": "LaMelo Ball",
+"team": "Minnesota Timberwolves",
+"status": "Day-To-Day",
+"date": "2026-11-26T03:37Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Ball (ankle) did not return to Wednesday's 113-106 win over the Thunder."
+},
+{
 "name": "Donte DiVincenzo",
 "team": "Minnesota Timberwolves",
 "status": "Out",
@@ -430,7 +439,7 @@
 "team": "New Orleans Pelicans",
 "status": "Day-To-Day",
 "date": "2026-11-25T16:11Z",
-"return": "2026-11-25",
+"return": "2026-12-01",
 "type": "Knee",
 "note": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
 },
@@ -462,6 +471,24 @@
 "note": "Murray (ankle) is out for Friday's game against Memphis."
 },
 {
+"name": "Miles McBride",
+"team": "New York Knicks",
+"status": "Day-To-Day",
+"date": "2026-11-26T05:31Z",
+"return": "2026-11-27",
+"type": "Groin",
+"note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
+},
+{
+"name": "Andre Drummond",
+"team": "New York Knicks",
+"status": "Day-To-Day",
+"date": "2026-11-26T03:40Z",
+"return": "2026-11-27",
+"type": "Head",
+"note": "Drummond (head) did not return to Wednesday's 121-102 win over the Cavaliers."
+},
+{
 "name": "OG Anunoby",
 "team": "New York Knicks",
 "status": "Out",
@@ -469,15 +496,6 @@
 "return": "2026-11-27",
 "type": "Calf",
 "note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports."
-},
-{
-"name": "Miles McBride",
-"team": "New York Knicks",
-"status": "Out",
-"date": "2026-11-25T17:57Z",
-"return": "2026-11-27",
-"type": "Groin",
-"note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
 },
 {
 "name": "Jordan Clarkson",
@@ -588,22 +606,22 @@
 "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
 },
 {
-"name": "Jaylen Brown",
-"team": "Philadelphia 76ers",
-"status": "Out",
-"date": "2026-11-25T23:30Z",
-"return": "2026-11-27",
-"type": "Hamstring",
-"note": "Brown (hamstring) won't return to Wednesday's game against Miami, Kyle Neubeck of AllPHLY.com reports. He finished with six points (2-8 FG, 0-1 3Pt, 2-2 FT), one rebound and one assist over 17 minutes."
-},
-{
 "name": "Joel Embiid",
 "team": "Philadelphia 76ers",
-"status": "Out",
-"date": "2026-11-25T20:07Z",
+"status": "Day-To-Day",
+"date": "2026-11-26T01:06Z",
 "return": "2026-11-27",
 "type": "Illness",
 "note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports."
+},
+{
+"name": "Jaylen Brown",
+"team": "Philadelphia 76ers",
+"status": "Day-To-Day",
+"date": "2026-11-26T01:06Z",
+"return": "2026-11-27",
+"type": "Hamstring",
+"note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports."
 },
 {
 "name": "Ariel Hukporti",
@@ -662,8 +680,8 @@
 {
 "name": "Zach LaVine",
 "team": "Sacramento Kings",
-"status": "Out",
-"date": "2026-11-25T22:40Z",
+"status": "Day-To-Day",
+"date": "2026-11-26T05:33Z",
 "return": "2026-11-29",
 "type": "Knee",
 "note": "LaVine (knee) is listed as out for Wednesday's game versus the Warriors."
@@ -690,19 +708,10 @@
 "name": "De'Aaron Fox",
 "team": "San Antonio Spurs",
 "status": "Day-To-Day",
-"date": "2026-11-25T01:27Z",
-"return": "2026-11-25",
+"date": "2026-11-26T06:01Z",
+"return": "2026-11-27",
 "type": "Lower Leg",
-"note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers."
-},
-{
-"name": "Victor Wembanyama",
-"team": "San Antonio Spurs",
-"status": "Day-To-Day",
-"date": "2026-11-25T01:23Z",
-"return": "2026-11-25",
-"type": "Back",
-"note": "Wembanyama (back) is questionable for Wednesday's game in Portland."
+"note": "Fox (shin) has been ruled out for Wednesday's game against Portland, Jeff McDonald of the San Antonio Express-News reports."
 },
 {
 "name": "Dylan Harper",

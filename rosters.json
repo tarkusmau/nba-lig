@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 03:59",
+ "updated": "2026-11-26 12:52",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -359,21 +359,20 @@
     "draft": 1
    },
    {
-    "name": "Pelle Larsson",
+    "name": "Josh Hart",
     "slot": "SF",
-    "id": 10312,
-    "nba": "MIA",
+    "id": 5843,
+    "nba": "NYK",
     "pos": "SG,SF",
-    "draft": 1
+    "draft": 16
    },
    {
-    "name": "Jaylen Brown",
+    "name": "Jake LaRavia",
     "slot": "PF",
-    "id": 5602,
-    "nba": "PHI",
-    "pos": "SG,SF,PF",
-    "status": "O",
-    "draft": 31
+    "id": 6709,
+    "nba": "LAL",
+    "pos": "SF,PF",
+    "draft": 1
    },
    {
     "name": "Julius Randle",
@@ -416,14 +415,6 @@
     "draft": 8
    },
    {
-    "name": "Josh Hart",
-    "slot": "BN",
-    "id": 5843,
-    "nba": "NYK",
-    "pos": "SG,SF",
-    "draft": 16
-   },
-   {
     "name": "Ausar Thompson",
     "slot": "BN",
     "id": 10096,
@@ -438,6 +429,23 @@
     "nba": "DET",
     "pos": "SG,SF",
     "draft": "FA"
+   },
+   {
+    "name": "Pelle Larsson",
+    "slot": "BN",
+    "id": 10312,
+    "nba": "MIA",
+    "pos": "SG,SF",
+    "draft": 1
+   },
+   {
+    "name": "Jaylen Brown",
+    "slot": "IL",
+    "id": 5602,
+    "nba": "PHI",
+    "pos": "SG,SF,PF",
+    "status": "Q",
+    "draft": 31
    },
    {
     "name": "Dylan Harper",
@@ -521,6 +529,7 @@
     "id": 10287,
     "nba": "MEM",
     "pos": "C",
+    "status": "Q",
     "draft": 15
    },
    {
@@ -583,6 +592,14 @@
    }
   ],
   "HobaKumpo": [
+   {
+    "name": "Jalen Brunson",
+    "slot": "PG",
+    "id": 6044,
+    "nba": "NYK",
+    "pos": "PG",
+    "draft": 41
+   },
    {
     "name": "Brandin Podziemski",
     "slot": "SG",
@@ -648,16 +665,8 @@
     "draft": 12
    },
    {
-    "name": "Jalen Brunson",
-    "slot": "Util",
-    "id": 6044,
-    "nba": "NYK",
-    "pos": "PG",
-    "draft": 41
-   },
-   {
     "name": "Saddiq Bey",
-    "slot": "BN",
+    "slot": "Util",
     "id": 6411,
     "nba": "NOP",
     "pos": "SF,PF",
@@ -826,7 +835,6 @@
     "id": 6679,
     "nba": "GSW",
     "pos": "PG",
-    "status": "O",
     "draft": "FA"
    },
    {
@@ -894,7 +902,6 @@
     "id": 10094,
     "nba": "SAS",
     "pos": "C",
-    "status": "Q",
     "draft": 90
    },
    {
@@ -906,28 +913,20 @@
     "draft": 17
    },
    {
+    "name": "Allen Graves",
+    "slot": "Util",
+    "id": 10570,
+    "nba": "TOR",
+    "pos": "PF",
+    "draft": "FA"
+   },
+   {
     "name": "Jakob Poeltl",
     "slot": "Util",
     "id": 5640,
     "nba": "TOR",
     "pos": "C",
     "draft": 3
-   },
-   {
-    "name": "Alex Caruso",
-    "slot": "Util",
-    "id": 5754,
-    "nba": "OKC",
-    "pos": "SG,SF",
-    "draft": 1
-   },
-   {
-    "name": "Allen Graves",
-    "slot": "BN",
-    "id": 10570,
-    "nba": "TOR",
-    "pos": "PF",
-    "draft": "FA"
    },
    {
     "name": "Quentin Grimes",
@@ -946,12 +945,11 @@
     "draft": 1
    },
    {
-    "name": "Jalen Smith",
-    "slot": "IL",
-    "id": 6402,
-    "nba": "CHI",
-    "pos": "PF,C",
-    "status": "O",
+    "name": "Alex Caruso",
+    "slot": "BN",
+    "id": 5754,
+    "nba": "OKC",
+    "pos": "SG,SF",
     "draft": 1
    },
    {
@@ -971,6 +969,15 @@
     "pos": "SG,SF",
     "status": "O",
     "draft": 19
+   },
+   {
+    "name": "Jalen Smith",
+    "slot": "IL",
+    "id": 6402,
+    "nba": "CHI",
+    "pos": "PF,C",
+    "status": "Q",
+    "draft": 1
    }
   ],
   "Kreuzberg Boys": [
@@ -1218,7 +1225,7 @@
     "id": 5324,
     "nba": "SAC",
     "pos": "PG,SG,SF",
-    "status": "O",
+    "status": "Q",
     "draft": 9
    },
    {
@@ -1254,6 +1261,7 @@
     "id": 6395,
     "nba": "MIN",
     "pos": "PG",
+    "status": "Q",
     "draft": 39
    },
    {
@@ -1543,6 +1551,7 @@
     "id": 5015,
     "nba": "NYK",
     "pos": "C",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -1551,7 +1560,7 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
-    "status": "O",
+    "status": "Q",
     "draft": 20
    },
    {
@@ -1689,7 +1698,7 @@
     "draft": 15
    },
    {
-    "name": "Christian Anderson",
+    "name": "Christian Anderson Jr.",
     "slot": "Util",
     "id": 10575,
     "nba": "CHA",
@@ -1788,14 +1797,6 @@
     "draft": 8
    },
    {
-    "name": "Luke Kornet",
-    "slot": "C",
-    "id": 5903,
-    "nba": "SAS",
-    "pos": "C",
-    "draft": 1
-   },
-   {
     "name": "Terrence Shannon Jr.",
     "slot": "Util",
     "id": 10280,
@@ -1834,6 +1835,14 @@
     "nba": "LAL",
     "pos": "C",
     "draft": 29
+   },
+   {
+    "name": "Jalen Slawson",
+    "slot": "BN",
+    "id": 10089,
+    "nba": "IND",
+    "pos": "SF,PF",
+    "draft": "FA"
    },
    {
     "name": "Austin Reaves",
@@ -2049,7 +2058,6 @@
     "id": 10571,
     "nba": "GSW",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 5
    },
    {
