@@ -251,7 +251,7 @@ def tx_key(e):
 
 # ---------------- Ana akis ----------------
 # ---------------- Oyuncu istatistikleri (Players sayfasi) ----------------
-PLAYER_SETS = [("bu_sezon_ort", "S_AS_2026"), ("gecen_sezon_ort", "S_AS_2025"), ("son14_ort", "S_AL14"),
+PLAYER_SETS = [("bu_sezon_ort", "S_AS_2026"), ("gecen_sezon_ort", "S_AS_2025"), ("iki_sezon_once_ort", "S_AS_2024"), ("uc_sezon_once_ort", "S_AS_2023"), ("son14_ort", "S_AL14"),
                ("son7_ort", "S_AL7"), ("projeksiyon_kalan", "S_PSR")]
 PLAYER_PASSES = [("T", 12), ("A", 8)]   # T: tum kadrolu oyuncular, A: en iyi ~200 serbest oyuncu
 
