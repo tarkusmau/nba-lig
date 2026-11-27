@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-27 23:28",
+"updated": "2026-11-28 01:58",
 "source": "ESPN",
 "injuries": [
 {
@@ -75,22 +75,22 @@
 "note": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports."
 },
 {
-"name": "Ryan Kalkbrenner",
-"team": "Charlotte Hornets",
-"status": "Day-To-Day",
-"date": "2026-11-26T05:30Z",
-"return": "2026-11-28",
-"type": "Hip",
-"note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
-},
-{
 "name": "Grayson Allen",
 "team": "Charlotte Hornets",
 "status": "Out",
-"date": "2026-11-25T17:39Z",
+"date": "2026-11-27T22:17Z",
 "return": "2026-11-28",
 "type": "Concussion",
-"note": "Allen (concussion) has been ruled out for Wednesday's game against Chicago."
+"note": "Allen (concussion) is questionable for Saturday's game against the Nets."
+},
+{
+"name": "Ryan Kalkbrenner",
+"team": "Charlotte Hornets",
+"status": "Day-To-Day",
+"date": "2026-11-27T22:04Z",
+"return": "2026-11-28",
+"type": "Hip",
+"note": "Kalkbrenner (hip) is probable for Saturday's matchup with Brooklyn."
 },
 {
 "name": "Dennis Schroder",
@@ -291,6 +291,15 @@
 "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
 },
 {
+"name": "Steven Adams",
+"team": "Houston Rockets",
+"status": "Day-To-Day",
+"date": "2026-11-27T22:06Z",
+"return": "2026-11-28",
+"type": "Knee",
+"note": "Adams (knee) is questionable for Saturday's game against the 76ers."
+},
+{
 "name": "Larry Nance Jr.",
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
@@ -313,8 +322,8 @@
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
 "date": "2026-11-27T00:42Z",
-"return": "2026-11-27",
-"type": "Hand",
+"return": null,
+"type": null,
 "note": "Oubre is questionable for Friday's game against the 76ers due to a right hand laceration."
 },
 {
@@ -322,7 +331,7 @@
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
 "date": "2026-11-26T22:29Z",
-"return": "2026-11-27",
+"return": "2026-11-28",
 "type": "Hamstring",
 "note": "McConnell (hamstring) is questionable for Friday's game against the 76ers."
 },
@@ -415,15 +424,6 @@
 "return": "2026-12-01",
 "type": "Knee",
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
-},
-{
-"name": "Giannis Antetokounmpo",
-"team": "Miami Heat",
-"status": "Day-To-Day",
-"date": "2026-11-26T21:15Z",
-"return": "2026-11-27",
-"type": "Groin",
-"note": "Antetokounmpo is probable for Friday's game against the Knicks due to right groin tendinitis."
 },
 {
 "name": "Kasparas Jakucionis",
@@ -613,6 +613,24 @@
 "return": "2027-01-02",
 "type": "Knee",
 "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports."
+},
+{
+"name": "Kevin Porter Jr.",
+"team": "Orlando Magic",
+"status": "Out",
+"date": "2026-11-27T21:08Z",
+"return": "2026-11-29",
+"type": "Not Injury Related",
+"note": "Porter won't play Saturday against the Wizards as he's still in the process of getting up to speed on his conditioning."
+},
+{
+"name": "Anthony Black",
+"team": "Orlando Magic",
+"status": "Day-To-Day",
+"date": "2026-11-27T21:05Z",
+"return": "2026-11-28",
+"type": "Back",
+"note": "Black (back) is questionable for Saturday's game against the Wizards."
 },
 {
 "name": "Colin Castleton",

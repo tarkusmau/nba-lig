@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 23:28",
+ "updated": "2026-11-28 01:58",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-27": {
@@ -419,7 +419,8 @@
      "slot": "BN",
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
-     "pos": "PG,SG"
+     "pos": "PG,SG",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -818,8 +819,7 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ NYK 7:00 pm",
-     "status": "P"
+     "game": "@ NYK 7:00 pm"
     },
     {
      "slot": "C",
@@ -1335,7 +1335,8 @@
      "slot": "SF",
      "name": "Anthony Black",
      "nba": "ORL",
-     "pos": "PG,SG,SF"
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -2118,7 +2119,8 @@
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
      "pos": "PG,SG",
-     "game": "@ WAS 5:00 pm"
+     "game": "@ WAS 5:00 pm",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -2523,8 +2525,7 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "status": "P"
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
@@ -2982,7 +2983,8 @@
      "name": "Anthony Black",
      "nba": "ORL",
      "pos": "PG,SG,SF",
-     "game": "@ WAS 5:00 pm"
+     "game": "@ WAS 5:00 pm",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -3754,7 +3756,8 @@
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
      "pos": "PG,SG",
-     "game": "@ DET 6:00 pm"
+     "game": "@ DET 6:00 pm",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -4155,8 +4158,7 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ CLE 3:30 pm",
-     "status": "P"
+     "game": "@ CLE 3:30 pm"
     },
     {
      "slot": "Util",
@@ -4663,7 +4665,8 @@
      "name": "Anthony Black",
      "nba": "ORL",
      "pos": "PG,SG,SF",
-     "game": "@ DET 6:00 pm"
+     "game": "@ DET 6:00 pm",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -5442,7 +5445,8 @@
      "slot": "BN",
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
-     "pos": "PG,SG"
+     "pos": "PG,SG",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -5831,8 +5835,7 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "status": "P"
+     "pos": "PF,C"
     },
     {
      "slot": "Util",
@@ -6324,7 +6327,8 @@
      "slot": "SF",
      "name": "Anthony Black",
      "nba": "ORL",
-     "pos": "PG,SG,SF"
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -7109,7 +7113,8 @@
      "slot": "BN",
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
-     "pos": "PG,SG"
+     "pos": "PG,SG",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -7497,8 +7502,7 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "vs ATL 7:30 pm",
-     "status": "P"
+     "game": "vs ATL 7:30 pm"
     },
     {
      "slot": "C",
@@ -8053,7 +8057,8 @@
      "slot": "BN",
      "name": "Anthony Black",
      "nba": "ORL",
-     "pos": "PG,SG,SF"
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -8787,7 +8792,8 @@
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
      "pos": "PG,SG",
-     "game": "@ DAL 8:00 pm"
+     "game": "@ DAL 8:00 pm",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -9205,8 +9211,7 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "status": "P"
+     "pos": "PF,C"
     },
     {
      "slot": "BN",
@@ -9672,7 +9677,8 @@
      "name": "Anthony Black",
      "nba": "ORL",
      "pos": "PG,SG,SF",
-     "game": "@ DAL 8:00 pm"
+     "game": "@ DAL 8:00 pm",
+     "status": "Q"
     },
     {
      "slot": "SF",
@@ -10453,7 +10459,8 @@
      "slot": "BN",
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
-     "pos": "PG,SG"
+     "pos": "PG,SG",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -10815,8 +10822,7 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "vs WAS 7:30 pm",
-     "status": "P"
+     "game": "vs WAS 7:30 pm"
     },
     {
      "slot": "F",
@@ -11376,7 +11382,8 @@
      "slot": "BN",
      "name": "Anthony Black",
      "nba": "ORL",
-     "pos": "PG,SG,SF"
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -12059,7 +12066,8 @@
      "slot": "BN",
      "name": "Kevin Porter Jr.",
      "nba": "ORL",
-     "pos": "PG,SG"
+     "pos": "PG,SG",
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -12402,8 +12410,7 @@
      "slot": "PF",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "status": "P"
+     "pos": "PF,C"
     },
     {
      "slot": "F",
@@ -12929,7 +12936,8 @@
      "slot": "BN",
      "name": "Anthony Black",
      "nba": "ORL",
-     "pos": "PG,SG,SF"
+     "pos": "PG,SG,SF",
+     "status": "Q"
     },
     {
      "slot": "BN",
