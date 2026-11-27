@@ -300,9 +300,23 @@ def parse_players(html):
         rows.append(rec)
     return rows, heads, soup
 
+STATIC_SETS = {"gecen_sezon_ort", "iki_sezon_once_ort", "uc_sezon_once_ort"}   # biten sezonlar: haftada bir yeterli
+
+def fresh(fn, days):
+    """Dosya var ve 'updated' alani son `days` gun icindeyse True."""
+    try:
+        u = json.load(open(fn, encoding="utf-8")).get("updated", "")
+        t = datetime.datetime.strptime(u[:16], "%Y-%m-%d %H:%M")
+        return (NOW.replace(tzinfo=None) - t).days < days
+    except Exception:
+        return False
+
 def scrape_players():
     os.makedirs("players", exist_ok=True)
     for key, stat in PLAYER_SETS:
+        if key in STATIC_SETS and fresh(f"players/{key}.json", 7):
+            log(f"Oyuncular {key}: guncel (haftalik), atlandi.")
+            continue
         allp, heads, seen = [], [], set()
         for status, maxp in PLAYER_PASSES:
             for p in range(maxp):
@@ -384,14 +398,22 @@ def scrape_rosters(home):
     log(f"Kadrolar: {len(ids)} takim bulundu: {ids}")
     draft = []
     try:
+        old = json.load(open("draft.json", encoding="utf-8")) if os.path.exists("draft.json") else []
+    except Exception:
+        old = []
+    if len(old) >= 200:
+        draft = old
+        log(f"Draft: {len(draft)} secim (kayitli dosyadan, tekrar cekilmedi).")
+    else:
+      try:
         html = fetch("/draftresults?drafttab=team")
         open("probe_draft.html", "w", encoding="utf-8").write(html)
         draft = parse_draft(html, ids)
         json.dump(draft, open("draft.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
         log(f"Draft: {len(draft)} secim yazildi.")
-    except SystemExit:
+      except SystemExit:
         raise
-    except Exception as ex:
+      except Exception as ex:
         log(f"HATA draft: {ex}")
     cost = {d["id"]: d["cost"] for d in draft if d.get("id")}
     cost_n = {d["name"]: d["cost"] for d in draft}
@@ -757,6 +779,8 @@ def scrape_league_pages(ids):
         except Exception as ex:
             log(f"HATA {name}: {ex}")
     try:
+        if fresh("settings.json", 7):
+            raise StopIteration
         html = fetch("/settings")
         soup = BeautifulSoup(html, "html.parser"); kv = {}
         for tr in soup.find_all("tr"):
@@ -765,6 +789,8 @@ def scrape_league_pages(ids):
                 kv[c[0].rstrip(":")] = c[1]
         save("settings.json", {"updated": stamp, "settings": kv})
         log(f"Ayarlar: {len(kv)} satir.")
+    except StopIteration:
+        log("Ayarlar: guncel (haftalik), atlandi.")
     except SystemExit:
         raise
     except Exception as ex:
