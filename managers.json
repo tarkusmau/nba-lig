@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 04:00",
+ "updated": "2026-11-27 19:47",
  "tables": [
   {
    "headers": [
@@ -31,7 +31,7 @@
      "Waiver Priority": "14",
      "Moves": "23",
      "Trades": "0",
-     "Last League Activity": "Thu Nov 26 3:35am EST"
+     "Last League Activity": "Fri Nov 27 4:17am EST"
     },
     {
      "Team Name": "EAH Seniors",
@@ -51,7 +51,7 @@
      "Waiver Priority": "2",
      "Moves": "11",
      "Trades": "1",
-     "Last League Activity": "Wed Nov 25 10:46pm EST"
+     "Last League Activity": "Fri Nov 27 5:09am EST"
     },
     {
      "Team Name": "Kalidou Koulibaly",
@@ -61,7 +61,7 @@
      "Waiver Priority": "4",
      "Moves": "17",
      "Trades": "0",
-     "Last League Activity": "Thu Nov 26 10:42am EST"
+     "Last League Activity": "Fri Nov 27 3:20am EST"
     },
     {
      "Team Name": "Kassablancas",
@@ -89,9 +89,9 @@
      "Email": "--hidden--",
      "Waiver Budget": "$192",
      "Waiver Priority": "5",
-     "Moves": "9",
+     "Moves": "10",
      "Trades": "1",
-     "Last League Activity": "Wed Nov 25 5:44pm EST"
+     "Last League Activity": "Fri Nov 27 5:05am EST"
     },
     {
      "Team Name": "Los Gerseii",
@@ -111,7 +111,7 @@
      "Waiver Priority": "15",
      "Moves": "6",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 8:26am EST"
+     "Last League Activity": "Fri Nov 27 3:27am EST"
     },
     {
      "Team Name": "Normal MAFIA",
@@ -131,17 +131,17 @@
      "Waiver Priority": "11",
      "Moves": "16",
      "Trades": "0",
-     "Last League Activity": "Wed Nov 25 9:08am EST"
+     "Last League Activity": "Fri Nov 27 9:57am EST"
     },
     {
      "Team Name": "Splash Brothers",
      "Manager": "Serhan",
      "Email": "mast3rly@gmail.com",
-     "Waiver Budget": "$160",
+     "Waiver Budget": "$145",
      "Waiver Priority": "8",
-     "Moves": "21",
+     "Moves": "22",
      "Trades": "3",
-     "Last League Activity": "Wed Nov 25 5:38pm EST"
+     "Last League Activity": "Fri Nov 27 6:38am EST"
     },
     {
      "Team Name": "Suhayy31",
@@ -151,7 +151,7 @@
      "Waiver Priority": "16",
      "Moves": "21",
      "Trades": "0",
-     "Last League Activity": "Thu Nov 26 2:55pm EST"
+     "Last League Activity": "Fri Nov 27 5:16am EST"
     },
     {
      "Team Name": "tarkus maurelius",
@@ -161,7 +161,7 @@
      "Waiver Priority": "10",
      "Moves": "19",
      "Trades": "0",
-     "Last League Activity": "Mon Nov 23 6:37am EST"
+     "Last League Activity": "Fri Nov 27 3:49am EST"
     },
     {
      "Team Name": "Yukatel Metin Akdülger",
@@ -171,7 +171,7 @@
      "Waiver Priority": "6",
      "Moves": "27",
      "Trades": "0",
-     "Last League Activity": "Thu Nov 26 2:53pm EST"
+     "Last League Activity": "Fri Nov 27 4:12am EST"
     }
    ]
   }
