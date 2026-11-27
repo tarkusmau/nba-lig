@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 01:58",
+ "updated": "2026-11-28 02:33",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-27": {
@@ -392,7 +392,8 @@
      "name": "Dean Wade",
      "nba": "PHI",
      "pos": "SF,PF",
-     "game": "@ IND 7:30 pm"
+     "game": "@ IND 7:30 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -514,8 +515,7 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "vs PHI 7:30 pm",
-     "status": "Q"
+     "game": "vs PHI 7:30 pm"
     },
     {
      "slot": "BN",
@@ -1660,8 +1660,7 @@
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
      "pos": "PF,C",
-     "game": "vs MIA 7:00 pm",
-     "status": "Q"
+     "game": "vs MIA 7:00 pm"
     },
     {
      "slot": "C",
@@ -2093,7 +2092,8 @@
      "name": "Dean Wade",
      "nba": "PHI",
      "pos": "SF,PF",
-     "game": "@ HOU 8:30 pm"
+     "game": "@ HOU 8:30 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -2163,8 +2163,7 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ CHI 8:00 pm",
-     "status": "Q"
+     "game": "@ CHI 8:00 pm"
     },
     {
      "slot": "PF",
@@ -3283,8 +3282,7 @@
      "slot": "C",
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
-     "pos": "PF,C",
-     "status": "Q"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -3729,7 +3727,8 @@
      "slot": "Util",
      "name": "Dean Wade",
      "nba": "PHI",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -3856,8 +3855,7 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF",
-     "status": "Q"
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -4985,8 +4983,7 @@
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
      "pos": "PF,C",
-     "game": "vs ATL 6:00 pm",
-     "status": "Q"
+     "game": "vs ATL 6:00 pm"
     },
     {
      "slot": "C",
@@ -5421,7 +5418,8 @@
      "slot": "Util",
      "name": "Dean Wade",
      "nba": "PHI",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -5538,8 +5536,7 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF",
-     "status": "Q"
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -6638,8 +6635,7 @@
      "slot": "C",
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
-     "pos": "PF,C",
-     "status": "Q"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -7086,7 +7082,8 @@
      "name": "Dean Wade",
      "nba": "PHI",
      "pos": "SF,PF",
-     "game": "vs MEM 7:00 pm"
+     "game": "vs MEM 7:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -7211,8 +7208,7 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ CLE 7:00 pm",
-     "status": "Q"
+     "game": "@ CLE 7:00 pm"
     },
     {
      "slot": "BN",
@@ -8315,8 +8311,7 @@
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
      "pos": "PF,C",
-     "game": "@ CHI 8:00 pm",
-     "status": "Q"
+     "game": "@ CHI 8:00 pm"
     },
     {
      "slot": "C",
@@ -8765,7 +8760,8 @@
      "name": "Dean Wade",
      "nba": "PHI",
      "pos": "SF,PF",
-     "game": "vs DEN 7:00 pm"
+     "game": "vs DEN 7:00 pm",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -8890,8 +8886,7 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF",
-     "status": "Q"
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -10002,8 +9997,7 @@
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
      "pos": "PF,C",
-     "game": "@ MIL 8:00 pm",
-     "status": "Q"
+     "game": "@ MIL 8:00 pm"
     },
     {
      "slot": "C",
@@ -10434,7 +10428,8 @@
      "slot": "Util",
      "name": "Dean Wade",
      "nba": "PHI",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -10551,8 +10546,7 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ ATL 7:00 pm",
-     "status": "Q"
+     "game": "@ ATL 7:00 pm"
     },
     {
      "slot": "BN",
@@ -11632,8 +11626,7 @@
      "slot": "C",
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
-     "pos": "PF,C",
-     "status": "Q"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -12042,7 +12035,8 @@
      "slot": "Util",
      "name": "Dean Wade",
      "nba": "PHI",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -12155,8 +12149,7 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF",
-     "status": "Q"
+     "pos": "SF,PF"
     },
     {
      "slot": "BN",
@@ -13176,8 +13169,7 @@
      "slot": "C",
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
-     "pos": "PF,C",
-     "status": "Q"
+     "pos": "PF,C"
     },
     {
      "slot": "C",

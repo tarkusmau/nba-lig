@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 01:58",
+ "updated": "2026-11-28 02:33",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -539,6 +539,7 @@
     "id": 6256,
     "nba": "PHI",
     "pos": "SF,PF",
+    "status": "O",
     "draft": "FA"
    },
    {
@@ -680,7 +681,6 @@
     "id": 5475,
     "nba": "IND",
     "pos": "SF,PF",
-    "status": "Q",
     "draft": 1
    },
    {
@@ -2031,7 +2031,6 @@
     "id": 5432,
     "nba": "NYK",
     "pos": "PF,C",
-    "status": "Q",
     "draft": 47
    },
    {
