@@ -494,8 +494,8 @@ function openPlayer(id) {
   PM = p; PMtab = "g"; $("pm").hidden = false; document.body.style.overflow = "hidden";
   if (!history.state || !history.state.pm) history.pushState({ pm: 1 }, "");
   renderPM();
-  if (!GL) Promise.all([getX("gamelog.json"), getX("draft.json"), getX("transactions.json")]).then(([g, d, t]) => {
-    GL = g || { p: {} }; GLI = {}; Object.keys(GL.p).forEach(k => GLI[E.normName(k)] = GL.p[k]);
+  if (!GL || GL.miss) Promise.all([getX("gamelog.json"), getX("draft.json"), getX("transactions.json")]).then(([g, d, t]) => {
+    GL = g || { p: {}, miss: 1 }; GLI = {}; Object.keys(GL.p).forEach(k => GLI[E.normName(k)] = GL.p[k]);
     DRAFT = {}; (d || []).forEach(x => DRAFT[x.id] = x); TX = t || []; if (PM) renderPM(); });
 }
 function closePM() { PM = null; $("pm").hidden = true; document.body.style.overflow = ""; }
@@ -514,6 +514,7 @@ function renderPM() {
 }
 function pmLog(p) {
   const gs = pmGames(p), played = gs.filter(r => r.length > 5).map(glStats);
+  if (GL.miss) return `<p class="note">Maç kayıtları (gamelog.json) şu an yüklenemedi. Pencereyi kapatıp tekrar açınca yeniden denenir.</p>`;
   if (!gs.length) return `<p class="note">Bu oyuncu için kayıtlı maç yok.</p>`;
   const fgc = s => s.fga >= 5 ? (s.fgp >= .55 ? "cu" : s.fgp < .4 ? "cd" : "") : "", ftc = s => s.fta >= 3 ? (s.ftp >= .85 ? "cu" : s.ftp < .65 ? "cd" : "") : "";
   const avgRow = (lbl, arr) => { const a = avgStats(arr); return a ? `<tr class="pavg"><td colspan="2">${lbl}</td><td>${Math.round(a.mpg)}</td><td>${f3(a.fgp)}</td><td>${f3(a.ftp)}</td>${["tpm", "pts", "reb", "st", "blk", "to", "ast"].map(k => `<td>${f1(a[k])}</td>`).join("")}</tr>` : ""; };
@@ -599,12 +600,51 @@ function renderStrat() {
 }
 
 // ---------- LIG ----------
-const SUBS = [["h2h", "Eşleşme"], ["all", "Herkese karşı"], ["pow", "Güç"], ["cat", "Kategori"], ["tot", "Toplam"], ["pg", "Maç başı"]];
+const SUBS = [["h2h", "Eşleşme"], ["all", "Herkese karşı"], ["pow", "Güç"], ["cat", "Kategori"], ["tot", "Toplam"], ["pg", "Maç başı"], ["val", "Değerler"]];
+let DEG = null, degM = Q.get("dm") === "tm" ? "tm" : "pl", degT = Q.get("dt") || "", degS = "v";
+function loadDeg() {
+  if (DEG) return; DEG = 0;
+  fetch("degerler.json?v=" + Date.now()).then(r => r.ok ? r.json() : null).then(d => { DEG = d || { players: [] }; if (view === "lg" && lgSub === "val") renderLeague(); })
+    .catch(() => { DEG = null; $("lg-out").innerHTML = "<p class='err'>Değerler yüklenemedi. Sayfayı yenile.</p>"; });
+}
+function renderDeg() {
+  const out = $("lg-out");
+  if (!DEG) { loadDeg(); out.innerHTML = "<p class='note'>Değerler yükleniyor…</p>"; return; }
+  const P = DEG.players, tn = t => t === "FA" ? "FA" : (SHORT[t] || t);
+  const dif = p => p.d == null ? null : p.v - p.d;
+  const fx = x => x == null ? "<td class='mut'>–</td>" : `<td class="${x > 0 ? "win" : x < 0 ? "loss" : "mut"}">${x > 0 ? "+" : ""}${x}</td>`;
+  const T = {}; P.forEach(p => { if (p.t === "FA") return; const o = T[p.t] = T[p.t] || { t: p.t, d: 0, v: 0 }; o.d += p.d || 0; o.v += p.v; });
+  const TL = Object.values(T).sort((a, b) => b.v - a.v);
+  let h = `<p class="note">Güncel $: sezon öncesi hedef fiyat + 9-kat z-skoru + haftalık kazanma (H2H, punt) karışımı; bu sezonun verisi ağırlığı maç sayısıyla artar. Draft $: lig draft fiyatı (FA = draftta seçilmedi, fark hesaplanmaz). Güncelleme: ${esc(DEG.updated || "")}.</p>
+<div class="msel" id="dg-m"><button data-m="pl"${degM === "pl" ? ' class="on"' : ""}>Oyuncular</button><button data-m="tm"${degM === "tm" ? ' class="on"' : ""}>Takımlar</button></div>`;
+  if (degM === "tm") {
+    h += `<p class="note">Takıma dokun: o takımın oyuncuları açılır. Fark, waiver'dan alınan oyuncuların kazancını da içerir.</p><div class="tw"><table><thead><tr><th>#</th><th class="l">Takım</th><th>Draft $</th><th>Güncel $</th><th>Fark</th></tr></thead><tbody>` +
+      TL.map((o, i) => `<tr data-t="${esc(o.t)}" class="${o.t === cur ? "sel" : ""}" style="cursor:pointer"><td>${i + 1}</td><td class="l">${esc(o.t)}</td><td>${o.d}</td><td><b>${o.v}</b></td>${fx(o.v - o.d)}</tr>`).join("") + "</tbody></table></div>";
+  } else {
+    const opts = [["", "Tüm oyuncular"], ...TL.map(o => [o.t, o.t]), ["FA", "Serbest (FA)"]];
+    h += `<div class="pick" style="gap:8px;display:flex"><select id="dg-t" style="flex:1;min-width:0">${opts.map(([k, l]) => `<option value="${esc(k)}"${k === degT ? " selected" : ""}>${esc(l)}</option>`).join("")}</select>
+<select id="dg-s" style="flex:1;min-width:0">${[["v", "Güncel değere göre"], ["up", "En çok kazanan"], ["dn", "En çok kaybeden"]].map(([k, l]) => `<option value="${k}"${k === degS ? " selected" : ""}>${l}</option>`).join("")}</select></div>`;
+    let L2 = P.filter(p => !degT || p.t === degT);
+    if (degS !== "v") L2 = L2.filter(p => p.d != null).sort((a, b) => degS === "up" ? dif(b) - dif(a) : dif(a) - dif(b));
+    if (degT && T[degT]) { const o = T[degT]; h += `<div class="kpis" style="margin:8px 0;grid-template-columns:repeat(3,1fr)"><div class="kpi"><span>Draft $</span><b>${o.d}</b></div><div class="kpi"><span>Güncel $</span><b>${o.v}</b></div><div class="kpi"><span>Fark</span><b class="${o.v - o.d >= 0 ? "win" : "loss"}">${o.v - o.d > 0 ? "+" : ""}${o.v - o.d}</b></div></div>`; }
+    h += `<div class="tw" style="margin-top:8px"><table class="small"><thead><tr><th>#</th><th class="l">Oyuncu</th>${degT ? "" : "<th>Takım</th>"}<th>Draft $</th><th>Güncel $</th><th>Fark</th></tr></thead><tbody>` +
+      L2.map((p, i) => `<tr${p.id ? ` data-pid="${p.id}"` : ""} class="${p.t === cur ? "sel" : ""}" style="cursor:pointer"><td>${i + 1}</td><td class="l" style="white-space:normal">${esc(p.n)}</td>${degT ? "" : `<td class="mut" style="max-width:74px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.68rem;text-align:left">${esc(tn(p.t))}</td>`}<td>${p.d == null ? "FA" : "$" + p.d}</td><td><b>${p.v}</b></td>${fx(dif(p))}</tr>`).join("") + "</tbody></table></div>";
+  }
+  out.innerHTML = h;
+  [...$("dg-m").children].forEach(b => b.onclick = () => { degM = b.dataset.m; setQ({ dm: degM }); renderDeg(); });
+  const st = $("dg-t"), ss = $("dg-s");
+  if (st) st.onchange = () => { degT = st.value; setQ({ dt: degT }); renderDeg(); };
+  if (ss) ss.onchange = () => { degS = ss.value; renderDeg(); };
+  out.onclick = e => { const r = e.target.closest("tr[data-t]"); if (r) { degM = "pl"; degT = r.dataset.t; setQ({ dm: degM, dt: degT }); renderDeg(); window.scrollTo(0, 0); return; }
+    const p = e.target.closest("tr[data-pid]"); if (p) openPlayer(+p.dataset.pid); };
+}
 function standings(V) {
   const out = V.map(a => { let cw = 0, cl = 0, ct = 0, beats = 0; V.forEach(b => { if (a === b) return; const r = cmp(a, b); cw += r.w; cl += r.l; ct += r.t; if (r.w > r.l) beats++; }); return { team: a.team, cw, cl, ct, beats }; });
   out.sort((x, y) => (y.beats - x.beats) || ((y.cw + y.ct / 2) - (x.cw + x.ct / 2))); out.forEach((r, i) => r.rank = i + 1); return out;
 }
 function renderLeague() {
+  if (lgSub === "val") { $("lg-wk").hidden = true; $("lg-upd").textContent = ""; chipRow($("lg-sub"), SUBS, lgSub, k => { lgSub = k; setQ({ s: k }); renderLeague(); }); renderDeg(); return; }
+  $("lg-wk").hidden = false; $("lg-out").onclick = null;
   if (!DATA) { $("lg-out").innerHTML = "<p class='note'>Lig verisi yükleniyor…</p>"; return; }
   const ks = weekKeys(); if (!lgWk || !DATA.weeks[lgWk]) lgWk = ks[ks.length - 1];
   chipRow($("lg-wk"), weekItems(), lgWk, k => { lgWk = k; setQ({ w: k }); renderLeague(); });
