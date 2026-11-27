@@ -1,15 +1,15 @@
 {
-"updated": "2026-11-26 20:02",
+"updated": "2026-11-27 04:00",
 "source": "ESPN",
 "injuries": [
 {
 "name": "Jock Landale",
 "team": "Atlanta Hawks",
 "status": "Out",
-"date": "2026-11-21T22:12Z",
-"return": "2026-11-27",
+"date": "2026-11-26T22:44Z",
+"return": "2026-11-29",
 "type": "Hip",
-"note": "Landale (hip) won't play Sunday against the Pistons."
+"note": "Landale (hip) is out for Friday's game against the Celtics."
 },
 {
 "name": "Asa Newell",
@@ -51,19 +51,19 @@
 "name": "Mitchell Robinson",
 "team": "Boston Celtics",
 "status": "Out",
-"date": "2026-11-23T21:09Z",
+"date": "2026-11-26T19:00Z",
 "return": "2026-11-27",
 "type": "Illness",
-"note": "Robinson (illness) is out for Tuesday's game against Washington, Taylor Snow of the Celtics' official site reports."
+"note": "Robinson (illness) is questionable for Friday's game against the Hawks."
 },
 {
 "name": "Moritz Wagner",
 "team": "Brooklyn Nets",
 "status": "Out",
-"date": "2026-11-26T02:48Z",
-"return": "2026-11-27",
+"date": "2026-11-26T21:33Z",
+"return": "2026-11-28",
 "type": "Knee",
-"note": "Wagner (knee) will not return to Wednesday's game against the Bucks, C.J. Holmes of the New York Daily News reports."
+"note": "Wagner (knee) won't be available for Friday's game against Toronto."
 },
 {
 "name": "Nolan Traore",
@@ -159,37 +159,55 @@
 "name": "Tobi Lawal",
 "team": "Dallas Mavericks",
 "status": "Out",
-"date": "2026-11-23T23:25Z",
-"return": "2026-11-27",
+"date": "2026-11-27T00:01Z",
+"return": "2026-11-30",
 "type": "Groin",
-"note": "Lawal (groin) is out for Tuesday's game against Denver."
-},
-{
-"name": "Dereck Lively II",
-"team": "Dallas Mavericks",
-"status": "Out",
-"date": "2026-11-20T19:31Z",
-"return": "2026-11-27",
-"type": "Foot",
-"note": "Head coach Dusty May said Friday that Lively (foot) is moving well and progressing in his recovery, and the big man told May he's \"close\" to returning, Mike Curtis of The Dallas Morning News reports."
+"note": "Lawal (groin) is out for Friday's game against the Suns."
 },
 {
 "name": "Sergio de Larrea",
 "team": "Dallas Mavericks",
 "status": "Out",
-"date": "2026-11-17T22:53Z",
-"return": "2026-11-27",
+"date": "2026-11-26T23:59Z",
+"return": "2026-12-14",
 "type": "Knee",
-"note": "De Larrea (knee) is listed as out for Wednesday's game against the Warriors."
+"note": "De Larrea (knee) is out for Friday's game against the Suns."
+},
+{
+"name": "Dereck Lively II",
+"team": "Dallas Mavericks",
+"status": "Out",
+"date": "2026-11-26T23:56Z",
+"return": "2026-11-30",
+"type": "Foot",
+"note": "Lively (foot) is out for Friday's game against the Suns."
 },
 {
 "name": "Tarik Biberovic",
 "team": "Dallas Mavericks",
 "status": "Out",
-"date": "2026-11-17T22:42Z",
-"return": "2026-11-27",
+"date": "2026-11-26T23:53Z",
+"return": "2026-12-04",
 "type": "Heel",
-"note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
+"note": "Biberovic (heel) is out for Friday's game against the Suns."
+},
+{
+"name": "Duncan Robinson",
+"team": "Detroit Pistons",
+"status": "Out",
+"date": "2026-11-26T22:26Z",
+"return": "2026-11-29",
+"type": "Quadriceps",
+"note": "Robinson (quadriceps) is out for Friday's game against the Bucks."
+},
+{
+"name": "Cade Cunningham",
+"team": "Detroit Pistons",
+"status": "Out",
+"date": "2026-11-26T22:25Z",
+"return": "2026-11-29",
+"type": "Knee",
+"note": "Cunningham (knee) is out for Friday's game against the Bucks."
 },
 {
 "name": "Jalen Duren",
@@ -199,15 +217,6 @@
 "return": "2026-11-30",
 "type": "Hamstring",
 "note": "Detroit recalled Duren (hamstring) from the G League's Motor City Cruise on Wednesday."
-},
-{
-"name": "Cade Cunningham",
-"team": "Detroit Pistons",
-"status": "Day-To-Day",
-"date": "2026-11-25T19:00Z",
-"return": "2026-11-27",
-"type": "Knee",
-"note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando."
 },
 {
 "name": "Ebuka Okorie",
@@ -226,15 +235,6 @@
 "return": "2026-12-26",
 "type": "Knee",
 "note": "Prince underwent arthroscopic right knee surgery Nov. 18 and will be re-evaluated in four weeks, Eric Vincent of ClutchPoints.com reports."
-},
-{
-"name": "Duncan Robinson",
-"team": "Detroit Pistons",
-"status": "Out",
-"date": "2026-11-24T18:30Z",
-"return": "2026-11-27",
-"type": "Quadriceps",
-"note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports."
 },
 {
 "name": "Stephen Curry",
@@ -273,13 +273,31 @@
 "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
 },
 {
+"name": "Kelly Oubre Jr.",
+"team": "Indiana Pacers",
+"status": "Day-To-Day",
+"date": "2026-11-27T00:42Z",
+"return": "2026-11-27",
+"type": "Hand",
+"note": "Oubre is questionable for Friday's game against the 76ers due to a right hand laceration."
+},
+{
+"name": "Larry Nance Jr.",
+"team": "Indiana Pacers",
+"status": "Day-To-Day",
+"date": "2026-11-26T22:43Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Nance (ankle) is questionable for Friday's game against the 76ers."
+},
+{
 "name": "T.J. McConnell",
 "team": "Indiana Pacers",
 "status": "Day-To-Day",
-"date": "2026-11-24T19:43Z",
+"date": "2026-11-26T22:29Z",
 "return": "2026-11-27",
 "type": "Hamstring",
-"note": "McConnell (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Shams Charania of ESPN reports."
+"note": "McConnell (hamstring) is questionable for Friday's game against the 76ers."
 },
 {
 "name": "Tyrese Haliburton",
@@ -289,24 +307,6 @@
 "return": "2026-12-13",
 "type": "Hamstring",
 "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports."
-},
-{
-"name": "Aaron Nesmith",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-24T04:40Z",
-"return": "2026-11-27",
-"type": "Foot",
-"note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness."
-},
-{
-"name": "Larry Nance Jr.",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-24T02:00Z",
-"return": "2026-11-27",
-"type": "Ankle",
-"note": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports."
 },
 {
 "name": "Ben Sheppard",
@@ -339,19 +339,28 @@
 "name": "Austin Reaves",
 "team": "Los Angeles Lakers",
 "status": "Out",
-"date": "2026-11-25T20:33Z",
+"date": "2026-11-26T23:21Z",
 "return": "2026-11-27",
 "type": "Heel",
-"note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports."
+"note": "Reaves (heel) is questionable for Friday's game against the Spurs."
+},
+{
+"name": "Isaiah Stewart",
+"team": "Memphis Grizzlies",
+"status": "Day-To-Day",
+"date": "2026-11-26T23:27Z",
+"return": "2026-11-27",
+"type": "Hip",
+"note": "Stewart is questionable for Friday's game against the Timberwolves due to right hip soreness."
 },
 {
 "name": "Zach Edey",
 "team": "Memphis Grizzlies",
 "status": "Day-To-Day",
-"date": "2026-11-26T03:43Z",
+"date": "2026-11-26T23:24Z",
 "return": "2026-11-27",
 "type": "Ankle",
-"note": "Edey (ankle) did not return to Wednesday's 115-97 win over the Clippers. He finished with seven points (3-4 FG, 1-1 FT), four rebounds, two assists and two blocks across nine minutes."
+"note": "Edey (ankle) is questionable for Friday's game against the Timberwolves."
 },
 {
 "name": "Scotty Pippen Jr.",
@@ -399,13 +408,31 @@
 "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
 },
 {
+"name": "Giannis Antetokounmpo",
+"team": "Miami Heat",
+"status": "Day-To-Day",
+"date": "2026-11-26T21:15Z",
+"return": "2026-11-27",
+"type": "Groin",
+"note": "Antetokounmpo is probable for Friday's game against the Knicks due to right groin tendinitis."
+},
+{
+"name": "Andrew Wiggins",
+"team": "Miami Heat",
+"status": "Day-To-Day",
+"date": "2026-11-26T21:08Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Wiggins is probable for Friday's game against the Knicks due to a right ankle sprain."
+},
+{
 "name": "LaMelo Ball",
 "team": "Minnesota Timberwolves",
 "status": "Day-To-Day",
-"date": "2026-11-26T03:37Z",
+"date": "2026-11-26T23:14Z",
 "return": "2026-11-27",
 "type": "Ankle",
-"note": "Ball (ankle) did not return to Wednesday's 113-106 win over the Thunder."
+"note": "Ball (ankle) is questionable for Friday's game against the Grizzlies."
 },
 {
 "name": "Donte DiVincenzo",
@@ -435,6 +462,24 @@
 "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced."
 },
 {
+"name": "Trendon Watford",
+"team": "New Orleans Pelicans",
+"status": "Out",
+"date": "2026-11-26T21:22Z",
+"return": "2026-11-27",
+"type": "Ankle",
+"note": "Watford (ankle) is probable for Friday's game against the Clippers."
+},
+{
+"name": "Bennedict Mathurin",
+"team": "New Orleans Pelicans",
+"status": "Out",
+"date": "2026-11-26T21:21Z",
+"return": "2026-11-27",
+"type": "Foot",
+"note": "Mathurin (foot) is doubtful for Friday's game against the Clippers."
+},
+{
 "name": "Julian Reese",
 "team": "New Orleans Pelicans",
 "status": "Day-To-Day",
@@ -444,29 +489,11 @@
 "note": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
 },
 {
-"name": "Trendon Watford",
-"team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-21T18:21Z",
-"return": "2026-11-27",
-"type": "Ankle",
-"note": "Watford (ankle) is out for Saturday's game against the Spurs."
-},
-{
-"name": "Bennedict Mathurin",
-"team": "New Orleans Pelicans",
-"status": "Out",
-"date": "2026-11-19T21:07Z",
-"return": "2026-11-27",
-"type": "Foot",
-"note": "Mathurin (foot) has been ruled out for Friday's game against the Thunder."
-},
-{
 "name": "Dejounte Murray",
 "team": "New Orleans Pelicans",
 "status": "Out",
 "date": "2026-11-13T20:19Z",
-"return": "2026-11-27",
+"return": "2026-11-29",
 "type": "Ankle",
 "note": "Murray (ankle) is out for Friday's game against Memphis."
 },
@@ -474,37 +501,37 @@
 "name": "Miles McBride",
 "team": "New York Knicks",
 "status": "Day-To-Day",
-"date": "2026-11-26T05:31Z",
+"date": "2026-11-26T22:11Z",
 "return": "2026-11-27",
 "type": "Groin",
-"note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
-},
-{
-"name": "Andre Drummond",
-"team": "New York Knicks",
-"status": "Day-To-Day",
-"date": "2026-11-26T03:40Z",
-"return": "2026-11-27",
-"type": "Head",
-"note": "Drummond (head) did not return to Wednesday's 121-102 win over the Cavaliers."
-},
-{
-"name": "OG Anunoby",
-"team": "New York Knicks",
-"status": "Out",
-"date": "2026-11-25T23:19Z",
-"return": "2026-11-27",
-"type": "Calf",
-"note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports."
+"note": "McBride (groin) is questionable for Friday's game against the Heat."
 },
 {
 "name": "Jordan Clarkson",
 "team": "New York Knicks",
 "status": "Out",
-"date": "2026-11-24T21:56Z",
+"date": "2026-11-26T22:03Z",
 "return": "2026-11-27",
 "type": "Foot",
-"note": "Clarkson (foot) is out for Wednesday's game against Cleveland."
+"note": "Clarkson (foot) is questionable for Friday's game against the Heat."
+},
+{
+"name": "OG Anunoby",
+"team": "New York Knicks",
+"status": "Out",
+"date": "2026-11-26T21:57Z",
+"return": "2026-11-27",
+"type": "Calf",
+"note": "Anunoby (calf) is doubtful for Friday's game against the Heat."
+},
+{
+"name": "Andre Drummond",
+"team": "New York Knicks",
+"status": "Day-To-Day",
+"date": "2026-11-26T21:51Z",
+"return": "2026-11-27",
+"type": "Head",
+"note": "Drummond (head) is questionable for Friday's game against the Heat."
 },
 {
 "name": "Nikola Topic",
@@ -618,19 +645,19 @@
 "name": "Joel Embiid",
 "team": "Philadelphia 76ers",
 "status": "Day-To-Day",
-"date": "2026-11-26T01:06Z",
+"date": "2026-11-26T22:16Z",
 "return": "2026-11-27",
 "type": "Illness",
-"note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports."
+"note": "Embiid (illness) is questionable for Friday's game against the Pacers."
 },
 {
 "name": "Jaylen Brown",
 "team": "Philadelphia 76ers",
-"status": "Day-To-Day",
-"date": "2026-11-26T01:06Z",
-"return": "2026-11-27",
+"status": "Out",
+"date": "2026-11-26T22:13Z",
+"return": "2026-11-28",
 "type": "Hamstring",
-"note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports."
+"note": "Brown (hamstring) is out for Friday's game against the Pacers."
 },
 {
 "name": "Ariel Hukporti",
@@ -655,7 +682,7 @@
 "team": "Portland Trail Blazers",
 "status": "Out",
 "date": "2026-11-20T22:18Z",
-"return": "2026-11-27",
+"return": "2026-11-29",
 "type": "Heel",
 "note": "Youngblood (heel) has been ruled out for Saturday's game against the Knicks."
 },
@@ -714,22 +741,22 @@
 "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
 },
 {
-"name": "De'Aaron Fox",
-"team": "San Antonio Spurs",
-"status": "Day-To-Day",
-"date": "2026-11-26T06:01Z",
-"return": "2026-11-27",
-"type": "Lower Leg",
-"note": "Fox (shin) has been ruled out for Wednesday's game against Portland, Jeff McDonald of the San Antonio Express-News reports."
-},
-{
 "name": "Dylan Harper",
 "team": "San Antonio Spurs",
 "status": "Out",
-"date": "2026-11-19T20:07Z",
-"return": "2026-12-13",
+"date": "2026-11-26T23:41Z",
+"return": "2026-11-27",
 "type": "Hip",
-"note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports."
+"note": "Harper (hip) is questionable for Friday's game against the Lakers."
+},
+{
+"name": "De'Aaron Fox",
+"team": "San Antonio Spurs",
+"status": "Day-To-Day",
+"date": "2026-11-26T23:35Z",
+"return": "2026-11-27",
+"type": "Lower Leg",
+"note": "Fox (shin) is questionable for Friday's game against the Lakers."
 },
 {
 "name": "Tobias Harris",
@@ -748,6 +775,15 @@
 "return": "2026-12-03",
 "type": "Knee",
 "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+},
+{
+"name": "Alijah Martin",
+"team": "Toronto Raptors",
+"status": "Day-To-Day",
+"date": "2026-11-26T21:18Z",
+"return": "2026-11-27",
+"type": "Knee",
+"note": "Martin is questionable for Friday's game against the Nets due to left knee soreness."
 },
 {
 "name": "Kawhi Leonard",
@@ -780,19 +816,19 @@
 "name": "Jaxson Hayes",
 "team": "Utah Jazz",
 "status": "Day-To-Day",
-"date": "2026-11-24T06:07Z",
+"date": "2026-11-27T00:11Z",
 "return": "2026-11-27",
 "type": "Knee",
-"note": "Hayes (knee) has been ruled out for Monday's game against the Lakers."
+"note": "Hayes (knee) is questionable for Friday's game against the Nuggets."
 },
 {
 "name": "Jusuf Nurkic",
 "team": "Utah Jazz",
 "status": "Out",
-"date": "2026-11-20T22:40Z",
-"return": "2026-11-29",
+"date": "2026-11-27T00:08Z",
+"return": "2026-11-27",
 "type": "Foot",
-"note": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
+"note": "Nurkic (foot) is questionable for Friday's game against the Nuggets."
 },
 {
 "name": "Lauri Markkanen",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 20:02",
+ "updated": "2026-11-27 04:00",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-26": {
@@ -122,7 +122,8 @@
      "slot": "G",
      "name": "Andrew Wiggins",
      "nba": "MIA",
-     "pos": "SG,SF,PF"
+     "pos": "SG,SF,PF",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -240,7 +241,8 @@
      "slot": "C",
      "name": "Isaiah Stewart",
      "nba": "MEM",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "Util",
@@ -277,7 +279,7 @@
      "name": "Jaylen Brown",
      "nba": "PHI",
      "pos": "SG,SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -454,7 +456,8 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -725,7 +728,8 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "P"
     },
     {
      "slot": "C",
@@ -750,7 +754,7 @@
      "name": "Cade Cunningham",
      "nba": "DET",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -916,8 +920,7 @@
      "slot": "F",
      "name": "Aaron Nesmith",
      "nba": "IND",
-     "pos": "SG,SF",
-     "status": "Q"
+     "pos": "SG,SF"
     },
     {
      "slot": "C",
@@ -1683,7 +1686,8 @@
      "name": "Andrew Wiggins",
      "nba": "MIA",
      "pos": "SG,SF,PF",
-     "game": "@ NYK 7:00 pm"
+     "game": "@ NYK 7:00 pm",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -1817,7 +1821,8 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "game": "@ MIN 8:30 pm"
+     "game": "@ MIN 8:30 pm",
+     "status": "Q"
     },
     {
      "slot": "Util",
@@ -1858,7 +1863,7 @@
      "nba": "PHI",
      "pos": "SG,SF,PF",
      "game": "@ IND 7:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -2012,7 +2017,8 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "vs PHI 7:30 pm"
+     "game": "vs PHI 7:30 pm",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -2337,7 +2343,7 @@
      "nba": "DET",
      "pos": "PG,SG",
      "game": "vs MIL 7:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -2365,7 +2371,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ NYK 7:00 pm"
+     "game": "@ NYK 7:00 pm",
+     "status": "P"
     },
     {
      "slot": "C",
@@ -2571,8 +2578,7 @@
      "name": "Aaron Nesmith",
      "nba": "IND",
      "pos": "SG,SF",
-     "game": "vs PHI 7:30 pm",
-     "status": "Q"
+     "game": "vs PHI 7:30 pm"
     },
     {
      "slot": "C",
@@ -3408,7 +3414,8 @@
      "slot": "G",
      "name": "Andrew Wiggins",
      "nba": "MIA",
-     "pos": "SG,SF,PF"
+     "pos": "SG,SF,PF",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -3525,7 +3532,8 @@
      "slot": "C",
      "name": "Isaiah Stewart",
      "nba": "MEM",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -3571,7 +3579,7 @@
      "nba": "PHI",
      "pos": "SG,SF,PF",
      "game": "@ HOU 8:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -3715,7 +3723,8 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ CHI 8:00 pm"
+     "game": "@ CHI 8:00 pm",
+     "status": "Q"
     },
     {
      "slot": "PF",
@@ -4020,7 +4029,7 @@
      "name": "Cade Cunningham",
      "nba": "DET",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -4076,7 +4085,8 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "P"
     },
     {
      "slot": "BN",
@@ -4247,8 +4257,7 @@
      "name": "Aaron Nesmith",
      "nba": "IND",
      "pos": "SG,SF",
-     "game": "@ CHI 8:00 pm",
-     "status": "Q"
+     "game": "@ CHI 8:00 pm"
     },
     {
      "slot": "C",
@@ -5040,7 +5049,8 @@
      "name": "Andrew Wiggins",
      "nba": "MIA",
      "pos": "SG,SF,PF",
-     "game": "@ CLE 3:30 pm"
+     "game": "@ CLE 3:30 pm",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -5173,7 +5183,8 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "game": "vs LAL 4:00 pm"
+     "game": "vs LAL 4:00 pm",
+     "status": "Q"
     },
     {
      "slot": "Util",
@@ -5211,7 +5222,7 @@
      "name": "Jaylen Brown",
      "nba": "PHI",
      "pos": "SG,SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -5415,7 +5426,8 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -5682,7 +5694,7 @@
      "nba": "DET",
      "pos": "PG,SG",
      "game": "vs ORL 6:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -5716,7 +5728,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "@ CLE 3:30 pm"
+     "game": "@ CLE 3:30 pm",
+     "status": "P"
     },
     {
      "slot": "Util",
@@ -5918,8 +5931,7 @@
      "slot": "F",
      "name": "Aaron Nesmith",
      "nba": "IND",
-     "pos": "SG,SF",
-     "status": "Q"
+     "pos": "SG,SF"
     },
     {
      "slot": "C",
@@ -6748,7 +6760,8 @@
      "slot": "G",
      "name": "Andrew Wiggins",
      "nba": "MIA",
-     "pos": "SG,SF,PF"
+     "pos": "SG,SF,PF",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -6869,7 +6882,8 @@
      "slot": "C",
      "name": "Isaiah Stewart",
      "nba": "MEM",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -6915,7 +6929,7 @@
      "name": "Jaylen Brown",
      "nba": "PHI",
      "pos": "SG,SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -7104,7 +7118,8 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -7367,7 +7382,7 @@
      "nba": "DET",
      "pos": "PG,SG",
      "game": "vs DEN 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -7400,7 +7415,8 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "P"
     },
     {
      "slot": "Util",
@@ -7596,8 +7612,7 @@
      "slot": "F",
      "name": "Aaron Nesmith",
      "nba": "IND",
-     "pos": "SG,SF",
-     "status": "Q"
+     "pos": "SG,SF"
     },
     {
      "slot": "C",
@@ -8412,7 +8427,8 @@
      "name": "Andrew Wiggins",
      "nba": "MIA",
      "pos": "SG,SF,PF",
-     "game": "vs ATL 7:30 pm"
+     "game": "vs ATL 7:30 pm",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -8534,7 +8550,8 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "game": "@ PHI 7:00 pm"
+     "game": "@ PHI 7:00 pm",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -8579,7 +8596,7 @@
      "nba": "PHI",
      "pos": "SG,SF,PF",
      "game": "vs MEM 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -8783,7 +8800,8 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ CLE 7:00 pm"
+     "game": "@ CLE 7:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -9047,7 +9065,7 @@
      "name": "Cade Cunningham",
      "nba": "DET",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -9073,7 +9091,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "vs ATL 7:30 pm"
+     "game": "vs ATL 7:30 pm",
+     "status": "P"
     },
     {
      "slot": "C",
@@ -9278,8 +9297,7 @@
      "name": "Aaron Nesmith",
      "nba": "IND",
      "pos": "SG,SF",
-     "game": "@ CLE 7:00 pm",
-     "status": "Q"
+     "game": "@ CLE 7:00 pm"
     },
     {
      "slot": "C",
@@ -10096,7 +10114,8 @@
      "slot": "G",
      "name": "Andrew Wiggins",
      "nba": "MIA",
-     "pos": "SG,SF,PF"
+     "pos": "SG,SF,PF",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -10221,7 +10240,8 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "game": "@ DET 7:00 pm"
+     "game": "@ DET 7:00 pm",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -10269,7 +10289,7 @@
      "nba": "PHI",
      "pos": "SG,SF,PF",
      "game": "vs DEN 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -10470,7 +10490,8 @@
      "slot": "BN",
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
-     "pos": "SF,PF"
+     "pos": "SF,PF",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -10732,7 +10753,7 @@
      "nba": "DET",
      "pos": "PG,SG",
      "game": "vs MEM 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -10790,7 +10811,8 @@
      "slot": "BN",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "P"
     },
     {
      "slot": "BN",
@@ -10965,8 +10987,7 @@
      "slot": "F",
      "name": "Aaron Nesmith",
      "nba": "IND",
-     "pos": "SG,SF",
-     "status": "Q"
+     "pos": "SG,SF"
     },
     {
      "slot": "C",
@@ -11784,7 +11805,8 @@
      "name": "Andrew Wiggins",
      "nba": "MIA",
      "pos": "SG,SF,PF",
-     "game": "vs WAS 7:30 pm"
+     "game": "vs WAS 7:30 pm",
+     "status": "P"
     },
     {
      "slot": "SF",
@@ -11903,7 +11925,8 @@
      "slot": "C",
      "name": "Isaiah Stewart",
      "nba": "MEM",
-     "pos": "PF,C"
+     "pos": "PF,C",
+     "status": "Q"
     },
     {
      "slot": "C",
@@ -11946,7 +11969,7 @@
      "name": "Jaylen Brown",
      "nba": "PHI",
      "pos": "SG,SF,PF",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "IL",
@@ -12137,7 +12160,8 @@
      "name": "Kelly Oubre Jr.",
      "nba": "IND",
      "pos": "SF,PF",
-     "game": "@ ATL 7:00 pm"
+     "game": "@ ATL 7:00 pm",
+     "status": "Q"
     },
     {
      "slot": "BN",
@@ -12393,7 +12417,7 @@
      "name": "Cade Cunningham",
      "nba": "DET",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "SF",
@@ -12407,7 +12431,8 @@
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
      "pos": "PF,C",
-     "game": "vs WAS 7:30 pm"
+     "game": "vs WAS 7:30 pm",
+     "status": "P"
     },
     {
      "slot": "F",
@@ -12620,8 +12645,7 @@
      "name": "Aaron Nesmith",
      "nba": "IND",
      "pos": "SG,SF",
-     "game": "@ ATL 7:00 pm",
-     "status": "Q"
+     "game": "@ ATL 7:00 pm"
     },
     {
      "slot": "C",

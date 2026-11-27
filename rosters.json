@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 20:02",
+ "updated": "2026-11-27 04:00",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -240,6 +240,7 @@
     "id": 5292,
     "nba": "MIA",
     "pos": "SG,SF,PF",
+    "status": "P",
     "draft": 5
    },
    {
@@ -396,6 +397,7 @@
     "id": 6408,
     "nba": "MEM",
     "pos": "PF,C",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -444,7 +446,7 @@
     "id": 5602,
     "nba": "PHI",
     "pos": "SG,SF,PF",
-    "status": "Q",
+    "status": "O",
     "draft": 31
    },
    {
@@ -678,6 +680,7 @@
     "id": 5475,
     "nba": "IND",
     "pos": "SF,PF",
+    "status": "Q",
     "draft": 1
    },
    {
@@ -1035,6 +1038,7 @@
     "id": 5185,
     "nba": "MIA",
     "pos": "PF,C",
+    "status": "P",
     "draft": 63
    },
    {
@@ -1067,7 +1071,7 @@
     "id": 6512,
     "nba": "DET",
     "pos": "PG,SG",
-    "status": "Q",
+    "status": "O",
     "draft": 66
    },
    {
@@ -1286,7 +1290,6 @@
     "id": 6406,
     "nba": "IND",
     "pos": "SG,SF",
-    "status": "Q",
     "draft": 1
    },
    {
