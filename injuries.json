@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-28 02:33",
+"updated": "2026-11-28 03:32",
 "source": "ESPN",
 "injuries": [
 {
@@ -309,15 +309,6 @@
 "note": "McConnell (hamstring) has been ruled out for Friday's game against the 76ers, Alex Golden of SI.com reports."
 },
 {
-"name": "Larry Nance Jr.",
-"team": "Indiana Pacers",
-"status": "Day-To-Day",
-"date": "2026-11-27T18:07Z",
-"return": "2026-11-27",
-"type": "Ankle",
-"note": "Nance (ankle) is probable for Friday's game against the 76ers."
-},
-{
 "name": "Tyrese Haliburton",
 "team": "Indiana Pacers",
 "status": "Out",
@@ -356,9 +347,9 @@
 {
 "name": "Isaiah Stewart",
 "team": "Memphis Grizzlies",
-"status": "Day-To-Day",
-"date": "2026-11-26T23:27Z",
-"return": "2026-11-27",
+"status": "Out",
+"date": "2026-11-28T00:10Z",
+"return": "2026-11-29",
 "type": "Hip",
 "note": "Stewart is questionable for Friday's game against the Timberwolves due to right hip soreness."
 },
@@ -534,6 +525,15 @@
 "note": "Drummond (concussion) has been ruled out for Friday's game against the Heat."
 },
 {
+"name": "Nikola Topic",
+"team": "Oklahoma City Thunder",
+"status": "Out",
+"date": "2026-11-27T23:49Z",
+"return": "2026-12-13",
+"type": "Hip",
+"note": "Topic (hip) is out for Saturday's game against the Bucks, Brandon Rahbar of DailyThunder.com reports."
+},
+{
 "name": "Aday Mara",
 "team": "Oklahoma City Thunder",
 "status": "Out",
@@ -541,15 +541,6 @@
 "return": "2026-11-30",
 "type": "Lower Leg",
 "note": "Mara (leg) is out for Saturday's game versus the Bucks, per Clemente Almanza of USA Today."
-},
-{
-"name": "Nikola Topic",
-"team": "Oklahoma City Thunder",
-"status": "Out",
-"date": "2026-11-24T23:29Z",
-"return": "2026-12-13",
-"type": "Hip",
-"note": "Topic (hip) is listed as out for Wednesday's game versus Minnesota."
 },
 {
 "name": "Jaylin Williams",
@@ -660,6 +651,15 @@
 "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
 },
 {
+"name": "Dean Wade",
+"team": "Philadelphia 76ers",
+"status": "Out",
+"date": "2026-11-27T23:33Z",
+"return": "2026-11-28",
+"type": "Hamstring",
+"note": "Wade (hamstring) is out for Friday's game against the Pacers, Austin Krell of Vertical 76 reports."
+},
+{
 "name": "Jaylen Brown",
 "team": "Philadelphia 76ers",
 "status": "Out",
@@ -667,15 +667,6 @@
 "return": "2026-12-01",
 "type": "Hamstring",
 "note": "Brown (hamstring) underwent an MRI that showed no signs of a new injury or re-aggravation, but he didn't travel with the team for the road trip, so he will miss the team's next two games, Kris Rhim of ESPN reports."
-},
-{
-"name": "Joel Embiid",
-"team": "Philadelphia 76ers",
-"status": "Day-To-Day",
-"date": "2026-11-27T16:32Z",
-"return": "2026-11-27",
-"type": "Illness",
-"note": "Embiid (illness) was at shootaround for the 76ers on Friday, Chris Hine of The Philly Inquirer reports."
 },
 {
 "name": "Ariel Hukporti",

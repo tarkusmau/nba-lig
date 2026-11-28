@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 02:33",
+ "updated": "2026-11-28 03:32",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -420,7 +420,7 @@
     "id": 6408,
     "nba": "MEM",
     "pos": "PF,C",
-    "status": "Q",
+    "status": "O",
     "draft": 1
    },
    {
@@ -1538,7 +1538,6 @@
     "id": 5294,
     "nba": "PHI",
     "pos": "C",
-    "status": "Q",
     "draft": 20
    },
    {

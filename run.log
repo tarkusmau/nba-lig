@@ -1,6 +1,6 @@
 Uyari: / HTTP 302 yonlendirme dongusu; 30 sn sonra tekrar denenecek.
 Guncel hafta: 6
-Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 28 Kasım 2026, 02:33 (27 Kasım maçları dahil)
+Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 28 Kasım 2026, 03:32 (27 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
 Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
@@ -25,8 +25,8 @@ yoneticiler: 16 satir.
 takim kayitlari: 16 satir.
 takim toplamlari: 16 satir.
 Ayarlar: guncel (haftalik), atlandi.
-Yahoo sakatliklar: 102 kayit.
-Gunluk kadro 2026-11-27: 16 takim, 183 maci olan oyuncu.
+Yahoo sakatliklar: 100 kayit.
+Gunluk kadro 2026-11-27: 16 takim, 168 maci olan oyuncu.
 Gunluk kadro 2026-11-28: 16 takim, 75 maci olan oyuncu.
 Gunluk kadro 2026-11-29: 16 takim, 166 maci olan oyuncu.
 Gunluk kadro 2026-11-30: 16 takim, 106 maci olan oyuncu.
@@ -34,7 +34,7 @@ Gunluk kadro 2026-12-01: 16 takim, 135 maci olan oyuncu.
 Gunluk kadro 2026-12-02: 16 takim, 145 maci olan oyuncu.
 Gunluk kadro 2026-12-03: 16 takim, 82 maci olan oyuncu.
 Gunluk kadro 2026-12-04: 16 takim, 0 maci olan oyuncu.
-Fikstur: {'6': 'Bomonti Sınırsız', '7': 'HobaKumpo', '8': 'Splash Brothers', '9': 'Kyojins on Rumbling'}
+Fikstur: {'6': None, '7': 'HobaKumpo', '8': 'Splash Brothers', '9': 'Kyojins on Rumbling'}
 Oyuncular bu_sezon_ort: 443 oyuncu (243 kadrolu) yazildi.
 Oyuncular gecen_sezon_ort: guncel (haftalik), atlandi.
 Oyuncular iki_sezon_once_ort: guncel (haftalik), atlandi.
@@ -44,4 +44,4 @@ Oyuncular son7_ort: 443 oyuncu (243 kadrolu) yazildi.
 Oyuncular projeksiyon_kalan: 443 oyuncu (243 kadrolu) yazildi.
 NBA takvimi guncel, yeniden cekilmedi.
 Gamelog: 37 gun, 502 oyuncu.
-Sakatliklar: 101 kayit.
+Sakatliklar: 100 kayit.

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 02:33",
+ "updated": "2026-11-28 03:32",
  "note": "Yahoo tarihleri (ABD saati)",
  "days": {
   "2026-11-27": {
@@ -133,15 +133,13 @@
      "slot": "G",
      "name": "Andrew Wiggins",
      "nba": "MIA",
-     "pos": "SG,SF,PF",
-     "game": "@ NYK 7:00 pm"
+     "pos": "SG,SF,PF"
     },
     {
      "slot": "SF",
      "name": "Klay Thompson",
      "nba": "MIA",
-     "pos": "SG,SF",
-     "game": "@ NYK 7:00 pm"
+     "pos": "SG,SF"
     },
     {
      "slot": "PF",
@@ -232,15 +230,13 @@
      "slot": "G",
      "name": "Pelle Larsson",
      "nba": "MIA",
-     "pos": "SG,SF",
-     "game": "@ NYK 7:00 pm"
+     "pos": "SG,SF"
     },
     {
      "slot": "SF",
      "name": "Josh Hart",
      "nba": "NYK",
-     "pos": "SG,SF",
-     "game": "vs MIA 7:00 pm"
+     "pos": "SG,SF"
     },
     {
      "slot": "PF",
@@ -290,7 +286,7 @@
      "nba": "MEM",
      "pos": "PF,C",
      "game": "@ MIN 8:30 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -444,8 +440,7 @@
      "slot": "PG",
      "name": "Jalen Brunson",
      "nba": "NYK",
-     "pos": "PG",
-     "game": "vs MIA 7:00 pm"
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -818,8 +813,7 @@
      "slot": "C",
      "name": "Giannis Antetokounmpo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "game": "@ NYK 7:00 pm"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -1153,8 +1147,7 @@
      "slot": "BN",
      "name": "Ryan Conwell",
      "nba": "MIA",
-     "pos": "SG",
-     "game": "@ NYK 7:00 pm"
+     "pos": "SG"
     },
     {
      "slot": "BN",
@@ -1233,16 +1226,14 @@
      "slot": "F",
      "name": "Bobby Portis Jr.",
      "nba": "MIA",
-     "pos": "PF,C",
-     "game": "@ NYK 7:00 pm"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
      "name": "Joel Embiid",
      "nba": "PHI",
      "pos": "C",
-     "game": "@ IND 7:30 pm",
-     "status": "Q"
+     "game": "@ IND 7:30 pm"
     },
     {
      "slot": "C",
@@ -1268,7 +1259,6 @@
      "name": "Andre Drummond",
      "nba": "NYK",
      "pos": "C",
-     "game": "vs MIA 7:00 pm",
      "status": "O"
     },
     {
@@ -1356,8 +1346,7 @@
      "slot": "C",
      "name": "Bam Adebayo",
      "nba": "MIA",
-     "pos": "PF,C",
-     "game": "@ NYK 7:00 pm"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -1413,8 +1402,7 @@
      "slot": "PG",
      "name": "Davion Mitchell",
      "nba": "MIA",
-     "pos": "PG",
-     "game": "@ NYK 7:00 pm"
+     "pos": "PG"
     },
     {
      "slot": "SG",
@@ -1434,8 +1422,7 @@
      "slot": "SF",
      "name": "Mikal Bridges",
      "nba": "NYK",
-     "pos": "SF,PF",
-     "game": "vs MIA 7:00 pm"
+     "pos": "SF,PF"
     },
     {
      "slot": "PF",
@@ -1469,8 +1456,7 @@
      "slot": "Util",
      "name": "Landry Shamet",
      "nba": "NYK",
-     "pos": "SG,SF",
-     "game": "vs MIA 7:00 pm"
+     "pos": "SG,SF"
     },
     {
      "slot": "Util",
@@ -1608,7 +1594,6 @@
      "name": "OG Anunoby",
      "nba": "NYK",
      "pos": "SF,PF",
-     "game": "vs MIA 7:00 pm",
      "status": "O"
     }
    ],
@@ -1659,8 +1644,7 @@
      "slot": "C",
      "name": "Karl-Anthony Towns",
      "nba": "NYK",
-     "pos": "PF,C",
-     "game": "vs MIA 7:00 pm"
+     "pos": "PF,C"
     },
     {
      "slot": "C",
@@ -1971,7 +1955,7 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -2891,8 +2875,7 @@
      "name": "Joel Embiid",
      "nba": "PHI",
      "pos": "C",
-     "game": "@ HOU 8:30 pm",
-     "status": "Q"
+     "game": "@ HOU 8:30 pm"
     },
     {
      "slot": "C",
@@ -3611,7 +3594,7 @@
      "nba": "MEM",
      "pos": "PF,C",
      "game": "vs LAL 4:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "Util",
@@ -4567,8 +4550,7 @@
      "slot": "C",
      "name": "Joel Embiid",
      "nba": "PHI",
-     "pos": "C",
-     "status": "Q"
+     "pos": "C"
     },
     {
      "slot": "C",
@@ -4905,7 +4887,7 @@
      "name": "Kyrie Irving",
      "nba": "DAL",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -5299,7 +5281,7 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -6229,8 +6211,7 @@
      "slot": "C",
      "name": "Joel Embiid",
      "nba": "PHI",
-     "pos": "C",
-     "status": "Q"
+     "pos": "C"
     },
     {
      "slot": "C",
@@ -6957,7 +6938,7 @@
      "nba": "MEM",
      "pos": "PF,C",
      "game": "@ PHI 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -7908,8 +7889,7 @@
      "name": "Joel Embiid",
      "nba": "PHI",
      "pos": "C",
-     "game": "vs MEM 7:00 pm",
-     "status": "Q"
+     "game": "vs MEM 7:00 pm"
     },
     {
      "slot": "C",
@@ -8635,7 +8615,7 @@
      "nba": "MEM",
      "pos": "PF,C",
      "game": "@ DET 7:00 pm",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -9586,8 +9566,7 @@
      "name": "Joel Embiid",
      "nba": "PHI",
      "pos": "C",
-     "game": "vs DEN 7:00 pm",
-     "status": "Q"
+     "game": "vs DEN 7:00 pm"
     },
     {
      "slot": "C",
@@ -10310,7 +10289,7 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -11229,8 +11208,7 @@
      "slot": "C",
      "name": "Joel Embiid",
      "nba": "PHI",
-     "pos": "C",
-     "status": "Q"
+     "pos": "C"
     },
     {
      "slot": "C",
@@ -11555,7 +11533,7 @@
      "name": "Kyrie Irving",
      "nba": "DAL",
      "pos": "PG,SG",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "BN",
@@ -11921,7 +11899,7 @@
      "name": "Isaiah Stewart",
      "nba": "MEM",
      "pos": "PF,C",
-     "status": "Q"
+     "status": "O"
     },
     {
      "slot": "C",
@@ -12794,8 +12772,7 @@
      "slot": "C",
      "name": "Joel Embiid",
      "nba": "PHI",
-     "pos": "C",
-     "status": "Q"
+     "pos": "C"
     },
     {
      "slot": "C",
