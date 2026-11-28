@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-28 18:31",
+"updated": "2026-11-28 18:39",
 "source": "ESPN",
 "injuries": [
 {
@@ -318,6 +318,15 @@
 "note": "Adams (knee) is questionable for Saturday's game against the 76ers."
 },
 {
+"name": "Tyrese Haliburton",
+"team": "Indiana Pacers",
+"status": "Out",
+"date": "2026-11-28T15:24Z",
+"return": "2026-12-13",
+"type": "Hamstring",
+"note": "The Pacers recalled Haliburton (hamstring) from the G League's Noblesville Boom on Friday, per the NBA G League transaction report."
+},
+{
 "name": "T.J. McConnell",
 "team": "Indiana Pacers",
 "status": "Out",
@@ -325,15 +334,6 @@
 "return": "2026-11-28",
 "type": "Hamstring",
 "note": "McConnell (hamstring) has been ruled out for Friday's game against the 76ers, Alex Golden of SI.com reports."
-},
-{
-"name": "Tyrese Haliburton",
-"team": "Indiana Pacers",
-"status": "Out",
-"date": "2026-11-27T16:20Z",
-"return": "2026-12-13",
-"type": "Hamstring",
-"note": "Haliburton (hamstring) has been ruled out per Scott Agness of FieldhouseFiles.com for Friday's game against the 76ers. The guard participated in practice activities earlier this week as he continues working toward his return."
 },
 {
 "name": "Ben Sheppard",

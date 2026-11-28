@@ -1,11 +1,8 @@
 Uyari: / HTTP 302 yonlendirme dongusu; 30 sn sonra tekrar denenecek.
 Guncel hafta: 6
-Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 28 Kasım 2026, 18:31 (27 Kasım maçları dahil)
+Hafta 6 yazildi: Hafta 6 (23-29 Kasım) | 28 Kasım 2026, 18:39 (27 Kasım maçları dahil)
 Puan durumu: 16 takim hesaplandi.
-Islemler: 3 yeni kayit eklendi.
-  + {"time": "2026-11-28 17:54", "team": "Pickle Men", "type": "add/drop", "add": ["S. James"], "drop": ["O. Ighodaro"], "pos": "SG,SF / C", "source": "FA"}
-  + {"time": "2026-11-28 15:39", "team": "tarkus maurelius", "type": "add", "add": ["G. Bitadze"], "drop": [], "pos": "C", "source": "FA"}
-  + {"time": "2026-11-28 13:51", "team": "Kalidou Koulibaly", "type": "drop", "add": [], "drop": ["W. Richard"], "pos": "SG,SF"}
+Islemler: 0 yeni kayit eklendi.
 Kadrolar: 16 takim bulundu: {15: 'tarkus maurelius', 2: 'Bomonti Sınırsız', 1: 'Pickle Men', 11: 'M. Sucks', 3: 'BÇ', 8: 'Kreuzberg Boys', 4: 'EAH Seniors', 5: 'HobaKumpo', 6: 'Kalidou Koulibaly', 7: 'Kassablancas', 9: 'Kyojins on Rumbling', 13: 'Splash Brothers', 10: 'Los Gerseii', 16: 'Yukatel Metin Akdülger', 12: 'Normal MAFIA', 14: 'Suhayy31'}
 Draft: 208 secim (kayitli dosyadan, tekrar cekilmedi).
 Kadro Pickle Men: 16 oyuncu, IL: ['Norman Powell', 'Evan Mobley', 'Caleb Wilson']

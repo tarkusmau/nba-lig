@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 18:31",
+ "updated": "2026-11-28 18:39",
  "files": {
   "boxscores/2026-11-14.json": 17502,
   "boxscores/2026-11-15.json": 31661,
@@ -18,7 +18,7 @@
   "degerler.json": 27565,
   "draft.json": 16222,
   "gamelog.json": 409571,
-  "injuries.json": 27218,
+  "injuries.json": 27124,
   "injuries_yahoo.json": 11018,
   "managers.json": 4489,
   "nba_schedule.json": 36043,
@@ -32,7 +32,7 @@
   "players/son7_ort.json": 166999,
   "players/uc_sezon_once_ort.json": 163065,
   "rosters.json": 34267,
-  "run.log": 3256,
+  "run.log": 3500,
   "schedule.json": 188,
   "settings.json": 1923,
   "standings.json": 2084,
