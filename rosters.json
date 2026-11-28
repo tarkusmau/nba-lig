@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 13:45",
+ "updated": "2026-11-28 18:31",
  "team_info": {
   "Pickle Men": {
    "id": 1,
@@ -125,12 +125,12 @@
     "draft": 48
    },
    {
-    "name": "Paul Reed",
+    "name": "Sion James",
     "slot": "F",
-    "id": 6450,
-    "nba": "DET",
-    "pos": "PF,C",
-    "draft": 1
+    "id": 10498,
+    "nba": "CHA",
+    "pos": "SG,SF",
+    "draft": "FA"
    },
    {
     "name": "Rudy Gobert",
@@ -141,11 +141,11 @@
     "draft": 14
    },
    {
-    "name": "Oso Ighodaro",
+    "name": "Paul Reed",
     "slot": "C",
-    "id": 10313,
-    "nba": "PHX",
-    "pos": "C",
+    "id": 6450,
+    "nba": "DET",
+    "pos": "PF,C",
     "draft": 1
    },
    {
@@ -579,7 +579,7 @@
     "id": 6256,
     "nba": "PHI",
     "pos": "SF,PF",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    },
    {
@@ -727,12 +727,12 @@
   ],
   "Kalidou Koulibaly": [
    {
-    "name": "Collin Sexton",
+    "name": "Fred VanVleet",
     "slot": "PG",
-    "id": 6019,
-    "nba": "LAL",
-    "pos": "PG,SG",
-    "draft": 1
+    "id": 5727,
+    "nba": "HOU",
+    "pos": "PG",
+    "draft": 6
    },
    {
     "name": "Ryan Rollins",
@@ -743,28 +743,28 @@
     "draft": 22
    },
    {
-    "name": "Dyson Daniels",
+    "name": "Amen Thompson",
     "slot": "G",
-    "id": 6698,
-    "nba": "ATL",
-    "pos": "SG,SF",
-    "draft": 26
-   },
-   {
-    "name": "Will Richard",
-    "slot": "SF",
-    "id": 10485,
-    "nba": "GSW",
-    "pos": "SG,SF",
-    "draft": "FA"
+    "id": 10108,
+    "nba": "HOU",
+    "pos": "PG,SG",
+    "draft": 39
    },
    {
     "name": "De'Andre Hunter",
-    "slot": "PF",
+    "slot": "SF",
     "id": 6166,
     "nba": "SAC",
     "pos": "SF,PF",
     "draft": "FA"
+   },
+   {
+    "name": "Jabari Smith Jr.",
+    "slot": "PF",
+    "id": 6693,
+    "nba": "HOU",
+    "pos": "PF,C",
+    "draft": 10
    },
    {
     "name": "Derik Queen",
@@ -807,28 +807,28 @@
     "draft": "FA"
    },
    {
-    "name": "Jabari Smith Jr.",
+    "name": "Dyson Daniels",
     "slot": "BN",
-    "id": 6693,
-    "nba": "HOU",
-    "pos": "PF,C",
-    "draft": 10
+    "id": 6698,
+    "nba": "ATL",
+    "pos": "SG,SF",
+    "draft": 26
    },
    {
-    "name": "Fred VanVleet",
+    "name": "Collin Sexton",
     "slot": "BN",
-    "id": 5727,
-    "nba": "HOU",
-    "pos": "PG",
-    "draft": 6
-   },
-   {
-    "name": "Amen Thompson",
-    "slot": "BN",
-    "id": 10108,
-    "nba": "HOU",
+    "id": 6019,
+    "nba": "LAL",
     "pos": "PG,SG",
-    "draft": 39
+    "draft": 1
+   },
+   {
+    "name": "Brandon Williams",
+    "slot": "BN",
+    "id": 6679,
+    "nba": "GSW",
+    "pos": "PG",
+    "draft": "FA"
    },
    {
     "name": "Cameron Boozer",
@@ -838,14 +838,6 @@
     "pos": "PF,C",
     "status": "O",
     "draft": 25
-   },
-   {
-    "name": "Brandon Williams",
-    "slot": "IL",
-    "id": 6679,
-    "nba": "GSW",
-    "pos": "PG",
-    "draft": "FA"
    },
    {
     "name": "Justin Champagnie",
@@ -1157,12 +1149,12 @@
     "draft": 1
    },
    {
-    "name": "Zaccharie Risacher",
+    "name": "Matas Buzelis",
     "slot": "PF",
-    "id": 10296,
-    "nba": "DAL",
+    "id": 10265,
+    "nba": "CHI",
     "pos": "SF,PF",
-    "draft": "FA"
+    "draft": 23
    },
    {
     "name": "Franz Wagner",
@@ -1189,12 +1181,12 @@
     "draft": 45
    },
    {
-    "name": "Matas Buzelis",
+    "name": "Zaccharie Risacher",
     "slot": "Util",
-    "id": 10265,
-    "nba": "CHI",
+    "id": 10296,
+    "nba": "DAL",
     "pos": "SF,PF",
-    "draft": 23
+    "draft": "FA"
    },
    {
     "name": "Wendell Carter Jr.",
@@ -1627,7 +1619,7 @@
   ],
   "Splash Brothers": [
    {
-    "name": "Christian Anderson",
+    "name": "Christian Anderson Jr.",
     "slot": "PG",
     "id": 10575,
     "nba": "CHA",
@@ -1739,7 +1731,7 @@
     "id": 10278,
     "nba": "TOR",
     "pos": "PG,SG",
-    "status": "O",
+    "status": "Q",
     "draft": "FA"
    }
   ],
@@ -1860,6 +1852,14 @@
   ],
   "tarkus maurelius": [
    {
+    "name": "N. Alexander-Walker",
+    "slot": "PG",
+    "id": 6205,
+    "nba": "ATL",
+    "pos": "PG,SG",
+    "draft": 26
+   },
+   {
     "name": "Tari Eason",
     "slot": "SG",
     "id": 6707,
@@ -1868,12 +1868,12 @@
     "draft": 2
    },
    {
-    "name": "Immanuel Quickley",
+    "name": "Cooper Flagg",
     "slot": "G",
-    "id": 6417,
-    "nba": "TOR",
-    "pos": "PG,SG",
-    "draft": 8
+    "id": 10468,
+    "nba": "DAL",
+    "pos": "SG,SF,PF",
+    "draft": 55
    },
    {
     "name": "Sidy Cissoko",
@@ -1924,20 +1924,20 @@
     "draft": 21
    },
    {
-    "name": "Cooper Flagg",
+    "name": "Goga Bitadze",
     "slot": "Util",
-    "id": 10468,
-    "nba": "DAL",
-    "pos": "SG,SF,PF",
-    "draft": 55
+    "id": 6206,
+    "nba": "ORL",
+    "pos": "C",
+    "draft": "FA"
    },
    {
-    "name": "N. Alexander-Walker",
+    "name": "Immanuel Quickley",
     "slot": "BN",
-    "id": 6205,
-    "nba": "ATL",
+    "id": 6417,
+    "nba": "TOR",
     "pos": "PG,SG",
-    "draft": 26
+    "draft": 8
    },
    {
     "name": "Brook Lopez",
